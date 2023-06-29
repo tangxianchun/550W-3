@@ -1269,6 +1269,17 @@ credits:Toggle("彩虹UI", "", false, function(state)
 		game:GetService("CoreGui")['frosty'].Main.Style = "Custom";
 	end
 end);
+local creds = window:Tab("550W系列脚本", "6035145364");
+local tool = creds:section("请问一下你是个人吗？", true);
+tool:Button("550A TZ中心", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/X8KLkhLt"))();
+end);
+tool:Button("550W V1（好用，但是有些游戏会出bug）", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550WV1JM.txt"))();
+end);
+tool:Button("550W V2", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550WV2_YUN.txt"))();
+end);
 local creds = window:Tab("赞助脚本", "6035145364");
 local tool = creds:section("通用", true);
 tool:Button("HUA脚本 卡密：W&4rVy7R", function()
