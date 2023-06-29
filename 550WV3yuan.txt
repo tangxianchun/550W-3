@@ -10,7 +10,7 @@
 ]]--
 
 local CoreGui = game:GetService("StarterGui");
-CoreGui:SetCore("SendNotification", {Title="「㊐         ㊊』",Text="启动云端中",Duration=5});
+CoreGui:SetCore("SendNotification", {Title="「㊐ 与 ㊊』",Text="启动云端中",Duration=5});
 wait(4);
 local CoreGui = game:GetService("StarterGui");
 CoreGui:SetCore("SendNotification", {Title="『M O S S』",Text="正在接入",Duration=5});
