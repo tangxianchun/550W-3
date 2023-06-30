@@ -41,7 +41,7 @@ local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="550W系列 V3",Text="获得高级紧急授权，重新启动",Duration=(290 - (134 + 151))});
 wait(2)
 local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="550W系列 V3",Text=("检测到您的注入器为" .. identifyexecutor()"，"),Duration=(1829 - (1195 + 629))});
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text=("检测到您的注入器为" .. identifyexecutor"，"),Duration=(1829 - (1195 + 629))});
 wait(2);
 print("Anti Afk On");
 local v1 = game:GetService("VirtualUser");
