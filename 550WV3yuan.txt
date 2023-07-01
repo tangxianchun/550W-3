@@ -1774,9 +1774,9 @@ v44:Toggle("彩虹UI", "", false, function(v208)
 	end
 end);
 local v42 = v41:Tab("550W系列脚本", "6035145364");
-local v43 = v42:section("请问一下你是个人吗？", true);
+local v43 = v42:section("我把全部功能放在了这些脚本里", true);
 v43:Button("550A TZ中心", function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/X8KLkhLt"))();
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550A TZ.txt"))()
 end);
 v43:Button("550W V1（好用，但是有些游戏会出bug）", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550WV1JM.txt"))();
