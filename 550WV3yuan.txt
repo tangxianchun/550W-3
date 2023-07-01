@@ -1774,25 +1774,25 @@ v44:Toggle("彩虹UI", "", false, function(v208)
 	end
 end);
 local v42 = v41:Tab("550W系列脚本", "6035145364");
-local v45 = v42:section("请问一下你是个人吗？", true);
-v45:Button("550A TZ中心", function()
+local v43 = v42:section("请问一下你是个人吗？", true);
+v43:Button("550A TZ中心", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/X8KLkhLt"))();
 end);
-v45:Button("550W V1（好用，但是有些游戏会出bug）", function()
+v43:Button("550W V1（好用，但是有些游戏会出bug）", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550WV1JM.txt"))();
 end);
-v45:Button("550W V2", function()
+v43:Button("550W V2", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550WV2_YUN.txt"))();
 end);
-local v42 = v41:Tab("赞助脚本", "6035145364");
-local v45 = v42:section("通用", true);
+local v42 = v41:Tab("『赞助脚本』", "6035145364");
+local v45 = v42:section("「通用」", true);
 v45:Button("HUA脚本", function()
 	_G["HUA Script 作者:1924467894"]="HUA Script Update the cloud"local SCC_CharPool={
 [1]= tostring(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,114,101,110,116,114,121,46,99,111,47,104,101,110,101,120,116,105,115,109,111,111,110,115,101,99,112,108,101,97,115,101,115,116,111,112,97,110,100,105,116,105,115,97,102,114,101,101,115,99,114,105,112,116,111,107,98,121,104,117,105,115,104,97,110,103,103,111,110,103,122,104,117,111,115,104,105,105,106,117,115,116,97,115,99,114,105,112,116,47,114,97,119})end)()))}
 loadstring(game:HttpGet(SCC_CharPool[1]))()
 end);
-local v42 = v41:Tab("通用", "6035145364");
-local v45 = v42:section("通用", true);
+local v42 = v41:Tab("「通用」", "6035145364");
+local v45 = v42:section("『通用』", true);
 v45:Button("工具", function()
 	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))();
 end);
@@ -1811,8 +1811,8 @@ end);
 v45:Button("按键（任意选择按键", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/KeyBinds/main/KeyBinds-Source.lua"))();
 end);
-local v42 = v41:Tab("热门游戏", "6035145364");
-local v45 = v42:section("热门游戏", true);
+local v42 = v41:Tab("「热门游戏」", "6035145364");
+local v45 = v42:section("『热门游戏』", true);
 v45:Button("鲨脚本", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt", true))();
 end);
@@ -1868,16 +1868,16 @@ end);
 v45:Button("Bedwars 🛰️[NEW KIT!]", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/bojoexploitz/yooo/main/itsobfuscated/InfinityHubTooOP", true))();
 end);
-local v42 = v41:Tab("射击游戏", "6035145364");
-local v45 = v42:section("「射击游戏」", true);
+local v42 = v41:Tab("「射击游戏」", "6035145364");
+local v45 = v42:section("『射击游戏』", true);
 v45:Button("Arsenal", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"))();
 end);
 v45:Button("BIG Paintball!", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 end);
-local v42 = v41:Tab("特色游戏", "6035145364");
-local v45 = v42:section("特色游戏", true);
+local v42 = v41:Tab("「特色游戏」", "6035145364");
+local v45 = v42:section("『特色游戏』", true);
 v45:Button("Breaking Point", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/ColdStep2/Breaking-Point-Funny-Squid-Hax/main/Breaking%20Point%20Funny%20Squid%20Hax", true))();
 end);
@@ -2002,8 +2002,8 @@ end);
 v45:Button("Answer Wins (No key)", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownStraz/Longest-Answer-Wins/main/Script", true))();
 end);
-local v42 = v41:Tab("其他", "6035145364");
-local v45 = v42:section("功能类", true);
+local v42 = v41:Tab("「其他」", "6035145364");
+local v45 = v42:section("『功能类』", true);
 v45:Button("键盘", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))();
 end);
@@ -2154,8 +2154,8 @@ end);
 v45:Button("脚本大中心", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/zAuR0JUT"))();
 end);
-local v42 = v41:Tab("DOORS", "6035145364");
-local v45 = v42:section("功能", true);
+local v42 = v41:Tab("「DOORS」", "6035145364");
+local v45 = v42:section("『功能』", true);
 v45:Button("穿墙", function()
 	loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))();
 end);
@@ -2214,8 +2214,8 @@ end);
 v45:Button("紫色手电筒买东西时使用", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))();
 end);
-local v42 = v41:Tab("脚本", "6035145364");
-local v45 = v42:section("脚本", true);
+local v42 = v41:Tab("「脚本」", "6035145364");
+local v45 = v42:section("『脚本』", true);
 v45:Button("鲨脚本", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt", true))();
 end);
@@ -2238,8 +2238,8 @@ v45:Button("USA（卡密：USA AER）", function()
 	getgenv().USA = "作者莫羽免费请勿倒卖";
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/USA.lua"))();
 end);
-local v42 = v41:Tab("灭霸模拟器", "6035145364");
-local v45 = v42:section("功能", true);
+local v42 = v41:Tab("「灭霸模拟器」", "6035145364");
+local v45 = v42:section("『功能』", true);
 v45:Button("出生/复活的地方", function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 153, -(39 - 19));
 end);
