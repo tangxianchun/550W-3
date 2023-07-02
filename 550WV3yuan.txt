@@ -59,7 +59,7 @@ v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动中",Duration=
 wait(3)
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动失败",Duration=5});
-
+wait(3)
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="550W系列 V3",Text="获得授权，重新启动",Duration=(290 - (134 + 151))});
 wait(2)
