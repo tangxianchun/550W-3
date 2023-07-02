@@ -60,6 +60,7 @@ v0:SetCore("SendNotification", {Title="方舟空间站",Text=("您好" .. game.P
 wait(246 - (187 + 54));
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="『脚本测试者』",Text="『十字架』『tangxianchu』『一头小』『一条鱼』",Duration=(840 - (162 + 618))});
+v0:SetCore("SendNotification", {Title="『脚本测试者』",Text="作者师傅：HUA Script制作者",Duration=(840 - (162 + 618))});
 local v2 = Instance.new("ScreenGui", getParent);
 local v3 = Instance.new("TextLabel", getParent);
 local v4 = game.Players.LocalPlayer;
@@ -104,7 +105,7 @@ local function v31()
 		if (v47 == (4 - 2)) then
 			v48 = v48 - (v48 % (604 - (268 + 335)));
 			v26.Text = "北京时间:" .. os.date("%H") .. "时" .. os.date("%M") .. "分" .. os.date("%S");
-			break;
+			break
 		end
 	end
 end
@@ -1786,6 +1787,9 @@ v43:Button("550W V2", function()
 end);
 v43:Button("550W V3 (现在用的)", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550W_V3JM.txt"))()
+end);
+v43:Button("550W V4(要白名单)仅限测试人员", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550W-V4.txt"))()
 end);
 local v42 = v41:Tab("『赞助脚本』", "6035145364");
 local v45 = v42:section("「通用」", true);
