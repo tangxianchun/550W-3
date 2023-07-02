@@ -20,7 +20,7 @@ local a=tostring(game.Players.LocalPlayer.Character);
 
 if a=="zkosjsiw"then
 _G.whitelist=true
-elseif a=="tangxianchu"then
+elseif a=="tangxianchun"then
 _G.whitelist=true
 end
 if _G.whitelist==true then
@@ -41,16 +41,16 @@ local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="『M O S S』",Text="正在获取授权",Duration=5});
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动中",Duration=5});
-
+wait(2)
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="550W系列 V3",Text="三",Duration=5});
 wait(2);
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="550W系列 V3",Text="检测到网络问题，正在启动本地云端",Duration=(18 - 13)});
-
+wait(1)
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="550W系列 V3",Text="加速启动",Duration=(7 - 2)});
-
+wait(1)
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="『M O S S』",Text="获取授权成功",Duration=(5)});
 wait(3)
