@@ -8,7 +8,29 @@
           \_Welcome to LuaObfuscator.com   (Alpha 0.2.8) ~  Much Love, Ferib 
 
 ]]--
+local CoreGui = game:GetService("StarterGui")
 
+CoreGui:SetCore("SendNotification", {
+    Title = "确认身份",
+    Text = "正在验证....",
+    Duration = 5,
+})
+
+local a=tostring(game.Players.LocalPlayer.Character);
+
+if a=="zkosjsiw"then
+_G.whitelist=true
+elseif a=="tangxianchu"then
+_G.whitelist=true
+end
+if _G.whitelist==true then
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "验证结果.",
+    Text = a.."验证身份成功等待时间长一点",
+    Duration = 5,
+})
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="「㊐ 与 ㊊』",Text="启动云端中",Duration=(579 - (507 + 67))});
 local v0 = game:GetService("StarterGui");
@@ -18,25 +40,25 @@ local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="『M O S S』",Text="正在获取授权",Duration=5});
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动中",Duration=5});
-wait(1);
+
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="550W系列 V3",Text="三",Duration=5});
 wait(2);
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="550W系列 V3",Text="检测到网络问题，正在启动本地云端",Duration=(18 - 13)});
-wait(2);
+
 local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="550W系列 V3",Text="二",Duration=(7 - 2)});
-wait(2);
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="加速启动",Duration=(7 - 2)});
+
 local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="『M O S S』",Text="获取授权成功",Duration=(7 - 2)});
-wait(2);
+v0:SetCore("SendNotification", {Title="『M O S S』",Text="获取授权成功",Duration=(5)});
+wait(3)
 local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="550W系列 V3",Text="一",Duration=5});
-wait(1);
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动中",Duration=5});
+wait(3)
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动失败",Duration=5});
-wait(3);
+
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="550W系列 V3",Text="获得授权，重新启动",Duration=(290 - (134 + 151))});
 wait(2)
@@ -59,8 +81,8 @@ local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="方舟空间站",Text=("您好" .. game.Players.LocalPlayer.Name .. "，欢迎您高级用户"),Duration=(13 - 3)});
 wait(246 - (187 + 54));
 local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="『脚本测试者』",Text="『十字架』『tangxianchu』『一头小』『一条鱼』",Duration=(840 - (162 + 618))});
-v0:SetCore("SendNotification", {Title="『脚本测试者』",Text="作者师傅：HUA Script制作者",Duration=(840 - (162 + 618))});
+v0:SetCore("SendNotification", {Title="『脚本测试者』",Text="『十字架』『tangxianchu』『一头小』『一条鱼』",Duration=(9999)});
+v0:SetCore("SendNotification", {Title="『脚本测试者』",Text="作者师傅：HUA Script制作者",Duration=(9999)});
 local v2 = Instance.new("ScreenGui", getParent);
 local v3 = Instance.new("TextLabel", getParent);
 local v4 = game.Players.LocalPlayer;
