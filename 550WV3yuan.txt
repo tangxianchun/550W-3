@@ -31,6 +31,7 @@ CoreGui:SetCore("SendNotification", {
     Text = a.."验证身份成功等待时间长一点",
     Duration = 5,
 })
+wait(5)
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="「㊐ 与 ㊊』",Text="启动云端中",Duration=(579 - (507 + 67))});
 local v0 = game:GetService("StarterGui");
@@ -2400,3 +2401,12 @@ v44:Toggle("afk", "", false, function(v316)
 		end
 	end
 end);
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "验证失败",
+    Text = "你并没有白名单",
+    Duration = 10,   
+
+})
+end
