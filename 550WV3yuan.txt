@@ -27,6 +27,8 @@ local a=tostring(game.Players.LocalPlayer.Character);
 
 if a=="zkosjsiw"then
 _G.whitelist=true
+elseif a=="tangxianchun"then
+_G.whitelist=true
 elseif a=="zyzqwp"then
 _G.whitelist=true
 elseif a=="as30326"then
