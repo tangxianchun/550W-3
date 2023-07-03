@@ -1,3 +1,13 @@
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.2.8) ~  Much Love, Ferib 
+
+]]--
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "加群有可能会发放白名单",
@@ -12,7 +22,7 @@ CoreGui:SetCore("SendNotification", {
     Text = "正在验证....",
     Duration = 5,
 })
-
+wait(3)
 local a=tostring(game.Players.LocalPlayer.Character);
 
 if a=="zkosjsiw"then
@@ -21,440 +31,2384 @@ elseif a=="tangxianchu"then
 _G.whitelist=true
 end
 if _G.whitelist==true then
-  wait(2)
+
     local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "验证结果.",
+    Title = "『验证结果』",
     Text = a.."验证身份成功等待时间长一点",
     Duration = 5,
 })
 wait(5)
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "『脚本测试员』",
-    Text = "『十字架』『tangxianchu』『一头小』『一条鱼』",
-    Duration = 9999, 
-})
-local LBLG = Instance.new("ScreenGui", getParent)
-local LBL = Instance.new("TextLabel", getParent)
-local player = game.Players.LocalPlayer
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="「㊐ 与 ㊊』",Text="启动云端中",Duration=(579 - (507 + 67))});
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="『M O S S』",Text="正在接入",Duration=(1754 - (1013 + 736))});
+wait(1);
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="『M O S S』",Text="正在获取授权",Duration=5});
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动中",Duration=5});
+wait(2)
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="三",Duration=5});
+wait(2);
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="检测到网络问题，正在启动本地云端",Duration=(18 - 13)});
+wait(1)
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="加速启动",Duration=(7 - 2)});
+wait(1)
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="『M O S S』",Text="获取授权成功",Duration=(5)});
+wait(3)
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动中",Duration=5});
+wait(3)
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动失败",Duration=5});
 
-LBLG.Name = "LBLG"
-LBLG.Parent = game.CoreGui
-LBLG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-LBLG.Enabled = true
-LBL.Name = "LBL"
-LBL.Parent = LBLG
-LBL.BackgroundColor3 = Color3.new(55, 22, 11)
-LBL.BackgroundTransparency = 1
-LBL.BorderColor3 = Color3.new(5, 6, 7)
-LBL.Position = UDim2.new(0.75,0,0.010,0)
-LBL.Size = UDim2.new(0, 133, 0, 30)
-LBL.Font = Enum.Font.GothamSemibold
-LBL.Text = "TextLabel"
-LBL.TextColor3 = Color3.new(1, 1, 1)
-LBL.TextScaled = true
-LBL.TextSize = 14
-LBL.TextWrapped = true
-LBL.Visible = true
-
-local FpsLabel = LBL
-local Heartbeat = game:GetService("RunService").Heartbeat
-local LastIteration, Start
-local FrameUpdateTable = { }
-
-local function HeartbeatUpdate()
-	LastIteration = tick()
-	for Index = #FrameUpdateTable, 1, -1 do
-		FrameUpdateTable[Index + 1] = (FrameUpdateTable[Index] >= LastIteration - 1) and FrameUpdateTable[Index] or nil
-	end
-	FrameUpdateTable[1] = LastIteration
-	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
-	CurrentFPS = CurrentFPS - CurrentFPS % 1
-	FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
-end
-Start = tick()
-Heartbeat:Connect(HeartbeatUpdate)
-repeat task.wait() until game:IsLoaded()
-local library = {}
-local ToggleUI = false
-library.currentTab = nil
-library.flags = {}
-
-local services = setmetatable({}, {
-  __index = function(t, k)
-    return game.GetService(game, k)
-  end
-})
-
-local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/cypherdh/VanisUILIB/main/.gitignore'))()
-
-_G.autokill = true
-
-function autokill()
-	while _G.autokill == true do
-			for i, player in ipairs(game.Players:GetChildren()) do
-			if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-			player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="获得授权，重新启动",Duration=(290 - (134 + 151))});
+wait(2)
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动成功",Duration=(1829 - (1195 + 629))});
+wait(2);
+print("Anti Afk On");
+local v1 = game:GetService("VirtualUser");
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+	v1:Button2Down(Vector2.new(1665 - (970 + 695), 0 - 0), workspace.CurrentCamera.CFrame);
+	wait(1991 - (582 + 1408));
+	v1:Button2Up(Vector2.new(0 - 0, 0 - 0), workspace.CurrentCamera.CFrame);
+end);
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="反挂机已自动开启",Text="被踢出服务器的概率已降低",Duration=5});
+wait(11 - 8);
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="启动成功",Text=("您好" .. game.Players.LocalPlayer.Name .. "，欢迎使用550W系列脚本"),Duration=(1829 - (1195 + 629))});
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="方舟空间站",Text=("您好" .. game.Players.LocalPlayer.Name .. "，欢迎您高级用户"),Duration=(13 - 3)});
+wait(246 - (187 + 54));
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="『脚本测试者』",Text="『十字架』『tangxianchu』『一头小』『一条鱼』",Duration=(9999)});
+v0:SetCore("SendNotification", {Title="『脚本测试者』",Text="作者师傅：HUA Script制作者",Duration=(9999)});
+local v2 = Instance.new("ScreenGui", getParent);
+local v3 = Instance.new("TextLabel", getParent);
+local v4 = game.Players.LocalPlayer;
+v2.Name = "LBLG";
+v2.Parent = game.CoreGui;
+v2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
+v2.Enabled = true;
+v3.Name = "LBL";
+v3.Parent = v2;
+v3.BackgroundColor3 = Color3.new(39 + 16, 15 + 7, 23 - 12);
+v3.BackgroundTransparency = 1 - 0;
+v3.BorderColor3 = Color3.new(1 + 4, 1642 - (1373 + 263), 7);
+v3.Position = UDim2.new(1000.75 - (451 + 549), 0 + 0, 0.01, 0);
+v3.Size = UDim2.new(0 - 0, 133, 0, 50 - 20);
+v3.Font = Enum.Font.GothamSemibold;
+v3.Text = "TextLabel";
+v3.TextColor3 = Color3.new(1385 - (746 + 638), 1 + 0, 1 - 0);
+v3.TextScaled = true;
+v3.TextSize = 14;
+v3.TextWrapped = true;
+v3.Visible = true;
+local v26 = v3;
+local v27 = game:GetService("RunService").Heartbeat;
+local v28, v29;
+local v30 = {};
+local function v31()
+	local v47 = 341 - (218 + 123);
+	local v48;
+	while true do
+		if (v47 == (1581 - (1535 + 46))) then
+			v28 = tick();
+			for v490 = #v30, 1 + 0, -1 do
+				v30[v490 + 1 + 0] = ((v30[v490] >= (v28 - (561 - (306 + 254)))) and v30[v490]) or nil;
 			end
+			v47 = 1 + 0;
+		end
+		if (v47 == 1) then
+			v30[1 - 0] = v28;
+			v48 = (((tick() - v29) >= (1468 - (899 + 568))) and #v30) or (#v30 / (tick() - v29));
+			v47 = 2 + 0;
+		end
+		if (v47 == (4 - 2)) then
+			v48 = v48 - (v48 % (604 - (268 + 335)));
+			v26.Text = "北京时间:" .. os.date("%H") .. "时" .. os.date("%M") .. "分" .. os.date("%S");
+			break
+		end
+	end
+end
+v29 = tick();
+v27:Connect(v31);
+repeat
+	task.wait();
+until game:IsLoaded() 
+local v32 = {};
+local v33 = false;
+v32.currentTab = nil;
+v32.flags = {};
+local v36 = setmetatable({}, {__index=function(v49, v50)
+	return game.GetService(game, v50);
+end});
+local v37 = v36.Players.LocalPlayer:GetMouse();
+function Tween(v51, v52, v53)
+	local v54 = 0;
+	while true do
+		if (v54 == (290 - (60 + 230))) then
+			v36.TweenService:Create(v51, TweenInfo.new(v52[573 - (426 + 146)], Enum.EasingStyle[v52[1 + 1]], Enum.EasingDirection[v52[1459 - (282 + 1174)]]), v53):Play();
+			return true;
+		end
+	end
+end
+function Ripple(v55)
+	spawn(function()
+		if (v55.ClipsDescendants ~= true) then
+			v55.ClipsDescendants = true;
+		end
+		local v319 = Instance.new("ImageLabel");
+		v319.Name = "Ripple";
+		v319.Parent = v55;
+		v319.BackgroundColor3 = Color3.fromRGB(255, 1066 - (569 + 242), 255);
+		v319.BackgroundTransparency = 1;
+		v319.ZIndex = 22 - 14;
+		v319.Image = "rbxassetid://2708891598";
+		v319.ImageTransparency = 0.8 + 0;
+		v319.ScaleType = Enum.ScaleType.Fit;
+		v319.ImageColor3 = Color3.fromRGB(1279 - (706 + 318), 1506 - (721 + 530), 255);
+		v319.Position = UDim2.new((v37.X - v319.AbsolutePosition.X) / v55.AbsoluteSize.X, 1271 - (945 + 326), (v37.Y - v319.AbsolutePosition.Y) / v55.AbsoluteSize.Y, 0);
+		Tween(v319, {0.3,"Linear","InOut"}, {Position=UDim2.new(-(5.5 + 0), 700 - (271 + 429), -(5.5 + 0), 1500 - (1408 + 92)),Size=UDim2.new(12, 1086 - (461 + 625), 1300 - (993 + 295), 0 + 0)});
+		wait(1171.15 - (418 + 753));
+		Tween(v319, {(0.3 + 0),"Linear","InOut"}, {ImageTransparency=(530 - (406 + 123))});
+		wait(0.3);
+		v319:Destroy();
+	end);
+end
+local v38 = false;
+local v39 = false;
+function switchTab(v56)
+	local v57 = 1769 - (1749 + 20);
+	local v58;
+	while true do
+		if (v57 == (1 + 0)) then
+			v39 = true;
+			v32.currentTab = v56;
+			v36.TweenService:Create(v58[1323 - (1249 + 73)], TweenInfo.new(0.1 + 0), {ImageTransparency=(1145.2 - (466 + 679))}):Play();
+			v36.TweenService:Create(v56[2 - 1], TweenInfo.new(0.1), {ImageTransparency=0}):Play();
+			v57 = 5 - 3;
+		end
+		if (v57 == 3) then
+			task.wait(0.1);
+			v39 = false;
+			break;
+		end
+		if (v57 == (1900 - (106 + 1794))) then
+			if v39 then
+				return;
 			end
-wait(0.1)
-
+			v58 = v32.currentTab;
+			if (v58 == nil) then
+				local v500 = 0 + 0;
+				while true do
+					if (v500 == (1 + 1)) then
+						return;
+					end
+					if (v500 == (2 - 1)) then
+						v36.TweenService:Create(v56[1], TweenInfo.new(0.1), {ImageTransparency=0}):Play();
+						v36.TweenService:Create(v56[2 - 1].TabText, TweenInfo.new(114.1 - (4 + 110)), {TextTransparency=(584 - (57 + 527))}):Play();
+						v500 = 1429 - (41 + 1386);
+					end
+					if (v500 == (103 - (17 + 86))) then
+						v56[2 + 0].Visible = true;
+						v32.currentTab = v56;
+						v500 = 1;
+					end
+				end
+			end
+			if (v58[1 - 0] == v56[2 - 1]) then
+				return;
+			end
+			v57 = 1;
+		end
+		if (v57 == (168 - (122 + 44))) then
+			v36.TweenService:Create(v58[1 - 0].TabText, TweenInfo.new(0.1), {TextTransparency=(0.2 - 0)}):Play();
+			v36.TweenService:Create(v56[1 + 0].TabText, TweenInfo.new(0.1 + 0), {TextTransparency=(0 - 0)}):Play();
+			v58[67 - (30 + 35)].Visible = false;
+			v56[2].Visible = true;
+			v57 = 3 + 0;
+		end
 	end
 end
-
-_G.autoweight = true
-
-function autoweight()
-	while _G.autoweight == true do
-			 local part = Instance.new('Part', workspace)
-part.Size = Vector3.new(500, 20, 530.1)
-part.Position = Vector3.new(0, 1000, 133.15)
-part.CanCollide = true
-part.Anchored = true
-
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = part.CFrame + Vector3.new(0, 15, 0)
-
-local a = true
-local rs = game:GetService("RunService").RenderStepped
-if a == true then
-while rs:wait() do
-for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-if v.ClassName == "Tool" and v.Name == "Weight" then
-v.Parent = game.Players.LocalPlayer.Character
-end
-end
-game:GetService("Players").LocalPlayer.muscleEvent:FireServer("rep")
-end
-end
-
+function drag(v59, v60)
+	if not v60 then
+		v60 = v59;
 	end
+	local v61;
+	local v62;
+	local v63;
+	local v64;
+	local function v65(v331)
+		local v332 = v331.Position - v63;
+		v59.Position = UDim2.new(v64.X.Scale, v64.X.Offset + v332.X, v64.Y.Scale, v64.Y.Offset + v332.Y);
+	end
+	v60.InputBegan:Connect(function(v334)
+		if (v334.UserInputType == Enum.UserInputType.MouseButton1) then
+			local v465 = 1257 - (1043 + 214);
+			while true do
+				if (v465 == (3 - 2)) then
+					v64 = v59.Position;
+					v334.Changed:Connect(function()
+						if (v334.UserInputState == Enum.UserInputState.End) then
+							v61 = false;
+						end
+					end);
+					break;
+				end
+				if (v465 == (1212 - (323 + 889))) then
+					v61 = true;
+					v63 = v334.Position;
+					v465 = 2 - 1;
+				end
+			end
+		end
+	end);
+	v59.InputChanged:Connect(function(v335)
+		if (v335.UserInputType == Enum.UserInputType.MouseMovement) then
+			v62 = v335;
+		end
+	end);
+	v36.UserInputService.InputChanged:Connect(function(v336)
+		if ((v336 == v62) and v61) then
+			v65(v336);
+		end
+	end);
 end
-
-local Window = library:CreateWindow("[550W]脚本中心", "tangxianchu制作", 10044538000)
-
-local Tab = Window:CreateTab("游戏脚本列表")
-
-local Page = Tab:CreateFrame("致谢人员")
-
-Label = Page:CreateLabel("Label")
-Label:UpdateLabel("『HUA Script作者』『飞舞幻想作者』")
-Label:UpdateLabel("合集，TZ，550W")
-
-local Page = Tab:CreateFrame("公告")
-
-Label = Page:CreateLabel("Label")
-Label:UpdateLabel("这脚本是全新的550系列脚本")
-
-Label = Page:CreateLabel("Label")
-Label:UpdateLabel("作者QQ:1072042657 QQ群:781759165 QQ频道:868h663073")
-
-Label = Page:CreateLabel("Label")
-Label:UpdateLabel("更新『550W系列脚本』推荐使用")
-local Page = Tab:CreateFrame("550系列脚本")
-Button = Page:CreateButton("550A TZ", "最初的起点", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550A-TZ.txt"))()
-end)
-Button = Page:CreateButton("550W V1", "正式进入550W时代", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550WV1JM.txt"))();
-end)
-Button = Page:CreateButton("550W V2", "因为脚本出现了一些原因，所以才有了V2", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550WV2_YUN.txt"))()
-end)
-Button = Page:CreateButton("550W V3", "正式版", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550W_V3JM.txt"))()
-end)
-Button = Page:CreateButton("550W V4", "仅限测试员使用(有白名单)", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550W-V4.txt"))()
-end)
-local Page = Tab:CreateFrame("通用功能")
-
-TextBox = Page:CreateBox("自定义速度", 10044538000, function(arg)
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = arg
-end)
-
-TextBox = Page:CreateBox("自定义跳跃高度", 10044538000, function(arg)
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = arg
-end)
-
-TextBox = Page:CreateBox("自定义重力", 10044538000, function(arg)
-game.Workspace.Gravity = arg
-end)
-Button = Page:CreateButton("控制中心", "无限产量", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
-Button = Page:CreateButton("飞行", "50倍版", function()
+v32.new = function(v66, v67, v68)
+	for v337, v338 in next, v36.CoreGui:GetChildren() do
+		if (v338.Name == "frosty") then
+			v338:Destroy();
+		end
+	end
+	if (v68 == "dark") then
+		local v429 = 580 - (361 + 219);
+		while true do
+			if (v429 == (320 - (53 + 267))) then
+				MainColor = Color3.fromRGB(25, 6 + 19, 438 - (15 + 398));
+				Background = Color3.fromRGB(1007 - (18 + 964), 25, 94 - 69);
+				v429 = 1 + 0;
+			end
+			if (v429 == (1 + 0)) then
+				zyColor = Color3.fromRGB(25, 875 - (20 + 830), 20 + 5);
+				beijingColor = Color3.fromRGB(151 - (116 + 10), 2 + 23, 763 - (542 + 196));
+				break;
+			end
+		end
+	else
+		local v430 = 0 - 0;
+		while true do
+			if (v430 == (1 + 0)) then
+				zyColor = Color3.fromRGB(16 + 14, 11 + 19, 79 - 49);
+				beijingColor = Color3.fromRGB(255, 653 - 398, 255);
+				break;
+			end
+			if ((1551 - (1126 + 425)) == v430) then
+				MainColor = Color3.fromRGB(430 - (118 + 287), 97 - 72, 1146 - (118 + 1003));
+				Background = Color3.fromRGB(73 - 48, 402 - (142 + 235), 25);
+				v430 = 1;
+			end
+		end
+	end
+	local v69 = Instance.new("ScreenGui");
+	local v70 = Instance.new("Frame");
+	local v71 = Instance.new("Frame");
+	local v72 = Instance.new("UICorner");
+	local v73 = Instance.new("Frame");
+	local v74 = Instance.new("UICorner");
+	local v75 = Instance.new("Frame");
+	local v76 = Instance.new("UIGradient");
+	local v77 = Instance.new("ScrollingFrame");
+	local v78 = Instance.new("UIListLayout");
+	local v79 = Instance.new("TextLabel");
+	local v80 = Instance.new("UIGradient");
+	local v81 = Instance.new("TextButton");
+	local v82 = Instance.new("UIGradient");
+	local v83 = Instance.new("Frame");
+	local v84 = Instance.new("ImageLabel");
+	local v85 = Instance.new("UICorner");
+	local v86 = Instance.new("UIGradient");
+	local v87 = Instance.new("UIGradient");
+	if (syn and syn.protect_gui) then
+		syn.protect_gui(v69);
+	end
+	v69.Name = "frosty";
+	v69.Parent = v36.CoreGui;
+	function UiDestroy()
+		v69:Destroy();
+	end
+	function ToggleUILib()
+		if not v33 then
+			local v466 = 0;
+			while true do
+				if (v466 == (0 - 0)) then
+					v69.Enabled = false;
+					v33 = true;
+					break;
+				end
+			end
+		else
+			local v467 = 0 + 0;
+			while true do
+				if (v467 == 0) then
+					v33 = false;
+					v69.Enabled = true;
+					break;
+				end
+			end
+		end
+	end
+	v70.Name = "Main";
+	v70.Parent = v69;
+	v70.AnchorPoint = Vector2.new(0.5, 977.5 - (553 + 424));
+	v70.BackgroundColor3 = Background;
+	v70.BorderColor3 = MainColor;
+	v70.Position = UDim2.new(0.5 - 0, 0 + 0, 0.5, 0 + 0);
+	v70.Size = UDim2.new(0 + 0, 244 + 328, 0 + 0, 353);
+	v70.ZIndex = 2 - 1;
+	v70.Active = true;
+	v70.Draggable = true;
+	v36.UserInputService.InputEnded:Connect(function(v339)
+		if (v339.KeyCode == Enum.KeyCode.LeftControl) then
+			if (v70.Visible == true) then
+				v70.Visible = false;
+			else
+				v70.Visible = true;
+			end
+		end
+	end);
+	drag(v70);
+	v85.Parent = v70;
+	v85.CornerRadius = UDim.new(0 - 0, 6 - 3);
+	v83.Name = "DropShadowHolder";
+	v83.Parent = v70;
+	v83.BackgroundTransparency = 1 + 0;
+	v83.BorderSizePixel = 0 - 0;
+	v83.Size = UDim2.new(754 - (239 + 514), 0 + 0, 1, 0);
+	v83.BorderColor3 = Color3.fromRGB(1584 - (797 + 532), 255, 186 + 69);
+	v83.ZIndex = 0;
+	v84.Name = "DropShadow";
+	v84.Parent = v83;
+	v84.AnchorPoint = Vector2.new(0.5 + 0, 0.5 - 0);
+	v84.BackgroundTransparency = 1203 - (373 + 829);
+	v84.BorderSizePixel = 731 - (476 + 255);
+	v84.Position = UDim2.new(1130.5 - (369 + 761), 0 + 0, 0.5 - 0, 0 - 0);
+	v84.Size = UDim2.new(239 - (64 + 174), 7 + 36, 1 - 0, 379 - (144 + 192));
+	v84.ZIndex = 216 - (42 + 174);
+	v84.Image = "rbxassetid://6015897843";
+	v84.ImageColor3 = Color3.fromRGB(192 + 63, 255, 212 + 43);
+	v84.ImageTransparency = 0.5 + 0;
+	v84.ScaleType = Enum.ScaleType.Slice;
+	v84.SliceCenter = Rect.new(1553 - (363 + 1141), 1629 - (1183 + 397), 1369 - 919, 330 + 120);
+	v86.Color = ColorSequence.new({ColorSequenceKeypoint.new(1975 - (1913 + 62), Color3.fromRGB(255, 0 + 0, 0)),ColorSequenceKeypoint.new(1933.1 - (565 + 1368), Color3.fromRGB(958 - 703, 1788 - (1477 + 184), 0)),ColorSequenceKeypoint.new(0.2 - 0, Color3.fromRGB(238 + 17, 1111 - (564 + 292), 0)),ColorSequenceKeypoint.new(0.3, Color3.fromRGB(0 - 0, 255, 304 - (244 + 60))),ColorSequenceKeypoint.new(0.4 + 0, Color3.fromRGB(0, 255, 255)),ColorSequenceKeypoint.new(0.5, Color3.fromRGB(476 - (41 + 435), 1001 - (938 + 63), 255)),ColorSequenceKeypoint.new(0.6 + 0, Color3.fromRGB(139, 1125 - (936 + 189), 84 + 171)),ColorSequenceKeypoint.new(0.7, Color3.fromRGB(158 + 97, 1138 - (782 + 356), 267 - (176 + 91))),ColorSequenceKeypoint.new(0.8 - 0, Color3.fromRGB(255, 186 - 59, 1092 - (975 + 117))),ColorSequenceKeypoint.new(0.9 + 0, Color3.fromRGB(255, 905 - 650, 0)),ColorSequenceKeypoint.new(1019 - (697 + 321), Color3.fromRGB(0 - 0, 539 - 284, 0 - 0))});
+	v86.Parent = v84;
+	local v126 = game:GetService("TweenService");
+	local v127 = TweenInfo.new(3 + 4, Enum.EasingStyle.Linear, Enum.EasingDirection.In, -(1 - 0));
+	local v128 = v126:Create(v86, v127, {Rotation=360});
+	v128:Play();
+	function toggleui()
+		local v340 = 0 - 0;
+		while true do
+			if (v340 == 0) then
+				v38 = not v38;
+				spawn(function()
+					if v38 then
+						wait(0.3);
+					end
+				end);
+				v340 = 1;
+			end
+			if (v340 == (1228 - (322 + 905))) then
+				Tween(v70, {0.3,"Sine","InOut"}, {Size=UDim2.new(1189 - (449 + 740), 1481 - (826 + 46), 947 - (245 + 702), (v38 and (1595 - 1090)) or (0 + 0))});
+				break;
+			end
+		end
+	end
+	v71.Name = "TabMain";
+	v71.Parent = v70;
+	v71.BackgroundColor3 = Color3.fromRGB(255, 255, 2153 - (260 + 1638));
+	v71.BackgroundTransparency = 441 - (382 + 58);
+	v71.Position = UDim2.new(0.217000037, 0 - 0, 0, 3 + 0);
+	v71.Size = UDim2.new(0 - 0, 1331 - 883, 1205 - (902 + 303), 353);
+	v72.CornerRadius = UDim.new(0, 10.5 - 5);
+	v72.Name = "MainC";
+	v72.Parent = Frame;
+	v73.Name = "SB";
+	v73.Parent = v70;
+	v73.BackgroundColor3 = Color3.fromRGB(613 - 358, 22 + 233, 255);
+	v73.BorderColor3 = MainColor;
+	v73.Size = UDim2.new(1690 - (1121 + 569), 8, 214 - (22 + 192), 353);
+	v74.CornerRadius = UDim.new(683 - (483 + 200), 1469 - (1404 + 59));
+	v74.Name = "SBC";
+	v74.Parent = v73;
+	v75.Name = "Side";
+	v75.Parent = v73;
+	v75.BackgroundColor3 = Color3.fromRGB(697 - 442, 255, 342 - 87);
+	v75.BorderColor3 = Color3.fromRGB(255, 1020 - (468 + 297), 817 - (334 + 228));
+	v75.BorderSizePixel = 0 - 0;
+	v75.ClipsDescendants = true;
+	v75.Position = UDim2.new(1, 0 - 0, 0 - 0, 0 + 0);
+	v75.Size = UDim2.new(0, 110, 0, 589 - (141 + 95));
+	v76.Color = ColorSequence.new({ColorSequenceKeypoint.new(0 + 0, zyColor),ColorSequenceKeypoint.new(1, zyColor)});
+	v76.Rotation = 216 - 126;
+	v76.Name = "SideG";
+	v76.Parent = v75;
+	v77.Name = "TabBtns";
+	v77.Parent = v75;
+	v77.Active = true;
+	v77.BackgroundColor3 = Color3.fromRGB(60 + 195, 698 - 443, 180 + 75);
+	v77.BackgroundTransparency = 1 + 0;
+	v77.BorderSizePixel = 0 - 0;
+	v77.Position = UDim2.new(0 + 0, 0, 163.0973535776 - (92 + 71), 0 + 0);
+	v77.Size = UDim2.new(0 - 0, 875 - (574 + 191), 0, 263 + 55);
+	v77.CanvasSize = UDim2.new(0 - 0, 0, 1 + 0, 849 - (254 + 595));
+	v77.ScrollBarThickness = 126 - (55 + 71);
+	v78.Name = "TabBtnsL";
+	v78.Parent = v77;
+	v78.SortOrder = Enum.SortOrder.LayoutOrder;
+	v78.Padding = UDim.new(0 - 0, 12);
+	v79.Name = "ScriptTitle";
+	v79.Parent = v75;
+	v79.BackgroundColor3 = Color3.fromRGB(2045 - (573 + 1217), 706 - 451, 255);
+	v79.BackgroundTransparency = 1 + 0;
+	v79.Position = UDim2.new(0 - 0, 939 - (714 + 225), 0.00953488424 - 0, 0);
+	v79.Size = UDim2.new(0, 102, 0 - 0, 3 + 17);
+	v79.Font = Enum.Font.GothamSemibold;
+	v79.Text = v67;
+	v79.TextColor3 = Color3.fromRGB(368 - 113, 255, 255);
+	v79.TextSize = 14;
+	v79.TextScaled = true;
+	v79.TextXAlignment = Enum.TextXAlignment.Left;
+	v87.Parent = v79;
+	local function v188()
+		local v341 = Instance.new("LocalScript", v79);
+		local v342 = v341.Parent;
+		local v343 = v342.UIGradient;
+		local v344 = game:GetService("TweenService");
+		local v345 = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out);
+		local v346 = {Offset=Vector2.new(807 - (118 + 688), 48 - (25 + 23))};
+		local v347 = v344:Create(v343, v345, v346);
+		local v348 = Vector2.new(-(1 + 0), 1886 - (927 + 959));
+		local v349 = {};
+		local v350, v351 = ColorSequence.new, ColorSequenceKeypoint.new;
+		local v352 = 0 - 0;
+		local v353 = "down";
+		v343.Offset = v348;
+		local function v355()
+			local v431 = 732 - (16 + 716);
+			local v432;
+			local v433;
+			while true do
+				if (v431 == (0 - 0)) then
+					v432, v433 = 352 - (11 + 86), 621 - 366;
+					for v573 = 286 - (175 + 110), 25 - 15 do
+						local v574 = 0 - 0;
+						local v575;
+						while true do
+							if (v574 == (1796 - (503 + 1293))) then
+								v575 = v573 * (47 - 30);
+								table.insert(v349, Color3.fromHSV(v575 / (185 + 70), v432 / (1316 - (810 + 251)), v433 / 255));
+								break;
+							end
+						end
+					end
+					break;
+				end
+			end
+		end
+		v355();
+		v343.Color = v350({v351(0 + 0, v349[#v349]),v351(0.5 + 0, v349[#v349 - 1]),v351(1 + 0, v349[#v349 - (535 - (43 + 490))])});
+		v352 = #v349;
+		local function v357()
+			local v434 = 733 - (711 + 22);
+			while true do
+				if (v434 == (0 - 0)) then
+					v347:Play();
+					v347.Completed:Wait();
+					v343.Offset = v348;
+					v343.Rotation = 180;
+					v434 = 860 - (240 + 619);
+				end
+				if (v434 == (1 + 1)) then
+					v343.Rotation = 0 - 0;
+					if ((v352 == (#v349 - 1)) and (v353 == "up")) then
+						local v833 = 0 + 0;
+						while true do
+							if (v833 == (1745 - (1344 + 400))) then
+								v353 = "down";
+								break;
+							end
+							if (v833 == (405 - (255 + 150))) then
+								v343.Color = v350({v351(0 + 0, v349[4 - 3]),v351(0.5, v349[#v349]),v351(407 - (183 + 223), v343.Color.Keypoints[3 - 0].Value)});
+								v352 = 1 + 0;
+								v833 = 1;
+							end
+						end
+					elseif ((v352 == #v349) and (v353 == "up")) then
+						v343.Color = v350({v351(0, v349[339 - (10 + 327)]),v351(0.5, v349[339 - (118 + 220)]),v351(450 - (108 + 341), v343.Color.Keypoints[2 + 1].Value)});
+						v352 = 2;
+						v353 = "down";
+					elseif ((v352 <= (#v349 - (8 - 6))) and (v353 == "up")) then
+						local v1105 = 1493 - (711 + 782);
+						while true do
+							if (0 == v1105) then
+								v343.Color = v350({v351(469 - (270 + 199), v349[v352 + 2]),v351(0.5 + 0, v349[v352 + (1820 - (580 + 1239))]),v351(1, v343.Color.Keypoints[3].Value)});
+								v352 = v352 + (5 - 3);
+								v1105 = 1;
+							end
+							if (v1105 == 1) then
+								v353 = "down";
+								break;
+							end
+						end
+					end
+					v357();
+					break;
+				end
+				if (v434 == (1 + 0)) then
+					if ((v352 == (#v349 - (1 + 0))) and (v353 == "down")) then
+						local v834 = 0 + 0;
+						while true do
+							if (v834 == 1) then
+								v353 = "up";
+								break;
+							end
+							if (v834 == (0 - 0)) then
+								v343.Color = v350({v351(1167 - (645 + 522), v343.Color.Keypoints[1791 - (1010 + 780)].Value),v351(0.5 + 0, v349[#v349]),v351(1, v349[2 - 1])});
+								v352 = 1;
+								v834 = 1837 - (1045 + 791);
+							end
+						end
+					elseif ((v352 == #v349) and (v353 == "down")) then
+						v343.Color = v350({v351(0, v343.Color.Keypoints[1 - 0].Value),v351(505.5 - (351 + 154), v349[1575 - (1281 + 293)]),v351(267 - (28 + 238), v349[4 - 2])});
+						v352 = 1561 - (1381 + 178);
+						v353 = "up";
+					elseif ((v352 <= (#v349 - (2 + 0))) and (v353 == "down")) then
+						v343.Color = v350({v351(0 + 0, v343.Color.Keypoints[1].Value),v351(0.5 - 0, v349[v352 + 1]),v351(1, v349[v352 + (472 - (381 + 89))])});
+						v352 = v352 + 2;
+						v353 = "up";
+					end
+					v347:Play();
+					v347.Completed:Wait();
+					v343.Offset = v348;
+					v434 = 2;
+				end
+			end
+		end
+		v357();
+	end
+	coroutine.wrap(v188)();
+	v80.Color = ColorSequence.new({ColorSequenceKeypoint.new(0 + 0, zyColor),ColorSequenceKeypoint.new(1 - 0, zyColor)});
+	v80.Rotation = 90;
+	v80.Name = "SBG";
+	v80.Parent = v73;
+	v78:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+		v77.CanvasSize = UDim2.new(1156 - (1074 + 82), 0 - 0, 1784 - (214 + 1570), v78.AbsoluteContentSize.Y + 18);
+	end);
+	v81.Name = "Open";
+	v81.Parent = v69;
+	v81.BackgroundColor3 = Color3.fromRGB(25, 25, 1480 - (990 + 465));
+	v81.Position = UDim2.new(0.00829315186 + 0, 0 + 0, 0.31107837 + 0, 0);
+	v81.Size = UDim2.new(0 - 0, 1787 - (1668 + 58), 626 - (512 + 114), 32);
+	v81.Font = Enum.Font.SourceSans;
+	v81.Text = "隐藏/打开";
+	v81.TextColor3 = Color3.fromRGB(255, 664 - 409, 526 - 271);
+	v81.TextSize = 48 - 34;
+	v81.Active = true;
+	v81.Draggable = true;
+	v81.MouseButton1Click:Connect(function()
+		v70.Visible = not v70.Visible;
+	end);
+	v82.Parent = v81;
+	local v206 = {};
+	v206.Tab = function(v360, v361, v362)
+		local v363 = Instance.new("ScrollingFrame");
+		local v364 = Instance.new("ImageLabel");
+		local v365 = Instance.new("TextLabel");
+		local v366 = Instance.new("TextButton");
+		local v367 = Instance.new("UIListLayout");
+		v363.Name = "Tab";
+		v363.Parent = v71;
+		v363.Active = true;
+		v363.BackgroundColor3 = Color3.fromRGB(255, 255, 119 + 136);
+		v363.BackgroundTransparency = 1;
+		v363.Size = UDim2.new(1 + 0, 0 + 0, 3 - 2, 1994 - (109 + 1885));
+		v363.ScrollBarThickness = 1471 - (1269 + 200);
+		v363.Visible = false;
+		v364.Name = "TabIco";
+		v364.Parent = v77;
+		v364.BackgroundTransparency = 1 - 0;
+		v364.BorderSizePixel = 815 - (98 + 717);
+		v364.Size = UDim2.new(826 - (802 + 24), 40 - 16, 0, 29 - 5);
+		v364.Image = ("rbxassetid://%s"):format(v362 or (5138305446 - 767963747));
+		v364.ImageTransparency = 0.2 - 0;
+		v365.Name = "TabText";
+		v365.Parent = v364;
+		v365.BackgroundColor3 = Color3.fromRGB(1683 - (1233 + 195), 255, 850 - 595);
+		v365.BackgroundTransparency = 1 + 0;
+		v365.Position = UDim2.new(1.41666663 + 0, 0, 0, 0 + 0);
+		v365.Size = UDim2.new(0 + 0, 76, 0 + 0, 1457 - (797 + 636));
+		v365.Font = Enum.Font.GothamSemibold;
+		v365.Text = v361;
+		v365.TextColor3 = Color3.fromRGB(1238 - 983, 1874 - (1427 + 192), 255);
+		v365.TextSize = 5 + 9;
+		v365.TextXAlignment = Enum.TextXAlignment.Left;
+		v365.TextTransparency = 0.2 - 0;
+		v366.Name = "TabBtn";
+		v366.Parent = v364;
+		v366.BackgroundColor3 = Color3.fromRGB(230 + 25, 116 + 139, 255);
+		v366.BackgroundTransparency = 327 - (192 + 134);
+		v366.BorderSizePixel = 1276 - (316 + 960);
+		v366.Size = UDim2.new(0 + 0, 85 + 25, 0, 23 + 1);
+		v366.AutoButtonColor = false;
+		v366.Font = Enum.Font.SourceSans;
+		v366.Text = "";
+		v366.TextColor3 = Color3.fromRGB(0, 0 - 0, 551 - (83 + 468));
+		v366.TextSize = 14;
+		v367.Name = "TabL";
+		v367.Parent = v363;
+		v367.SortOrder = Enum.SortOrder.LayoutOrder;
+		v367.Padding = UDim.new(0, 1810 - (1202 + 604));
+		v366.MouseButton1Click:Connect(function()
+			spawn(function()
+				Ripple(v366);
+			end);
+			switchTab({v364,v363});
+		end);
+		if (v66.currentTab == nil) then
+			switchTab({v364,v363});
+		end
+		v367:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+			v363.CanvasSize = UDim2.new(325 - (45 + 280), 0 + 0, 0 + 0, v367.AbsoluteContentSize.Y + 3 + 5);
+		end);
+		local v414 = {};
+		v414.section = function(v436, v437, v438)
+			local v439 = 0 + 0;
+			local v440;
+			local v441;
+			local v442;
+			local v443;
+			local v444;
+			local v445;
+			local v446;
+			local v447;
+			local v448;
+			local v449;
+			while true do
+				if (v439 == (2 + 6)) then
+					v447.Parent = v446;
+					v447.SortOrder = Enum.SortOrder.LayoutOrder;
+					v447.Padding = UDim.new(0, 14 - 6);
+					v448 = v438;
+					if (v438 ~= false) then
+						v440.Size = UDim2.new(0.981000006, 1911 - (340 + 1571), 0 + 0, (v448 and ((1808 - (1733 + 39)) + v447.AbsoluteContentSize.Y + 8)) or 36);
+						v444.ImageTransparency = (v448 and (0 - 0)) or (1035 - (125 + 909));
+						v443.ImageTransparency = (v448 and (1949 - (1096 + 852))) or (0 + 0);
+					end
+					v445.MouseButton1Click:Connect(function()
+						local v576 = 0 - 0;
+						while true do
+							if (v576 == (0 + 0)) then
+								v448 = not v448;
+								v440.Size = UDim2.new(512.981000006 - (409 + 103), 236 - (46 + 190), 95 - (51 + 44), (v448 and (11 + 25 + v447.AbsoluteContentSize.Y + (1325 - (1114 + 203)))) or (762 - (228 + 498)));
+								v576 = 1 + 0;
+							end
+							if (v576 == 1) then
+								v444.ImageTransparency = (v448 and (0 + 0)) or 1;
+								v443.ImageTransparency = (v448 and 1) or (663 - (174 + 489));
+								break;
+							end
+						end
+					end);
+					v447:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+						local v577 = 0 - 0;
+						while true do
+							if (v577 == 0) then
+								if not v448 then
+									return;
+								end
+								v440.Size = UDim2.new(0.981000006, 1905 - (830 + 1075), 0, (560 - (303 + 221)) + v447.AbsoluteContentSize.Y + 8);
+								break;
+							end
+						end
+					end);
+					v439 = 1278 - (231 + 1038);
+				end
+				if (v439 == (0 + 0)) then
+					v440 = Instance.new("Frame");
+					v441 = Instance.new("UICorner");
+					v442 = Instance.new("TextLabel");
+					v443 = Instance.new("ImageLabel");
+					v444 = Instance.new("ImageLabel");
+					v445 = Instance.new("ImageButton");
+					v446 = Instance.new("Frame");
+					v439 = 1163 - (171 + 991);
+				end
+				if (v439 == (8 - 6)) then
+					v440.Size = UDim2.new(0.981000006 - 0, 0 - 0, 0 + 0, 36);
+					v441.CornerRadius = UDim.new(0 - 0, 17 - 11);
+					v441.Name = "SectionC";
+					v441.Parent = v440;
+					v442.Name = "SectionText";
+					v442.Parent = v440;
+					v442.BackgroundColor3 = Color3.fromRGB(411 - 156, 788 - 533, 1503 - (111 + 1137));
+					v439 = 161 - (91 + 67);
+				end
+				if (v439 == (8 - 5)) then
+					v442.BackgroundTransparency = 1 + 0;
+					v442.Position = UDim2.new(0.0887396261, 0, 0, 0);
+					v442.Size = UDim2.new(523 - (423 + 100), 3 + 398, 0, 99 - 63);
+					v442.Font = Enum.Font.GothamSemibold;
+					v442.Text = v437;
+					v442.TextColor3 = Color3.fromRGB(133 + 122, 1026 - (326 + 445), 255);
+					v442.TextSize = 69 - 53;
+					v439 = 8 - 4;
+				end
+				if (v439 == 7) then
+					v446.Parent = v440;
+					v446.BackgroundColor3 = Color3.fromRGB(594 - 339, 966 - (530 + 181), 1136 - (614 + 267));
+					v446.BackgroundTransparency = 1;
+					v446.BorderSizePixel = 32 - (19 + 13);
+					v446.Position = UDim2.new(0, 9 - 3, 0 - 0, 102 - 66);
+					v446.Size = UDim2.new(0.986347735 + 0, 0 - 0, 0 - 0, 1812 - (1293 + 519));
+					v447.Name = "ObjsL";
+					v439 = 16 - 8;
+				end
+				if ((2 - 1) == v439) then
+					v447 = Instance.new("UIListLayout");
+					v440.Name = "Section";
+					v440.Parent = v363;
+					v440.BackgroundColor3 = zyColor;
+					v440.BackgroundTransparency = 1 - 0;
+					v440.BorderSizePixel = 0 - 0;
+					v440.ClipsDescendants = true;
+					v439 = 2;
+				end
+				if ((23 - 13) == v439) then
+					v449.Dropdown = function(v578, v579, v580, v581, v582)
+						local v583 = 0 + 0;
+						local v582;
+						local v581;
+						local v584;
+						local v585;
+						local v586;
+						local v587;
+						local v588;
+						local v589;
+						local v590;
+						local v591;
+						local v592;
+						local v593;
+						local v594;
+						local v595;
+						local v596;
+						while true do
+							if (0 == v583) then
+								v582 = v582 or function()
+								end;
+								v581 = v581 or {};
+								assert(v579, "No text provided");
+								assert(v580, "No flag provided");
+								v66.flags[v580] = nil;
+								v584 = Instance.new("Frame");
+								v585 = Instance.new("TextButton");
+								v583 = 1;
+							end
+							if ((1 + 0) == v583) then
+								v586 = Instance.new("UICorner");
+								v587 = Instance.new("TextButton");
+								v588 = Instance.new("TextBox");
+								v589 = Instance.new("UIListLayout");
+								v590 = Instance.new("TextButton");
+								v591 = Instance.new("UICorner");
+								v584.Name = "DropdownModule";
+								v583 = 4 - 2;
+							end
+							if (v583 == (2 + 3)) then
+								v587.Name = "DropdownOpen";
+								v587.Parent = v585;
+								v587.AnchorPoint = Vector2.new(0 + 0, 0.5 + 0);
+								v587.BackgroundColor3 = Color3.fromRGB(255, 1351 - (709 + 387), 2113 - (673 + 1185));
+								v587.BackgroundTransparency = 1;
+								v587.BorderSizePixel = 0 - 0;
+								v587.Position = UDim2.new(0.918383181 - 0, 0 - 0, 0.5, 0);
+								v583 = 6;
+							end
+							if (v583 == 4) then
+								v585.Text = "";
+								v585.TextColor3 = Color3.fromRGB(183 + 72, 255, 191 + 64);
+								v585.TextSize = 20 - 4;
+								v585.TextXAlignment = Enum.TextXAlignment.Left;
+								v586.CornerRadius = UDim.new(0 + 0, 11 - 5);
+								v586.Name = "DropdownTopC";
+								v586.Parent = v585;
+								v583 = 9 - 4;
+							end
+							if (v583 == (1883 - (446 + 1434))) then
+								v585.Name = "DropdownTop";
+								v585.Parent = v584;
+								v585.BackgroundColor3 = zyColor;
+								v585.BorderSizePixel = 1283 - (1040 + 243);
+								v585.Size = UDim2.new(0 - 0, 2275 - (559 + 1288), 1931 - (609 + 1322), 492 - (13 + 441));
+								v585.AutoButtonColor = false;
+								v585.Font = Enum.Font.GothamSemibold;
+								v583 = 14 - 10;
+							end
+							if (v583 == 2) then
+								v584.Parent = v446;
+								v584.BackgroundColor3 = Color3.fromRGB(667 - 412, 255, 1270 - 1015);
+								v584.BackgroundTransparency = 1 + 0;
+								v584.BorderSizePixel = 0 - 0;
+								v584.ClipsDescendants = true;
+								v584.Position = UDim2.new(0 + 0, 0 + 0, 0, 0);
+								v584.Size = UDim2.new(0 - 0, 235 + 193, 0 - 0, 38);
+								v583 = 2 + 1;
+							end
+							if (v583 == (4 + 3)) then
+								v588.Parent = v585;
+								v588.BackgroundColor3 = Color3.fromRGB(255, 184 + 71, 255);
+								v588.BackgroundTransparency = 1 + 0;
+								v588.BorderSizePixel = 0 + 0;
+								v588.Position = UDim2.new(433.0373831764 - (153 + 280), 0 - 0, 0 + 0, 0);
+								v588.Size = UDim2.new(0, 73 + 111, 0 + 0, 38);
+								v588.Font = Enum.Font.GothamSemibold;
+								v583 = 8 + 0;
+							end
+							if (v583 == 8) then
+								v588.PlaceholderColor3 = Color3.fromRGB(255, 255, 185 + 70);
+								v588.PlaceholderText = v579;
+								v588.Text = "";
+								v588.TextColor3 = Color3.fromRGB(255, 255, 388 - 133);
+								v588.TextSize = 10 + 6;
+								v588.TextXAlignment = Enum.TextXAlignment.Left;
+								v589.Name = "DropdownModuleL";
+								v583 = 9;
+							end
+							if (v583 == (676 - (89 + 578))) then
+								v589.Parent = v584;
+								v589.SortOrder = Enum.SortOrder.LayoutOrder;
+								v589.Padding = UDim.new(0 + 0, 8 - 4);
+								function v592()
+									local v1069 = v584:GetChildren();
+									for v1107 = 1050 - (572 + 477), #v1069 do
+										local v1108 = v1069[v1107];
+										if (v1108:IsA("TextButton") and v1108.Name:match("Option_")) then
+											v1108.Visible = true;
+										end
+									end
+								end
+								function v593(v1070)
+									local v1071 = 0 + 0;
+									local v1072;
+									while true do
+										if (v1071 == 0) then
+											v1072 = v584:GetChildren();
+											for v1131 = 1, #v1072 do
+												local v1132 = v1072[v1131];
+												if (v1070 == "") then
+													v592();
+												elseif (v1132:IsA("TextButton") and v1132.Name:match("Option_")) then
+													if v1132.Text:lower():match(v1070:lower()) then
+														v1132.Visible = true;
+													else
+														v1132.Visible = false;
+													end
+												end
+											end
+											break;
+										end
+									end
+								end
+								v594 = false;
+								function v595()
+									v594 = not v594;
+									if v594 then
+										v592();
+									end
+									v587.Text = (v594 and "-") or "+";
+									v584.Size = UDim2.new(0, 257 + 171, 0 + 0, (v594 and (v589.AbsoluteContentSize.Y + 4)) or (124 - (84 + 2)));
+								end
+								v583 = 16 - 6;
+							end
+							if (v583 == 6) then
+								v587.Size = UDim2.new(0 + 0, 862 - (497 + 345), 0 + 0, 4 + 16);
+								v587.Font = Enum.Font.Gotham;
+								v587.Text = "+";
+								v587.TextColor3 = Color3.fromRGB(1588 - (605 + 728), 182 + 73, 255);
+								v587.TextSize = 52 - 28;
+								v587.TextWrapped = true;
+								v588.Name = "DropdownText";
+								v583 = 1 + 6;
+							end
+							if (v583 == 10) then
+								v587.MouseButton1Click:Connect(v595);
+								v588.Focused:Connect(function()
+									local v1075 = 0;
+									while true do
+										if (v1075 == 0) then
+											if v594 then
+												return;
+											end
+											v595();
+											break;
+										end
+									end
+								end);
+								v588:GetPropertyChangedSignal("Text"):Connect(function()
+									local v1076 = 0 - 0;
+									while true do
+										if ((0 + 0) == v1076) then
+											if not v594 then
+												return;
+											end
+											v593(v588.Text);
+											break;
+										end
+									end
+								end);
+								v589:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+									if not v594 then
+										return;
+									end
+									v584.Size = UDim2.new(0 - 0, 324 + 104, 0, v589.AbsoluteContentSize.Y + (493 - (457 + 32)));
+								end);
+								v596 = {};
+								v596.AddOption = function(v1078, v1079)
+									local v1080 = 0;
+									local v1081;
+									local v1082;
+									while true do
+										if ((1 + 1) == v1080) then
+											v1081.Position = UDim2.new(1402 - (832 + 570), 0, 0.328125, 0 + 0);
+											v1081.Size = UDim2.new(0 + 0, 1514 - 1086, 0 + 0, 26);
+											v1081.AutoButtonColor = false;
+											v1080 = 3;
+										end
+										if (v1080 == 4) then
+											v1081.TextSize = 810 - (588 + 208);
+											v1082.CornerRadius = UDim.new(0 - 0, 1806 - (884 + 916));
+											v1082.Name = "OptionC";
+											v1080 = 10 - 5;
+										end
+										if (v1080 == (2 + 1)) then
+											v1081.Font = Enum.Font.Gotham;
+											v1081.Text = v1079;
+											v1081.TextColor3 = Color3.fromRGB(908 - (232 + 421), 2144 - (1569 + 320), 63 + 192);
+											v1080 = 1 + 3;
+										end
+										if (v1080 == 1) then
+											v1081.Parent = v584;
+											v1081.BackgroundColor3 = zyColor;
+											v1081.BorderSizePixel = 0 - 0;
+											v1080 = 2;
+										end
+										if (v1080 == (605 - (316 + 289))) then
+											v1081 = Instance.new("TextButton");
+											v1082 = Instance.new("UICorner");
+											v1081.Name = "Option_" .. v1079;
+											v1080 = 2 - 1;
+										end
+										if (v1080 == (1 + 4)) then
+											v1082.Parent = v1081;
+											v1081.MouseButton1Click:Connect(function()
+												local v1133 = 0;
+												while true do
+													if ((1454 - (666 + 787)) == v1133) then
+														v588.Text = v1081.Text;
+														v66.flags[v580] = v1081.Text;
+														break;
+													end
+													if ((425 - (360 + 65)) == v1133) then
+														v595();
+														v582(v1081.Text);
+														v1133 = 1 + 0;
+													end
+												end
+											end);
+											break;
+										end
+									end
+								end;
+								v596.RemoveOption = function(v1083, v1084)
+									local v1085 = 254 - (79 + 175);
+									local v1084;
+									while true do
+										if (v1085 == (0 - 0)) then
+											v1084 = v584:FindFirstChild("Option_" .. v1084);
+											if v1084 then
+												v1084:Destroy();
+											end
+											break;
+										end
+									end
+								end;
+								v583 = 11;
+							end
+							if ((9 + 2) == v583) then
+								v596.SetOptions = function(v1086, v1087)
+									local v1088 = 0 - 0;
+									while true do
+										if (v1088 == 0) then
+											for v1134, v1135 in next, v584:GetChildren() do
+												if v1135.Name:match("Option_") then
+													v1135:Destroy();
+												end
+											end
+											for v1136, v1137 in next, v1087 do
+												v596:AddOption(v1137);
+											end
+											break;
+										end
+									end
+								end;
+								v596:SetOptions(v581);
+								return v596;
+							end
+						end
+					end;
+					return v449;
+				end
+				if (v439 == (9 - 4)) then
+					v443.Image = "http://www.roblox.com/asset/?id=6031302934";
+					v444.Name = "SectionOpened";
+					v444.Parent = v443;
+					v444.BackgroundTransparency = 900 - (503 + 396);
+					v444.BorderSizePixel = 181 - (92 + 89);
+					v444.Size = UDim2.new(0, 49 - 23, 0 + 0, 26);
+					v444.Image = "http://www.roblox.com/asset/?id=6031302932";
+					v439 = 4 + 2;
+				end
+				if (v439 == (23 - 17)) then
+					v444.ImageTransparency = 1 + 0;
+					v445.Name = "SectionToggle";
+					v445.Parent = v443;
+					v445.BackgroundTransparency = 2 - 1;
+					v445.BorderSizePixel = 0;
+					v445.Size = UDim2.new(0, 23 + 3, 0, 26);
+					v446.Name = "Objs";
+					v439 = 4 + 3;
+				end
+				if (v439 == (27 - 18)) then
+					v449 = {};
+					v449.Button = function(v597, v598, v599)
+						local v599 = v599 or function()
+						end;
+						local v600 = Instance.new("Frame");
+						local v601 = Instance.new("TextButton");
+						local v602 = Instance.new("UICorner");
+						v600.Name = "BtnModule";
+						v600.Parent = v446;
+						v600.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+						v600.BackgroundTransparency = 1;
+						v600.BorderSizePixel = 0;
+						v600.Position = UDim2.new(0, 0, 0, 0 + 0);
+						v600.Size = UDim2.new(0 - 0, 1672 - (485 + 759), 0 - 0, 38);
+						v601.Name = "Btn";
+						v601.Parent = v600;
+						v601.BackgroundColor3 = zyColor;
+						v601.BorderSizePixel = 1189 - (442 + 747);
+						v601.Size = UDim2.new(1135 - (832 + 303), 1374 - (88 + 858), 0, 38);
+						v601.AutoButtonColor = false;
+						v601.Font = Enum.Font.GothamSemibold;
+						v601.Text = "   " .. v598;
+						v601.TextColor3 = Color3.fromRGB(78 + 177, 212 + 43, 11 + 244);
+						v601.TextSize = 805 - (766 + 23);
+						v601.TextXAlignment = Enum.TextXAlignment.Left;
+						v602.CornerRadius = UDim.new(0 - 0, 7 - 1);
+						v602.Name = "BtnC";
+						v602.Parent = v601;
+						v601.MouseButton1Click:Connect(function()
+							spawn(function()
+								Ripple(v601);
+							end);
+							spawn(v599);
+						end);
+					end;
+					v449.Label = function(v626, v627)
+						local v628 = 0 - 0;
+						local v629;
+						local v630;
+						local v631;
+						while true do
+							if (v628 == (0 - 0)) then
+								v629 = Instance.new("Frame");
+								v630 = Instance.new("TextLabel");
+								v631 = Instance.new("UICorner");
+								v628 = 1074 - (1036 + 37);
+							end
+							if (v628 == (3 + 1)) then
+								v630.Size = UDim2.new(0 - 0, 337 + 91, 1480 - (641 + 839), 935 - (910 + 3));
+								v630.Font = Enum.Font.GothamSemibold;
+								v630.Text = v627;
+								v628 = 5;
+							end
+							if (v628 == 1) then
+								v629.Name = "LabelModule";
+								v629.Parent = v446;
+								v629.BackgroundColor3 = Color3.fromRGB(650 - 395, 1939 - (1466 + 218), 118 + 137);
+								v628 = 2;
+							end
+							if (v628 == (1150 - (556 + 592))) then
+								v629.BackgroundTransparency = 1 + 0;
+								v629.BorderSizePixel = 808 - (329 + 479);
+								v629.Position = UDim2.new(854 - (174 + 680), 0 - 0, NAN, 0 - 0);
+								v628 = 3 + 0;
+							end
+							if (v628 == 5) then
+								v630.TextColor3 = Color3.fromRGB(255, 994 - (396 + 343), 23 + 232);
+								v630.TextSize = 14;
+								v631.CornerRadius = UDim.new(1477 - (29 + 1448), 1395 - (135 + 1254));
+								v628 = 6;
+							end
+							if (v628 == 3) then
+								v629.Size = UDim2.new(0 - 0, 1998 - 1570, 0 + 0, 1546 - (389 + 1138));
+								v630.Parent = v629;
+								v630.BackgroundColor3 = zyColor;
+								v628 = 578 - (102 + 472);
+							end
+							if (v628 == (6 + 0)) then
+								v631.Name = "LabelC";
+								v631.Parent = v630;
+								return v630;
+							end
+						end
+					end;
+					v449.Toggle = function(v632, v633, v634, v635, v636)
+						local v636 = v636 or function()
+						end;
+						local v635 = v635 or false;
+						assert(v633, "No text provided");
+						assert(v634, "No flag provided");
+						v66.flags[v634] = v635;
+						local v638 = Instance.new("Frame");
+						local v639 = Instance.new("TextButton");
+						local v640 = Instance.new("UICorner");
+						local v641 = Instance.new("Frame");
+						local v642 = Instance.new("Frame");
+						local v643 = Instance.new("UICorner");
+						local v644 = Instance.new("UICorner");
+						v638.Name = "ToggleModule";
+						v638.Parent = v446;
+						v638.BackgroundColor3 = Color3.fromRGB(255, 142 + 113, 238 + 17);
+						v638.BackgroundTransparency = 1;
+						v638.BorderSizePixel = 1545 - (320 + 1225);
+						v638.Position = UDim2.new(0 - 0, 0 + 0, 1464 - (157 + 1307), 1859 - (821 + 1038));
+						v638.Size = UDim2.new(0, 428, 0 - 0, 38);
+						v639.Name = "ToggleBtn";
+						v639.Parent = v638;
+						v639.BackgroundColor3 = zyColor;
+						v639.BorderSizePixel = 0 + 0;
+						v639.Size = UDim2.new(0, 428, 0 - 0, 38);
+						v639.AutoButtonColor = false;
+						v639.Font = Enum.Font.GothamSemibold;
+						v639.Text = "   " .. v633;
+						v639.TextColor3 = Color3.fromRGB(95 + 160, 632 - 377, 1281 - (834 + 192));
+						v639.TextSize = 2 + 14;
+						v639.TextXAlignment = Enum.TextXAlignment.Left;
+						v640.CornerRadius = UDim.new(0 + 0, 6);
+						v640.Name = "ToggleBtnC";
+						v640.Parent = v639;
+						v641.Name = "ToggleDisable";
+						v641.Parent = v639;
+						v641.BackgroundColor3 = Background;
+						v641.BorderSizePixel = 0 + 0;
+						v641.Position = UDim2.new(0.901869178, 0 - 0, 304.208881587 - (300 + 4), 0 + 0);
+						v641.Size = UDim2.new(0 - 0, 398 - (112 + 250), 0, 9 + 13);
+						v642.Name = "ToggleSwitch";
+						v642.Parent = v641;
+						v642.BackgroundColor3 = beijingColor;
+						v642.Size = UDim2.new(0, 24, 0, 54 - 32);
+						v643.CornerRadius = UDim.new(0, 4 + 2);
+						v643.Name = "ToggleSwitchC";
+						v643.Parent = v642;
+						v644.CornerRadius = UDim.new(0 + 0, 5 + 1);
+						v644.Name = "ToggleDisableC";
+						v644.Parent = v641;
+						local v684 = {SetState=function(v838, v839)
+							local v840 = 0 + 0;
+							while true do
+								if (v840 == 0) then
+									if (v839 == nil) then
+										v839 = not v66.flags[v634];
+									end
+									if (v66.flags[v634] == v839) then
+										return;
+									end
+									v840 = 1 + 0;
+								end
+								if (v840 == (1416 - (1001 + 413))) then
+									v636(v839);
+									break;
+								end
+								if (v840 == (2 - 1)) then
+									v36.TweenService:Create(v642, TweenInfo.new(0.2), {Position=UDim2.new(882 - (244 + 638), (v839 and (v642.Size.X.Offset / (695 - (627 + 66)))) or 0, 0, 0 - 0),BackgroundColor3=((v839 and Color3.fromRGB(857 - (512 + 90), 2161 - (1665 + 241), 972 - (373 + 344))) or beijingColor)}):Play();
+									v66.flags[v634] = v839;
+									v840 = 2;
+								end
+							end
+						end,Module=v638};
+						if (v635 ~= false) then
+							v684:SetState(v634, true);
+						end
+						v639.MouseButton1Click:Connect(function()
+							v684:SetState();
+						end);
+						return v684;
+					end;
+					v449.Keybind = function(v685, v686, v687, v688)
+						local v689 = 0 + 0;
+						local v688;
+						local v687;
+						local v690;
+						local v691;
+						local v692;
+						local v693;
+						local v694;
+						local v695;
+						local v696;
+						local v697;
+						local v698;
+						local v699;
+						local v700;
+						while true do
+							if (v689 == (0 + 0)) then
+								v688 = v688 or function()
+								end;
+								assert(v686, "No text provided");
+								assert(v687, "No default key provided");
+								v687 = ((typeof(v687) == "string") and Enum.KeyCode[v687]) or v687;
+								v690 = {Return=true,Space=true,Tab=true,Backquote=true,CapsLock=true,Escape=true,Unknown=true};
+								v691 = {RightControl="Right Ctrl",LeftControl="Left Ctrl",LeftShift="Left Shift",RightShift="Right Shift",Semicolon=";",Quote='"',LeftBracket="[",RightBracket="]",Equals="=",Minus="-",RightAlt="Right Alt",LeftAlt="Left Alt"};
+								v692 = v687;
+								v693 = (v687 and (v691[v687.Name] or v687.Name)) or "None";
+								v689 = 2 - 1;
+							end
+							if (v689 == 2) then
+								v694.Parent = v446;
+								v694.BackgroundColor3 = Color3.fromRGB(255, 255, 431 - 176);
+								v694.BackgroundTransparency = 1100 - (35 + 1064);
+								v694.BorderSizePixel = 0 + 0;
+								v694.Position = UDim2.new(0, 0 - 0, 0 + 0, 1236 - (298 + 938));
+								v694.Size = UDim2.new(1259 - (233 + 1026), 428, 1666 - (636 + 1030), 20 + 18);
+								v695.Name = "KeybindBtn";
+								v695.Parent = v694;
+								v689 = 3 + 0;
+							end
+							if (v689 == 6) then
+								v698.Name = "KeybindValueC";
+								v698.Parent = v697;
+								v699.Name = "KeybindL";
+								v699.Parent = v695;
+								v699.HorizontalAlignment = Enum.HorizontalAlignment.Right;
+								v699.SortOrder = Enum.SortOrder.LayoutOrder;
+								v699.VerticalAlignment = Enum.VerticalAlignment.Center;
+								v700.Parent = v695;
+								v689 = 3 + 4;
+							end
+							if (v689 == (1 + 0)) then
+								v694 = Instance.new("Frame");
+								v695 = Instance.new("TextButton");
+								v696 = Instance.new("UICorner");
+								v697 = Instance.new("TextButton");
+								v698 = Instance.new("UICorner");
+								v699 = Instance.new("UIListLayout");
+								v700 = Instance.new("UIPadding");
+								v694.Name = "KeybindModule";
+								v689 = 2;
+							end
+							if (v689 == (228 - (55 + 166))) then
+								v700.PaddingRight = UDim.new(0 + 0, 1 + 5);
+								v36.UserInputService.InputBegan:Connect(function(v1090, v1091)
+									if v1091 then
+										return;
+									end
+									if (v1090.UserInputType ~= Enum.UserInputType.Keyboard) then
+										return;
+									end
+									if (v1090.KeyCode ~= v692) then
+										return;
+									end
+									v688(v692.Name);
+								end);
+								v697.MouseButton1Click:Connect(function()
+									v697.Text = "...";
+									wait();
+									local v1093, v1094 = v36.UserInputService.InputEnded:Wait();
+									local v1095 = tostring(v1093.KeyCode.Name);
+									if (v1093.UserInputType ~= Enum.UserInputType.Keyboard) then
+										local v1110 = 0 - 0;
+										while true do
+											if (v1110 == 0) then
+												v697.Text = v693;
+												return;
+											end
+										end
+									end
+									if v690[v1095] then
+										local v1111 = 297 - (36 + 261);
+										while true do
+											if (v1111 == (0 - 0)) then
+												v697.Text = v693;
+												return;
+											end
+										end
+									end
+									wait();
+									v692 = Enum.KeyCode[v1095];
+									v697.Text = v691[v1095] or v1095;
+								end);
+								v697:GetPropertyChangedSignal("TextBounds"):Connect(function()
+									v697.Size = UDim2.new(1368 - (34 + 1334), v697.TextBounds.X + 12 + 18, 0 + 0, 1311 - (1035 + 248));
+								end);
+								v697.Size = UDim2.new(21 - (20 + 1), v697.TextBounds.X + 16 + 14, 319 - (134 + 185), 1161 - (549 + 584));
+								break;
+							end
+							if (v689 == (689 - (314 + 371))) then
+								v695.TextXAlignment = Enum.TextXAlignment.Left;
+								v696.CornerRadius = UDim.new(0, 6);
+								v696.Name = "KeybindBtnC";
+								v696.Parent = v695;
+								v697.Name = "KeybindValue";
+								v697.Parent = v695;
+								v697.BackgroundColor3 = Background;
+								v697.BorderSizePixel = 0 - 0;
+								v689 = 5;
+							end
+							if (v689 == (971 - (478 + 490))) then
+								v695.BackgroundColor3 = zyColor;
+								v695.BorderSizePixel = 0 + 0;
+								v695.Size = UDim2.new(1172 - (786 + 386), 1386 - 958, 0, 1417 - (1055 + 324));
+								v695.AutoButtonColor = false;
+								v695.Font = Enum.Font.GothamSemibold;
+								v695.Text = "   " .. v686;
+								v695.TextColor3 = Color3.fromRGB(1595 - (1093 + 247), 227 + 28, 27 + 228);
+								v695.TextSize = 16;
+								v689 = 4;
+							end
+							if (v689 == (19 - 14)) then
+								v697.Position = UDim2.new(0.763033211 - 0, 0 - 0, 0.289473683 - 0, 0 + 0);
+								v697.Size = UDim2.new(0 - 0, 344 - 244, 0 + 0, 71 - 43);
+								v697.AutoButtonColor = false;
+								v697.Font = Enum.Font.Gotham;
+								v697.Text = v693;
+								v697.TextColor3 = Color3.fromRGB(255, 255, 255);
+								v697.TextSize = 702 - (364 + 324);
+								v698.CornerRadius = UDim.new(0 - 0, 14 - 8);
+								v689 = 2 + 4;
+							end
+						end
+					end;
+					v449.Textbox = function(v701, v702, v703, v704, v705)
+						local v706 = 0 - 0;
+						local v705;
+						local v707;
+						local v708;
+						local v709;
+						local v710;
+						local v711;
+						local v712;
+						local v713;
+						local v714;
+						while true do
+							if ((10 - 3) == v706) then
+								v712.TextSize = 42 - 28;
+								v713.Name = "TextboxBackL";
+								v713.Parent = v708;
+								v713.HorizontalAlignment = Enum.HorizontalAlignment.Right;
+								v713.SortOrder = Enum.SortOrder.LayoutOrder;
+								v713.VerticalAlignment = Enum.VerticalAlignment.Center;
+								v714.Name = "TextboxBackP";
+								v714.Parent = v708;
+								v706 = 1276 - (1249 + 19);
+							end
+							if (v706 == (6 + 0)) then
+								v712.Parent = v710;
+								v712.BackgroundColor3 = Color3.fromRGB(992 - 737, 1341 - (686 + 400), 201 + 54);
+								v712.BackgroundTransparency = 1;
+								v712.BorderSizePixel = 0;
+								v712.Size = UDim2.new(230 - (73 + 156), 0 + 0, 812 - (721 + 90), 0 + 0);
+								v712.Font = Enum.Font.Gotham;
+								v712.Text = v704;
+								v712.TextColor3 = Color3.fromRGB(827 - 572, 255, 725 - (224 + 246));
+								v706 = 11 - 4;
+							end
+							if (v706 == (6 - 2)) then
+								v709.Name = "TextboxBackC";
+								v709.Parent = v708;
+								v710.Name = "BoxBG";
+								v710.Parent = v708;
+								v710.BackgroundColor3 = Background;
+								v710.BorderSizePixel = 0 + 0;
+								v710.Position = UDim2.new(0.763033211, 0 + 0, 0.289473683 + 0, 0 - 0);
+								v710.Size = UDim2.new(0 - 0, 100, 0, 541 - (203 + 310));
+								v706 = 1998 - (1238 + 755);
+							end
+							if (v706 == 5) then
+								v710.AutoButtonColor = false;
+								v710.Font = Enum.Font.Gotham;
+								v710.Text = "";
+								v710.TextColor3 = Color3.fromRGB(18 + 237, 1789 - (709 + 825), 469 - 214);
+								v710.TextSize = 20 - 6;
+								v711.CornerRadius = UDim.new(864 - (196 + 668), 23 - 17);
+								v711.Name = "BoxBGC";
+								v711.Parent = v710;
+								v706 = 6;
+							end
+							if (v706 == (3 - 1)) then
+								v707.BackgroundTransparency = 834 - (171 + 662);
+								v707.BorderSizePixel = 0;
+								v707.Position = UDim2.new(0, 93 - (4 + 89), 0, 0 - 0);
+								v707.Size = UDim2.new(0, 156 + 272, 0, 38);
+								v708.Name = "TextboxBack";
+								v708.Parent = v707;
+								v708.BackgroundColor3 = zyColor;
+								v708.BorderSizePixel = 0 - 0;
+								v706 = 3;
+							end
+							if (v706 == (0 + 0)) then
+								v705 = v705 or function()
+								end;
+								assert(v702, "No text provided");
+								assert(v703, "No flag provided");
+								assert(v704, "No default text provided");
+								v66.flags[v703] = v704;
+								v707 = Instance.new("Frame");
+								v708 = Instance.new("TextButton");
+								v709 = Instance.new("UICorner");
+								v706 = 1;
+							end
+							if (v706 == 1) then
+								v710 = Instance.new("TextButton");
+								v711 = Instance.new("UICorner");
+								v712 = Instance.new("TextBox");
+								v713 = Instance.new("UIListLayout");
+								v714 = Instance.new("UIPadding");
+								v707.Name = "TextboxModule";
+								v707.Parent = v446;
+								v707.BackgroundColor3 = Color3.fromRGB(1741 - (35 + 1451), 1708 - (28 + 1425), 255);
+								v706 = 1995 - (941 + 1052);
+							end
+							if (v706 == 3) then
+								v708.Size = UDim2.new(0 + 0, 428, 1514 - (822 + 692), 38);
+								v708.AutoButtonColor = false;
+								v708.Font = Enum.Font.GothamSemibold;
+								v708.Text = "   " .. v702;
+								v708.TextColor3 = Color3.fromRGB(363 - 108, 121 + 134, 552 - (45 + 252));
+								v708.TextSize = 16 + 0;
+								v708.TextXAlignment = Enum.TextXAlignment.Left;
+								v709.CornerRadius = UDim.new(0 + 0, 6);
+								v706 = 9 - 5;
+							end
+							if (v706 == (441 - (114 + 319))) then
+								v714.PaddingRight = UDim.new(0, 7 - 1);
+								v712.FocusLost:Connect(function()
+									if (v712.Text == "") then
+										v712.Text = v704;
+									end
+									v66.flags[v703] = v712.Text;
+									v705(v712.Text);
+								end);
+								v712:GetPropertyChangedSignal("TextBounds"):Connect(function()
+									v710.Size = UDim2.new(0, v712.TextBounds.X + (38 - 8), 0 + 0, 41 - 13);
+								end);
+								v710.Size = UDim2.new(0 - 0, v712.TextBounds.X + (1993 - (556 + 1407)), 1206 - (741 + 465), 28);
+								break;
+							end
+						end
+					end;
+					v449.Slider = function(v715, v716, v717, v718, v719, v720, v721, v722)
+						local v722 = v722 or function()
+						end;
+						local v719 = v719 or 1;
+						local v720 = v720 or 10;
+						local v718 = v718 or v719;
+						local v721 = v721 or false;
+						v66.flags[v717] = v718;
+						assert(v716, "No text provided");
+						assert(v717, "No flag provided");
+						assert(v718, "No default value provided");
+						local v724 = Instance.new("Frame");
+						local v725 = Instance.new("TextButton");
+						local v726 = Instance.new("UICorner");
+						local v727 = Instance.new("Frame");
+						local v728 = Instance.new("UICorner");
+						local v729 = Instance.new("Frame");
+						local v730 = Instance.new("UICorner");
+						local v731 = Instance.new("TextButton");
+						local v732 = Instance.new("UICorner");
+						local v733 = Instance.new("TextBox");
+						local v734 = Instance.new("TextButton");
+						local v735 = Instance.new("TextButton");
+						v724.Name = "SliderModule";
+						v724.Parent = v446;
+						v724.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+						v724.BackgroundTransparency = 466 - (170 + 295);
+						v724.BorderSizePixel = 0 + 0;
+						v724.Position = UDim2.new(0 + 0, 0 - 0, 0 + 0, 0 + 0);
+						v724.Size = UDim2.new(0, 243 + 185, 1230 - (957 + 273), 38);
+						v725.Name = "SliderBack";
+						v725.Parent = v724;
+						v725.BackgroundColor3 = zyColor;
+						v725.BorderSizePixel = 0;
+						v725.Size = UDim2.new(0 + 0, 172 + 256, 0, 144 - 106);
+						v725.AutoButtonColor = false;
+						v725.Font = Enum.Font.GothamSemibold;
+						v725.Text = "   " .. v716;
+						v725.TextColor3 = Color3.fromRGB(671 - 416, 255, 778 - 523);
+						v725.TextSize = 16;
+						v725.TextXAlignment = Enum.TextXAlignment.Left;
+						v726.CornerRadius = UDim.new(0 - 0, 1786 - (389 + 1391));
+						v726.Name = "SliderBackC";
+						v726.Parent = v725;
+						v727.Name = "SliderBar";
+						v727.Parent = v725;
+						v727.AnchorPoint = Vector2.new(0 + 0, 0.5 + 0);
+						v727.BackgroundColor3 = Background;
+						v727.BorderSizePixel = 0 - 0;
+						v727.Position = UDim2.new(951.369000018 - (783 + 168), 40, 0.5 - 0, 0 + 0);
+						v727.Size = UDim2.new(0, 451 - (309 + 2), 0 - 0, 1224 - (1090 + 122));
+						v728.CornerRadius = UDim.new(0 + 0, 4);
+						v728.Name = "SliderBarC";
+						v728.Parent = v727;
+						v729.Name = "SliderPart";
+						v729.Parent = v727;
+						v729.BackgroundColor3 = Color3.fromRGB(856 - 601, 175 + 80, 1373 - (628 + 490));
+						v729.BorderSizePixel = 0 + 0;
+						v729.Size = UDim2.new(0 - 0, 54, 0, 13);
+						v730.CornerRadius = UDim.new(0 - 0, 778 - (431 + 343));
+						v730.Name = "SliderPartC";
+						v730.Parent = v729;
+						v731.Name = "SliderValBG";
+						v731.Parent = v725;
+						v731.BackgroundColor3 = Background;
+						v731.BorderSizePixel = 0;
+						v731.Position = UDim2.new(0.883177578 - 0, 0, 0.131578952, 0 - 0);
+						v731.Size = UDim2.new(0 + 0, 6 + 38, 1695 - (556 + 1139), 28);
+						v731.AutoButtonColor = false;
+						v731.Font = Enum.Font.Gotham;
+						v731.Text = "";
+						v731.TextColor3 = Color3.fromRGB(270 - (6 + 9), 47 + 208, 131 + 124);
+						v731.TextSize = 183 - (28 + 141);
+						v732.CornerRadius = UDim.new(0 + 0, 7 - 1);
+						v732.Name = "SliderValBGC";
+						v732.Parent = v731;
+						v733.Name = "SliderValue";
+						v733.Parent = v731;
+						v733.BackgroundColor3 = Color3.fromRGB(181 + 74, 1572 - (486 + 831), 663 - 408);
+						v733.BackgroundTransparency = 1;
+						v733.BorderSizePixel = 0;
+						v733.Size = UDim2.new(3 - 2, 0 + 0, 3 - 2, 0);
+						v733.Font = Enum.Font.Gotham;
+						v733.Text = "1000";
+						v733.TextColor3 = Color3.fromRGB(1518 - (668 + 595), 255, 230 + 25);
+						v733.TextSize = 14;
+						v734.Name = "MinSlider";
+						v734.Parent = v724;
+						v734.BackgroundColor3 = Color3.fromRGB(255, 255, 52 + 203);
+						v734.BackgroundTransparency = 1;
+						v734.BorderSizePixel = 0 - 0;
+						v734.Position = UDim2.new(290.296728969 - (23 + 267), 1984 - (1129 + 815), 387.236842096 - (371 + 16), 1750 - (1326 + 424));
+						v734.Size = UDim2.new(0, 20, 0 - 0, 73 - 53);
+						v734.Font = Enum.Font.Gotham;
+						v734.Text = "-";
+						v734.TextColor3 = Color3.fromRGB(373 - (88 + 30), 255, 255);
+						v734.TextSize = 795 - (720 + 51);
+						v734.TextWrapped = true;
+						v735.Name = "AddSlider";
+						v735.Parent = v724;
+						v735.AnchorPoint = Vector2.new(0, 0.5 - 0);
+						v735.BackgroundColor3 = Color3.fromRGB(2031 - (421 + 1355), 420 - 165, 126 + 129);
+						v735.BackgroundTransparency = 1;
+						v735.BorderSizePixel = 1083 - (286 + 797);
+						v735.Position = UDim2.new(0.810906529 - 0, 0, 0.5 - 0, 0);
+						v735.Size = UDim2.new(439 - (397 + 42), 7 + 13, 0, 20);
+						v735.Font = Enum.Font.Gotham;
+						v735.Text = "+";
+						v735.TextColor3 = Color3.fromRGB(1055 - (24 + 776), 392 - 137, 255);
+						v735.TextSize = 809 - (222 + 563);
+						v735.TextWrapped = true;
+						local v827 = {SetValue=function(v841, v842)
+							local v843 = 0 - 0;
+							local v844;
+							while true do
+								if (v843 == (3 + 0)) then
+									v729.Size = UDim2.new(v844, 190 - (23 + 167), 1799 - (690 + 1108), 0 + 0);
+									v722(tonumber(v842));
+									break;
+								end
+								if (v843 == (0 + 0)) then
+									v844 = (v37.X - v727.AbsolutePosition.X) / v727.AbsoluteSize.X;
+									if v842 then
+										v844 = (v842 - v719) / (v720 - v719);
+									end
+									v843 = 849 - (40 + 808);
+								end
+								if (v843 == (1 + 1)) then
+									v66.flags[v717] = tonumber(v842);
+									v733.Text = tostring(v842);
+									v843 = 3;
+								end
+								if (v843 == (3 - 2)) then
+									v844 = math.clamp(v844, 0 + 0, 1);
+									if v721 then
+										v842 = v842 or tonumber(string.format("%.1f", tostring(v719 + ((v720 - v719) * v844))));
+									else
+										v842 = v842 or math.floor(v719 + ((v720 - v719) * v844));
+									end
+									v843 = 2;
+								end
+							end
+						end};
+						v734.MouseButton1Click:Connect(function()
+							local v845 = v66.flags[v717];
+							v845 = math.clamp(v845 - (1 + 0), v719, v720);
+							v827:SetValue(v845);
+						end);
+						v735.MouseButton1Click:Connect(function()
+							local v846 = 0 + 0;
+							local v847;
+							while true do
+								if (v846 == 1) then
+									v827:SetValue(v847);
+									break;
+								end
+								if ((571 - (47 + 524)) == v846) then
+									v847 = v66.flags[v717];
+									v847 = math.clamp(v847 + 1 + 0, v719, v720);
+									v846 = 2 - 1;
+								end
+							end
+						end);
+						v827:SetValue(v718);
+						local v828, v829, v830 = false, false, {[""]=true,["-"]=true};
+						v727.InputBegan:Connect(function(v848)
+							if (v848.UserInputType == Enum.UserInputType.MouseButton1) then
+								local v1065 = 0 - 0;
+								while true do
+									if (v1065 == (0 - 0)) then
+										v827:SetValue();
+										v828 = true;
+										break;
+									end
+								end
+							end
+						end);
+						v36.UserInputService.InputEnded:Connect(function(v849)
+							if (v828 and (v849.UserInputType == Enum.UserInputType.MouseButton1)) then
+								v828 = false;
+							end
+						end);
+						v36.UserInputService.InputChanged:Connect(function(v850)
+							if (v828 and (v850.UserInputType == Enum.UserInputType.MouseMovement)) then
+								v827:SetValue();
+							end
+						end);
+						v727.InputBegan:Connect(function(v851)
+							if (v851.UserInputType == Enum.UserInputType.Touch) then
+								v827:SetValue();
+								v828 = true;
+							end
+						end);
+						v36.UserInputService.InputEnded:Connect(function(v852)
+							if (v828 and (v852.UserInputType == Enum.UserInputType.Touch)) then
+								v828 = false;
+							end
+						end);
+						v36.UserInputService.InputChanged:Connect(function(v853)
+							if (v828 and (v853.UserInputType == Enum.UserInputType.Touch)) then
+								v827:SetValue();
+							end
+						end);
+						v733.Focused:Connect(function()
+							v829 = true;
+						end);
+						v733.FocusLost:Connect(function()
+							local v854 = 0;
+							while true do
+								if (v854 == (1726 - (1165 + 561))) then
+									v829 = false;
+									if (v733.Text == "") then
+										v827:SetValue(v718);
+									end
+									break;
+								end
+							end
+						end);
+						v733:GetPropertyChangedSignal("Text"):Connect(function()
+							if not v829 then
+								return;
+							end
+							v733.Text = v733.Text:gsub("%D+", "");
+							local v856 = v733.Text;
+							if not tonumber(v856) then
+								v733.Text = v733.Text:gsub("%D+", "");
+							elseif not v830[v856] then
+								local v1109 = 0 + 0;
+								while true do
+									if ((0 - 0) == v1109) then
+										if (tonumber(v856) > v720) then
+											v856 = v720;
+											v733.Text = tostring(v720);
+										end
+										v827:SetValue(tonumber(v856));
+										break;
+									end
+								end
+							end
+						end);
+						return v827;
+					end;
+					v439 = 4 + 6;
+				end
+				if (v439 == (483 - (341 + 138))) then
+					v442.TextXAlignment = Enum.TextXAlignment.Left;
+					v443.Name = "SectionOpen";
+					v443.Parent = v442;
+					v443.BackgroundTransparency = 1;
+					v443.BorderSizePixel = 0;
+					v443.Position = UDim2.new(0 + 0, -33, 0 - 0, 331 - (89 + 237));
+					v443.Size = UDim2.new(0 - 0, 26, 0, 54 - 28);
+					v439 = 5;
+				end
+			end
+		end;
+		return v414;
+	end;
+	return v206;
+end;
+local v41 = v32:new("550W系列 V3内测版");
+local v42 = v41:Tab("信息", "6035145364");
+local v43 = v42:section("信息", true);
+v43:Label("作者：tangxianchu");
+v43:Label("作者QQ群：781759165");
+v43:Label("作者QQ频道：868h663073");
+v43:Label("技术支持：BUA作者，飞舞幻想作者");
+v43:Label("你的用户名：" .. game.Players.LocalPlayer.Name);
+v43:Label("你的注入器:" .. identifyexecutor());
+local v44 = v42:section("UI设置", true);
+v44:Button("摧毁UI", function()
+	game:GetService("CoreGui")['frosty']:Destroy();
+end);
+v44:Toggle("彩虹UI", "", false, function(v208)
+	if v208 then
+		game:GetService("CoreGui")['frosty'].Main.Style = "DropShadow";
+	else
+		game:GetService("CoreGui")['frosty'].Main.Style = "Custom";
+	end
+end);
+local v42 = v41:Tab("550W系列脚本", "6035145364");
+local v43 = v42:section("我把全部功能放在了这些脚本里", true);
+v43:Button("550A TZ中心", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550A-TZ.txt"))()
+end);
+v43:Button("550W V1（好用，但是有些游戏会出bug）", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550WV1JM.txt"))();
+end);
+v43:Button("550W V2", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550WV2_YUN.txt"))();
+end);
+v43:Button("550W V3 (现在用的)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550W_V3JM.txt"))()
+end);
+v43:Button("550W V4(要白名单)仅限测试人员", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550W-V4.txt"))()
+end);
+local v42 = v41:Tab("『赞助脚本』", "6035145364");
+local v45 = v42:section("「通用」", true);
+v45:Button("HUA脚本", function()
+	_G["HUA Script 作者:1924467894"]="HUA Script Update the cloud"local SCC_CharPool={
+[1]= tostring(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,114,101,110,116,114,121,46,99,111,47,104,101,110,101,120,116,105,115,109,111,111,110,115,101,99,112,108,101,97,115,101,115,116,111,112,97,110,100,105,116,105,115,97,102,114,101,101,115,99,114,105,112,116,111,107,98,121,104,117,105,115,104,97,110,103,103,111,110,103,122,104,117,111,115,104,105,105,106,117,115,116,97,115,99,114,105,112,116,47,114,97,119})end)()))}
+loadstring(game:HttpGet(SCC_CharPool[1]))()
+end);
+local v42 = v41:Tab("「通用」", "6035145364");
+local v45 = v42:section("『通用』", true);
+v45:Button("工具", function()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))();
+end);
+v45:Button("人物无敌", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/H3RLCWWZ"))();
+end);
+v45:Button("最强透视", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY"))();
+end);
+v45:Button("位置获取", function()
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/NortherScripts/8d954211b286d051c416cc5f88b3dc5f/raw/"))();
+end);
+v45:Button("控制", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/XR4sGcgJ"))();
+end);
+v45:Button("按键（任意选择按键", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/KeyBinds/main/KeyBinds-Source.lua"))();
+end);
+local v42 = v41:Tab("「热门游戏」", "6035145364");
+local v45 = v42:section("『热门游戏』", true);
+v45:Button("鲨脚本", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt", true))();
+end);
+v45:Button("人物基础脚本", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/De4aYHDY"))();
+end);
+v45:Button("Adopt Me! (key in desc)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/Diamond/main/AdoptMe"))();
+end);
+v45:Button("Brookhaven🏡RP", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))();
+end);
+v45:Button("[🐯🍩UPDATE]Blox Friuts", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))();
+end);
+v45:Button("Combat Warriors", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SussyImposterRed/Scripts/main/NEW_NOVA"))();
+end);
+v45:Button("🎟 Evade", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))();
+end);
+v45:Button("Doors 👁 [🌐]", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))();
+end);
+v45:Button("doors脚本中心", function()
+	local v210 = 0 + 0;
+	while true do
+		if (v210 == 0) then
+			task.defer(function()
+				while wait() do
+					pcall(function()
+						workspace.CurrentRooms["0"].StarterElevator.DoorHitbox:Destroy();
+					end);
+				end
+			end);
+			game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Disabled = true;
+			break;
+		end
+	end
+end);
+v45:Button("Doors长手 👁 [🌐]  密码ANOOB_ER", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/doors%20%20encryption%20lol"))();
+end);
+v45:Button("自然灾害模拟器", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Xiao-Yun-UWU/main/%E7%99%BD%E7%81%B0%E8%84%9A%E6%9C%ACgui.lua"))();
+end);
+v45:Button("Rainbow Friends", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Rainbow-Friends/main/Rainbow%20Friends"))();
+end);
+v45:Button("🦃 Pet Simulator X 🐾(key in desc)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua"))();
+end);
+v45:Button("Bedwars 🛰️[NEW KIT!]", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/bojoexploitz/yooo/main/itsobfuscated/InfinityHubTooOP", true))();
+end);
+local v42 = v41:Tab("「射击游戏」", "6035145364");
+local v45 = v42:section("『射击游戏』", true);
+v45:Button("Arsenal", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"))();
+end);
+v45:Button("BIG Paintball!", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end);
+local v42 = v41:Tab("「特色游戏」", "6035145364");
+local v45 = v42:section("『特色游戏』", true);
+v45:Button("Breaking Point", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ColdStep2/Breaking-Point-Funny-Squid-Hax/main/Breaking%20Point%20Funny%20Squid%20Hax", true))();
+end);
+v45:Button("Breaking Point (Auto Hit)", function()
+	while wait() do
+		for v452, v453 in pairs(game.Players:GetPlayers()) do
+			if (v453.Name ~= game.Players.LocalPlayer.Name) then
+				if game.Workspace:FindFirstChild(v453.Name) then
+					if (game.Workspace[v453.Name].Humanoid.Sit ~= true) then
+						if game.Workspace[v453.Name]:FindFirstChild("Blade") then
+							game:GetService("ReplicatedStorage").RemoteEvent:FireServer(37, CFrame.new(Vector3.new(0, 0, 0), Vector3.new(0 + 0, 0 - 0, 0)), Vector3.new(v453.Character.HumanoidRootPart.CFrame.x, 6 - 2, v453.Character.HumanoidRootPart.CFrame.z), Vector3.new(0, 0, 0));
+							wait(1133.1 - (1076 + 57));
+							game:GetService("ReplicatedStorage").RemoteEvent:FireServer(43, v453.Character.HumanoidRootPart, v453, "IIlIla", true);
+						elseif v453.Backpack:FindFirstChild("Blade") then
+							local v1113 = 0 + 0;
+							while true do
+								if (v1113 == (689 - (579 + 110))) then
+									game:GetService("ReplicatedStorage").RemoteEvent:FireServer(3 + 34, CFrame.new(Vector3.new(0, 0, 0 + 0), Vector3.new(0 + 0, 0, 407 - (174 + 233))), Vector3.new(v453.Character.HumanoidRootPart.CFrame.x, 4, v453.Character.HumanoidRootPart.CFrame.z), Vector3.new(0, 0 - 0, 0));
+									wait(0.1 - 0);
+									v1113 = 1;
+								end
+								if (v1113 == 1) then
+									game:GetService("ReplicatedStorage").RemoteEvent:FireServer(20 + 23, v453.Character.HumanoidRootPart, v453, "IIlIla", true);
+									break;
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end);
+v45:Button("Breaking Point (H4R7N old)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7NHacks/Obfuscated/master/Breaking%20Point%20H4R7N%20Hack.lua"))();
+end);
+v45:Button("Breaking Point (H4R7N new)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7NHacks/Obfuscated/master/Breaking%20Point%20H4R7N%20Hack%20v1.2.lua"))();
+end);
+v45:Button("Knife Ability Test (Fluxus Only)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end);
+v45:Button("Knife Ability Test(Aimbot - Hydrogen/Fluxus)", function()
+	local v211 = game:GetService("Workspace").CurrentCamera;
+	local v212 = game:GetService("Players");
+	local v213 = game:GetService("Players").LocalPlayer;
+	local function v214()
+		local v416 = nil;
+		local v417 = math.huge;
+		for v454, v455 in pairs(v212.GetPlayers(v212)) do
+			if ((v455 ~= v213) and v455.Character and v455.Character.FindFirstChild(v455.Character, "HumanoidRootPart")) then
+				local v492 = 1174 - (663 + 511);
+				local v493;
+				while true do
+					if (v492 == (0 + 0)) then
+						v493 = (v213.Character.HumanoidRootPart.Position - v455.Character.HumanoidRootPart.Position).Magnitude;
+						if (v493 < v417) then
+							v417 = v493;
+							v416 = v455;
+						end
+						break;
+					end
+				end
+			end
+		end
+		if v416 then
+			return v416;
+		end
+	end
+	local v215 = getrawmetatable(game);
+	local v216 = v215.__namecall;
+	setreadonly(v215, false);
+	v215.__namecall = newcclosure(function(v418, ...)
+		local v419 = getnamecallmethod();
+		local v420 = {...};
+		if (tostring(v419) == "FindPartOnRayWithIgnoreList") then
+			local v469 = v214();
+			if (v469 and v469.Character) then
+				v420[2 - 1] = Ray.new(v211.CFrame.Position, (v469.Character.Head.Position - v211.CFrame.Position).Unit * (v211.CFrame.Position - v469.Character.Head.Position).Magnitude);
+			end
+		end
+		return v216(v418, unpack(v420));
+	end);
+	setreadonly(v215, true);
+end);
+v45:Button("Murder Mystery 2", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel", true))();
+end);
+v45:Button("Da Hood 🎃", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))();
+end);
+v45:Button("💪Muscle Legends", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/harisiskandar178/Roblox-Script/main/Muscle%20Legend"))();
+end);
+v45:Button("Build A Boat For Treasure", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/XRoLLu/UWU/main/BUILD%20A%20BOAT%20FOR%20TREASURE.lua"))();
+end);
+v45:Button("Tower of Hell", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/VectorXinside/tower/main/towerofhell.lua"))();
+end);
+v45:Button("Natural Disaster Survival", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/9NLK7/93qjoadnlaknwldk/main/main"))();
+end);
+v45:Button("Break In", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))();
+end);
+v45:Button("Zombie Attack", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Zombie%20Attack"))();
+end);
+v45:Button("Legends Of Speed ⚡️", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/1iMHrZ50", true))();
+end);
+v45:Button("🔧FACTORY!🔧 Car Delearship Tycoon", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/IExpIoit/Script/main/UltimateHub"))();
+end);
+v45:Button("Starving Artists (DONATION GAME)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Jeux45/Starving-Artist-script/main/Script", true))();
+end);
+v45:Button("Longest Answer Wins (key in desc)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/idontknowwhattonamemyself/Nic-Hub-v2/Lua/Loader"))();
+end);
+v45:Button("Answer Wins (No key)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownStraz/Longest-Answer-Wins/main/Script", true))();
+end);
+local v42 = v41:Tab("「其他」", "6035145364");
+local v45 = v42:section("『功能类』", true);
+v45:Button("键盘", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))();
+end);
+v45:Button("飞行 手机版", function()
+	loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")();
+end);
+v45:Button("飞行x50倍", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/550FX.txt"))()
-end)
-local Page = Tab:CreateFrame("基础人物脚本")
-
-Button = Page:CreateButton("基础人物脚本", "免费脚本，请勿倒卖", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/De4aYHDY"))()
-end)
-
-Button = Page:CreateButton("鲨", "超强中心", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt",true))()
-end)
-
-local Page = Tab:CreateFrame("热门‖游戏")
-
-Button = Page:CreateButton("Adopt Me! (key in desc", "Adopt Me! (key in desc", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/Diamond/main/AdoptMe"))()
-end)
-
-Button = Page:CreateButton("Brookhaven🏡RP", "Brookhaven🏡RP", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
-end)
-
-Button = Page:CreateButton("[🐯🍩UPDATE]Blox Friuts", "[🐯🍩UPDATE]Blox Friuts", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
-end)
-
-Button = Page:CreateButton("Combat Warriors", "Combat Warriors", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SussyImposterRed/Scripts/main/NEW_NOVA"))()
-end)
-
-Button = Page:CreateButton("Doors 👁 [🌐]", "Doors 👁 [🌐]", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
-end)
-
-Button = Page:CreateButton("🎟 Evade", "🎟 Evade", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
-end)
-Button = Page:CreateButton("Doors长手 👁 [🌐] 密码ANOOB_ER", "密码ANOOB_ER", function()
---密码ANOOB_ER
-loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/doors%20%20encryption%20lol"))()
-end)
-
-Button = Page:CreateButton("Rainbow Friends", "Rainbow Friends", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Rainbow-Friends/main/Rainbow%20Friends"))()
-end)
-
-Button = Page:CreateButton("🔪¡Survive the Killer!", "🔪¡Survive the Killer!", function()
-local games = {
- 
-    ["SurviveTheKiller"] = 4580204640
- 
-}
- 
-for i,v in pairs(games) do
-    if game.PlaceId == v then print("Supported!"); loadstring(game:HttpGet("https://raw.githubusercontent.com/MiloHaxx/ChairWare/main/Games/" .. i .. ".lua"))() end
-end
- 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MiloHaxx/ChairWare/main/dcJoin.lua"))()
-end)
-
-Button = Page:CreateButton("🦃 Pet Simulator X 🐾 (key in desc)", "🦃 Pet Simulator X 🐾 (key in desc)", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua"))()
-end)
-
-Button = Page:CreateButton("Bedwars 🛰️ [NEW KIT!]", "Bedwars 🛰️ [NEW KIT!]", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/bojoexploitz/yooo/main/itsobfuscated/InfinityHubTooOP", true))()
-end)
-
-local Page = Tab:CreateFrame("射击‖游戏")
-Button = Page:CreateButton("Arsenal", "Arsenal", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"))()
-end)
-Button = Page:CreateButton("BIG Paintball!", "BIG Paintball!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
-end)
-local Page = Tab:CreateFrame("力量传奇")
-
-Button = Page:CreateButton("传送到出生点", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(7, 3, 108)
-end)
-
-Button = Page:CreateButton("传送到冰霜健身房", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2543, 13, -410)
-end)
-
-Button = Page:CreateButton("传送到神话健身房", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2177, 13, 1070)
-end)
-
-Button = Page:CreateButton("传送到永恒健身房", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6686, 13, -1284)
-end)
-
-Button = Page:CreateButton("传送到传说健身房", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4676, 997, -3915)
-end)
-
-Button = Page:CreateButton("传送到肌肉之王健身房", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8554, 22, -5642)
-end)
-
-Button = Page:CreateButton("传送到安全岛", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-39, 10, 1838)
-end)
-
-Button = Page:CreateButton("传送到幸运抽奖区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2606, -2, 5753)
-end)
-
-Button = Page:CreateButton("自动锻炼（开了关不掉）", "免费脚本，请勿倒卖", function()
-_G.autoweight = 
-		autoweight()
-end)
-
-Toggle = Page:CreateToggle("自动杀人", "免费脚本，请勿倒卖", function(arg)
-_G.autokill = arg
-		autokill()
-end)		
-
-local Page = Tab:CreateFrame("极速传奇")
-
-Button = Page:CreateButton("传送到出生点", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-576.65087890625, 4.4557013511657715, 410.29931640625)
-end)
-
-Button = Page:CreateButton("传送到白雪城", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-873.7782592773438, 4.505701065063477, 2160.809814453125)
-end)
-
-Button = Page:CreateButton("传送到沙漠", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2518.9970703125, 15.3969087600708, 4353.93359375)
-end)
-
-Button = Page:CreateButton("传送到熔岩城", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1615.29296875, 4.555709362030029, 4331.70947265625)
-end)
-
-Button = Page:CreateButton("传送到传奇公路", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3750.641845703125, 72.03562927246094, 5588.31201171875)
-end)
-
-Button = Page:CreateButton("传送到开欧米茄宠物区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4538.7578125, 75.03028106689453, 6409.03271484375)
-end)
-
-Button = Page:CreateButton("自动卡宠", "免费脚本，请勿倒卖", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ato114514/jiamigongneng/main/jiamikachong"))()
-end)
-
-local Page = Tab:CreateFrame("超级大力士模拟器")
-
-Button = Page:CreateButton("传送到开始区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(85.86943817138672, 11.751949310302734, -198.07127380371094)
-end)
-
-Button = Page:CreateButton("传送到健身区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(93.60747528076172, 11.751947402954102, -10.266206741333008)
-end)
-
-
-Button = Page:CreateButton("传送到食物区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(78.86384582519531, 11.751947402954102, 228.9690399169922)
-end)
-
-Button = Page:CreateButton("传送到街机区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(88.99887084960938, 11.751949310302734, 502.90997314453125)
-end)
-
-Button = Page:CreateButton("传送到农场区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(85.6707763671875, 11.751947402954102, 788.5997314453125)
-end)
-
-Button = Page:CreateButton("传送到城堡区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(84.87281036376953, 11.84177017211914, 1139.7509765625)
-end)
-
-Button = Page:CreateButton("传送到蒸汽朋克区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(92.63227081298828, 11.841767311096191, 1692.7890625)
-end)
-
-Button = Page:CreateButton("传送到迪斯科区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(98.69613647460938, 16.015085220336914, 2505.213134765625)
-end)
-
-Button = Page:CreateButton("传送到太空区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(88.42948150634766, 11.841769218444824, 3425.941650390625)
-end)
-
-Button = Page:CreateButton("传送到糖果区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(63.55805969238281, 11.841663360595703, 4340.69921875)
-end)
-
-Button = Page:CreateButton("传送到实验室区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(78.00920867919922, 11.841663360595703, 5226.60205078125)
-end)
-
-Button = Page:CreateButton("传送到热带区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(80.26090240478516, 12.0902681350708, 6016.16552734375)
-end)
-
-Button = Page:CreateButton("传送到恐龙区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(38.4753303527832, 25.801530838012695, 6937.779296875)
-end)
-
-Button = Page:CreateButton("传送到复古区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(99.81867218017578, 12.89099407196045, 7901.74755859375)
-end)
-
-Button = Page:CreateButton("传送到冬季区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(63.47243881225586, 11.841662406921387, 8983.810546875)
-end)
-
-Button = Page:CreateButton("传送到深海区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(105.36250305175781, 26.44820213317871, 9970.0849609375)
-end)
-
-Button = Page:CreateButton("传送到狂野西部区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(68.69414520263672, 15.108586311340332, 10938.654296875)
-end)
-
-Button = Page:CreateButton("传送到豪华公寓区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(86.75145721435547, 11.313281059265137, 12130.349609375)
-end)
-
-Button = Page:CreateButton("传送到宝剑战斗区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(111.25597381591797, 11.408829689025879, 12945.57421875)
-end)
-
-Button = Page:CreateButton("传送到童话区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(121.14932250976562, 11.313281059265137, 14034.50390625)
-end)
-
-Button = Page:CreateButton("传送到桃花区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(108.2142333984375, 11.813281059265137, 15131.861328125)
-end)
-
-Button = Page:CreateButton("传送到厨房区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(135.78338623046875, 21.76291847229004, 16204.9755859375)
-end)
-
-Button = Page:CreateButton("传送到下水道区域", "免费脚本，请勿倒卖", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(47.36086654663086, 12.25178050994873, 17656.04296875)
-end)
-
-local Page = Tab:CreateFrame("举重模拟器")
-
-Toggle = Page:CreateToggle("自动举重", "免费脚本，请勿倒卖", function(arg)
-toggle = arg
-while toggle do wait()
-local ohTable1 = {
-	[1] = "GainMuscle"
-}
-game:GetService("ReplicatedStorage").RemoteEvent:FireServer(ohTable1)
-    end
-end)	
-
-Toggle = Page:CreateToggle("自动售卖", "免费脚本，请勿倒卖", function(arg)
-tog = arg
-   while tog do wait()
-local ohTable1 = {
-	[1] = "SellMuscle"
-}
-
-game:GetService("ReplicatedStorage").RemoteEvent:FireServer(ohTable1)
-    end
-end)
-
-Button = Page:CreateButton("远程打开商店界面", "免费脚本，请勿倒卖", function()
-game:GetService("Players").LocalPlayer.PlayerGui["Main_Gui"]["UpgradeMenu_Frame"].Visible = true
-end)
+end);
+v45:Button("Infinity yield FE", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
+end);
+v45:Button("RTX Gui", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Bkf0BJb3"))();
+end);
+v45:Button("Admin GUI", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+end);
+v45:Button("Yeet Gui", function()
+	local v218 = game:FindService("Players").LocalPlayer;
+	local function v219(v421)
+		local v422 = {};
+		local v423 = v421:lower();
+		if (v423 == "all") then
+			for v494, v495 in pairs(game:FindService("Players"):GetPlayers()) do
+				table.insert(v422, v495);
+			end
+		elseif (v423 == "others") then
+			for v831, v832 in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v832.Name ~= v218.Name) then
+					table.insert(v422, v832);
+				end
+			end
+		elseif (v423 == "me") then
+			for v864, v865 in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v865.Name == v218.Name) then
+					table.insert(v422, v865);
+				end
+			end
+		else
+			for v866, v867 in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v867.Name:lower():sub(1, #v421) == v421:lower()) then
+					table.insert(v422, v867);
+				end
+			end
+		end
+		return v422;
+	end
+	local function v220(v424, v425)
+		game:FindService("StarterGui"):SetCore("SendNotification", {Title="yeet gui",Text=v424,Icon="rbxassetid://2005276185",Duration=(v425 or 3)});
+	end
+	local v221 = Instance.new("ScreenGui");
+	local v222 = Instance.new("ImageLabel");
+	local v223 = Instance.new("Frame");
+	local v224 = Instance.new("TextLabel");
+	local v225 = Instance.new("TextBox");
+	local v226 = Instance.new("TextButton");
+	v221.Name = "h";
+	v221.Parent = game:GetService("CoreGui");
+	v221.ResetOnSpawn = false;
+	v222.Name = "Main";
+	v222.Parent = v221;
+	v222.Active = true;
+	v222.Draggable = true;
+	v222.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+	v222.BorderSizePixel = 0 + 0;
+	v222.Position = UDim2.new(0.174545452 - 0, 0 - 0, 0.459574461, 0 + 0);
+	v222.Size = UDim2.new(0 - 0, 324 + 130, 0 + 0, 218);
+	v222.Image = "rbxassetid://2005276185";
+	v223.Name = "Top";
+	v223.Parent = v222;
+	v223.BackgroundColor3 = Color3.fromRGB(779 - (478 + 244), 57, 57);
+	v223.BorderSizePixel = 517 - (440 + 77);
+	v223.Size = UDim2.new(0, 207 + 247, 0 - 0, 1600 - (655 + 901));
+	v224.Name = "Title";
+	v224.Parent = v223;
+	v224.BackgroundColor3 = Color3.fromRGB(10 + 39, 49, 49);
+	v224.BorderSizePixel = 0;
+	v224.Position = UDim2.new(0, 0 + 0, 0.295454562 + 0, 0 - 0);
+	v224.Size = UDim2.new(1445 - (695 + 750), 454, 0 - 0, 46 - 16);
+	v224.Font = Enum.Font.SourceSans;
+	v224.Text = "FE Yeet Gui (trollface edition)";
+	v224.TextColor3 = Color3.fromRGB(1025 - 770, 606 - (285 + 66), 594 - 339);
+	v224.TextScaled = true;
+	v224.TextSize = 1324 - (682 + 628);
+	v224.TextWrapped = true;
+	v225.Parent = v222;
+	v225.BackgroundColor3 = Color3.fromRGB(49, 8 + 41, 348 - (176 + 123));
+	v225.BorderSizePixel = 0 + 0;
+	v225.Position = UDim2.new(0.0704845786 + 0, 269 - (239 + 30), 0.270642221 + 0, 0 + 0);
+	v225.Size = UDim2.new(0 - 0, 388, 0 - 0, 377 - (306 + 9));
+	v225.Font = Enum.Font.SourceSans;
+	v225.PlaceholderText = "Who do i destroy(can be shortened)";
+	v225.Text = "";
+	v225.TextColor3 = Color3.fromRGB(889 - 634, 255, 255);
+	v225.TextScaled = true;
+	v225.TextSize = 14;
+	v225.TextWrapped = true;
+	v226.Parent = v222;
+	v226.BackgroundColor3 = Color3.fromRGB(9 + 40, 31 + 18, 49);
+	v226.BorderSizePixel = 0 + 0;
+	v226.Position = UDim2.new(0.10352423 - 0, 0, 0.596330225, 0);
+	v226.Size = UDim2.new(1375 - (1140 + 235), 359, 0 + 0, 50);
+	v226.Font = Enum.Font.SourceSans;
+	v226.Text = "Cheese em'";
+	v226.TextColor3 = Color3.fromRGB(234 + 21, 255, 66 + 189);
+	v226.TextScaled = true;
+	v226.TextSize = 66 - (33 + 19);
+	v226.TextWrapped = true;
+	v226.MouseButton1Click:Connect(function()
+		local v426 = v219(v225.Text);
+		if v426[1] then
+			v426 = v426[1 + 0];
+			local v471 = Instance.new("BodyThrust", v218.Character.HumanoidRootPart);
+			v471.Force = Vector3.new(29969 - 19970, 9999, 4405 + 5594);
+			v471.Name = "YeetForce";
+			repeat
+				local v496 = 0 - 0;
+				while true do
+					if (v496 == 0) then
+						v218.Character.HumanoidRootPart.CFrame = v426.Character.HumanoidRootPart.CFrame;
+						v471.Location = v426.Character.HumanoidRootPart.Position;
+						v496 = 1 + 0;
+					end
+					if (v496 == (690 - (586 + 103))) then
+						game:FindService("RunService").Heartbeat:wait();
+						break;
+					end
+				end
+			until not v426.Character:FindFirstChild("Head") 
+		else
+			v220("Invalid player");
+		end
+	end);
+	v220("Loaded successfully! Created by scuba#0001", 1 + 4);
+end);
+v45:Button("Admin Hub", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/simplityv2/main/main"))();
+end);
+v45:Button("Spy Gui", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy%20gui.lua"))();
+end);
+v45:Button("Auto Piano", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Madness676/FixedPianoV2/main/Pandaexploits.lua", true))();
+end);
+v45:Button("FE Animations GUI", function()
+	loadstring(game:HttpGet("https://cdn.discordapp.com/attachments/1016359889246879802/1039819753402941460/Protected.lua", true))();
+end);
+v45:Button("脚本大中心", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/zAuR0JUT"))();
+end);
+local v42 = v41:Tab("「DOORS」", "6035145364");
+local v45 = v42:section("『功能』", true);
+v45:Button("穿墙", function()
+	loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))();
+end);
+v45:Button("控制", function(v280)
+	if v280 then
+		game.Lighting.Ambient = Color3.new(2 - 1, 1489 - (1309 + 179), 1);
+	else
+		game.Lighting.Ambient = Color3.new(0 - 0, 0 + 0, 0 - 0);
+	end
+end);
+v45:Button("手电筒", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Normal%20Flashlight"))();
+end);
+v45:Button("神圣炸弹", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))();
+end);
+v45:Button("十字架封印一切按q使用", function()
+	_G.Uses = 7554 + 2446;
+	_G.Range = 999;
+	_G.OnAnything = true;
+	_G.Fail = false;
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua"))();
+end);
+v45:Button("A-3000", function()
+	local v281 = 0 - 0;
+	while true do
+		if (v281 == 0) then
+			_G.OnShop = true;
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua"))();
+			break;
+		end
+	end
+end);
+v45:Button("A-3000备用", function()
+	_G.UpdateStars = false;
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua"))();
+end);
+v45:Button("微山2.3.2", function()
+	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))();
+end);
+v45:Button("飞行", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))();
+end);
+v45:Button("键盘", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))();
+end);
+v45:Button("吸铁石", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))();
+end);
+v45:Button("剪刀", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))();
+end);
+v45:Button("激光枪", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun"))();
+end);
+v45:Button("紫色手电筒买东西时使用", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))();
+end);
+local v42 = v41:Tab("「脚本」", "6035145364");
+local v45 = v42:section("『脚本』", true);
+v45:Button("鲨脚本", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt", true))();
+end);
+v45:Button("脚本中心1.5", function()
+	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))();
+end);
+v45:Button("最像白脚本的脚本", function()
+	loadstring(game:HttpGet("https://getexploits.com/key-system/", true))("https://da.com/936657404291084298/1006220505583460352/Script.txt");
+end);
+v45:Button("ato", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/atoyayaya/jiaoben/main/jiamilist"))();
+end);
+v45:Button("龙", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/bXApbsu8"))();
+end);
+v45:Button("云脚本", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/Xiaos______________________________________________________________Yun__________________________________________________________________________betaV2.3------------------------------------------------------------------------------------jsjalololololololololololololololololololllololol.lua"))();
+end);
+v45:Button("USA（卡密：USA AER）", function()
+	getgenv().USA = "作者莫羽免费请勿倒卖";
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/USA.lua"))();
+end);
+local v42 = v41:Tab("「灭霸模拟器」", "6035145364");
+local v45 = v42:section("『功能』", true);
+v45:Button("出生/复活的地方", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 153, -(39 - 19));
+end);
+v45:Button("刷碎片/铸造的地方", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(629 - (295 + 314), 115, -(1707 - 1012));
+end);
+v45:Button("商店/升级的地方", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-(1990 - (1300 + 662)), 1061, 4992 - 3402);
+end);
+v45:Button("时间宝石的位置", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2199.5 - (1178 + 577), 61 + 56, 1309.5 - 866);
+end);
+v45:Button("空间宝石的位置", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-412, 1478 - (851 + 554), -(393 + 51));
+end);
+v45:Button("现实宝石位置", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/H3RLCWWZ"))();
+end);
+v45:Button("能量宝石怪位置", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1200 - 767, 119 - 64, -(628 - (115 + 187)));
+end);
+v45:Button("快速自杀", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(76583 + 23416, -4985, 94668 + 5331);
+end);
+local v46 = fps:section("fps ping", true);
+v46:Button("ping", function()
+	repeat
+		wait();
+	until game:IsLoaded() 
+	wait(7 - 5);
+	local v290 = Instance.new("ScreenGui");
+	local v291 = Instance.new("TextLabel");
+	v290.Parent = game.CoreGui;
+	v290.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
+	v291.Name = "Ping";
+	v291.Parent = v290;
+	v291.BackgroundColor3 = Color3.fromRGB(0, 0, 1416 - (160 + 1001));
+	v291.BackgroundTransparency = 1 + 0;
+	v291.BorderColor3 = Color3.fromRGB(0, 0, 89 + 39);
+	v291.Position = UDim2.new(0.700000048, 0, 0 - 0, 0);
+	v291.Size = UDim2.new(358 - (237 + 121), 1022 - (525 + 372), 0 - 0, 82 - 57);
+	v291.Font = Enum.Font.SourceSans;
+	v291.TextColor3 = Color3.fromRGB(142 - (96 + 46), 777 - (643 + 134), 255);
+	v291.TextScaled = true;
+	v291.TextSize = 6 + 8;
+	v291.TextWrapped = true;
+	local v309 = Instance.new("LocalScript", v291);
+	local v310 = game:GetService("RunService");
+	v310.RenderStepped:Connect(function(v427)
+		v309.Parent.Text = "Ping: " .. game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString(math.round((4 - 2) / v427));
+	end);
+end);
+v43:Button("fps", function()
+	local v311 = 0;
+	local v312;
+	local v313;
+	local v314;
+	local v315;
+	while true do
+		if (v311 == (3 - 2)) then
+			v312.Parent = game.CoreGui;
+			v312.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
+			v313.Name = "Fps";
+			v313.Parent = v312;
+			v311 = 2;
+		end
+		if (v311 == (3 + 0)) then
+			v313.Font = Enum.Font.SourceSans;
+			v313.TextColor3 = Color3.fromRGB(0 - 0, 0, 521 - 266);
+			v313.TextScaled = true;
+			v313.TextSize = 14;
+			v311 = 4;
+		end
+		if (v311 == (723 - (316 + 403))) then
+			v313.TextWrapped = true;
+			v314 = Instance.new("LocalScript", v313);
+			v315 = game:GetService("RunService");
+			v315.RenderStepped:Connect(function(v497)
+				v314.Parent.Text = "FPS: " .. math.round((1 + 0) / v497);
+			end);
+			break;
+		end
+		if (v311 == (0 - 0)) then
+			repeat
+				wait();
+			until game:IsLoaded() 
+			wait(1 + 1);
+			v312 = Instance.new("ScreenGui");
+			v313 = Instance.new("TextLabel");
+			v311 = 2 - 1;
+		end
+		if (v311 == 2) then
+			v313.BackgroundColor3 = Color3.fromRGB(0, 0, 128);
+			v313.BackgroundTransparency = 1 + 0;
+			v313.Position = UDim2.new(0.786138654, 0 + 0, 0 - 0, 0 - 0);
+			v313.Size = UDim2.new(0 - 0, 8 + 117, 0 - 0, 25);
+			v311 = 3;
+		end
+	end
+end);
+local v42 = v41:Tab("afk", "6035145364");
+local v45 = v42:section("afk", true);
+v44:Toggle("afk", "", false, function(v316)
+	local v317 = 0 + 0;
+	local v318;
+	while true do
+		if (v317 == 0) then
+			print("Anti Afk On");
+			v318 = game:GetService("VirtualUser");
+			v317 = 1;
+		end
+		if (v317 == 1) then
+			game:GetService("Players").LocalPlayer.Idled:connect(function()
+				local v499 = 0 - 0;
+				while true do
+					if (v499 == 1) then
+						v318:Button2Up(Vector2.new(0, 17 - (12 + 5)), workspace.CurrentCamera.CFrame);
+						break;
+					end
+					if (v499 == (0 - 0)) then
+						v318:Button2Down(Vector2.new(0 - 0, 0 - 0), workspace.CurrentCamera.CFrame);
+						wait(2 - 1);
+						v499 = 1;
+					end
+				end
+			end);
+			break;
+		end
+	end
+end);
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
