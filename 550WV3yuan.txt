@@ -51,35 +51,29 @@ CoreGui:SetCore("SendNotification", {
 })
 wait(5)
 local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="「㊐ 与 ㊊』",Text="启动云端中",Duration=(579 - (507 + 67))});
+v0:SetCore("SendNotification", {Title="🇹「㊐  ㊊』🇿",Text="启动云端中",Duration=(579 - (507 + 67))});
+wait(2)
+local v0 = game:GetService("StarterGui");
+v0:SetCore("SendNotification", {Title="🇹「㊐  ㊊』🇿",Text="启动云端成功，550W V3为您服务",Duration=(579 - (507 + 67))});
+wait(1)
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="『M O S S』",Text="正在接入",Duration=(1754 - (1013 + 736))});
 wait(1);
 local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="『M O S S』",Text="正在获取授权",Duration=5});
+v0:SetCore("SendNotification", {Title="『M O S S』",Text="正在授权中",Duration=5});
 local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动中",Duration=5});
-wait(2)
-local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="550W系列 V3",Text="三",Duration=5});
-wait(2);
-local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="550W系列 V3",Text="检测到网络问题，正在启动本地云端",Duration=(18 - 13)});
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="脚本启动中",Duration=5});
+
 wait(1)
 local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="550W系列 V3",Text="加速启动",Duration=(7 - 2)});
-wait(1)
-local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="『M O S S』",Text="获取授权成功",Duration=(5)});
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="正在申请云端授权",Duration=(7 - 2)});
+
 wait(3)
 local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动中",Duration=5});
-wait(3)
-local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="550W系列 V3",Text="获得授权，重新启动",Duration=(290 - (134 + 151))});
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="申请授权成功，启动中",Duration=(290 - (134 + 151))});
 wait(2)
 local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动成功",Duration=(1829 - (1195 + 629))});
+v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动完毕",Duration=(1829 - (1195 + 629))});
 wait(2);
 print("Anti Afk On");
 local v1 = game:GetService("VirtualUser");
@@ -92,7 +86,7 @@ local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="反挂机已自动开启",Text="被踢出服务器的概率已降低",Duration=5});
 wait(11 - 8);
 local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="启动成功",Text=("您好" .. game.Players.LocalPlayer.Name .. "，欢迎使用550W系列脚本"),Duration=(1829 - (1195 + 629))});
+v0:SetCore("SendNotification", {Title="欢迎来到方舟空间站",Text=("您好" .. game.Players.LocalPlayer.Name .. "，欢迎使用550W系列脚本"),Duration=(1829 - (1195 + 629))});
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="方舟空间站",Text=("您好" .. game.Players.LocalPlayer.Name .. "，欢迎您高级用户"),Duration=(13 - 3)});
 wait(246 - (187 + 54));
