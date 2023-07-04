@@ -2254,6 +2254,9 @@ end);
 v45:Button("紫色手电筒买东西时使用", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))();
 end);
+v45:Button("拯救上帝", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/ZJSD.txt"))()
+end);
 local v42 = v41:Tab("「脚本」", "6035145364");
 local v45 = v42:section("『脚本』", true);
 v45:Button("鲨脚本", function()
