@@ -1823,6 +1823,9 @@ end);
 v43:Button("550W V4(要白名单)仅限测试人员", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550W-V4.txt"))()
 end);
+v43:Button("550W V5 拓展功能", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-V5/main/550W-V5.txt"))()
+end);
 local v42 = v41:Tab("『赞助脚本』", "6035145364");
 local v45 = v42:section("「通用」", true);
 v45:Button("HUA脚本", function()
