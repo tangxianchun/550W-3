@@ -5,16 +5,16 @@ CoreGui:SetCore("SendNotification", {
     Duration = 2999, 
 })
 
-wait(4)
+wait(2)
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "确认身份",
-    Text = "正在验证....",
+    Title = "🇹「㊐   ㊊』🇿",
+    Text = "白名单资格验证中...",
     Duration = 5,
 })
 
-wait(3)
+wait(2)
 local a=tostring(game.Players.LocalPlayer.Character);
 
 if a=="zkosjsiw"then
@@ -53,7 +53,7 @@ _G.whitelist=true
 elseif a=="rushshshseek9"then
 _G.whitelist=true
 
-elseif a=="tangxianch"then
+elseif a=="tangxianchu"then
 _G.whitelist=true
 
 elseif a=="gvgggcfftfrreww"then
@@ -918,7 +918,7 @@ else
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "验证",
+    Title = "🇹「㊐   ㊊』🇿",
     Text = "没有白名单",
     Duration = 10,   
 
