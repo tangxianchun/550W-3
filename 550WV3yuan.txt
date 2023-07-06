@@ -53,7 +53,7 @@ _G.whitelist=true
 elseif a=="rushshshseek9"then
 _G.whitelist=true
 
-elseif a=="tangxianchu"then
+elseif a=="tangxianch"then
 _G.whitelist=true
 
 elseif a=="gvgggcfftfrreww"then
@@ -914,12 +914,17 @@ credits:Toggle("afk", "", false, function(state)
 		end)
 end)
 
+else
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "验证",
-    Text = "白名单",
+    Text = "没有白名单",
     Duration = 10,   
 
 })
+
+wait(2)
+game.Players.LocalPlayer:Kick ("错误：加群有活动领取白名单资格：781759165")
 end
+
