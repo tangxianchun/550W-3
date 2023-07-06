@@ -23,7 +23,7 @@ _G.whitelist=true
 elseif a=="Zsjcb1005"then
 _G.whitelist=true
 
-elseif a=="114514phz12"then
+elseif a=="114514phz129"then
 _G.whitelist=true
 
 elseif a=="plmnkoijbvhuygcxfty"then
