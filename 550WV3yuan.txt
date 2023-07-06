@@ -356,7 +356,6 @@ task.defer(function()
        end)
    end
 end)
-
 game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Disabled = true
 end)
 
