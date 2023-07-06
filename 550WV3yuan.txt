@@ -347,18 +347,6 @@ tool:Button("Doors 👁 [🌐]",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
 end)
 
-tool:Butto("doors脚本中心",function()
-	--PUT IN AUTOEXEC, OTHERWISE NO WOK
-task.defer(function()
-   while wait() do
-       pcall(function()
-           workspace.CurrentRooms["0"].StarterElevator.DoorHitbox:Destroy()
-       end)
-   end
-end)
-game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Disabled = true
-end)
-
 tool:Button("Doors长手 👁 [🌐]  密码ANOOB_ER",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/doors%20%20encryption%20lol"))()
 end)
