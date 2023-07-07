@@ -221,6 +221,8 @@ CoreGui:SetCore("SendNotification", {
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-V5/main/550W-V5.txt"))()
+
 local hualib = loadstring(game:HttpGet("https://raw.githubusercontent.com/pyawhh/UI-FOR-HUA-AND-550W/main/olny%20ui%20objet%20for%20use%20by%20hui%20shan%20gong%20zhuo%20shi",true))()
 
 local win = hualib:new("550W系列 V3内测版")
