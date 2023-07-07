@@ -20,6 +20,12 @@ local a=tostring(game.Players.LocalPlayer.Character);
 if a=="zkosjsiw"then
 _G.whitelist=true
 
+elseif a=="jinitaimei1y55555"then
+_G.whitelist=true
+
+elseif a=="SDjdkskes"then
+_G.whitelist=true
+
 elseif a=="qjddie4514"then
 _G.whitelist=true
 
@@ -223,7 +229,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/m
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-V5/main/550W-V5.txt"))()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
+
 
 else
 local CoreGui = game:GetService("StarterGui")
