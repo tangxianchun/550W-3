@@ -38,6 +38,12 @@ _G.whitelist=true
 elseif a=="Bluewitchme"then
 _G.whitelist=true
 
+elseif a=="yuihghghg"then
+_G.whitelist=true
+
+elseif a=="yuihuiniao"then
+_G.whitelist=true
+
 elseif a=="QMQQAQQ"then
 _G.whitelist=true
 
