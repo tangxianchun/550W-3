@@ -344,6 +344,10 @@ tool:Button("[🐯🍩UPDATE]Blox Friuts",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
 end)
 
+tool:Button("[🍩UPDATE]Blox Friuts(imchina)提供",function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
+end)
+
 tool:Button("Combat Warriors",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/SussyImposterRed/Scripts/main/NEW_NOVA"))()
 end)
