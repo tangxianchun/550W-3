@@ -14,13 +14,19 @@ CoreGui:SetCore("SendNotification", {
     Duration = 5,
 })
 
-wait(2)
+wait(3)
 local a=tostring(game.Players.LocalPlayer.Character);
 
 if a=="zkosjsiw"then
 _G.whitelist=true
 
+elseif a=="114514phz129"then
+_G.whitelist=true
+
 elseif a=="jinitaimei1y55555"then
+_G.whitelist=true
+
+elseif a=="moyingyo"then
 _G.whitelist=true
 
 elseif a=="SDjdkskes"then
@@ -29,16 +35,10 @@ _G.whitelist=true
 elseif a=="qjddie4514"then
 _G.whitelist=true
 
-elseif a=="Zsjcb1005"then
-_G.whitelist=true
-
-elseif a=="114514phz129"then
-_G.whitelist=true
-
-elseif a=="plmnkoijbvhuygcxfty"then
-_G.whitelist=true
-
 elseif a=="567yydc"then
+_G.whitelist=true
+
+elseif a=="Zsjcb1005"then
 _G.whitelist=true
 
 elseif a=="function963"then
@@ -65,6 +65,9 @@ _G.whitelist=true
 elseif a=="as30326"then
 _G.whitelist=true
 
+elseif a=="plmnkoijbvhuygcxfty"then
+_G.whitelist=true
+
 elseif a=="rushshshseek9"then
 _G.whitelist=true
 
@@ -84,97 +87,12 @@ CoreGui:SetCore("SendNotification", {
     Text = a.."验证身份成功等待时间长一点",
     Duration = 5,
 })
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "🇹「㊐   ㊊』🇿",
-    Text = "「启动云端中』",
-    Duration = 5, 
-})
 wait(2)
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "🇹「㊐   ㊊』🇿",
-    Text = "启动完毕",
+    Text = "云端加速启动中",
     Duration = 5, 
-})
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "🇹「㊐   ㊊』🇿",
-    Text = "已启动加速功能",
-    Duration = 5, 
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "550W V3",
-    Text = "正在申请授权进入方舟空间站",
-    Duration = 5, 
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "『M O S S』",
-    Text = "正在接入",
-    Duration = 5, 
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "『M O S S』",
-    Text = "正在获取授权",
-    Duration = 5, 
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "『M O S S』",
-    Text = "注入授权",
-    Duration = 5, 
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "550W V3",
-    Text = "申请授权成功",
-    Duration = 5, 
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "550W V3",
-    Text = "正在启动脚本中",
-    Duration = 5, 
-})
-
-
-print("Anti Afk On")
-		local vu = game:GetService("VirtualUser")
-		game:GetService("Players").LocalPlayer.Idled:connect(function()
-		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		   wait(1)
-		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		end)
-		
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "反挂机已自动开启",
-    Text = "被踢出服务器的概率已降低",
-    Duration = 5,
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "启动成功",
-    Text = "您好"..game.Players.LocalPlayer.Name.."，欢迎使用550W系列脚本",
-    Duration = 5,
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "正在接入方舟空间站",
-    Text = "您好"..game.Players.LocalPlayer.Name.."，欢迎您白名单用户",
-    Duration = 5,
 })
 
 local LBLG = Instance.new("ScreenGui", getParent)
@@ -217,19 +135,21 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
+repeat task.wait() until game:IsLoaded()
+local library = {}
+local ToggleUI = false
+library.currentTab = nil
+library.flags = {}
 
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "550W V3",
-    Text = "加载成功，欢迎进入方舟空间站(在建)",
-    Duration = 5, 
+local services = setmetatable({}, {
+  __index = function(t, k)
+    return game.GetService(game, k)
+  end
 })
-
+wait(2)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-V5/main/550W-V5.txt"))()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
+    
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-V5/main/550W_V5.txt"))()
 
 else
 local CoreGui = game:GetService("StarterGui")
