@@ -1356,9 +1356,9 @@ end
     
 local window = library:new("550W系列 V3内测版")
 
-local creds = window:Tab("信息",'6035145364')
+local creds = window:Tab("『信息』",'6035145364')
 
-local bin = creds:section("信息",true)
+local bin = creds:section("『信息』",true)
 bin:Label("作者：tangxianchu")
     bin:Label("作者QQ群：781759165")
 
@@ -1383,7 +1383,7 @@ local credits = creds:section("UI设置",true)
             game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
         end
     end)
-local creds = window:Tab("550系列脚本",'6035145364')
+local creds = window:Tab("『550系列脚本』",'6035145364')
     
 local tool = creds:section("『我把全部功能放在了这些脚本里』",true)
 
