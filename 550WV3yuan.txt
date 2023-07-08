@@ -38,7 +38,7 @@ _G.whitelist=true
 elseif a=="qjddie4514"then
 _G.whitelist=true
 
-elseif a=="delta_China"then
+elseif a=="roblox_qwq7"then
 _G.whitelist=true
 
 elseif a=="0997ikun"then
