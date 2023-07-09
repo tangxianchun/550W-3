@@ -35,6 +35,9 @@ _G.whitelist=true
 elseif a=="CN_sakara"then
 _G.whitelist=true
 
+elseif a=="6331nhdi"then
+_G.whitelist=true
+
 elseif a=="Harry_Bert"then
 _G.whitelist=true
 
