@@ -1,212 +1,3 @@
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "加群有可能会发放白名单",
-    Text = "781759165",
-    Duration = 2999, 
-})
-
-wait(2)
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "🇹「㊐   ㊊』🇿",
-    Text = "白名单资格验证中...",
-    Duration = 5,
-})
-
-wait(2)
-local a=tostring(game.Players.LocalPlayer.Character);
-
-if a=="zkosjsiw"then
-_G.whitelist=true
-
-elseif a=="jinitaimei1y55555"then
-_G.whitelist=true
-
-elseif a=="SDjdkskes"then
-_G.whitelist=true
-
-elseif a=="gamemode12678643"then
-_G.whitelist=true
-
-elseif a=="rtyyydshahaha"then
-_G.whitelist=true
-
-elseif a=="CN_sakara"then
-_G.whitelist=true
-
-elseif a=="6331nhdi"then
-_G.whitelist=true
-
-elseif a=="Harry_Bert"then
-_G.whitelist=true
-
-elseif a=="cclb_123xh"then
-_G.whitelist=true
-
-elseif a=="6fhg51"then
-_G.whitelist=true
-
-elseif a=="moyingyo"then
-_G.whitelist=true
-
-elseif a=="qjddie4514"then
-_G.whitelist=true
-
-elseif a=="roblox_qwq7"then
-_G.whitelist=true
-
-elseif a=="0997ikun"then
-_G.whitelist=true
-
-elseif a=="Zsjcb1005"then
-_G.whitelist=true
-
-elseif a=="114514phz129"then
-_G.whitelist=true
-
-elseif a=="plmnkoijbvhuygcxfty"then
-_G.whitelist=true
-
-elseif a=="567yydc"then
-_G.whitelist=true
-
-elseif a=="function963"then
-_G.whitelist=true
-
-elseif a=="Bluewitchme"then
-_G.whitelist=true
-
-elseif a=="yuihghghg"then
-_G.whitelist=true
-
-elseif a=="yuihuiniao"then
-_G.whitelist=true
-
-elseif a=="QMQQAQQ"then
-_G.whitelist=true
-
-elseif a=="TANGXIANCHUN"then
-_G.whitelist=true
-
-elseif a=="zyzqwp"then
-_G.whitelist=true
-
-elseif a=="as30326"then
-_G.whitelist=true
-
-elseif a=="rushshshseek9"then
-_G.whitelist=true
-
-elseif a=="tangxianchu"then
-_G.whitelist=true
-
-elseif a=="gvgggcfftfrreww"then
-_G.whitelist=true
-
-end
-if _G.whitelist==true then
-
-    local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "『验证结果』",
-    Text = a.."验证身份成功等待时间长一点",
-    Duration = 5,
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "🇹「㊐   ㊊』🇿",
-    Text = "「启动云端中』",
-    Duration = 5, 
-})
-wait(2)
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "🇹「㊐   ㊊』🇿",
-    Text = "启动完毕",
-    Duration = 5, 
-})
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "🇹「㊐   ㊊』🇿",
-    Text = "已启动加速功能",
-    Duration = 5, 
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "550W V3",
-    Text = "正在申请授权进入方舟空间站",
-    Duration = 5, 
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "『M O S S』",
-    Text = "正在接入",
-    Duration = 5, 
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "『M O S S』",
-    Text = "正在获取授权",
-    Duration = 5, 
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "『M O S S』",
-    Text = "注入授权",
-    Duration = 5, 
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "550W V3",
-    Text = "申请授权成功",
-    Duration = 5, 
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "550W V3",
-    Text = "正在启动脚本中",
-    Duration = 5, 
-})
-
-
-print("Anti Afk On")
-		local vu = game:GetService("VirtualUser")
-		game:GetService("Players").LocalPlayer.Idled:connect(function()
-		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		   wait(1)
-		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		end)
-		
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "反挂机已自动开启",
-    Text = "被踢出服务器的概率已降低",
-    Duration = 5,
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "启动成功",
-    Text = "您好"..game.Players.LocalPlayer.Name.."，欢迎使用550W系列脚本",
-    Duration = 5,
-})
-
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "正在接入方舟空间站",
-    Text = "您好"..game.Players.LocalPlayer.Name.."，欢迎您白名单用户",
-    Duration = 5,
-})
-
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -248,28 +39,106 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "550W V3",
-    Text = "加载成功，欢迎进入方舟空间站(在建)",
-    Duration = 5, 
-})
+local CoreGui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/pyawhh/UI-FOR-HUA-AND-550W/main/zi%20ji%20yong%20ke%20yi%20bu%20yao%20wai%20chuan')))()
+
+notify("🇹『㊐    ㊊』🇿", "白名单验证中", 4)
+notify("🇹『㊐    ㊊』🇿", "加群定期发放白名单", 4)
+wait(7)
+
+local a=tostring(game.Players.LocalPlayer.Character);
+
+if a=="zkosjsiw"then
+_G.whitelist=true
+elseif a=="jinitaimei1y55555"then
+_G.whitelist=true
+elseif a=="SDjdkskes"then
+_G.whitelist=true
+elseif a=="gamemode12678643"then
+_G.whitelist=true
+elseif a=="Harry_Bert"then
+_G.whitelist=true
+elseif a=="cclb_123xh"then
+_G.whitelist=true
+elseif a=="6fhg51"then
+_G.whitelist=true
+elseif a=="6331nhdi"then
+_G.whitelist=true
+elseif a=="rtyyydshahaha"then
+_G.whitelist=true
+elseif a=="moyingyo"then
+_G.whitelist=true
+elseif a=="qjddie4514"then
+_G.whitelist=true
+elseif a=="CN_sakara"then
+_G.whitelist=true
+elseif a=="roblox_qwq7"then
+_G.whitelist=true
+elseif a=="0997ikun"then
+_G.whitelist=true
+elseif a=="Zsjcb1005"then
+_G.whitelist=true
+elseif a=="114514phz129"then
+_G.whitelist=true
+elseif a=="plmnkoijbvhuygcxfty"then
+_G.whitelist=true
+elseif a=="567yydc"then
+_G.whitelist=true
+elseif a=="function963"then
+_G.whitelist=true
+elseif a=="Bluewitchme"then
+_G.whitelist=true
+elseif a=="yuihghghg"then
+_G.whitelist=true
+elseif a=="yuihuiniao"then
+_G.whitelist=true
+elseif a=="QMQQAQQ"then
+_G.whitelist=true
+elseif a=="TANGXIANCHUN"then
+_G.whitelist=true
+elseif a=="zyzqwp"then
+_G.whitelist=true
+elseif a=="as30326"then
+_G.whitelist=true
+elseif a=="rushshshseek9"then
+_G.whitelist=true
+elseif a=="tangxianchu"then
+_G.whitelist=true
+elseif a=="gvgggcfftfrreww"then
+_G.whitelist=true
+end
+if _G.whitelist==true then
+
+notify("🇹『㊐    ㊊』🇿", "验证成功，欢迎您！亲爱的"..game.Players.LocalPlayer.Name.. "", 1)
+wait(2)
+notify("🇹『㊐    ㊊』🇿", "loading……", 1)
+wait(1)
+notify("🇹『㊐    ㊊』🇿", "正在为您启动云端…", 1)
+wait(2)
+notify("🇹『㊐    ㊊』🇿", "启动成功！", 1)
+notify("🇹『㊐    ㊊』🇿", "Welcome use 550V3", 1)
+wait(1)
+notify("🇹『㊐    ㊊』🇿", "您目前使用的注入器:"..identifyexecutor(), 2)
+notify("🇹『㊐    ㊊』🇿", "正在授权进入空间站…", 2)
+notify("MOSS", "正在为您获取授权…", 1)
+notify("MOSS", "正在为您注入授权…", 1)
+notify("MOSS", "550W Script™", 1)
+notify("550W Script", "正在为您加载[已打开反挂机]", 1)
+print("Anti Afk On")
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		   wait(1)
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+
+notify("550W", "加载成功，欢迎进入方舟空间站[正在建造...]", 1)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
 
 else
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "🇹「㊐   ㊊』🇿",
-    Text = "没有白名单",
-    Duration = 10,   
-
-})
-
-wait(2)
-game.Players.LocalPlayer:Kick ("错误：加群有活动领取白名单资格：781759165")
+notify("白", "很抱歉，您并非白名单玩家，正在执行Player kick 指令!", 5)
+wait(5)
+game.Players.LocalPlayer:Kick ("加群有活动领取白名单资格：781759165")
 end
-
