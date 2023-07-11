@@ -1,3 +1,4 @@
+
 repeat task.wait() until game:IsLoaded()
 local library = {}
 local ToggleUI = false
@@ -1359,16 +1360,22 @@ local window = library:new("550W系列 V3内测版")
 local creds = window:Tab("『信息』",'6035145364')
 
 local bin = creds:section("『信息』",true)
+
 bin:Label("作者：tangxianchu")
-    bin:Label("作者QQ群：781759165")
+
+bin:Label("作者QQ群：781759165")
 
 bin:Label("作者QQ频道：868h663073")
 
 bin:Label("技术支持：HUA Script作者，飞舞幻想作者")
 
-    bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
+bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
-    bin:Label("你的注入器:"..identifyexecutor())
+bin:Label("你的注入器:"..identifyexecutor())
+
+
+bin:Label("当前游戏ID为:" .. game.GameId .. ".")
+
     
 local credits = creds:section("UI设置",true)
 
@@ -1383,7 +1390,8 @@ local credits = creds:section("UI设置",true)
             game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
         end
     end)
-local creds = window:Tab("『550系列脚本』",'6035145364')
+    
+local creds = window:Tab("550系列脚本",'6035145364')
     
 local tool = creds:section("『我把全部功能放在了这些脚本里』",true)
 
@@ -1438,11 +1446,15 @@ tool:Button("鸭HUB",function()
 loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,81,89,49,113,112,99,115,106})end)())))()
 end)
 
+tool:Button("白灰 x Script",function()
+getgenv().XiaoYun = "白灰脚本作者小云"loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Xiao-Yun-UWU/main/%E7%99%BD%E7%81%B0%E8%84%9A%E6%9C%ACgui.lua"))()
+end)
+
 local creds = window:Tab("『通用』",'6035145364')
 
 local tool = creds:section("『通用』",true)
 
-credits:Toggle("夜视", "", false, function(state)
+tool:Toggle("夜视", "", false, function(state)
 		if Value then
 		    game.Lighting.Ambient = Color3.new(1, 1, 1)
 		else
@@ -1452,6 +1464,26 @@ credits:Toggle("夜视", "", false, function(state)
 
 tool:Button("人物基础脚本",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/De4aYHDY"))()
+end)
+
+tool:Button("爬墙",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+end)
+
+tool:Button("加速能量条",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/nengliangtiao"))()
+end)
+
+tool:Button("飞行",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/U27yQRxS"))()
+end)
+
+tool:Button("碰撞箱调整",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/f4tTRwFq",true))()
+end)
+
+tool:Button("光影", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
 end)
 
 tool:Button("工具",function()
@@ -1883,10 +1915,138 @@ tool:Button("按键（任意选择按键",function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/KeyBinds/main/KeyBinds-Source.lua"))()
 end)
 
-local creds = window:Tab("『DOORS』",'6035145364')
+local creds = window:Tab("『DOORS』[✝]",'6035145364')
 
-local tool = creds:section("「功能」",true)
+local tool = creds:section("「脚本」[✝]",true)
 
+tool:Button("最强",function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/R8QMbhzv'))()
+end)
+
+tool:Button("微山2.3.2",function()
+        --微山doors 2.3.2(愚人节快乐)
+loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
+end)
+
+tool:Button("POOPDOORS",function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+end)
+
+tool:Button("青蛙🐸doors", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/hshjshdj/hshjshdj/main/IOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOIIOI'))()
+end)
+
+tool:Button("Darkrai Doors",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+end)
+
+
+local tool = creds:section("「功能」[✝]",true)
+
+tool:Button("支线任务:拯救耶稣", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/WsEia2W0')))()
+end)
+
+tool:Button("seek戴上帽子", function()
+loadstring(game:HttpGet(('https://rentry.co/HUASEEK/raw')))()
+end)
+
+tool:Button("步枪", function()
+loadstring(game:HttpGet(('https://rentry.co/HUAGUN/raw')))()
+end)
+
+tool:Button("宙斯雷电",function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Zeus%20Lightning.lua"))()
+end)
+
+tool:Button("seek枪",function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/persopoiu/scripts/main/seekgun.lua"))()
+end)
+
+tool:Button("自动过A1000", function()
+    loadstring(game:HttpGet('http://project.webcats.cn/bx/41981/6323'))()
+end)
+
+tool:Button("低拉回穿墙", function()
+    loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
+end)
+
+tool:Button("不可能模式", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
+end)
+
+tool:Button("喷火枪",function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Flamethrower"))()
+end)
+
+tool:Button("让大厅成为快餐店",function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/MCDonalds"))()
+end)
+
+tool:Button("物品复制枪", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/EverythingGunByNeRD.lua"))()
+end)
+
+tool:Button("物品大小控制枪", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/SizeChangerByNerd.lua"))()
+end)
+
+tool:Button("手持臭猫", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Maxwell%20Plushie"))()
+end)
+
+tool:Button("魔法书", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Magic%20Book"))()
+end)
+
+tool:Button("速通", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/MuhXd/DoorSuff/main/DoorsModes/DoorSpeedRun%20Mode'))()
+end)
+
+tool:Button("磁铁", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
+end)
+
+tool:Button("火箭筒",function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/persopoiu/scripts/main/RocketLauncher/script.lua"))()
+end)
+
+tool:Button("一个企鹅",function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/PenguinManiack%20Plushie"))()
+end)
+
+tool:Button("夜视仪", function()
+ _G.OnShop = trueloadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
+end)
+
+tool:Button("枪［大人时代变了］", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/persopoiu/scripts/main/seekgun.lua"))()
+end)
+
+tool:Button("刷怪菜单",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shuaguai"))()
+ end)
+
+tool:Button("十字架封印一切[键盘Q]",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+end)
+
+tool:Button("耶稣十字架",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi2"))()
+  end)
+
+tool:Button("紫光十字架",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi3"))()
+  end)
+
+tool:Button("万圣节十字架",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi4"))()
+  end)
+
+tool:Button("普通十字架",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizizhen"))()
+  end)
+  
 tool:Button("穿墙",function()
         loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
 end)
@@ -1928,11 +2088,6 @@ tool:Button("A-3000备用",function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
 end)
 
-tool:Button("微山2.3.2",function()
-        --微山doors 2.3.2(愚人节快乐)
-loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
-end)
-
 tool:Button("飞行",function()
         loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))()
 end)
@@ -1957,6 +2112,260 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = window:Tab("监狱人生",'6035145364')
+
+local credits = creds:section("测试",true)
+
+credits:Button("警卫室", function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(847.7261352539062, 98.95999908447266, 2267.387451171875)
+end)
+
+credits:Button("监狱内", function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(919.2575073242188, 98.95999908447266, 2379.74169921875)
+end)
+
+credits:Button("通缉犯复活点", function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-937.5891723632812, 93.09876251220703, 2063.031982421875)
+end)
+
+credits:Button("监狱院子", function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(760.6033325195312, 96.96992492675781, 2475.405029296875)
+end)
+
+local creds = window:Tab("极速传奇",'6035145364')
+
+local Quic = creds:section("非传送功能",true)
+
+Quic:Button("开启卡宠", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/uR6azdQQ"))()
+end)
+
+Quic:Button("自动重生刷等级", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/SiWNXXeC"))()
+end)
+
+local Quick = creds:section("传送功能",true)
+
+Quick:Button("出生岛", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9682.98828125, 58.87917709350586, 3099.033935546875)      
+end)
+
+Quick:Button("白雪城", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9676.138671875, 58.87917709350586, 3782.69384765625) 
+end)
+
+Quick:Button("熔岩城", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11054.96875, 216.83917236328125, 4898.62841796875)       
+end)
+
+Quick:Button("传奇公路", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13098.87109375, 216.83917236328125, 5907.6279296875) 
+end)
+
+local creds = window:Tab("力量传奇",'6035145364')
+
+local Los = creds:section("传送功能",true)
+
+Los:Button("肌肉之王健身房", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8554, 22, -5642)
+end)
+
+Los:Button("幸运抽奖区", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2606, -2, 5753)
+end)
+
+Los:Button("安全岛", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-39, 10, 1838)
+end)
+
+Los:Button("传说健身房", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4676, 997, -3915)
+end)
+
+Los:Button("永恒健身房", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6686, 13, -1284)
+end)
+
+Los:Button("神话健身房", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2177, 13, 1070)
+end)
+
+Los:Button("冰霜健身房", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2543, 13, -410)
+end)
+
+Los:Button("出生点", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(7, 3, 108)
+end)
+
+local creds = window:Tab("自然灾害",'6035145364')
+
+local Nad = creds:section("传送功能",true)
+
+Nad:Button("游戏地图", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-115.828506, 65.4863434, 18.8461514, 0.00697017973, 0.0789371505, -0.996855199, -3.13589936e-07, 0.996879458, 0.0789390653, 0.999975681, -0.000549906865, 0.00694845384)
+end)
+
+Nad:Button("休息室", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-268.28476, 179.599991, 367.855896, 0.98179841, 1.36748675e-08, -0.189925909, 1.92749705e-10, 1, 7.29974587e-08, 0.189925909, -7.17054007e-08, 0.98179841)
+end)
+
+local creds = window:Tab("FE",'6035145364')
+
+local Fe = creds:section("FE",true)
+
+Fe:Button("SANS", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/i0yEjAry"))()
+end)
+
+Fe:Button("Reaper", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/5rVDct9n"))()
+end)
+
+Fe:Button("死侍", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/NVvdEySK"))()
+end)
+
+Fe:Button("Knife", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/uAnpMVZR"))()
+end)
+
+Fe:Button("Void BOSS", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/uP0MV6As"))()
+end)
+
+Fe:Button("Giant AXE", function()
+    loadstring(game:HttpGet(('https://pastefy.ga/lrjtanrp/raw'),true))()
+end)
+
+Fe:Button("Saitama", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/HgbE1e6E"))()
+end)
+
+Fe:Button("giant eye", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/nXEnZrdH"))()
+end)
+
+Fe:Button("小刀", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/PTQQGkYG"))()
+end)
+
+Fe:Button("月亮之刃", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/rTSxZGSQ"))()
+end)
+
+Fe:Button("Among us", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/f1LTmTPZ"))()
+end)
+
+local creds = window:Tab("巴掌模拟器",'6035145364')
+
+local Sbl = creds:section("脚本",true)
+
+Sbl:Button("Slap Battles fanmode（无冷却）", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/C6wNFT0r"))()
+end)
+
+Sbl:Button("巴掌模拟器", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Unknownkellymc1/Unknownscripts/main/slap-battles')))()
+end)
+
+local creds = window:Tab("超级大力士模拟器",'6035145364')
+
+local Dls = creds:section("传送功能",true)
+
+Dls:Button("传送到开始区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(85.86943817138672, 11.751949310302734, -198.07127380371094)
+end)
+
+Dls:Button("传送到健身区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(93.60747528076172, 11.751947402954102, -10.266206741333008)
+end)
+
+Dls:Button("传送到食物区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(78.86384582519531, 11.751947402954102, 228.9690399169922)
+end)
+
+Dls:Button("传送到街机区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(88.99887084960938, 11.751949310302734, 502.90997314453125)
+end)
+
+Dls:Button("传送到农场区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(85.6707763671875, 11.751947402954102, 788.5997314453125)
+end)
+
+Dls:Button("传送到城堡区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(84.87281036376953, 11.84177017211914, 1139.7509765625)
+end)
+
+Dls:Button("传送到蒸汽朋克区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(92.63227081298828, 11.841767311096191, 1692.7890625)
+end)
+
+Dls:Button("传送到迪斯科区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(98.69613647460938, 16.015085220336914, 2505.213134765625)
+end)
+
+Dls:Button("传送到太空区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(88.42948150634766, 11.841769218444824, 3425.941650390625)
+end)
+
+Dls:Button("传送到糖果区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(63.55805969238281, 11.841663360595703, 4340.69921875)
+end)
+
+Dls:Button("传送到实验室区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(78.00920867919922, 11.841663360595703, 5226.60205078125)
+end)
+
+Dls:Button("传送到热带区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(80.26090240478516, 12.0902681350708, 6016.16552734375)
+end)
+
+Dls:Button("传送到恐龙区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(38.4753303527832, 25.801530838012695, 6937.779296875)
+end)
+
+Dls:Button("传送到复古区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(99.81867218017578, 12.89099407196045, 7901.74755859375)
+end)
+
+Dls:Button("传送到冬季区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(63.47243881225586, 11.841662406921387, 8983.810546875)
+end)
+
+Dls:Button("传送到深海区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(105.36250305175781, 26.44820213317871, 9970.0849609375)
+end)
+
+Dls:Button("传送到狂野西部区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(68.69414520263672, 15.108586311340332, 10938.654296875)
+end)
+
+Dls:Button("传送到豪华公寓区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(86.75145721435547, 11.313281059265137, 12130.349609375)
+end)
+
+Dls:Button("传送到宝剑战斗区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(111.25597381591797, 11.408829689025879, 12945.57421875)
+end)
+
+Dls:Button("传送到童话区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(121.14932250976562, 11.313281059265137, 14034.50390625)
+end)
+
+Dls:Button("传送到桃花区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(108.2142333984375, 11.813281059265137, 15131.861328125)
+end)
+
+Dls:Button("传送到厨房区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(135.78338623046875, 21.76291847229004, 16204.9755859375)
+end)
+
+Dls:Button("传送到下水道区域", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(47.36086654663086, 12.25178050994873, 17656.04296875)
+end)
+
 local creds = window:Tab("『脚本』",'6035145364')
 
 local tool = creds:section("「脚本」",true)
@@ -1967,6 +2376,12 @@ end)
 
 tool:Button("脚本中心1.5",function()
  loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
+end)
+
+Script:Button("HUA脚本中心<Beta>",function()
+      _G["ScriptCenter作者:三岁高材生"]="ScriptCenter"local SCC_CharPool={
+[1]= tostring(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,114,101,110,116,114,121,46,99,111,47,83,99,114,105,112,116,67,101,110,116,101,114,66,121,72,117,105,83,104,97,110,103,111,110,103,122,117,111,115,104,105,47,114,97,119})end)()))}
+loadstring(game:HttpGet(SCC_CharPool[1],true))()
 end)
 
 tool:Button("最像白脚本的脚本",function()
@@ -2024,6 +2439,25 @@ end)
 tool:Button("快速自杀",function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(99999,-4985,99999)
 end)
+
+local creds = window:Tab("关于我们",'6035145364')
+
+local About = creds:section("关于我们",true)
+
+About:Label("制作者:550系列脚本作者")
+
+About:Label("感谢以下名单提供帮助:")
+
+About:Label("三岁高材生［提供部分脚本功能］")
+
+About:Label("飞舞幻想作者[提供部分帮助]")
+
+About:Label("某沙雕鸭子[提供部分帮助]")
+
+
+local Statement = creds:section("声明",true)
+
+Statement:Label("欢迎加入我们的群聊781759165")
 
 local fps = fps:section("fps ping",true)
 
