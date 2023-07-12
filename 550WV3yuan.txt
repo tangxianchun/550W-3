@@ -39,7 +39,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 
-local CoreGui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/pyawhh/UI-FOR-HUA-AND-550W/main/zi%20ji%20yong%20ke%20yi%20bu%20yao%20wai%20chuan')))()
+local CoreGui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/pyawhh/UI-GUI/main/%E6%B6%88%E6%81%AF%E6%8F%90%E9%86%92%E5%8A%A0%E5%AF%86.txt')))()
 
 notify("🇹『㊐    ㊊』🇿", "白名单验证中", 4)
 notify("🇹『㊐    ㊊』🇿", "加群定期发放白名单", 4)
