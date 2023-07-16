@@ -79,6 +79,8 @@ elseif a=="qjddie4514"then
 _G.whitelist=true
 elseif a=="CN_sakara"then
 _G.whitelist=true
+elseif a=="QMPW147258"then
+_G.whitelist=true
 elseif a=="fhscnxdznxgz"then
 _G.whitelist=true
 elseif a=="roblox_qwq7"then
