@@ -1470,6 +1470,10 @@ tool:Button("无限跳",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
 end)
 
+tool:Button("踏空",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+end)
+
 tool:Button("人物基础脚本",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/De4aYHDY"))()
 end)
