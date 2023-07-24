@@ -1431,18 +1431,18 @@ local creds = window:Tab("『赞助脚本』",'6035145364')
 
 local tool = creds:section("『通用』",true)
 
-tool:Button("HUA x Script（已停止更新）",function()
+tool:Button("HUA脚本",function()
 	_G["HUA Script 作者:1924467894"]="HUA Script Update the cloud"local SCC_CharPool={
 [1]= tostring(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,114,101,110,116,114,121,46,99,111,47,104,101,110,101,120,116,105,115,109,111,111,110,115,101,99,112,108,101,97,115,101,115,116,111,112,97,110,100,105,116,105,115,97,102,114,101,101,115,99,114,105,112,116,111,107,98,121,104,117,105,115,104,97,110,103,103,111,110,103,122,104,117,111,115,104,105,105,106,117,115,116,97,115,99,114,105,112,116,47,114,97,119})end)()))}
 loadstring(game:HttpGet(SCC_CharPool[1]))()
 end)
 
-tool:Button("幻 x Script",function()
+tool:Button("幻脚本",function()
 --幻想(delta无法使用)
 loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\88\120\48\119\114\54\120\72"))()
 end)
 
-tool:Button("鸭HUB x Script",function()
+tool:Button("鸭HUB",function()
 loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,81,89,49,113,112,99,115,106})end)())))()
 end)
 
@@ -1450,9 +1450,8 @@ tool:Button("白灰 x Script",function()
 getgenv().XiaoYun = "白灰脚本作者小云"loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Xiao-Yun-UWU/main/%E7%99%BD%E7%81%B0%E8%84%9A%E6%9C%ACgui.lua"))()
 end)
 
-tool:Button("河流 x Script",function()
-getgenv().long = "河脚本-加载速度很快"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XingheRiver/XingheRiver/main/%E6%B2%B3%E6%B5%81-%E5%AF%86%E9%92%A5-%E7%99%BD%E5%90%8D%E5%8D%95-%E6%BA%90%E7%A0%81.lua"))()
+tool:Button("徽标 x Script",function()
+loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,117,106,52,78,70,117,90,85})end)())))()
 end)
 
 local creds = window:Tab("『通用』",'6035145364')
@@ -1466,6 +1465,10 @@ tool:Toggle("夜视", "", false, function(state)
 		    game.Lighting.Ambient = Color3.new(0, 0, 0)
 		end
     end)
+
+tool:Button("无限跳",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+end)
 
 tool:Button("人物基础脚本",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/De4aYHDY"))()
@@ -1892,33 +1895,6 @@ end)
 tool:Button("脚本大中心",function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/zAuR0JUT"))()
 end)
-local creds = window:Tab("『通用』",'6035145364')
-
-local tool = creds:section("「通用」",true)
-
-tool:Button("工具",function()
-        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
-end)
-
-tool:Button("人物无敌",function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/H3RLCWWZ'))()
-end)
-
-tool:Button("最强透视",function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY"))()
-end)
-    
-tool:Button("位置获取",function()
-        loadstring(game:HttpGet("https://gist.githubusercontent.com/NortherScripts/8d954211b286d051c416cc5f88b3dc5f/raw/"))()
-end)
-
-tool:Button("控制",function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/XR4sGcgJ"))()
-end)
-
-tool:Button("按键（任意选择按键",function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/KeyBinds/main/KeyBinds-Source.lua"))()
-end)
 
 local creds = window:Tab("『DOORS』[✝]",'6035145364')
 
@@ -2115,6 +2091,13 @@ end)
 
 tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
+end)
+local creds = window:Tab("彩虹朋友",'6035145364')
+
+local credits = creds:section("脚本",true)
+
+credits:Button("彩虹朋友", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Rainbow-Friends/main/Rainbow%20Friends"))()
 end)
 
 local creds = window:Tab("监狱人生",'6035145364')
@@ -2371,38 +2354,6 @@ Dls:Button("传送到下水道区域", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(47.36086654663086, 12.25178050994873, 17656.04296875)
 end)
 
-local creds = window:Tab("『脚本』",'6035145364')
-
-local tool = creds:section("「脚本」",true)
-
-tool:Button("鲨脚本",function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt",true))()
-end)
-
-tool:Button("脚本中心1.5",function()
- loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
-end)
-
-tool:Button("最像白脚本的脚本",function()
-        loadstring(game:HttpGet('https://getexploits.com/key-system/',true))('https://da.com/936657404291084298/1006220505583460352/Script.txt')
-end)
-
-tool:Button("ato",function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/atoyayaya/jiaoben/main/jiamilist"))()
-end)
-
-tool:Button("龙",function()
-        loadstring(game:HttpGet "https://pastebin.com/raw/bXApbsu8")()
-end)
-
-tool:Button("云脚本",function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/Xiaos______________________________________________________________Yun__________________________________________________________________________betaV2.3------------------------------------------------------------------------------------jsjalololololololololololololololololololllololol.lua"))()
-end)
-
-tool:Button("USA（卡密：USA AER）",function()
-        getgenv().USA="作者莫羽免费请勿倒卖"loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/USA.lua"))()
-end)
-
 local creds = window:Tab("『灭霸模拟器』",'6035145364')
 
 local tool = creds:section("「功能」",true)
@@ -2437,6 +2388,42 @@ end)
 
 tool:Button("快速自杀",function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(99999,-4985,99999)
+end)
+
+local creds = window:Tab("『脚本』",'6035145364')
+
+local tool = creds:section("「脚本」",true)
+
+tool:Button("青脚本",function()
+loadstring(game:HttpGet('https://rentry.co/ct293/raw'))()
+end)
+
+tool:Button("鲨脚本",function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt",true))()
+end)
+
+tool:Button("脚本中心1.5",function()
+ loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
+end)
+
+tool:Button("最像白脚本的脚本",function()
+        loadstring(game:HttpGet('https://getexploits.com/key-system/',true))('https://da.com/936657404291084298/1006220505583460352/Script.txt')
+end)
+
+tool:Button("ato",function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/atoyayaya/jiaoben/main/jiamilist"))()
+end)
+
+tool:Button("龙",function()
+        loadstring(game:HttpGet "https://pastebin.com/raw/bXApbsu8")()
+end)
+
+tool:Button("云脚本",function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/Xiaos______________________________________________________________Yun__________________________________________________________________________betaV2.3------------------------------------------------------------------------------------jsjalololololololololololololololololololllololol.lua"))()
+end)
+
+tool:Button("USA（卡密：USA AER）",function()
+        getgenv().USA="作者莫羽免费请勿倒卖"loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/USA.lua"))()
 end)
 
 local creds = window:Tab("关于我们",'6035145364')
