@@ -1746,14 +1746,6 @@ tool:Button("键盘",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt",true))()
 end)
 
-tool:Button("飞行x2倍",function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/550FX2.txt"))()
-end)
-
-tool:Button("飞行x50倍",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/550FX.txt"))()
-end)
-
 tool:Button("Infinity yield FE",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
@@ -2402,6 +2394,11 @@ end)
 local creds = window:Tab("『脚本』",'6035145364')
 
 local tool = creds:section("「脚本」",true)
+
+tool:Button("白脚本",function()
+_G["白脚本作者修狗"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey"
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/wev666666/baijiaobengV2.0beta/main/%E7%99%BD%E8%84%9A%E6%9C%ACbeta'),true))() 
+end)
 
 tool:Button("青脚本",function()
 loadstring(game:HttpGet('https://rentry.co/ct293/raw'))()
