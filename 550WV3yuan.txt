@@ -73,6 +73,8 @@ elseif a=="rtyyydshahaha"then
 _G.whitelist=true
 elseif a=="xwzz123456aq"then
 _G.whitelist=true
+elseif a=="CN_dyc265"then
+_G.whitelist=true
 elseif a=="doCj2158"then
 _G.whitelist=true
 elseif a=="cnmlgbdpgt"then
