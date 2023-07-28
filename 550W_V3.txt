@@ -1449,7 +1449,7 @@ getgenv().XiaoYun = "白灰脚本作者小云"loadstring(game:HttpGet("https://r
 end)
 
 tool:Button("徽标 x Script",function()
-loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,117,106,52,78,70,117,90,85})end)())))()
+loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,74,82,121,71,84,50,67,120})end)())))()
 end)
 
 tool:Button("云 x Script",function()
