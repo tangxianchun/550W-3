@@ -1373,6 +1373,7 @@ bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
 bin:Label("你的注入器:"..identifyexecutor())
 
+bin:Label("当前游戏名为:" ..Enum.KeyCode.P .. "")
 
 bin:Label("当前游戏ID为:" .. game.GameId .. ".")
 
