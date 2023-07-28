@@ -412,8 +412,8 @@ end
       Open.Position = UDim2.new(0.00829315186, 0, 0.31107837, 0)
       Open.Size = UDim2.new(0, 61, 0, 32)
       Open.Font = Enum.Font.SourceSans
-      Open.Text = "『神』「坤坤」"
-      Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+      Open.Text = "『神』「坤」"
+      Open.TextColor3 = Color3.fromRGB(255, 215, 0)
       Open.TextSize = 14.000
       Open.Active = true
       Open.Draggable = true
@@ -1373,11 +1373,8 @@ bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
 bin:Label("你的注入器:"..identifyexecutor())
 
-bin:Label("当前游戏名为:" ..Enum.KeyCode.P .. ".")
-
 bin:Label("当前游戏ID为:" .. game.GameId .. ".")
 
-    
 local credits = creds:section("UI设置",true)
 
     credits:Button("摧毁UI",function()
