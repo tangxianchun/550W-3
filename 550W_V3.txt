@@ -1481,6 +1481,33 @@ tool:Button("人物基础脚本",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/De4aYHDY"))()
 end)
 
+tool:Button("点击传送",function()
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Equip to Click TP"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+tool:Button("全游戏通用无CD(不知道是不是真的)",function()
+local old
+
+old = hookfunction(wait, newcclosure(function(...)
+   return old()
+end))
+
+local balls
+
+balls = hookfunction(task.wait, newcclosure(function(...)
+   return balls()
+end))
+end)
+
 tool:Button("爬墙",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
 end)
