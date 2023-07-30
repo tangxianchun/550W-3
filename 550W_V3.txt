@@ -1528,6 +1528,10 @@ tool:Button("光影", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
 end)
 
+tool:Button("自瞄",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/zhimiao.txt"))()
+end)
+
 tool:Button("工具",function()
         loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
 end)
