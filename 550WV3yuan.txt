@@ -178,7 +178,7 @@ local Start = Instance.new("TextButton")
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-UI.Name = "550W V4卡密"
+UI.Name = "550W密钥系统"
 UI.Parent = ScreenGui
 UI.Active = true
 UI.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -190,14 +190,14 @@ UI.Draggable = true
 
 Title.Name = "Title"
 Title.Parent = UI
-Title.BackgroundColor3 = Color3.new(68, 68, 68)
+Title.BackgroundColor3 = Color3.new(255, 215, 0)
 Title.BackgroundTransparency = 1
 Title.BorderSizePixel = 2
 Title.Position = UDim2.new(0, 0, 0.02, 0)
 Title.Size = UDim2.new(1, 0, 0, 50)
 Title.Font = Enum.Font.SourceSans
 Title.Text = "密钥系统"
-Title.TextColor3 = Color3.new(0, 0, 255)
+Title.TextColor3 = Color3.new(1, 1, 1)
 Title.TextScaled = true
 Title.TextSize = 14
 Title.TextWrapped = true
@@ -224,7 +224,7 @@ Key.TextWrapped = true
 
 Start.Name = "Start"
 Start.Parent = UI
-Start.BackgroundColor3 = Color3.new(0, 0, 255)
+Start.BackgroundColor3 = Color3.new(255, 215, 0)
 Start.BackgroundTransparency = 0
 Start.BorderSizePixel = 2
 Start.Position = UDim2.new(0.25, 0, 0.65, 0)
@@ -242,26 +242,12 @@ Start.MouseButton1Click:Connect(function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchu/550W_V3/main/550W_V3.txt"))()
        
     else
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "💫『㊐  工作室  ㊊」💫",
-    Text = "密码错误",
-    Duration = 10,   
-
-})
+notify("系统", "密钥错误™", 1)
 
 wait(2)
 game.Players.LocalPlayer:Kick ("错误：加群有活动领取白名单资格：781759165")
 end
 
 end)
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "验证失败",
-    Text = "你并没有白名单，已启动备用系统",
-    Duration = 10,   
-
-})
+notify("系统", "验证失败，开启密钥程序™", 1)
 end
