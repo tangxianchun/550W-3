@@ -162,6 +162,8 @@ print("Anti Afk On")
 
 notify("550W", "加载成功，欢迎进入方舟空间站[正在建造...]", 1)
 
+loadstring(game:HttpGet("https://eternityhub.xyz/BetterRoblox/Loader"))()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
