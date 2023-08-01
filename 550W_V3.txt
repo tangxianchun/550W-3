@@ -2150,6 +2150,14 @@ credits:Button("监狱院子", function()
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(760.6033325195312, 96.96992492675781, 2475.405029296875)
 end)
 
+local creds = window:Tab("克隆大亨[✝]",'6035145364')
+
+local tool = creds:section("「脚本」[✝]",true)
+
+tool:Button("克隆大亨",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HELLLO1073/RobloxStuff/main/CT-Destroyer"))()
+end)
+
 local creds = window:Tab("极速传奇",'6035145364')
 
 local Quic = creds:section("非传送功能",true)
