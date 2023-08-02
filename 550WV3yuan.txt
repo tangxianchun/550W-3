@@ -242,10 +242,6 @@ Start.MouseButton1Click:Connect(function()
     if Key.Text == "550W V3" then
         ScreenGui:Destroy()
 
-Start.MouseButton2Click:Connect(function()
-    if Key.Text == "BMDYH" then
-        ScreenGui:Destroy()
-
       loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
        
     else
