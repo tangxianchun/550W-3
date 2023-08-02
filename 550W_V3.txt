@@ -1461,13 +1461,9 @@ local creds = window:Tab("『通用』",'6035145364')
 
 local tool = creds:section("『通用』",true)
 
-tool:Toggle("夜视", "", false, function(state)
-		if Value then
-		    game.Lighting.Ambient = Color3.new(1, 1, 1)
-		else
-		    game.Lighting.Ambient = Color3.new(0, 0, 0)
-		end
-    end)
+tool:Button("光影",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/guangying.txt"))()
+end)
 
 tool:Button("无限跳",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
@@ -1524,7 +1520,7 @@ tool:Button("碰撞箱调整",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/f4tTRwFq",true))()
 end)
 
-tool:Button("光影", function()
+tool:Button("光影2", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
 end)
 
