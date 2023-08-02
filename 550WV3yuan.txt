@@ -161,11 +161,15 @@ print("Anti Afk On")
 
 notify("550W", "加载成功，欢迎进入方舟空间站[正在建造...]", 1)
 
+notify("————💫『㊐  工作室  ㊊」💫————", "您为白名单用户…", 2)
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/KRNL%20UI%20Remake.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/guangying.txt"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
 
