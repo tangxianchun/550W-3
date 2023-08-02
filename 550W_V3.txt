@@ -2122,15 +2122,15 @@ local creds = window:Tab("『小黑子』",'6035145364')
 
 local tool = creds:section("「脚本」",true)
 
-credits:Button("小黑子(无密钥)", function()
+tool:Button("小黑子(无密钥)", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0SwordWarriors"))()
 end)
 
-credits:Button("小黑子(无密钥)2", function()
+tool:Button("小黑子(无密钥)2", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0swordwarrior"))()
 end)
 
-credits:Button("小黑子(需密钥)", function()
+tool:Button("小黑子(需密钥)", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/KidichiHB/Kidachi/main/Scripts/SwordWarrior", true))()
 end)
 
