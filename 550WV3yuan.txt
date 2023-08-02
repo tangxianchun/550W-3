@@ -242,7 +242,7 @@ Start.MouseButton1Click:Connect(function()
     if Key.Text == "550W V3" then
         ScreenGui:Destroy()
 
-Start.MouseButton1Click:Connect(function()
+Start.MouseButton2Click:Connect(function()
     if Key.Text == "BMDYH" then
         ScreenGui:Destroy()
 
