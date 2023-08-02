@@ -174,4 +174,3 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/m
 notify("————💫『㊐  工作室  ㊊」💫————", "验证失败，启动踢出游戏", 2)
 wait(2)
 game.Players.LocalPlayer:Kick ("错误：加群有活动领取白名单资格：781759165")
-end
