@@ -131,6 +131,8 @@ elseif a=="tangxianchu"then
 _G.whitelist=true
 elseif a=="gvgggcfftfrreww"then
 _G.whitelist=true
+elseif a=="ty13725038308"then
+_G.whitelist=true
 end
 if _G.whitelist==true then
 
