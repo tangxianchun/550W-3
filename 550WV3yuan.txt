@@ -236,14 +236,14 @@ Start.BorderSizePixel = 2
 Start.Position = UDim2.new(0.25, 0, 0.65, 0)
 Start.Size = UDim2.new(0.5, 0, 0, 45)
 Start.Font = Enum.Font.Gotham
-Start.Text = "(点我检查)"
+Start.Text = "点我验证"
 Start.TextColor3 = Color3.new(0, 0, 0)
 Start.TextScaled = true
 Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "550W V3" then
+    if Key.Text == "BMDYH" then
         ScreenGui:Destroy()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
        
