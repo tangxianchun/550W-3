@@ -1520,8 +1520,8 @@ tool:Button("碰撞箱调整",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/f4tTRwFq",true))()
 end)
 
-tool:Button("光影2", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+tool:Button("光影落日余晖", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/guangy.txt"))()
 end)
 
 tool:Button("自瞄",function()
