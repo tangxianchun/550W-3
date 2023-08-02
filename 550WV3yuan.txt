@@ -165,9 +165,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/m
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/KRNL%20UI%20Remake.lua"))()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
 
-    else 
+else
 local ScreenGui = Instance.new("ScreenGui")
 local UI = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
@@ -239,7 +241,8 @@ Start.TextWrapped = true
 Start.MouseButton1Click:Connect(function()
     if Key.Text == "550W V3" then
         ScreenGui:Destroy()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchu/550W_V3/main/550W_V3.txt"))()
+
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
        
     else
 notify("系统", "密钥错误™", 1)
