@@ -163,7 +163,7 @@ print("Anti Afk On")
 
 notify("550W", "加载成功，欢迎进入方舟空间站[正在建造...]", 1)
 
-notify("————💫『㊐  工作室  ㊊」💫————", "您为白名单用户…", 10)
+notify("————💫『㊐  工作室  ㊊」💫————", "欢迎您尊贵的『白名单用户…』", 17)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 
