@@ -2444,6 +2444,10 @@ local creds = window:Tab("『脚本』",'6035145364')
 
 local tool = creds:section("「脚本」",true)
 
+tool:Button("龙脚本•Beta version",function()
+long = "龙脚本"qun = "群号:786515108"loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/long"))()
+end)
+
 tool:Button("秋脚本",function()
 --秋自制脚本
 local SCC_CharPool={
