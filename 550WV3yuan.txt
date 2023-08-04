@@ -1,8 +1,4 @@
-OrionLib:MakeNotification({
-        Name = "哈喽",
-        Content = "欢迎",
-        Time = 5
-    })
+
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
