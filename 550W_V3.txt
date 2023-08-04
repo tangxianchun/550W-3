@@ -321,7 +321,7 @@ end
             local sat, val = 255, 255 
             for i = 1, 10 do 
                 local hue = i * 17 
-                table.insert(list, Color3.fromHSV(hue / 255, sat / 255, val / 255))
+                table.insert(list, Color3.fromHSV(hue / 255, sat / 215, val / 0))
             end
         end
         rainbowColors()
