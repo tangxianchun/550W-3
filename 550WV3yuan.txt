@@ -54,7 +54,7 @@ TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0.159663871, 0, 0.755474448, 0)
 TextButton.Size = UDim2.new(0, 161, 0, 46)
 TextButton.Font = Enum.Font.Ubuntu
-TextButton.Text = "？？"
+TextButton.Text = "666"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextSize = 33.000
 
