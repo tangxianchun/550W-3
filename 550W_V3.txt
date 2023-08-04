@@ -432,7 +432,7 @@ end
         Tab.Name = "Tab"
         Tab.Parent = TabMain
         Tab.Active = true
-        Tab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Tab.BackgroundColor3 = Color3.fromRGB(255, 215, 0)
         Tab.BackgroundTransparency = 1.000
         Tab.Size = UDim2.new(1, 0, 1, 0)
         Tab.ScrollBarThickness = 2
@@ -448,7 +448,7 @@ end
         
         TabText.Name = "TabText"
         TabText.Parent = TabIco
-        TabText.BackgroundColor3 = Color3.fromRGB(255, 215, 0)
+        TabText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         TabText.BackgroundTransparency = 1.000
         TabText.Position = UDim2.new(1.41666663, 0, 0, 0)
         TabText.Size = UDim2.new(0, 76, 0, 24)
