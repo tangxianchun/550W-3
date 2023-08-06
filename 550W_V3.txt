@@ -2118,6 +2118,26 @@ end)
 tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
+
+local creds = window:Tab("the rake",'6035145364')
+
+local tool = creds:section("『脚本』",true)
+
+tool:Button("the rake 无限耐力",function()
+_G["550W作者LikJ"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/THE RAKE.txt"))()
+end)
+
+tool:Button("the rake ",function()
+_G["550W作者LikJ"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RealZzHub/MainV2/main/Main.lua"))()
+end)
+
+tool:Button("THE RAKE",function()
+_G["550W作者LikJ"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey"
+loadstring(game:HttpGet("https://gist.githubusercontent.com/OtarDevv/49186047e758b9b263ec5a6583a99b4b/raw/bf8e3b74e48936ed310767314b42c17c1b210e86/Rake"))();
+end)
+
 local creds = window:Tab("『小黑子』",'6035145364')
 
 local tool = creds:section("「脚本」",true)
