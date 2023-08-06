@@ -1424,6 +1424,10 @@ end)
 tool:Button("飞行x50倍(550脚本专属)",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/550FX.txt"))()
 end)
+local creds = window:Tab("日月防踢",'6035145364')
+    
+local tool = creds:section("『20分钟不动都不会被踢』",true)
+_G["550W作者LikJ"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey" loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/ft.txt"))()
 
 local creds = window:Tab("『赞助脚本』",'6035145364')
 
