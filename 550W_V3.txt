@@ -1361,13 +1361,19 @@ local creds = window:Tab("『信息』",'6035145364')
 
 local bin = creds:section("『信息』",true)
 
-bin:Label("作者：tangxianchu")
+bin:Label("作者：♡̶҉作者꧔ꦿ℘⁧~LikJ⁧‭")
 
 bin:Label("作者QQ群：781759165")
 
 bin:Label("作者QQ频道：868h663073")
 
 bin:Label("技术支持：HUA Script作者，飞舞幻想作者")
+
+bin:Label("当前版本：V3.1.3 公开测试版")
+
+bin:Label("更新日志")
+
+bin:Label("添加日月防踢")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
