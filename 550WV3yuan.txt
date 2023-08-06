@@ -246,7 +246,8 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "BMDYH" then
+    if Key.Text == "MEkwEwYHKoZIzj0CAQYIKoZIzj0DAQEDMgAEBqDgs/fHkxICLHPocbNNsdklxKnI
+HKFAwMSLb56vzGi+X+k12en4C+nQthDybONM" then
         ScreenGui:Destroy()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
        
