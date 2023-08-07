@@ -412,7 +412,7 @@ end
       Open.Position = UDim2.new(0.00829315186, 0, 0.31107837, 0)
       Open.Size = UDim2.new(0, 61, 0, 32)
       Open.Font = Enum.Font.SourceSans
-      Open.Text = "『神•测版」"
+      Open.Text = "『V3.1.3」"
       Open.TextColor3 = Color3.fromRGB(255, 215, 0)
       Open.TextSize = 14.000
       Open.Active = true
@@ -1355,7 +1355,7 @@ end
     end
     
     
-local window = library:new("550W系列 V3『神测版」")
+local window = library:new("550W系列 V3『3.1.3」Public beta version")
 
 local creds = window:Tab("『信息』",'6035145364')
 
