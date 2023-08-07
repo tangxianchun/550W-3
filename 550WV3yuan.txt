@@ -105,7 +105,7 @@ local Start = Instance.new("TextButton")
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-UI.Name = "550W密钥系统"
+UI.Name = "——💫日月工作室💫——"
 UI.Parent = ScreenGui
 UI.Active = true
 UI.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -123,7 +123,7 @@ Title.BorderSizePixel = 2
 Title.Position = UDim2.new(0, 0, 0.02, 0)
 Title.Size = UDim2.new(1, 0, 0, 50)
 Title.Font = Enum.Font.SourceSans
-Title.Text = "密钥系统"
+Title.Text = "——💫日月工作室｜密钥系统💫——"
 Title.TextColor3 = Color3.new(1, 1, 1)
 Title.TextScaled = true
 Title.TextSize = 14
@@ -157,15 +157,16 @@ Start.BorderSizePixel = 2
 Start.Position = UDim2.new(0.25, 0, 0.65, 0)
 Start.Size = UDim2.new(0.5, 0, 0, 45)
 Start.Font = Enum.Font.Gotham
-Start.Text = "点我验证"
+Start.Text = "验证"
 Start.TextColor3 = Color3.new(0, 0, 0)
 Start.TextScaled = true
 Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJAaqMuahIkRb8XCjsLroK59dVh" then
+    if Key.Text == "375D3AF9A9DC491115528ECCF9453" then
         ScreenGui:Destroy()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
        
     else
