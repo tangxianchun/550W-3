@@ -68,6 +68,8 @@ elseif a=="6331nhdi"then
 _G.whitelist=true
 elseif a=="qwrtuiplkjhgfdsa"then
 _G.whitelist=true
+elseif a=="fengwenshuopp"then
+_G.whitelist=true
 elseif a=="shiIbushiKUN"then
 _G.whitelist=true
 elseif a=="rtyyydshahaha"then
