@@ -48,96 +48,11 @@ wait(1)
 
 local a=tostring(game.Players.LocalPlayer.Character);
 
-if a=="zkosjsiw"then
+if a==""then
 _G.whitelist=true
-elseif a=="jinitaimei1y55555"then
+elseif a==""then
 _G.whitelist=true
-elseif a=="SDjdkskes"then
-_G.whitelist=true
-elseif a=="gamemode12678643"then
-_G.whitelist=true
-elseif a=="Harry_Bert"then
-_G.whitelist=true
-elseif a=="cclb_123xh"then
-_G.whitelist=true
-elseif a=="6fhg51"then
-_G.whitelist=true
-elseif a=="BBB989898988"then
-_G.whitelist=true
-elseif a=="6331nhdi"then
-_G.whitelist=true
-elseif a=="qwrtuiplkjhgfdsa"then
-_G.whitelist=true
-elseif a=="fengwenshuopp"then
-_G.whitelist=true
-elseif a=="shiIbushiKUN"then
-_G.whitelist=true
-elseif a=="rtyyydshahaha"then
-_G.whitelist=true
-elseif a=="xwzz123456aq"then
-_G.whitelist=true
-elseif a=="CN_dyc265"then
-_G.whitelist=true
-elseif a=="doCj2158"then
-_G.whitelist=true
-elseif a=="cnmlgbdpgt"then
-_G.whitelist=true
-elseif a=="951357nvjn"then
-_G.whitelist=true
-elseif a=="gfj233958"then
-_G.whitelist=true
-elseif a=="shadiao_yazi"then
-_G.whitelist=true
-elseif a=="moyingyo"then
-_G.whitelist=true
-elseif a=="qjddie4514"then
-_G.whitelist=true
-elseif a=="CN_sakara"then
-_G.whitelist=true
-elseif a=="QMPW147258"then
-_G.whitelist=true
-elseif a=="fhscnxdznxgz"then
-_G.whitelist=true
-elseif a=="roblox_qwq7"then
-_G.whitelist=true
-elseif a=="0997ikun"then
-_G.whitelist=true
-elseif a=="Zsjcb1005"then
-_G.whitelist=true
-elseif a=="114514phz129"then
-_G.whitelist=true
-elseif a=="plmnkoijbvhuygcxfty"then
-_G.whitelist=true
-elseif a=="567yydc"then
-_G.whitelist=true
-elseif a=="function963"then
-_G.whitelist=true
-elseif a=="Bluewitchme"then
-_G.whitelist=true
-elseif a=="yuihghghg"then
-_G.whitelist=true
-elseif a=="1235yangTianyu"then
-_G.whitelist=true
-elseif a=="yuihuiniao"then
-_G.whitelist=true
-elseif a=="QMQQAQQ"then
-_G.whitelist=true
-elseif a=="TANGXIANCHUN"then
-_G.whitelist=true
-elseif a=="zyzqwp"then
-_G.whitelist=true
-elseif a=="as30326"then
-_G.whitelist=true
-elseif a=="rushshshseek9"then
-_G.whitelist=true
-elseif a=="tangxianchu"then
-_G.whitelist=true
-elseif a=="gvgggcfftfrreww"then
-_G.whitelist=true
-elseif a=="ty13725038308"then
-_G.whitelist=true
-elseif a=="a2023742"then
-_G.whitelist=true
+
 end
 if _G.whitelist==true then
 
