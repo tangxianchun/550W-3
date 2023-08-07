@@ -2694,5 +2694,11 @@ credits:Toggle("afk", "", false, function(state)
 end)
 
 else
-notify("系统", "密钥错误™", 1)
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "——💫日月工作室💫——",
+    Text = "密钥错误",
+    Duration = 5,
+})
 end)
