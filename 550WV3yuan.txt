@@ -164,7 +164,7 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "375D3AF9A9DC491115528ECCF9453" then
+    if Key.Text == "EB139A13EC4BF34E7A2DAD3FFCBD5" then
         ScreenGui:Destroy()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
