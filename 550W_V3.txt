@@ -2133,7 +2133,7 @@ end)
 
 local creds = window:Tab("『俄亥俄州』",'6035145364')
 
-local tool = creds:section("『指令版』",true)
+local bin = creds:section("『指令版』",true)
 
 bin:Label("指令如下:
 透开 ---透视
@@ -2154,7 +2154,7 @@ bin:Label("指令如下:
 拳击光环关
 以上指令聊天框发送即可")
 
-tool:Button("俄亥俄州•指令版",function()
+bin:Button("俄亥俄州•指令版",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
 end)
 
