@@ -2135,28 +2135,13 @@ local creds = window:Tab("『俄亥俄州』",'6035145364')
 
 local bin = creds:section("『指令版』",true)
 
-bin:Label("指令如下:
-透开 ---透视
-透关
-追踪开 ---子弹追踪
-追踪关
-收钱开 ---收集钱包
-收钱关
-收物开 ---收集物品
-收物关
-抢取款机开 ---抢ATM机
-抢取款机关
-抢银行开 ---抢银行（银行有钱自动抢）
-抢银行关
-穿墙开 ---穿墙
-穿墙关
-拳击光环开 ---拳头光环
-拳击光环关
-以上指令聊天框发送即可")
+bin:Label("指令如下:透开 ---透视 透关 追踪开 ---子弹追踪 追踪关 收钱开 ---收集钱包 收钱关 收物开 ---收集物品 收物关 抢取款机开 ---抢ATM机 抢取款机关 抢银行开 ---抢银行（银行有钱自动抢）抢银行关 穿墙开 ---穿墙 穿墙关 拳击光环开 ---拳头光环 拳击光环关 以上指令聊天框发送即可‭")
 
-bin:Button("俄亥俄州•指令版",function()
+local credits = creds:section("聊天框输入",true)
+
+credits:Button("俄亥俄州",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
-end)
+    end)
 
 local creds = window:Tab("the rake",'6035145364')
 
