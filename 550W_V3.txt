@@ -2151,6 +2151,12 @@ credits:Button("俄亥俄州",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
     end)
 
+local credits = creds:section("脚本版",true)
+
+credits:Button("俄亥俄州",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/ohio/main/Roblox232"))()
+    end)
+
 local creds = window:Tab("the rake",'6035145364')
 
 local tool = creds:section("『脚本』",true)
