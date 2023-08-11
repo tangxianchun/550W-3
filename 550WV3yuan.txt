@@ -164,10 +164,12 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "AAAAB3NzaC1yc2EAAAADAQABAAAAQQDDEfDAqt9HtQ" then
+    if Key.Text == "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA3qskL5Dt6APR2X1pgH37" then
         ScreenGui:Destroy()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
        
     else
 notify("系统", "密钥错误™", 1)
