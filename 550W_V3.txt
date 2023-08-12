@@ -1936,15 +1936,11 @@ local creds = window:Tab("『掰手腕』",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
-tool:Button("掰手腕模拟器『无密钥』",function()
+tool:Button("掰手腕模拟器『需密钥』",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/wrestle2/main/armsim"))()
 end)
 
-tool:Button("掰手腕模拟器『无密钥』2",function()
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/304b4e619a232d3fc9bac5ee77d95087.lua"))()
-end)
-
-tool:Button("掰手腕模拟器『无密钥』3",function()
+tool:Button("掰手腕模拟器『需密钥』3",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Kenniel123/Arm-Wrestle-Simulator-Script/main/Arm-Wrestle-Simulator-Script",true))();
 end)
 
