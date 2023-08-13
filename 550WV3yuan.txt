@@ -48,11 +48,18 @@ wait(1)
 
 local a=tostring(game.Players.LocalPlayer.Character);
 
-if a==""then
+if a=="tangxianchu"then
 _G.whitelist=true
-elseif a==""then
+elseif a=="TANGXIANCHUN"then
 _G.whitelist=true
-
+elseif a=="cmhehebeb"then
+_G.whitelist=true
+elseif a=="rushshshseek9"then
+_G.whitelist=true
+elseif a=="SunjunyuSSS"then
+_G.whitelist=true
+elseif a=="xwzz123456aq"then
+_G.whitelist=true
 end
 if _G.whitelist==true then
 
