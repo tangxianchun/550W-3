@@ -60,6 +60,8 @@ elseif a=="SunjunyuSSS"then
 _G.whitelist=true
 elseif a=="xwzz123456aq"then
 _G.whitelist=true
+elseif a=="plmnkoijbvhuygcxfty"then
+_G.whitelist=true
 end
 if _G.whitelist==true then
 
