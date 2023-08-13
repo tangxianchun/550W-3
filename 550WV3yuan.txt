@@ -76,8 +76,6 @@ wait(1)
 notify("————💫『㊐  工作室  ㊊」💫————", "Welcome use 550V3", 1)
 wait(1)
 notify("————💫『㊐  工作室  ㊊」💫————", "您目前使用的注入器:"..identifyexecutor(), 2)
-wait(1)
-notify("————💫『㊐  工作室  ㊊」💫————", "正在授权进入空间站…", 2)
 notify("MOSS", "正在为您获取授权…", 1)
 notify("MOSS", "正在为您注入授权…", 1)
 notify("MOSS", "550W Script™", 1)
@@ -177,7 +175,6 @@ Start.MouseButton1Click:Connect(function()
         ScreenGui:Destroy()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
        
     else
