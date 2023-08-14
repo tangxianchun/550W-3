@@ -66,13 +66,9 @@ end
 if _G.whitelist==true then
 
 notify("————💫『㊐  工作室  ㊊」💫————", "验证成功，欢迎您！亲爱的"..game.Players.LocalPlayer.Name.. "", 1)
-wait(1)
 notify("————💫『㊐  工作室  ㊊」💫————", "loading……", 1)
-wait(1)
 notify("————💫『㊐  工作室  ㊊」💫————", "正在为您启动云端…", 1)
-wait(1)
 notify("————💫『㊐  工作室  ㊊」💫————", "启动成功！", 1)
-wait(1)
 notify("————💫『㊐  工作室  ㊊」💫————", "Welcome use 550V3", 1)
 wait(1)
 notify("————💫『㊐  工作室  ㊊」💫————", "您目前使用的注入器:"..identifyexecutor(), 2)
@@ -171,7 +167,7 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "qsEM3grCseFVBUqgCAxrVgUmt4GLBDw" then
+    if Key.Text == "GDyh4hxyXYT2RE2Va3mJSbeNxKRehrTVBR0cdsJqXKwqcGCJ1SAiRusXu9lyWwLv" then
         ScreenGui:Destroy()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
