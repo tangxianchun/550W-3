@@ -1527,7 +1527,8 @@ tool:Button("飞行",function()
 end)
 
 tool:Button("碰撞箱调整",function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/f4tTRwFq",true))()
+_G["550W作者LikJ"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/PZT.txt"))()
 end)
 
 tool:Button("光影落日余晖 V5", function()
