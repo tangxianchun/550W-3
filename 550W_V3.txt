@@ -2203,6 +2203,18 @@ tool:Button("小黑子(需密钥)", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/KidichiHB/Kidachi/main/Scripts/SwordWarrior", true))()
 end)
 
+local creds = window:Tab("『法宝模拟器』",'6035145364')
+
+local bin = creds:section("『可能用不了』",true)
+
+bin:Button("法宝模拟器", function()
+-- // put in auto exe
+-- // ui will only appear on supported games
+-- // press left ctrl to toggle universal scripts.
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/katrina367/ScriptBlox-Projects/main/OblivionAutoEXEV1'))()
+end)
+
 local creds = window:Tab("彩虹朋友",'6035145364')
 
 local credits = creds:section("脚本",true)
