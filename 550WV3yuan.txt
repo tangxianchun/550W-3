@@ -167,7 +167,7 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "18PPUm6KMfMJ7gX7XOKjPHBC4KnuAIrkR0spTRJyHjmIXaGifSc7DclHlEsnDcBUGAFYDV4VjRt5J7fg" then
+    if Key.Text == "VDhGW7UQCETycn3OH5UU0yQ45WgnvzvTc8SfGftPk6UgrPaoHFx33DvokzaRUyvZciPKjRM0G8JlYksfybpKV3vhsQKNoi7wASb" then
         ScreenGui:Destroy()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
