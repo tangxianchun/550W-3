@@ -75,8 +75,6 @@ notify("————💫『㊐  工作室  ㊊」💫————", "启动成�
 notify("————💫『㊐  工作室  ㊊」💫————", "Welcome use 550V3", 1)
 wait(1)
 notify("————💫『㊐  工作室  ㊊」💫————", "您目前使用的注入器:"..identifyexecutor(), 2)
-notify("MOSS", "正在为您获取授权…", 1)
-notify("MOSS", "正在为您注入授权…", 1)
 notify("MOSS", "550W Script™", 1)
 notify("550W Script", "正在为您加载[已打开反挂机]", 1)
 print("Anti Afk On")
@@ -170,7 +168,7 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "VDhGW7UQCETycn3OH5UU0yQ45WgnvzvTc8SfGftPk6UgrPaoHFx33DvokzaRUyvZciPKjRM0G8JlYksfybpKV3vhsQKNoi7wASb" then
+    if Key.Text == "f6YH0NzIIWBdcRvf8IZ5YfjwUVTyYS8KN1cb8UUD18UkiW29NfUVlC2qNw" then
         ScreenGui:Destroy()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
