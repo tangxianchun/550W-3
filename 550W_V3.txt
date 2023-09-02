@@ -413,7 +413,7 @@ end
       Open.Position = UDim2.new(0.00829315186, 0, 0.31107837, 0)
       Open.Size = UDim2.new(0, 61, 0, 32)
       Open.Font = Enum.Font.SourceSans
-      Open.Text = "『V3.2.1」"
+      Open.Text = "『V3.2.2」"
       Open.TextColor3 = Color3.fromRGB(255, 215, 0)
       Open.TextSize = 15.000
       Open.Active = true
@@ -1355,7 +1355,7 @@ end
       return window
     end
     
-local window = library:new("550W V3『3.2.1」")
+local window = library:new("550W V3『3.2.2」")
 
 local creds = window:Tab("『信息』",'6035145364')
 
@@ -1367,11 +1367,11 @@ bin:Label("作者QQ群：781759165")
 
 bin:Label("作者QQ频道：868h663073")
 
-bin:Label("当前版本：V3.2.1 公开测试版")
+bin:Label("当前版本：V3.2.2 公开测试版")
 
 bin:Label("更新日志")
 
-bin:Label("暂无")
+bin:Label("Nico Next Bot")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -2142,7 +2142,23 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
-local creds = window:Tab("『俄亥俄州』",'6035145364')
+local creds = window:Tab("Nico Next Bot",'6035145364')
+
+local tool = creds:section("『可能用不了』",true)
+
+tool:Button("Nico Next Bot 1",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CopyReal/NexHub/main/NexHubLoader"))()
+end)
+
+tool:Button("Nico Next Bot 2",function()
+local hrp  = game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+hrp.Parent = nil;
+hrp:Clone()
+hrp.Parent =  game.Players.LocalPlayer.Character
+hrp.Name   = "Humanoid"
+end)
+
+local creds = window:Tab("俄亥俄州",'6035145364')
 
 local bin = creds:section("『指令版』",true)
 
