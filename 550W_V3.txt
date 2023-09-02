@@ -2158,6 +2158,33 @@ hrp.Parent =  game.Players.LocalPlayer.Character
 hrp.Name   = "Humanoid"
 end)
 
+tool:Button("Nico Next Bot 3",function()
+local UIS = game:GetService("UserInputService")
+local PS = game:GetService("Players")
+local Player = PS.LocalPlayer
+
+function Reconnect()
+   local Connection;
+   local Character = PS.LocalPlayer.Character or PS.LocalPlayer.CharacterAdded:Wait()
+   local Humanoid = Character:WaitForChild("Humanoid")
+   local PlayerGui = Player:WaitForChild("PlayerGui")
+   repeat wait() until PlayerGui:WaitForChild("engine"):FindFirstChild("jumpEngine")
+   for _,c in pairs(getconnections(UIS.JumpRequest)) do
+       c:Disable()
+   end
+   Connection = UIS.JumpRequest:Connect(function()
+       Character:WaitForChild("Humanoid").JumpPower = 40
+   end)
+   Humanoid.Died:Connect(function()
+       Connection:Disconnect()
+   end)
+end
+Reconnect()
+Player.CharacterAdded:Connect(function()
+   Reconnect()
+end)
+end)
+
 local creds = window:Tab("俄亥俄州",'6035145364')
 
 local bin = creds:section("『指令版』",true)
