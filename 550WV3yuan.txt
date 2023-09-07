@@ -66,6 +66,10 @@ elseif a=="ymym999a"then
 _G.whitelist=true
 elseif a=="XHT147"then
 _G.whitelist=true
+elseif a=="you5z7"then
+_G.whitelist=true
+elseif a=="dss3144"then
+_G.whitelist=true
 
 end
 if _G.whitelist==true then
