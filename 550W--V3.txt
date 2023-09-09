@@ -52,6 +52,10 @@ if a=="tangxianchu"then
 _G.whitelist=true
 elseif a=="TANGXIANCHUN"then
 _G.whitelist=true
+elseif a=="rushshshseek9"then
+_G.whitelist=true
+elseif a=="plmnkoijbvhuygcxfty"then
+_G.whitelist=true
 
 end
 if _G.whitelist==true then
