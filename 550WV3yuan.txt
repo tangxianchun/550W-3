@@ -76,6 +76,8 @@ elseif a=="jfjefaj"then
 _G.whitelist=true
 elseif a=="qazazure"then
 _G.whitelist=true
+elseif a=="Bluewitchme"then
+_G.whitelist=true
 
 end
 if _G.whitelist==true then
