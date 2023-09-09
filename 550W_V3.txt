@@ -1949,6 +1949,17 @@ local creds = window:Tab("『DOORS』[✝]",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
+tool:Button("GODMODE",function()
+        --UNIVERSAL SOUL OPS GODMODE
+
+getgenv().GodMode = true
+loadstring(game:HttpGet("https://nekaiscripts.tk/scripts/UniversalSoulOpsGodMode.lua",true))()
+end)
+
+tool:Button("MSDoors",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/mstudio45/MSDOORS/7bd97c2d956a775d683c2d7973d79715b30998ea/MSDOORS/Moonsec.lua'))()
+end)
+
 tool:Button("最强",function()
         loadstring(game:HttpGet('https://pastebin.com/raw/R8QMbhzv'))()
 end)
