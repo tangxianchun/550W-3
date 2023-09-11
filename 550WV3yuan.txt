@@ -111,7 +111,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-wor
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/KRNL%20UI%20Remake.lua"))()
 
-loadstring(game:HttpGet("https://rentry.co/550W_V3YUANMA/raw"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
 
 else
 local ScreenGui = Instance.new("ScreenGui")
