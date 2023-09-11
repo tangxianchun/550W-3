@@ -80,6 +80,9 @@ elseif a=="Bluewitchme"then
 _G.whitelist=true
 elseif a=="gghjsydhhsijrjdjsfdj"then
 _G.whitelist=true
+elseif a=="whddnb_boors"then
+_G.whitelist=true
+
 
 end
 if _G.whitelist==true then
