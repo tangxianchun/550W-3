@@ -1359,7 +1359,7 @@ local creds = window:Tab("『信息』",'6035145364')
 
 local bin = creds:section("版本:『Public beta version』",true)
 
-bin:Label("皓采")
+bin:Label("作者：皓采")
 
 bin:Label("作者QQ群：781759165")
 
@@ -1369,7 +1369,7 @@ bin:Label("当前版本：V3.2.3 公开测试版")
 
 bin:Label("更新日志")
 
-bin:Label("Doors")
+bin:Label("Infectious Smile")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -1560,7 +1560,7 @@ tool:Button("按键（任意选择按键",function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/KeyBinds/main/KeyBinds-Source.lua"))()
 end)
 
-local creds = window:Tab("『热门游戏』",'6035145364')
+local creds = window:Tab("热门游戏",'6035145364')
 
 local tool = creds:section("『热门游戏』",true)
 
@@ -1612,7 +1612,7 @@ tool:Button("Bedwars 🛰️[NEW KIT!]",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/bojoexploitz/yooo/main/itsobfuscated/InfinityHubTooOP",true))()
 end)
 
-local creds = window:Tab("『射击游戏』",'6035145364')
+local creds = window:Tab("射击游戏",'6035145364')
 
 local tool = creds:section("『射击游戏』",true)
 
@@ -1624,7 +1624,7 @@ tool:Button("BIG Paintball!",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
 end)
 
-local creds = window:Tab("『特色游戏』",'6035145364')
+local creds = window:Tab("特色游戏",'6035145364')
 
 local tool = creds:section("『特色游戏』",true)
 
@@ -1771,7 +1771,7 @@ tool:Button("Answer Wins (No key)",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownStraz/Longest-Answer-Wins/main/Script",true))()
 end)
 
-local creds = window:Tab("『其他』", "6035145364")
+local creds = window:Tab("其他", "6035145364")
 
 local tool = creds:section("『功能类』",true)
 
@@ -1944,7 +1944,7 @@ Combat Warriors Script/GUI (ProjectHook):
 loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
 end)
 
-local creds = window:Tab("『掰手腕』",'6035145364')
+local creds = window:Tab("掰手腕",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
@@ -1955,7 +1955,7 @@ end)
 tool:Button("掰手腕模拟器『需密钥』3",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Kenniel123/Arm-Wrestle-Simulator-Script/main/Arm-Wrestle-Simulator-Script",true))();
 end)
-local creds = window:Tab("The Mimic[✝]",'6035145364')
+local creds = window:Tab("The Mimic",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
@@ -1963,7 +1963,7 @@ tool:Button("The Mimic",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ttjy9808/THEMIMICNEWMOBILEUINOTBETA/main/README.md"))()
 end)
 
-local creds = window:Tab("『DOORS』[✝]",'6035145364')
+local creds = window:Tab("DOORS",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
@@ -2266,7 +2266,7 @@ _G["550W作者LikJ"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey"
 loadstring(game:HttpGet("https://gist.githubusercontent.com/OtarDevv/49186047e758b9b263ec5a6583a99b4b/raw/bf8e3b74e48936ed310767314b42c17c1b210e86/Rake"))();
 end)
 
-local creds = window:Tab("『小黑子』",'6035145364')
+local creds = window:Tab("只因剑",'6035145364')
 
 local tool = creds:section("「脚本」",true)
 
@@ -2322,7 +2322,15 @@ credits:Button("监狱院子", function()
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(760.6033325195312, 96.96992492675781, 2475.405029296875)
 end)
 
-local creds = window:Tab("克隆大亨[✝]",'6035145364')
+local creds = window:Tab("Infectious Smile",'6035145364')
+
+local tool = creds:section("「脚本」",true)
+
+tool:Button("Infectious Smile",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/InfectiousSmile.lua", true))()
+end)
+
+local creds = window:Tab("克隆大亨",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
