@@ -114,6 +114,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-wor
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/KRNL%20UI%20Remake.lua"))()
 
+--550W V3
+--550WYUAN
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
 
 else
@@ -190,6 +192,9 @@ Start.MouseButton1Click:Connect(function()
         ScreenGui:Destroy()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+
+--550W V3
+--550WYUAN
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
        
     else
