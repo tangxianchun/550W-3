@@ -108,6 +108,12 @@ notify("550W", "加载成功，欢迎进入方舟空间站[正在建造...]", 1)
 
 notify("————💫『㊐  工作室  ㊊」💫————", "欢迎您尊贵的『白名单用户…』", 17)
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/KRNL%20UI%20Remake.lua"))()
+
 --550W V3
 --550WYUAN
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
