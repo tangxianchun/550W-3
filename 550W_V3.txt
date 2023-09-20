@@ -1411,11 +1411,10 @@ loadstring(game:HttpGet("https://rentry.co/550W-V2/raw"))()
 end)
 
 tool:Button("550W V3 (公开测试版)",function()
-	
-loadstring(game:HttpGet("https://rentry.co/550W-V3GKB/raw"))()
+_G["公开测试版"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey" loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchu/550W_V3/main/550W_V3.txt"))()
 end)
 
-tool:Button("550W V3 (未公开测试版)",function()
+tool:Button("550W V3 (未公开测试版)仅限测试员且脚本优先添加",function()
 	
 loadstring(game:HttpGet("https://rentry.co/550W-V3BAOMIBMD/raw"))()
 end)
