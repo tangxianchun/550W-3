@@ -1439,7 +1439,7 @@ end)
 local creds = window:Tab("日月防踢",'6035145364')
     
 local tool = creds:section("『20分钟不动都不会被踢』",true)
-tool:Button("日月工作室｜防踢",function()
+tool:Button("日月星辰工作室｜防踢",function()
 _G["550W作者LikJ"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey" loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/ft.txt"))()
 end)
 
