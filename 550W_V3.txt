@@ -1353,13 +1353,13 @@ end
       return window
     end
     
-local window = library:new(""星月交辉" V3 公开测试版")
+local window = library:new("星月交辉 V3 公开测试版")
 
 local creds = window:Tab("『信息』",'6035145364')
 
 local bin = creds:section("版本:『Public beta version』",true)
 
-bin:Label("作者：皓采")
+bin:Label("作者：LikJ")
 
 bin:Label("作者QQ群：781759165")
 
@@ -2804,3 +2804,4 @@ credits:Toggle("afk", "", false, function(state)
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 end)
+
