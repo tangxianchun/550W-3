@@ -42,8 +42,8 @@ Heartbeat:Connect(HeartbeatUpdate)
 
 local CoreGui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/pyawhh/UI-GUI/main/%E6%B6%88%E6%81%AF%E6%8F%90%E9%86%92%E5%8A%A0%E5%AF%86.txt')))()
 
-notify("————💫『㊐  工作室  ㊊」💫————", "白名单验证中", 4)
-notify("————💫『㊐  工作室  ㊊」💫————", "加群定期发放白名单", 4)
+notify("————💫『日月星辰工作室」💫————", "白名单验证中", 4)
+notify("————💫『日月星辰工作室」💫————", "加群定期发放白名单", 4)
 wait(1)
 
 whitelist = {
@@ -272,15 +272,15 @@ whitelist = {
 }
 if table.find(whitelist, game.Players.LocalPlayer.Name) then
 
-notify("————💫『㊐  工作室  ㊊」💫————", "验证成功，欢迎您！亲爱的"..game.Players.LocalPlayer.Name.. "", 1)
-notify("————💫『㊐  工作室  ㊊」💫————", "loading……", 1)
-notify("————💫『㊐  工作室  ㊊」💫————", "正在为您启动云端…", 1)
-notify("————💫『㊐  工作室  ㊊」💫————", "启动成功！", 1)
-notify("————💫『㊐  工作室  ㊊」💫————", "Welcome use 550V3", 1)
+notify("————💫『日月星辰工作室」💫————", "验证成功，欢迎您！亲爱的"..game.Players.LocalPlayer.Name.. "", 1)
+notify("————💫『日月星辰工作室」💫————", "loading……", 1)
+notify("————💫『日月星辰工作室」💫————", "正在为您启动云端…", 1)
+notify("————💫『日月星辰工作室」💫————", "启动成功！", 1)
+notify("————💫『日月星辰工作室」💫————", "Welcome use 550V3", 1)
 wait(1)
-notify("————💫『㊐  工作室  ㊊」💫————", "您目前使用的注入器:"..identifyexecutor(), 2)
-notify("MOSS", "550W Script™", 1)
-notify("550W Script", "正在为您加载[已打开反挂机]", 1)
+notify("————💫『日月星辰工作室」💫————", "您目前使用的注入器:"..identifyexecutor(), 2)
+notify("MOSS", "星月交辉 Script™", 1)
+notify("星月交辉 Script", "正在为您加载[已打开反挂机]", 1)
 print("Anti Afk On")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -289,7 +289,7 @@ print("Anti Afk On")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 
-notify("550W", "加载成功，欢迎进入方舟空间站[正在建造...]", 1)
+notify("星月交辉", "加载成功，欢迎进入方舟空间站[正在建造...]", 1)
 
 notify("————💫『㊐  工作室  ㊊」💫————", "欢迎您尊贵的『白名单用户…』", 17)
 
