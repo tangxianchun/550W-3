@@ -2330,6 +2330,11 @@ tool:Button("The Mimic", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ttjy9808/THEMIMICNEWMOBILEUINOTBETA/main/README.md"))()
 end)
 
+tool:Button("The Mimic 2", function()
+_G.Key = "Table" --- dont remove this noob
+loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/TheMimic/main/README.md"))()
+end)
+
 local creds = window:Tab("只因剑",'6035145364')
 
 local tool = creds:section("「脚本」",true)
