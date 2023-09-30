@@ -1353,7 +1353,7 @@ end
       return window
     end
     
-local window = library:new("星月交辉 V3 公开测试版")
+local window = library:new("星月交辉☪️ V3 公开测试版")
 
 local creds = window:Tab("『信息』",'6035145364')
 
@@ -1395,36 +1395,36 @@ local creds = window:Tab("星月交辉系列",'6035145364')
     
 local tool = creds:section("『我把全部功能放在了这些脚本里』",true)
 
-tool:Button("星月交辉 TZ中心",function()
+tool:Button("星月交辉☪️ TZ中心",function()
 	
 loadstring(game:HttpGet("https://rentry.co/550W-TZBMD/raw"))()
 end)
 
-tool:Button("星月交辉 V1",function()
+tool:Button("星月交辉☪️ V1",function()
 	
 loadstring(game:HttpGet("https://rentry.co/550W-V1BMD/raw"))()
 end)
 
-tool:Button("星月交辉 V2",function()
+tool:Button("星月交辉☪️ V2",function()
 	
 loadstring(game:HttpGet("https://rentry.co/550W-V2/raw"))()
 end)
 
-tool:Button("星月交辉 V3 (公开测试版)",function()
+tool:Button("星月交辉☪️ V3 (公开测试版)",function()
 _G["公开测试版"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey" loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchu/550W_V3/main/550W_V3.txt"))()
 end)
 
-tool:Button("星月交辉 V3 (未公开测试版)仅限测试员且脚本优先添加",function()
+tool:Button("星月交辉☪️ V3 (未公开测试版)仅限测试员且脚本优先添加",function()
 	
 loadstring(game:HttpGet("https://rentry.co/550W-V3BAOMIBMD/raw"))()
 end)
 
-tool:Button("星月交辉 V4(要白名单)仅限测试人员",function()
+tool:Button("星月交辉☪️ V4(要白名单)仅限测试人员",function()
 	
 loadstring(game:HttpGet("https://rentry.co/550W-V4BMD/raw"))()
 end)
 
-tool:Button("星月交辉 V5 拓展功能",function()
+tool:Button("星月交辉☪️ V5 拓展功能",function()
 	
 loadstring(game:HttpGet("https://rentry.co/550W-V5BMD/raw"))()
 end)
