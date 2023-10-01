@@ -474,6 +474,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-s
 --550WYUAN
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
 
+notify("系统", "验证失败，开启密钥程序™", 4)
+end
+
 else
 local ScreenGui = Instance.new("ScreenGui")
 local UI = Instance.new("Frame")
@@ -561,8 +564,6 @@ game.Players.LocalPlayer:Kick ("错误：加群有活动领取白名单资格：
 end
 
 end)
-notify("系统", "验证失败，开启密钥程序™", 4)
-end
 
 local myTitle = "星月交辉·协议条款" 
 CreateGUI(myTitle)
