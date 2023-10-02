@@ -1493,6 +1493,13 @@ local creds = window:Tab("音乐",'6035145364')
 
 local tool = creds:section("点一下就行",true)
 
+tool:Button("国歌🇨🇳",function()
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://1845918434"
+sound.Parent = game.Workspace
+sound:Play()
+end)
+
 tool:Button("彩虹瀑布",function()
 local sound = Instance.new("Sound")
 sound.SoundId = "rbxassetid://1837879082"
