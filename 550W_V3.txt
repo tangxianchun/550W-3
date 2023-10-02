@@ -1489,6 +1489,17 @@ tool:Button("玖恶 x Script",function()
 loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,97,121,97,110,103,119,112,46,99,110,47,97,112,105,47,118,51,47,102,105,108,101,47,103,101,116,47,56,49,56,56,47,37,69,55,37,56,69,37,57,54,37,69,54,37,56,49,37,66,54,37,69,54,37,66,65,37,57,48,37,69,55,37,65,48,37,56,49,46,116,120,116,63,115,105,103,110,61,75,48,105,118,73,121,49,50,104,97,106,74,104,69,113,117,97,107,104,78,101,79,82,54,105,116,53,55,68,55,114,90,98,104,97,88,114,45,107,106,97,115,99,37,51,68,37,51,65,48})end)())))();
 end)
 
+local creds = window:Tab("音乐",'6035145364')
+
+local tool = creds:section("点一下就行",true)
+
+tool:Button("彩虹瀑布",function()
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://1837879082"
+sound.Parent = game.Workspace
+sound:Play()
+end)
+
 local creds = window:Tab("『通用』",'6035145364')
 
 local tool = creds:section("『通用』",true)
