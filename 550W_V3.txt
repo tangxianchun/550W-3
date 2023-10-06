@@ -2391,6 +2391,30 @@ bin:Button("法宝模拟器", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/katrina367/ScriptBlox-Projects/main/OblivionAutoEXEV1'))()
 end)
 
+local creds = window:Tab("刀刃球",'6035145364')
+
+local credits = creds:section("脚本",true)
+
+credits:Button("刀刃球 1", function()
+_G.Config = {
+    MinDistance = 10,
+    DelBallSpeed = 3,
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
+end)
+
+credits:Button("刀刃球 2", function()
+--⭕Red Circle Auto-Block:
+getgenv().visualizer = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))()
+-- CLICK 'X' TO ENABLE SPAM MODE
+
+-- 🔥Inferno Hub V2:
+loadstring(game:HttpGet("https://github.com/SadlekAski/Scripts/raw/main/Blade%20Ball/Equip%20any%20ability.lua"))()
+
+end)
+
 local creds = window:Tab("彩虹朋友",'6035145364')
 
 local credits = creds:section("脚本",true)
