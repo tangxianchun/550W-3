@@ -2395,16 +2395,16 @@ local creds = window:Tab("刀刃球",'6035145364')
 
 local credits = creds:section("脚本",true)
 
-credits:Button("刀刃球 1", function()
+credits:Button("刀刃球 catsus", function()
 _G.Config = {
     MinDistance = 10,
-    DelBallSpeed = 3,
+    DelBallSpeed = 1,
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
 end)
 
-credits:Button("刀刃球 2", function()
+credits:Button("刀刃球 Auto-Block and Inderno Hub", function()
 --⭕Red Circle Auto-Block:
 getgenv().visualizer = true
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))()
@@ -2415,7 +2415,7 @@ loadstring(game:HttpGet("https://github.com/SadlekAski/Scripts/raw/main/Blade%20
 
 end)
 
-credits:Button("刀刃球 3", function()
+credits:Button("刀刃球 Lua x", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/OopssSorry/luax-crack/main/loader.lua"))()
 end)
 
