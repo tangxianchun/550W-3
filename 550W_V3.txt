@@ -2415,6 +2415,14 @@ loadstring(game:HttpGet("https://github.com/SadlekAski/Scripts/raw/main/Blade%20
 
 end)
 
+credits:Button("刀刃球 3", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OopssSorry/luax-crack/main/loader.lua"))()
+end)
+
+credits:Button("刀刃球 nexus", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/loadstring"))()
+end)
+
 local creds = window:Tab("彩虹朋友",'6035145364')
 
 local credits = creds:section("脚本",true)
