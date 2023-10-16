@@ -1500,6 +1500,11 @@ sound.Parent = game.Workspace
 sound:Play()
 end)
 
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://1845918434"
+sound.Parent = game.Workspace
+sound:Play()
+
 tool:Button("彩虹瀑布",function()
 local sound = Instance.new("Sound")
 sound.SoundId = "rbxassetid://1837879082"
