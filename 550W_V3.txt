@@ -1490,7 +1490,7 @@ loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,1
 end)
 
 tool:Button("星火交辉 x Script",function()
-loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/9309/%E6%98%9F%E7%81%AB%E4%BA%A4%E8%BE%89.lua?sign=TNtg6EJ3HU_iNzjFBszwBWIhJ1wlL25QLswJWyP4JGg%3D%3A0"))()
+loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/9319/%E6%98%9F%E7%81%AB%E4%BA%A4%E8%BE%89%E8%84%9A%E6%9C%AC%E6%BA%90%E7%A0%81.lua?sign=pw1GHDb-tSJH25rTcTo_QPhzJBe73nf7djKDL1vQN1M%3D%3A0"))()
 end)
 
 local creds = window:Tab("音乐",'6035145364')
