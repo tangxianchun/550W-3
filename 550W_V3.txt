@@ -2407,7 +2407,7 @@ local credits = creds:section("脚本",true)
 credits:Button("刀刃球 catsus", function()
 _G.Config = {
     MinDistance = 1120,
-    DelBallSpeed = 0,
+    DelBallSpeed = 0.2,
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
