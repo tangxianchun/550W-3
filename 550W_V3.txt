@@ -1370,7 +1370,7 @@ bin:Label("当前版本：V3.2.3 公开测试版")
 
 bin:Label("更新日志")
 
-bin:Label("刀刃球")
+bin:Label("清风明月door")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -2410,8 +2410,8 @@ local credits = creds:section("脚本",true)
 
 credits:Button("刀刃球 catsus", function()
 _G.Config = {
-    MinDistance = 1120,
-    DelBallSpeed = 0.2,
+    MinDistance = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999*999999999999999999999999999999999999999999999999999999999999999999,
+    DelBallSpeed = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000005,
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
