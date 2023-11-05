@@ -276,7 +276,7 @@ notify("————💫『日月星辰工作室」💫————", "验证成
 notify("————💫『日月星辰工作室」💫————", "loading……", 1)
 notify("————💫『日月星辰工作室」💫————", "正在为您启动云端…", 1)
 notify("————💫『日月星辰工作室」💫————", "启动成功！", 1)
-notify("————💫『日月星辰工作室」💫————", "Welcome use 550V3", 1)
+notify("————💫『日月星辰工作室」💫————", "Welcome use 星月交辉☪️ V3", 1)
 wait(1)
 notify("————💫『日月星辰工作室」💫————", "您目前使用的注入器:"..identifyexecutor(), 2)
 notify("MOSS", "星月交辉 Script™", 1)
@@ -373,7 +373,7 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "6K7aWZv67X3BUAHyNXwhTr3f0mqMsr2lURyzVvz1" then
+    if Key.Text == "7A81LKDOkUOAjtdobaOcOSQocj4AF9defkRaFSqMjLAWa" then
         ScreenGui:Destroy()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
@@ -386,7 +386,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/m
 notify("系统", "密钥错误™", 1)
 
 wait(2)
-game.Players.LocalPlayer:Kick ("错误：加群有活动领取白名单资格：781759165")
+game.Players.LocalPlayer:Kick ("错误：加群有活动领取密钥：781759165")
 end
 
 end)
