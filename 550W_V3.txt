@@ -2410,11 +2410,12 @@ local credits = creds:section("脚本",true)
 
 credits:Button("刀刃球 catsus", function()
 _G.Config = {
-    MinDistance = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999*999999999999999999999999999999999999999999999999999999999999999999,
-    DelBallSpeed = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000005,
+    MinDistance = 20,
+    DelBallSpeed = 2,
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
+
 end)
 
 credits:Button("刀刃球 Auto-Block and Inderno Hub", function()
