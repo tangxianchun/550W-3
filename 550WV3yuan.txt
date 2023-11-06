@@ -295,7 +295,7 @@ notify("————💫『日月星辰工作室」💫————", "欢迎您
 
 
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/arceus-X.txt"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/KRNL%20UI%20Remake.lua"))()
 
