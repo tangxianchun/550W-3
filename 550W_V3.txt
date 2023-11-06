@@ -1378,6 +1378,10 @@ bin:Label("你的注入器:"..identifyexecutor())
 
 bin:Label("当前游戏ID为:" .. game.GameId .. ".")
 
+bin:Toggle("游戏信息", "", false, function(state)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+    end)
+
 local credits = creds:section("UI设置",true)
 
     credits:Button("摧毁UI",function()
