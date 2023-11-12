@@ -2414,9 +2414,12 @@ local credits = creds:section("脚本",true)
 
 credits:Button("刀刃球 catsus", function()
 _G.Config = {
-    MinDistance = 20,
-    DelBallSpeed = 2,
+    MinDistance = 0.5,
+    DelBallSpeed = 0.15 or 0.25 or 0.35,
 }
+_G.CloseCombatMode = "Lag" -- [ "Lag","NotLag"  ] 
+
+_G.UI_Size = 30 -- config ui size
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
 
@@ -2439,6 +2442,17 @@ end)
 
 credits:Button("刀刃球 nexus", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/loadstring"))()
+end)
+
+credits:Button("刀刃球 FreeFuji 密钥：FreeFuji", function()
+
+
+loadstring(game:HttpGet("https://shz.al/~free-fuji-v2"))()
+end)
+
+credits:Button("刀刃球 INDISCORD 密钥：INDISCORD", function()
+script_key=""; -- Put your key here if you have VIP
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main"))()
 end)
 
 local creds = window:Tab("彩虹朋友",'6035145364')
