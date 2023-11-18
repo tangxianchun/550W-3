@@ -2412,6 +2412,18 @@ local creds = window:Tab("刀刃球",'6035145364')
 
 local credits = creds:section("脚本",true)
 
+credits:Button("刀刃球 syn 需要key", function()
+local a,b,c,d=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,"https://itsjidy.github.io/SymphonyHub/Loader.html"c(a and b, "Your Executor does not support.")a(b({Url=d,Method="GET"}).Body)()
+end)
+
+credits:Button("刀刃球 REDzHUB", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/eng"))()
+end)
+
+credits:Button("刀刃球 REDzHUB Beta", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/redz9999"))()
+end)
+
 credits:Button("刀刃球 catsus", function()
 _G.Config = {
     MinDistance = 0.5,
