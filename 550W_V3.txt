@@ -2007,6 +2007,10 @@ local creds = window:Tab("『DOORS』[✝]",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
+tool:Button("Doors-Hack",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/NeRDV3.5_New.lua"))()
+end)
+
 tool:Button("GODMODE",function()
         --UNIVERSAL SOUL OPS GODMODE
 
