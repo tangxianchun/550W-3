@@ -2431,59 +2431,8 @@ local creds = window:Tab("刀刃球",'6035145364')
 
 local credits = creds:section("脚本",true)
 
-credits:Button("刀刃球 syn 需要key", function()
-local a,b,c,d=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,"https://itsjidy.github.io/SymphonyHub/Loader.html"c(a and b, "Your Executor does not support.")a(b({Url=d,Method="GET"}).Body)()
-end)
-
-credits:Button("刀刃球 REDzHUB", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/eng"))()
-end)
-
-credits:Button("刀刃球 REDzHUB Beta", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/redz9999"))()
-end)
-
-credits:Button("刀刃球 catsus", function()
-_G.Config = {
-    MinDistance = 0.5,
-    DelBallSpeed = 0.15 or 0.25 or 0.35,
-}
-_G.CloseCombatMode = "Lag" -- [ "Lag","NotLag"  ] 
-
-_G.UI_Size = 30 -- config ui size
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
-
-end)
-
-credits:Button("刀刃球 Auto-Block and Inderno Hub", function()
---⭕Red Circle Auto-Block:
-getgenv().visualizer = true
-loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))()
--- CLICK 'X' TO ENABLE SPAM MODE
-
--- 🔥Inferno Hub V2:
-loadstring(game:HttpGet("https://github.com/SadlekAski/Scripts/raw/main/Blade%20Ball/Equip%20any%20ability.lua"))()
-
-end)
-
-credits:Button("刀刃球 Lua x", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/OopssSorry/luax-crack/main/loader.lua"))()
-end)
-
-credits:Button("刀刃球 nexus", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/loadstring"))()
-end)
-
-credits:Button("刀刃球 FreeFuji 密钥：FreeFuji", function()
-
-
-loadstring(game:HttpGet("https://shz.al/~free-fuji-v2"))()
-end)
-
-credits:Button("刀刃球 INDISCORD 密钥：INDISCORD", function()
-script_key=""; -- Put your key here if you have VIP
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main"))()
+credits:Button("合集",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/daorenqiu.lua"))()
 end)
 
 local creds = window:Tab("海贼王",'6035145364')
