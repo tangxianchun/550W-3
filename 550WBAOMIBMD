@@ -1,3 +1,344 @@
+local CoreGui = game:GetService("StarterGui")
+
+local gui = Instance.new("ScreenGui")
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 300, 0, 200)
+frame.Position = UDim2.new(0.5, -150, 0.2, -15)
+frame.BackgroundTransparency = 0
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+frame.Parent = gui
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 25)
+corner.Parent = frame
+
+local titleLabel = Instance.new("TextLabel")
+titleLabel.Text = "明月清风安全验证系统"
+titleLabel.Size = UDim2.new(0, 300, 0, 30)
+titleLabel.Position = UDim2.new(0, 0, 0, 10)
+titleLabel.BackgroundTransparency = 1
+titleLabel.TextColor3 = Color3.new(1, 0.8, 0) 
+titleLabel.TextSize = 19
+titleLabel.Parent = frame
+
+local loadingText = Instance.new("TextLabel")
+loadingText.Text = "[加载中…]"
+loadingText.Size = UDim2.new(0, 200, 0, 20)
+loadingText.Position = UDim2.new(0, 50, 0, 50)
+loadingText.BackgroundTransparency = 1
+loadingText.TextSize = 13
+loadingText.Parent = frame
+
+local progressLabel = Instance.new("TextLabel")
+progressLabel.Text = "加载进度: 0%"
+progressLabel.Size = UDim2.new(0, 200, 0, 20)
+progressLabel.Position = UDim2.new(0, 50, 0, 140)
+progressLabel.BackgroundTransparency = 1
+progressLabel.TextColor3 = Color3.new(1, 0, 0)
+progressLabel.TextSize = 15
+progressLabel.Parent = frame
+
+local zrqyzLabel = Instance.new("TextLabel")
+zrqyzLabel.Text = "正在检测您的注入器……"
+zrqyzLabel.Size = UDim2.new(0, 200, 0, 20)
+zrqyzLabel.Position = UDim2.new(0, 50, 0, 110)
+zrqyzLabel.BackgroundTransparency = 1
+zrqyzLabel.TextSize = 15
+zrqyzLabel.Parent = frame
+
+local yhmLabel = Instance.new("TextLabel")
+yhmLabel.Text = "欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. ""
+yhmLabel.Size = UDim2.new(0, 200, 0, 20)
+yhmLabel.Position = UDim2.new(0, 50, 0, 80)
+yhmLabel.BackgroundTransparency = 1
+yhmLabel.TextColor3 = Color3.new(0, 1, 0)
+yhmLabel.TextSize = 15
+yhmLabel.Parent = frame
+
+local progressBarBackground = Instance.new("Frame")
+progressBarBackground.Size = UDim2.new(0, 200, 0, 10)
+progressBarBackground.Position = UDim2.new(0, 50, 0, 170)
+progressBarBackground.BackgroundTransparency = 0.5
+progressBarBackground.BackgroundColor3 = Color3.new(1, 0, 0)
+progressBarBackground.Parent = frame
+
+local progressBar = Instance.new("Frame")
+progressBar.Size = UDim2.new(0, 0, 1, 0)
+progressBar.BackgroundColor3 = Color3.new(0, 1, 0)
+progressBar.Parent = progressBarBackground
+
+local progress = 0
+
+local function updateLoading()
+    progress = progress + 1
+    progressBar.Size = UDim2.new(progress / 100, 0, 1, 0)
+    progressLabel.Text = "加载进度: " .. progress .. "%"
+    if progress < 100 then
+        progressLabel.TextColor3 = Color3.new(1, 0, 0)
+        loadingText.TextColor3 = Color3.new(1, 0, 0)
+    else
+        progressLabel.TextColor3 = Color3.new(0, 1, 0)
+        loadingText.TextColor3 = Color3.new(0, 1, 0)
+        loadingText.Text = "✅加载成功✅"
+        wait(1)
+        titleLabel:Destroy()
+        loadingText:Destroy()
+        progressBarBackground:Destroy()
+        progressBar:Destroy()
+        progressLabel:Destroy()
+        frame:Destroy()
+    end
+    if progress < 50 then
+    zrqyzLabel.TextColor3 = Color3.new(1, 0, 0)
+	zrqyzLabel.Text = "正在检测您的注入器……"
+	else
+	zrqyzLabel.TextColor3 = Color3.new(0, 1, 0)
+	zrqyzLabel.Text = "你的注入器:"..identifyexecutor()
+	end
+    if progress == 29 or progress == 50 or progress == 99 then
+        wait(1.275)
+    end
+end
+
+while progress < 100 do
+    wait(0.1)
+    updateLoading()
+end
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 150, 0, 40)
+frame.Position = UDim2.new(0.5, -100, 0.5, -20)
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+frame.Active = true
+frame.Draggable = true
+frame.Parent = gui
+
+local frameRateLabel = Instance.new("TextLabel")
+frameRateLabel.Text = "当前帧数"
+frameRateLabel.Position = UDim2.new(0, 0, 0, 0)
+frameRateLabel.Size = UDim2.new(1, 0, 0.5, 0)
+frameRateLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+frameRateLabel.TextColor3 = Color3.new(1, 0, 0)
+frameRateLabel.TextSize = 10
+frameRateLabel.Parent = frame
+
+local timeLabel = Instance.new("TextLabel")
+timeLabel.Text = "当前时间: " .. os.date("%H:%M:%S")
+timeLabel.Position = UDim2.new(0, 0, 0.5, 0)
+timeLabel.Size = UDim2.new(1, 0, 0.5, 0)
+timeLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+timeLabel.TextColor3 = Color3.new(1, 0, 0)
+timeLabel.TextSize = 10
+timeLabel.Parent = frame
+
+game:GetService("RunService").RenderStepped:Connect(function()
+    frameRateLabel.Text = "当前帧数: " .. tostring(math.floor(1 / game:GetService("RunService").RenderStepped:Wait()))
+    timeLabel.Text = "当前时间: " .. os.date("%H:%M:%S")
+end)
+
+local frame = Instance.new("Frame")
+frame.Position = UDim2.new(0, -200, 0.75, 0)
+frame.Size = UDim2.new(0, 200, 0, 200)
+frame.AnchorPoint = Vector2.new(0, 0.5)
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+frame.Parent = gui
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 25)
+corner.Parent = frame   
+
+local textLabel = Instance.new("TextLabel")
+textLabel.Text = "明月清风脚本"
+textLabel.Position = UDim2.new(0, 0, 0, 0)
+textLabel.Size = UDim2.new(1, 0, 0.5, 0)
+textLabel.BackgroundTransparency = 1
+textLabel.TextColor3 = Color3.new(1, 0, 0)
+textLabel.TextSize = 24
+textLabel.Parent = frame
+
+local smallTextLabel = Instance.new("TextLabel")
+smallTextLabel.Text = "欢迎使用^ω^"
+smallTextLabel.Position = UDim2.new(0, 0, 0.5, 0)
+smallTextLabel.Size = UDim2.new(1, 0, 0.5, 0)
+smallTextLabel.BackgroundTransparency = 1
+smallTextLabel.TextColor3 = Color3.new(1, 0.84, 0)
+smallTextLabel.TextSize = 18
+smallTextLabel.Parent = frame
+
+local targetPos = UDim2.new(0.5, -100, 0.75, -100)
+local tweenTime = 2.5
+local stayTime = 3
+
+local tween = game:GetService("TweenService"):Create(frame, TweenInfo.new(tweenTime, Enum.EasingStyle.Linear), {
+    Position = targetPos
+})
+
+tween:Play()
+tween.Completed:Wait()
+
+wait(stayTime)
+
+local reverseTween = game:GetService("TweenService"):Create(frame, TweenInfo.new(tweenTime, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(1, 0, 0.75, 0)
+})
+
+reverseTween:Play()
+reverseTween.Completed:Wait()
+
+textLabel:Destroy()
+smallTextLabel:Destroy()
+frame:Destroy()
+
+local toggleSwitch = Instance.new("TextButton")
+toggleSwitch.Text = "正在阅读"
+toggleSwitch.Position = UDim2.new(0.8, 0, 0.9, 0)
+toggleSwitch.Size = UDim2.new(0.15, 0.05, 0.1, 0.05)
+toggleSwitch.BackgroundColor3 = Color3.new(0, 1, 0)
+toggleSwitch.TextColor3 = Color3.new(1, 1, 1)
+toggleSwitch.TextSize = 14
+toggleSwitch.Parent = gui
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 400, 0, 200)
+frame.Position = UDim2.new(0.5, -200, 1, -100)
+frame.AnchorPoint = Vector2.new(0.5, 0.5)
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+frame.Parent = gui
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 25)
+corner.Parent = frame
+
+local textLabel1 = Instance.new("TextLabel")
+textLabel1.Text = "明月清风脚本协议"
+textLabel1.Position = UDim2.new(0, 0, 0, 0)
+textLabel1.Size = UDim2.new(1, 0, 0.2, 0)
+textLabel1.BackgroundTransparency = 1
+textLabel1.TextColor3 = Color3.new(1, 0.84, 0)
+textLabel1.TextSize = 20
+textLabel1.Parent = frame
+
+local textLabel2 = Instance.new("TextLabel")
+textLabel2.Text = "1.账号封禁与我们无关"
+textLabel2.Position = UDim2.new(0.1, 0, 0.25, 0)
+textLabel2.Size = UDim2.new(0.4, -10, 0.1, 0)
+textLabel2.BackgroundTransparency = 1
+textLabel2.TextColor3 = Color3.new(1, 0, 0)
+textLabel2.TextSize = 16
+textLabel2.Parent = frame
+
+local textLabel3 = Instance.new("TextLabel")
+textLabel3.Text = "2.本脚本拥有免费渠道，不要无脑喷"
+textLabel3.Position = UDim2.new(0.1, 0, 0.45, 0)
+textLabel3.Size = UDim2.new(0.6, -10, 0.1, 0)
+textLabel3.BackgroundTransparency = 1
+textLabel3.TextColor3 = Color3.new(1, 0, 0)
+textLabel3.TextSize = 16
+textLabel3.Parent = frame
+
+local textLabel4 = Instance.new("TextLabel")
+textLabel4.Text = "3.一切解释权归日月星辰工作室所有"
+textLabel4.Position = UDim2.new(0.1, 0, 0.65, 0)
+textLabel4.Size = UDim2.new(0.6, -10, 0.1, 0)
+textLabel4.BackgroundTransparency = 1
+textLabel4.TextColor3 = Color3.new(1, 0, 0)
+textLabel4.TextSize = 16
+textLabel4.Parent = frame
+
+local button1 = Instance.new("TextButton")
+button1.Text = "不同意"
+button1.Position = UDim2.new(0, 10, 0.8, 0)
+button1.Size = UDim2.new(0.4, -20, 0.1, 0)
+button1.BackgroundColor3 = Color3.new(1, 0, 0)
+button1.TextColor3 = Color3.new(1, 1, 1)
+button1.TextSize = 16
+button1.Parent = frame
+
+local button2 = Instance.new("TextButton")
+button2.Text = "同意"
+button2.Position = UDim2.new(0.6, 10, 0.8, 0)
+button2.Size = UDim2.new(0.4, -20, 0.1, 0)
+button2.BackgroundColor3 = Color3.new(0, 1, 0)
+button2.TextColor3 = Color3.new(1, 1, 1)
+button2.TextSize = 16
+button2.Parent = frame
+
+local startPos = UDim2.new(0.5, -200, 1, -100)
+local targetPos = UDim2.new(0.64, -100, 0.75, -100)
+local tweenTime = 2.5
+
+local tween = game:GetService("TweenService"):Create(frame, TweenInfo.new(tweenTime, Enum.EasingStyle.Linear), {
+    Position = targetPos
+})
+
+tween:Play()
+
+toggleSwitch.MouseButton1Click:Connect(function()
+    if toggleSwitch.Text == "正在阅读" then
+        toggleSwitch.Text = "已隐藏协议"
+        toggleSwitch.BackgroundColor3 = Color3.new(1, 0, 0)
+        frame.Visible = false
+        textLabel1.Visible = false
+        textLabel2.Visible = false
+        textLabel3.Visible = false
+        textLabel4.Visible = false
+        button1.Visible = false
+        button2.Visible = false
+    else
+        toggleSwitch.Text = "正在阅读"
+        toggleSwitch.BackgroundColor3 = Color3.new(0, 1, 0)
+        frame.Visible = true
+        textLabel1.Visible = true
+        textLabel2.Visible = true
+        textLabel3.Visible = true
+        textLabel4.Visible = true
+        button1.Visible = true
+        button2.Visible = true
+    end
+end)
+
+button1.MouseButton1Click:Connect(function()
+    textLabel1:Destroy()
+    textLabel2:Destroy()
+    textLabel3:Destroy()
+    textLabel4:Destroy()
+    button1:Destroy()
+    button2:Destroy()
+    toggleSwitch:Destroy()
+    frame:Destroy()
+    
+    CoreGui:SetCore("SendNotification", {
+    Title = "日月星辰工作室 | 明月清风",
+    Text = "您拒绝签订协议",
+    Duration = 5, 
+})
+end)
+
+button2.MouseButton1Click:Connect(function()
+    textLabel1:Destroy()
+    textLabel2:Destroy()
+    textLabel3:Destroy()
+    textLabel4:Destroy()
+    button1:Destroy()
+    button2:Destroy()
+    toggleSwitch:Destroy()
+    frame:Destroy()
+    
+    CoreGui:SetCore("SendNotification", {
+    Title = "日月星辰工作室 | 明月清风",
+    Text = "状态检测:反挂机……ON",
+    Duration = 5, 
+})
+print("反挂机开启")
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		   wait(1)
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -160,3 +501,6 @@ end
 end)
 notify("系统", "验证失败，开启密钥程序™", 4)
 end
+
+end)
+
