@@ -2427,6 +2427,23 @@ bin:Button("法宝模拟器", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/katrina367/ScriptBlox-Projects/main/OblivionAutoEXEV1'))()
 end)
 
+local creds = window:Tab("Tank Race",'6035145364')
+
+local credits = creds:section("脚本",true)
+
+credits:Button("Tank Race",function()
+--Tank Race
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0TankRace'))()
+end)
+
+local creds = window:Tab("3008",'6035145364')
+
+local credits = creds:section("脚本",true)
+
+credits:Button("自动收集食物",function()
+
+
 local creds = window:Tab("刀刃球",'6035145364')
 
 local credits = creds:section("脚本",true)
