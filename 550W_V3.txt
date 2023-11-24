@@ -1403,17 +1403,17 @@ local tool = creds:section("『星月交辉☪』",true)
 
 tool:Button("星月交辉☪️ TZ中心",function()
 	
-loadstring(game:HttpGet("https://rentry.co/550W-TZBMD/raw"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550A-TZ/main/550A-TZ.txt"))()
 end)
 
 tool:Button("星月交辉☪️ V1",function()
 	
-loadstring(game:HttpGet("https://rentry.co/550W-V1BMD/raw"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550WV1/main/550WV1.txt"))()
 end)
 
 tool:Button("星月交辉☪️ V2",function()
 	
-loadstring(game:HttpGet("https://rentry.co/550W-V2/raw"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550WV2/main/550WV2YUN.txt"))()
 end)
 
 tool:Button("星月交辉☪️ V3 (公开测试版)",function()
@@ -1427,12 +1427,12 @@ end)
 
 tool:Button("星月交辉☪️ V4(要白名单)仅限测试人员",function()
 	
-loadstring(game:HttpGet("https://rentry.co/550W-V4BMD/raw"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550WV4/main/550W-V4.txt"))()
 end)
 
 tool:Button("星月交辉☪️ V5 拓展功能",function()
 	
-loadstring(game:HttpGet("https://rentry.co/550W-V5BMD/raw"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-V5/main/550W-V5.txt"))()
 end)
 
 tool:Button("飞行x2倍(星月交辉脚本专属)",function()
