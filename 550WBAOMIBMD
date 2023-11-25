@@ -15,7 +15,7 @@ corner.CornerRadius = UDim.new(0, 25)
 corner.Parent = frame
 
 local titleLabel = Instance.new("TextLabel")
-titleLabel.Text = "明月清风安全验证系统"
+titleLabel.Text = "星月交辉安全验证系统"
 titleLabel.Size = UDim2.new(0, 300, 0, 30)
 titleLabel.Position = UDim2.new(0, 0, 0, 10)
 titleLabel.BackgroundTransparency = 1
@@ -72,7 +72,7 @@ progressBar.Parent = progressBarBackground
 local progress = 0
 
 local function updateLoading()
-    progress = progress + 1
+    progress = progress + 5
     progressBar.Size = UDim2.new(progress / 100, 0, 1, 0)
     progressLabel.Text = "加载进度: " .. progress .. "%"
     if progress < 100 then
@@ -150,7 +150,7 @@ corner.CornerRadius = UDim.new(0, 25)
 corner.Parent = frame   
 
 local textLabel = Instance.new("TextLabel")
-textLabel.Text = "明月清风脚本"
+textLabel.Text = "星月交辉脚本"
 textLabel.Position = UDim2.new(0, 0, 0, 0)
 textLabel.Size = UDim2.new(1, 0, 0.5, 0)
 textLabel.BackgroundTransparency = 1
@@ -212,7 +212,7 @@ corner.CornerRadius = UDim.new(0, 25)
 corner.Parent = frame
 
 local textLabel1 = Instance.new("TextLabel")
-textLabel1.Text = "明月清风脚本协议"
+textLabel1.Text = "星月交辉脚本协议"
 textLabel1.Position = UDim2.new(0, 0, 0, 0)
 textLabel1.Size = UDim2.new(1, 0, 0.2, 0)
 textLabel1.BackgroundTransparency = 1
@@ -380,25 +380,7 @@ local CoreGui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/pyaw
 notify("————💫『㊐  工作室  ㊊」💫————", "白名单验证中", 4)
 notify("————💫『㊐  工作室  ㊊」💫————", "加群定期发放白名单", 4)
 wait(1)
-local a=tostring(game.Players.LocalPlayer.Character);
-if a=="tangxianchu"then
-_G.whitelist=true
-elseif a=="TANGXIANCHUN"then
-_G.whitelist=true
-elseif a=="cmhehebeb"then
-_G.whitelist=true
-elseif a=="rushshshseek9"then
-_G.whitelist=true
-elseif a=="SunjunyuSSS"then
-_G.whitelist=true
-elseif a=="xwzz123456aq"then
-_G.whitelist=true
-elseif a=="plmnkoijbvhuygcxfty"then
-_G.whitelist=true
-elseif a=="gghjsydhhsijrjdjsfdj"then
-_G.whitelist=true
-end
-if _G.whitelist==true then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/BMD.lua"))()
 
 notify("————💫『㊐  工作室  ㊊」💫————", "验证成功，欢迎您！亲爱的"..game.Players.LocalPlayer.Name.. "", 1)
 notify("————💫『㊐  工作室  ㊊」💫————", "loading……", 1)
