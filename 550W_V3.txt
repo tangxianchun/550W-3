@@ -2415,6 +2415,10 @@ _G.Key = "Table" --- dont remove this noob
 loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/TheMimic/main/README.md"))()
 end)
 
+tool:Button("The Mimic 3",function()
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end)
+
 local creds = window:Tab("只因剑",'6035145364')
 
 local tool = creds:section("「脚本」",true)
