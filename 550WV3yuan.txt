@@ -73,7 +73,7 @@ progressBar.Parent = progressBarBackground
 local progress = 0
 
 local function updateLoading()
-    progress = progress + 2
+    progress = progress + 5
     progressBar.Size = UDim2.new(progress / 100, 0, 1, 0)
     progressLabel.Text = "加载进度: " .. progress .. "%"
     if progress < 100 then
