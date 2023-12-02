@@ -389,7 +389,6 @@ notify("————💫『日月星辰工作室」💫————", "加群定
 
 local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/BMD.lua", true))()
 if whitelist[game.Players.LocalPlayer.UserId] then
-print("白名单脚本")
 
 notify("————💫『日月星辰工作室」💫————", "验证成功，欢迎您！亲爱的"..game.Players.LocalPlayer.Name.. "", 1)
 notify("————💫『日月星辰工作室」💫————", "loading……", 1)
