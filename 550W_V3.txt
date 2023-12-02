@@ -1371,7 +1371,7 @@ bin:Label("当前版本：V3.2.4 公开测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("Hoverboard Race")
+bin:Label("海贼王")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -2480,6 +2480,10 @@ local bin = creds:section("『BF』",true)
 bin:Button("海贼王 key：C9F2B937918FB984", function()
 
 loadstring(game:HttpGet"https://codeberg.org/CokkaHub/Loadstring/raw/branch/main/CokkaHub.lua")()
+end)
+
+bin:Button("海贼王 KEY-WEEK",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Fiend1sh/FiendMain/main/MadoxHubKey", true))() 
 end)
 
 local creds = window:Tab("彩虹朋友",'6035145364')
