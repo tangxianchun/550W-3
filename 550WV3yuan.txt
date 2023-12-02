@@ -417,9 +417,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/ma
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/KRNL.txt"))()
 
---550W V3
---550WYUAN
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
+print("loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()")
 
 
 else
@@ -497,8 +495,7 @@ Start.MouseButton1Click:Connect(function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 
---550W V3
---550WYUAN
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
        
     else
