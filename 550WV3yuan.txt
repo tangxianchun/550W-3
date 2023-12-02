@@ -493,6 +493,7 @@ Start.TextWrapped = true
 Start.MouseButton1Click:Connect(function()
     if Key.Text == "7A81LKDOkUOAjtdobaOcOSQocj4AF9defkRaFSqMjLAWa" then
         ScreenGui:Destroy()
+print("非白名单脚本")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 
