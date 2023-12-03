@@ -2473,6 +2473,30 @@ credits:Button("合集",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/daorenqiu.lua"))()
 end)
 
+local creds = window:Tab("宠物模拟器",'6035145364')
+
+local bin = creds:section("『Pet simulator X』",true)
+
+bin:Button("Pet simulator X 1",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua"))()
+end)
+
+bin:Button("Pet simulator X 2",function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a82cd5447cbbc4c7be0e8db405555787.lua"))()
+end)
+
+bin:Button("Pet simulator X 3",function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))()
+end)
+
+bin:Button("Pet simulator X 4",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ReturnString9999/P-S-X-main-lulz/main/Changer/.lua"))()
+end)
+
+bin:Button("Pet simulator X 5",function()
+loadstring(game:HttpGetAsync("https://gitlab.com/Sky2836/test/-/raw/main/Windows"))()
+end)
+
 local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『BF』",true)
