@@ -2247,10 +2247,6 @@ tool:Button("LUCKY BLOCKS Battlegrounds (需密钥)",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
 end)
 
-tool:Button("LUCKY BLOCKS Battlegrounds",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/luc"))()
-end)
-
 local creds = window:Tab("Apeirophobia",'6035145364')
 
 local tool = creds:section("『可能用不了』",true)
