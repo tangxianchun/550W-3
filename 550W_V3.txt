@@ -1534,6 +1534,10 @@ local creds = window:Tab("『通用』",'6035145364')
 
 local tool = creds:section("『通用』",true)
 
+tool:Button("阿尔宙斯",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/arceus-X.txt"))()
+end)
+
 tool:Button("光影",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/guangying.txt"))()
 end)
