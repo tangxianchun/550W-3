@@ -1371,7 +1371,7 @@ bin:Label("当前版本：V3.2.4 公开测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("Pet simulator X ")
+bin:Label("删除一些用不了的脚本")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -2482,18 +2482,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-
 end)
 
 bin:Button("Pet simulator X 2",function()
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a82cd5447cbbc4c7be0e8db405555787.lua"))()
-end)
-
-bin:Button("Pet simulator X 3",function()
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))()
-end)
-
-bin:Button("Pet simulator X 4",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ReturnString9999/P-S-X-main-lulz/main/Changer/.lua"))()
 end)
 
-bin:Button("Pet simulator X 5",function()
+bin:Button("Pet simulator X 3",function()
 loadstring(game:HttpGetAsync("https://gitlab.com/Sky2836/test/-/raw/main/Windows"))()
 end)
 
@@ -2819,12 +2811,6 @@ end)
 local creds = window:Tab("『脚本』",'6035145364')
 
 local tool = creds:section("「脚本」",true)
-
-tool:Button("河流•version",function()
---河流
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AWDX-DYVB/test/main/%E6%B2%B3%E6%B5%81%E6%97%A0%E5%AF%86%E9%92%A5.lua"))()
-end)
 
 tool:Button("皇脚本•version",function()
 loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
