@@ -1534,7 +1534,7 @@ local creds = window:Tab("『通用』",'6035145364')
 
 local tool = creds:section("『通用』",true)
 
-tool:Textbox("速度",function(Value)
+tool:Text("速度",function(Value)
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 end)
 
