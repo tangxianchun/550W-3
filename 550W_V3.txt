@@ -2243,7 +2243,7 @@ local creds = window:Tab("幸运方块战场",'6035145364')
 
 local tool = creds:section("『LUCKY BLOCKS Battlegrounds』",true)
 
-tool:Button("LUCKY BLOCKS Battlegrounds",function()
+tool:Button("LUCKY BLOCKS Battlegrounds (需密钥)",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
 end)
 
