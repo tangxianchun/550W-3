@@ -1534,10 +1534,6 @@ local creds = window:Tab("『通用』",'6035145364')
 
 local tool = creds:section("『通用』",true)
 
-tool:Text("速度","",false,function(Value)
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-end)
-
 tool:Button("阿尔宙斯",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/arceus-X.txt"))()
 end)
