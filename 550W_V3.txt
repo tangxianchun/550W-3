@@ -2239,6 +2239,14 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = window:Tab("宠物模拟器 99",'6035145364')
+
+local tool = creds:section("『Pet Simulator 99』",true)
+
+tool:Button("Pet Simulator 99 ",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/PetSimulator99/main/redz9999.lua"))()
+end)
+
 local creds = window:Tab("幸运方块战场",'6035145364')
 
 local tool = creds:section("『LUCKY BLOCKS Battlegrounds』",true)
