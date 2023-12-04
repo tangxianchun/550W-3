@@ -2000,7 +2000,7 @@ tool:Button("脚本大中心",function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/zAuR0JUT"))()
 end)
 
-local creds = window:Tab("『掰手腕』",'6035145364')
+local creds = window:Tab("掰手腕",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
@@ -2012,7 +2012,7 @@ tool:Button("掰手腕模拟器『需密钥』3",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Kenniel123/Arm-Wrestle-Simulator-Script/main/Arm-Wrestle-Simulator-Script",true))();
 end)
 
-local creds = window:Tab("『DOORS』[✝]",'6035145364')
+local creds = window:Tab("DOORS[✝]",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
@@ -2618,6 +2618,14 @@ end)
 
 Los:Button("出生点", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(7, 3, 108)
+end)
+
+local creds = window:Tab("忍者传奇",'6035145364')
+
+local tool = creds:section("『Ninja Legends』",true)
+
+tool:Button("忍者传奇",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadetamic/horizon/main/loadstring.lua"))()
 end)
 
 local creds = window:Tab("自然灾害",'6035145364')
