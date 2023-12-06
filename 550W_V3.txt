@@ -412,8 +412,8 @@ end
       Open.Position = UDim2.new(0.00829315186, 0, 0.31107837, 0)
       Open.Size = UDim2.new(0, 61, 0, 32)
       Open.Font = Enum.Font.SourceSans
-      Open.Text = "『V3.2.4」"
-      Open.TextColor3 = Color3.fromRGB(255, 215, 0)
+      Open.Text = "『V3.2.5』"
+      Open.TextColor3 = Color3.fromRGB(255, 21, 0)
       Open.TextColor3 = Color3.fromRGB(255, 255, 0)
       Open.TextSize = 17.000
       Open.Active = true
@@ -1367,11 +1367,11 @@ bin:Label("作者QQ群：781759165")
 
 bin:Label("作者QQ频道：868h663073")
 
-bin:Label("当前版本：V3.2.4 公开测试版")
+bin:Label("当前版本：V3.2.5 公开测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("删除一些用不了的脚本")
+bin:Label("海贼王")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
