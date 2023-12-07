@@ -1371,7 +1371,7 @@ bin:Label("当前版本：V3.2.5 公开测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("海贼王")
+bin:Label("刀刃球")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -2503,6 +2503,10 @@ local credits = creds:section("脚本",true)
 
 credits:Button("合集",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/daorenqiu.lua"))()
+end)
+
+credits:Button("星月交辉刀刃球",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/daorenqiu-V2.lua"))()
 end)
 
 local creds = window:Tab("宠物模拟器",'6035145364')
