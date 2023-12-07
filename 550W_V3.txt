@@ -2247,6 +2247,14 @@ tool:Button("Pet Simulator 99 ",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/PetSimulator99/main/redz9999.lua"))()
 end)
 
+local creds = window:Tab("Break in 2",'6035145364')
+
+local tool = creds:section("「脚本」",true)
+
+tool:Button("Break in 2", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/harlenscripts/HarlenHub/main/HarlenScripts"))()
+end)
+
 local creds = window:Tab("幸运方块战场",'6035145364')
 
 local tool = creds:section("『LUCKY BLOCKS Battlegrounds』",true)
