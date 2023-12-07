@@ -2505,10 +2505,6 @@ credits:Button("合集",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/daorenqiu.lua"))()
 end)
 
-credits:Button("星月交辉刀刃球",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/daorenqiu-V2.lua"))()
-end)
-
 local creds = window:Tab("宠物模拟器",'6035145364')
 
 local bin = creds:section("『Pet simulator X』",true)
