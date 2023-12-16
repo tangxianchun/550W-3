@@ -2016,6 +2016,10 @@ local creds = window:Tab("DOORS[✝]",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
+tool:Button("content",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Doors"))()
+end)
+
 tool:Button("最强•中文版",function()
 --[[Doors Blackking And BobHub脚本汉化]]
 
@@ -2524,6 +2528,16 @@ end)
 local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『BF』",true)
+
+bin:Button("AppleHub",function()
+getgenv().NgonNguScript = true
+repeat task.wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ImTienNguyenZ/AppleHub/main/LoaderBF"))()
+end)
+
+bin:Button("LoaderBF",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ImTienNguyenZ/AppleHub/main/LoaderBF"))()
+end)
 
 bin:Button("海贼王 key：C9F2B937918FB984", function()
 
