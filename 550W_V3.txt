@@ -1435,6 +1435,10 @@ tool:Button("星月交辉☪️ V5 拓展功能",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-V5/main/550W-V5.txt"))()
 end)
 
+tool:Button("星月交辉☪️ Doors",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/doors.lua"))()
+end)
+
 tool:Button("飞行x2倍(星月交辉脚本专属)",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/550FX2.txt"))()
 end)
@@ -2015,6 +2019,8 @@ end)
 local creds = window:Tab("DOORS[✝]",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
+
+
 
 tool:Button("content",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Doors"))()
