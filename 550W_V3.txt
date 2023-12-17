@@ -1439,6 +1439,10 @@ tool:Button("星月交辉☪️ Doors",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/doors.lua"))()
 end)
 
+tool:Butto("星月☪️ Doors",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/DOORS.lua"))()
+end)
+
 tool:Button("飞行x2倍(星月交辉脚本专属)",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/550FX2.txt"))()
 end)
