@@ -2261,6 +2261,22 @@ tool:Button("Pet Simulator 99 ",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/PetSimulator99/main/redz9999.lua"))()
 end)
 
+local creds = window:Tab("竞赛摩托车脚本",'6035145364')
+
+local tool = creds:section("「Race motorcycle Script」",true)
+
+tool:Button("Race motorcycle Script", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0MotoRace'))()
+end)
+
+local creds = window:Tab("塔防模拟器",'6035145364')
+
+local tool = creds:section("「Tower Defense Simulator」",true)
+
+tool:Button("Tower Defense Simulator", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/TowerDefenseSimulator.lua', true))()
+end)
+
 local creds = window:Tab("Break in 2",'6035145364')
 
 local tool = creds:section("「脚本」",true)
