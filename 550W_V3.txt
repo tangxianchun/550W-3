@@ -1371,7 +1371,7 @@ bin:Label("当前版本：V3.2.5 公开测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("BF｜doors｜星月交辉 doors")
+bin:Label("Toilet Tower Defense")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -2435,6 +2435,14 @@ credits:Button("俄亥俄州",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/ohio/main/Roblox232"))()
     end)
 
+local creds = window:Tab("厕所塔防",'6035145364')
+
+local tool = creds:section("『Toilet Tower Defense』",true)
+
+tool:Button("Toilet Tower Defense",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Tower/main/Toilet"))()
+end)
+
 local creds = window:Tab("the rake",'6035145364')
 
 local tool = creds:section("『脚本』",true)
@@ -2467,6 +2475,11 @@ end)
 local creds = window:Tab("The Mimic",'6035145364')
 
 local tool = creds:section("「脚本」",true)
+
+tool:Button("MMC2",function()
+getgenv().mainKey = "nil";
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 
 tool:Button("The Mimic", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ttjy9808/THEMIMICNEWMOBILEUINOTBETA/main/README.md"))()
