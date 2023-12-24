@@ -2297,6 +2297,14 @@ tool:Button("LUCKY BLOCKS Battlegrounds (无密钥)",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/harlenscripts/HarlenHub/main/HarlenScripts"))()
 end)
 
+local creds = window:Tab("杀手与警长",'6035145364')
+
+local tool = creds:section("『可能用不了』",true)
+
+tool:Button("杀手与警长",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/woolips/tolis/main/77_7DBZZJU.lua'))()
+end)
+
 local creds = window:Tab("Apeirophobia",'6035145364')
 
 local tool = creds:section("『可能用不了』",true)
