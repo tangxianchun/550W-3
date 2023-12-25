@@ -2579,7 +2579,11 @@ end)
 
 local creds = window:Tab("海贼王",'6035145364')
 
-local bin = creds:section("『BF』",true)
+local bin = creds:section("『Blox Fruits』",true)
+
+bin:Button("REDzHUB",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+end)
 
 bin:Button("Omg",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
