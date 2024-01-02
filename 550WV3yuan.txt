@@ -487,7 +487,7 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "7A81LKDOkUOAjtdobaOcOSQocj4AF9defkRaFSqMjLAWa" then
+    if Key.Text == "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEq78z3mQfz6ikaNMatV5LKR2fvKlN" then
         ScreenGui:Destroy()
 print("非白名单脚本")
 
