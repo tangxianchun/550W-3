@@ -2305,6 +2305,18 @@ tool:Button("杀手与警长",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/woolips/tolis/main/77_7DBZZJU.lua'))()
 end)
 
+tool:Button("Bebo",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/MurderersVsSheriffs.lua"))()
+end)
+
+local creds = window:Tab("僵尸起义",'6035145364')
+
+local a= creds:section("『Zombie Uprising』",true)
+
+a:Button("6Foot",function()
+loadstring(game:HttpGet("https://www.6footscripts.com/Scripts/6FootHub/Hub.lua"))()
+end)
+
 local creds = window:Tab("Apeirophobia",'6035145364')
 
 local tool = creds:section("『可能用不了』",true)
