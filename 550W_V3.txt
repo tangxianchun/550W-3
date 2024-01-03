@@ -2024,8 +2024,6 @@ local creds = window:Tab("DOORS[✝]",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
-
-
 tool:Button("content",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Doors"))()
 end)
@@ -2251,6 +2249,14 @@ end)
 
 tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
+end)
+
+local creds = window:Tab("evade",'6035145364')
+
+local tool = creds:section("『evade』",true)
+
+tool:Button("evade",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua"))()
 end)
 
 local creds = window:Tab("宠物模拟器 99",'6035145364')
@@ -2516,7 +2522,7 @@ local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or
 end)
 
 tool:Button("CE",function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/scriptemt/CE-Technologies/main/script', true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptemt/CE-Technologies/main/script", true))()
 end)
 
 local creds = window:Tab("只因剑",'6035145364')
@@ -2544,7 +2550,7 @@ bin:Button("法宝模拟器", function()
 -- // ui will only appear on supported games
 -- // press left ctrl to toggle universal scripts.
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/katrina367/ScriptBlox-Projects/main/OblivionAutoEXEV1'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/katrina367/ScriptBlox-Projects/main/OblivionAutoEXEV1"))()
 end)
 
 local creds = window:Tab("Tank Race",'6035145364')
@@ -2568,6 +2574,10 @@ end)
 local creds = window:Tab("刀刃球",'6035145364')
 
 local a = creds:section("脚本",true)
+
+a:Button("Zzz",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZzzScript/SpectacularHubScript/main/BladeBall"))()
+end)
 
 a:button("AC",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AC447724/Blade-Ball/main/c5xkvercelv5.lua.txt"))()
