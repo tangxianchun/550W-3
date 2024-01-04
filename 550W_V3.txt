@@ -2251,6 +2251,22 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = window:Tab("战斗勇士",'6035145364')
+
+local tool = creds:section("『Combat Warriors ✅』",true)
+
+tool:Button("Project-Hook ✅",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiritXmas/Project-Hook/main/required.lua"))()
+end)
+
+tool:Button("verm ✅",function()
+_G.killAuraEnabled = true
+_G.infiniteStamina = true
+_G.killAuraRange = 12 -- Max Magnitude (Range) you can go is 12
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/samuelLovesPie/verm_releases/main/combat_warriors.lua", true))()
+end)
+
 local creds = window:Tab("evade",'6035145364')
 
 local tool = creds:section("『evade』",true)
