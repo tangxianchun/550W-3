@@ -2595,7 +2595,7 @@ a:Button("Zzz",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZzzScript/SpectacularHubScript/main/BladeBall"))()
 end)
 
-a:button("AC",function()
+a:Button("AC",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AC447724/Blade-Ball/main/c5xkvercelv5.lua.txt"))()
 end)
 
