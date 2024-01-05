@@ -2482,7 +2482,7 @@ local creds = window:Tab("厕所塔防",'6035145364')
 local tool = creds:section("『Toilet Tower Defense』",true)
 
 tool:Button("Toilet Tower Defense",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Tower/main/Toilet"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Tower2/main/Toilet"))()
 end)
 
 local creds = window:Tab("the rake",'6035145364')
