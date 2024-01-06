@@ -2339,6 +2339,14 @@ a:Button("6Foot",function()
 loadstring(game:HttpGet("https://www.6footscripts.com/Scripts/6FootHub/Hub.lua"))()
 end)
 
+local creds = window:Tab("僵尸攻击",'6035145364')
+
+local tool = creds:section("『Zombie Attack』",true)
+
+tool:Button("rblxhub",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua"),true))()
+end)
+
 local creds = window:Tab("Apeirophobia",'6035145364')
 
 local tool = creds:section("『可能用不了』",true)
