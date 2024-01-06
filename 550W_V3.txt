@@ -2728,6 +2728,10 @@ bin:Button("Pet simulator X 3",function()
 loadstring(game:HttpGetAsync("https://gitlab.com/Sky2836/test/-/raw/main/Windows"))()
 end)
 
+bin:Button("SKYHUB",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SKOIXLL/RIVERHUB-SKYHUB/main/WL.lua"))()
+end)
+
 local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
