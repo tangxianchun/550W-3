@@ -2599,6 +2599,10 @@ local creds = window:Tab("刀刃球",'6035145364')
 
 local a = creds:section("脚本",true)
 
+a:Button("NoHaxV3",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/NoHaxV3/main/BladeBallNoHax%20V3"))();
+end)
+
 a:Button("Zzz",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZzzScript/SpectacularHubScript/main/BladeBall"))()
 end)
