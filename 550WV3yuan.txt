@@ -73,7 +73,7 @@ progressBar.Parent = progressBarBackground
 local progress = 0
 
 local function updateLoading()
-    progress = progress + 5
+    progress = progress + 15
     progressBar.Size = UDim2.new(progress / 100, 0, 1, 0)
     progressLabel.Text = "加载进度: " .. progress .. "%"
     if progress < 100 then
@@ -160,7 +160,7 @@ textLabel.TextSize = 24
 textLabel.Parent = frame
 
 local smallTextLabel = Instance.new("TextLabel")
-smallTextLabel.Text = "欢迎使用-_-"
+smallTextLabel.Text = "欢迎使用Σ＞―(灬⁺д⁺灬)♡―――＞"
 smallTextLabel.Position = UDim2.new(0, 0, 0.5, 0)
 smallTextLabel.Size = UDim2.new(1, 0, 0.5, 0)
 smallTextLabel.BackgroundTransparency = 1
@@ -390,6 +390,9 @@ notify("————💫『日月星辰工作室」💫————", "加群定
 local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/BMD.lua", true))()
 if whitelist[game.Players.LocalPlayer.Name] then
 print("白名单脚本")
+print("欢迎👏白名单用户上分")
+print("已开启反挂机哟")
+print("欢迎您加入我们的大家庭🎉('ω')🎉")
 
 notify("————💫『日月星辰工作室」💫————", "验证成功，欢迎您！亲爱的"..game.Players.LocalPlayer.Name.. "", 1)
 notify("————💫『日月星辰工作室」💫————", "loading……", 1)
@@ -490,6 +493,8 @@ Start.MouseButton1Click:Connect(function()
     if Key.Text == "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEq78z3mQfz6ikaNMatV5LKR2fvKlN" then
         ScreenGui:Destroy()
 print("非白名单脚本")
+print("您的是非白名单脚本")
+print("欢迎您使用此脚本")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 
