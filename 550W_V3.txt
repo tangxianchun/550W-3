@@ -2489,6 +2489,18 @@ local creds = window:Tab("厕所塔防",'6035145364')
 
 local tool = creds:section("『Toilet Tower Defense』",true)
 
+tool:Button("Aidens.",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Maxx01112/Aidens.scripts.rblx/main/Maxx's%20Hub%20Beta"))()
+end)
+
+tool:Button("Dragoninc",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Coemssuw8a/Dragonic-HUB/main/Protected_4928151334798917.lua.txt",true))()
+end)
+
+tool:Button("exoprts",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/exportscript/script/main/toilet'))()
+end)
+
 tool:Button("Toilet Tower Defense",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Tower2/main/Toilet"))()
 end)
@@ -2739,6 +2751,10 @@ end)
 local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
+
+bin:Button("Im",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ImTienNguyenZ/ImTienNguyenZ/main/obf_lc8NZP74x7Y0j6TZs4B8c2EF93mtOpRQZkarI3R8GiBRedSlkA2293QygddzqIWU.lua"))() 
+end)
 
 bin:Button("no key",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Script-Blox/Script/main/Script-Blox"))()
