@@ -2776,6 +2776,10 @@ local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
 
+bin:Button("Basicallyy",function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/Min_XT_V2_.lua")()
+end)
+
 bin:Button("Im",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ImTienNguyenZ/ImTienNguyenZ/main/obf_lc8NZP74x7Y0j6TZs4B8c2EF93mtOpRQZkarI3R8GiBRedSlkA2293QygddzqIWU.lua"))() 
 end)
