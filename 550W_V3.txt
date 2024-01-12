@@ -2251,6 +2251,18 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = window:Tab("战争大亨",'6035145364')
+
+local a = creds:section("『War Tycoon ✅』",true)
+
+a:Button("vercel ✅",function()
+loadstring(game:HttpGet('https://oopshub.vercel.app'))()
+end)
+
+a:Button("awkenchan",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Awakenchan/Misc-Release/main/WarTycoon"))()
+end)
+
 local creds = window:Tab("战斗勇士",'6035145364')
 
 local tool = creds:section("『Combat Warriors ✅』",true)
