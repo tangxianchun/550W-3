@@ -1361,7 +1361,7 @@ local creds = window:Tab("『信息』",'6035145364')
 
 local bin = creds:section("版本:『Public beta version』",true)
 
-bin:Label("作者：LikJ")
+bin:Label("作者：日月 official | ♡日月꧔ꦿ℘⁧~ikWYZ⁧‭")
 
 bin:Label("作者QQ群：781759165")
 
@@ -3231,7 +3231,7 @@ local creds = window:Tab("关于我们",'6035145364')
 
 local About = creds:section("关于我们",true)
 
-About:Label("制作者:皓采(星月交辉作者)")
+About:Label("制作者：日月꧔ꦿ℘⁧~ikWYZ⁧‭(星月交辉作者)")
 
 About:Label("感谢以下名单提供帮助:")
 
@@ -3245,7 +3245,9 @@ local Statement = creds:section("声明",true)
 
 Statement:Label("欢迎加入我们的群聊781759165")
 
-local fps = fps:section("fps ping",true)
+local creds = window:Tab("fps ping",'6035145364')
+
+local fps = creds:section("fps ping",true)
 
 fps:Button("ping",function()
             repeat wait() until game:IsLoaded() wait(2)
@@ -3274,6 +3276,8 @@ RunService.RenderStepped:Connect(function(ping)
 script.Parent.Text = ("Ping: " ..game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString(math.round(2/ping))) -- your ping
 end)
 end)
+
+local bin = creds:section("fps",true)
 
 bin:Button("fps",function()
         repeat wait() until game:IsLoaded() wait(2)
