@@ -3310,7 +3310,7 @@ local creds = window:Tab("afk",'6035145364')
 
 local tool = creds:section("afk",true)
 
-credits:Toggle("afk", "", false, function(state)
+tool:Toggle("afk", "", false, function(state)
         print("Anti Afk On")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
