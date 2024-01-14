@@ -1542,6 +1542,10 @@ local creds = window:Tab("『通用』",'6035145364')
 
 local tool = creds:section("『通用』",true)
 
+tool:Button("功能",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HyaFranch/projs/hyrofr/hub"))()
+end)
+
 tool:Button("阿尔宙斯",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/arceus-X.txt"))()
 end)
