@@ -2255,6 +2255,14 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = window:Tab("BROOKHAVEN",'6035145364')
+
+local a = creds:section("『BROOKHAVEN ✅』",true)
+
+a:Button("REDzHUB ✅",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB"))()
+end)
+
 local creds = window:Tab("收养我",'6035145364')
 
 local a = creds:section("『Adopt Me ✅』",true)
