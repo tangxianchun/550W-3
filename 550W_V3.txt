@@ -2788,6 +2788,10 @@ local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
 
+bin:Button("module",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/Module/main/Mobile_Script.lua"))()
+end)
+
 bin:Button("Basicallyy",function()
 loadstring(game:HttpGet"https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/Min_XT_V2_.lua")()
 end)
