@@ -2315,7 +2315,11 @@ local creds = window:Tab("宠物模拟器 99",'6035145364')
 
 local tool = creds:section("『Pet Simulator 99』",true)
 
-tool:Button("Pet Simulator 99 ",function()
+tool:Button("woah",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/fissurectomy/woah/main/ps99_stairway.lua'))()
+end)
+
+tool:Button("REDzHUB",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/PetSimulator99/main/redz9999.lua"))()
 end)
 
