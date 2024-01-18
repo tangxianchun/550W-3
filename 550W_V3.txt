@@ -1371,7 +1371,7 @@ bin:Label("当前版本：V3.2.5 公开测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("Adopt Me")
+bin:Label("fly race")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -2253,6 +2253,14 @@ end)
 
 tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
+end)
+
+local creds = window:Tab("飞行比赛",'6035145364')
+
+local a = creds:section("『fly race ✅』",true)
+
+a:Button("fly race ✅",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NightCoded/script/main/fly-race.lua"))()
 end)
 
 local creds = window:Tab("BROOKHAVEN",'6035145364')
