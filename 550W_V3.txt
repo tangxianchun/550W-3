@@ -1371,7 +1371,7 @@ bin:Label("当前版本：V3.2.5 公开测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("fly race")
+bin:Label("Zombie Uprising")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
