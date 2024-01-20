@@ -2255,12 +2255,24 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = window:Tab("床战",'6035145364')
+
+local a = creds:section("『Bed Wars ✅』",true)
+
+a:Button("AlSploit ✅",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AlSploit/AlSploit/main/Bedwars"))()
+end)
+
 local creds = window:Tab("飞行比赛",'6035145364')
 
 local a = creds:section("『fly race ✅』",true)
 
 a:Button("fly race ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NightCoded/script/main/fly-race.lua"))()
+end)
+
+a:Button("key:mTAgLLFQJazwRWGh",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Amenteso/robloxscripts/main/Key.lua",true))()
 end)
 
 local creds = window:Tab("BROOKHAVEN",'6035145364')
