@@ -2399,6 +2399,10 @@ a:Button("6Foot",function()
 loadstring(game:HttpGet("https://www.6footscripts.com/Scripts/6FootHub/Hub.lua"))()
 end)
 
+a:Button("V.G-Hub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub"))()
+end)
+
 local creds = window:Tab("僵尸攻击",'6035145364')
 
 local tool = creds:section("『Zombie Attack』",true)
