@@ -2351,6 +2351,10 @@ tool:Button("REDzHUB",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/PetSimulator99/main/redz9999.lua"))()
 end)
 
+tool:Button("RedzHub-2.0",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FreeeScript/RedzHub-2.0/main/Update"))()
+end)
+
 local creds = window:Tab("竞赛摩托车脚本",'6035145364')
 
 local tool = creds:section("「Race motorcycle Script」",true)
