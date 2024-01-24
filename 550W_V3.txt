@@ -2268,7 +2268,7 @@ local creds = window:Tab("床战",'6035145364')
 local a = creds:section("『Bed Wars ✅』",true)
 
 a:Button("AlSploit ✅",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AlSploit/AlSploit/main/Bedwars"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AlSploit/AlSploit/main/MainScript"))()
 end)
 
 local creds = window:Tab("飞行比赛",'6035145364')
