@@ -2695,6 +2695,14 @@ local creds = window:Tab("刀刃球",'6035145364')
 
 local a = creds:section("脚本",true)
 
+a:Button("nqxl0fc",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua"))()
+end)
+
+a:Button("sira",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Blade-ball/main/Blade-ball-free"))()
+end)
+
 a:Button("NoHaxV3",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/NoHaxV3/main/BladeBallNoHax%20V3"))();
 end)
