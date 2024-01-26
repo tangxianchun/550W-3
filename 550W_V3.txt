@@ -2255,14 +2255,6 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
-local creds = window:Tab("国王遗产",'6035145364')
-
-local a = creds:section("『KING LEGACY ✅』",true)
-
-a:Button("Hyper ✅",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua))()
-end)
-
 local creds = window:Tab("Race Clicker",'6035145364')
 
 local a = creds:section("『Race Clicker ✅』",true)
@@ -2702,10 +2694,6 @@ end)
 local creds = window:Tab("刀刃球",'6035145364')
 
 local a = creds:section("脚本",true)
-
-a:Button("Aqui",function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/Kozukiremboukk/Aqui-mesml/main/blades")))()
-end)
 
 a:Button("nqxl0fc",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua"))()
