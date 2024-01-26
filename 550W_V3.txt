@@ -1373,8 +1373,6 @@ bin:Label("更新日志：")
 
 bin:Label("国王的遗产｜KING LEGACY")
 
-bin:Label("汽车经销商大亨｜Car Dealership Tycoon")
-
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
 bin:Label("你的注入器:"..identifyexecutor())
@@ -2260,10 +2258,6 @@ end)
 local creds = window:Tab("汽车经销商大亨",'6035145364')
 
 local a = creds:section("『Car Dealership Tycoon ✅』",true)
-
-a:Button("vercel ✅",function()
-loadstring(game:HttpGet("https://astronomic.vercel.app"))()
-end)
 
 a:Button("Weinz",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/weiny-ez/Weinz_Car-Dealership/main/weinz_cars.lua"))()
