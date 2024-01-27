@@ -1371,9 +1371,15 @@ bin:Label("当前版本：V3.3.1 公开测试版")
 
 bin:Label("更新日志：")
 
+bin:Label("刀刃球｜Blade Ball")
+
+bin:Label("幸运方块战场｜Lucky Block")
+
+bin:Label("法师大亨｜Mage Tycoon")
+
 bin:Label("国王的遗产｜KING LEGACY")
 
-bin:Label("忍者传奇")
+bin:Label("海贼王｜Blox Fruit")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -2257,6 +2263,14 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = window:Tab("法师大亨",'6035145364')
+
+local a = creds:section("『Mage Tycoon ✅』",true)
+
+a:Button("wheathub ✅",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/wheathub/main/main.lua"))()
+end)
+
 local creds = window:Tab("汽车经销商大亨",'6035145364')
 
 local a = creds:section("『🚗Car Dealership Tycoon ✅』",true)
@@ -2272,6 +2286,10 @@ end)
 local creds = window:Tab("国王的遗产",'6035145364')
 
 local a = creds:section("『KING LEGACY ✅』",true)
+
+a:Button("btteam",function()
+loadstring(game:HttpGet("https://btteam.net/scripts-auth/", true))()
+end)
 
 a:Button("Hyper ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))()
@@ -2411,6 +2429,10 @@ end)
 
 tool:Button("LUCKY BLOCKS Battlegrounds (无密钥)",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/harlenscripts/HarlenHub/main/HarlenScripts"))()
+end)
+
+tool:Button("5iREx",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/5iREx/script/main/bedwars"))()
 end)
 
 local creds = window:Tab("杀手与警长",'6035145364')
@@ -2717,6 +2739,10 @@ local creds = window:Tab("刀刃球",'6035145364')
 
 local a = creds:section("脚本",true)
 
+a:Button("Corolla",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7190000/Corolla-Hub/main/ch.lua"))()
+end)
+
 a:Button("nqxl0fc",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua"))()
 end)
@@ -2865,6 +2891,10 @@ end)
 local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
+
+bin:Button("RadonHub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/RadonHub/main/Script.lua"))()
+end)
 
 bin:Button("module",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/Module/main/Mobile_Script.lua"))()
