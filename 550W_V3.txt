@@ -1373,7 +1373,7 @@ bin:Label("更新日志：")
 
 bin:Label("国王的遗产｜KING LEGACY")
 
-bin:Label("汽车经销商大亨｜🚗Car Dealership Tycoon")
+bin:Label("忍者传奇")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -3023,6 +3023,10 @@ end)
 local creds = window:Tab("忍者传奇",'6035145364')
 
 local tool = creds:section("『Ninja Legends』",true)
+
+tool:Button("horizon",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadetamic/horizon/main/loadstring.lua"))()
+end)
 
 tool:Button("忍者传奇",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadetamic/horizon/main/loadstring.lua"))()
