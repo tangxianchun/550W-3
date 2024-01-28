@@ -2311,6 +2311,14 @@ a:Button("AlSploit ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AlSploit/AlSploit/main/MainScript"))()
 end)
 
+local creds = window:Tab("龙族竞赛",'6035145364')
+
+local a = creds:section("『Dragon Race  ✅』",true)
+
+a:Button("ToraIsMe ✅",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Dragon"))()
+end)
+
 local creds = window:Tab("飞行比赛",'6035145364')
 
 local a = creds:section("『fly race ✅』",true)
