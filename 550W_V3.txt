@@ -1373,13 +1373,7 @@ bin:Label("更新日志：")
 
 bin:Label("刀刃球｜Blade Ball")
 
-bin:Label("幸运方块战场｜Lucky Block")
-
-bin:Label("法师大亨｜Mage Tycoon")
-
-bin:Label("国王的遗产｜KING LEGACY")
-
-bin:Label("海贼王｜Blox Fruit")
+bin:Label("国王的遗产｜King Legacy")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -2287,6 +2281,10 @@ local creds = window:Tab("国王的遗产",'6035145364')
 
 local a = creds:section("『KING LEGACY ✅』",true)
 
+a:Button("Adel-Hub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AdelOnTheTop/Adel-Hub/main/Main.lua"))()
+end)
+
 a:Button("btteam",function()
 loadstring(game:HttpGet("https://btteam.net/scripts-auth/", true))()
 end)
@@ -2746,6 +2744,10 @@ end)
 local creds = window:Tab("刀刃球",'6035145364')
 
 local a = creds:section("脚本",true)
+
+a:Button("goinglike",function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/goinglikeatrainlol/c19adfa90a95db3fb8fcea27a87d3254/raw/8a84b455a0ad6eb75df333dfc7598916d0547eb8/mysticware%2520remake"))()
+end)
 
 a:Button("Corolla",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/7190000/Corolla-Hub/main/ch.lua"))()
