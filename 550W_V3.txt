@@ -3074,6 +3074,12 @@ end)
 
 local creds = window:Tab("自然灾害",'6035145364')
 
+local Nad = creds:section("脚本功能",true)
+
+Nad:Button("Natural",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hussain1323232234/My-Scripts/main/Natural%20Disaster"))()
+end)
+
 local Nad = creds:section("传送功能",true)
 
 Nad:Button("游戏地图", function()
