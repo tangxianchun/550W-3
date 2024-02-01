@@ -2853,8 +2853,13 @@ loadstring(game:HttpGet("https://github.com/SadlekAski/Scripts/raw/main/Blade%20
  end) 
  
  a:Button("Hosvile『主』",function() 
+
+_G.killAuraEnabled = true
+_G.infiniteStamina = true
+_G.killAuraRange = 20
+
      _G.Config = {
-    MinDistance = 10,
+    MinDistance = 0.00000001,
     DelBallSpeed = 0.000000000000000001,
 }
 _G.CloseCombatMode = "ping"
