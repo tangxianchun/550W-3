@@ -2750,7 +2750,8 @@ loadstring(Game:HttpGet("https://raw.githubusercontent.com/Peessst/Heavenhub/mai
 end)
 
 a:Button("8968",function()
-loadstring(game:HttpGet("https://scriptblox.com/raw/Blade-Ball-Autofarm-8968"))()
+local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/daorenqiu1.lua"
+loadstring(game:HttpGet(link))()
 end)
 
 a:Button("Corolla",function()
