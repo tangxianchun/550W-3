@@ -2745,8 +2745,12 @@ local creds = window:Tab("刀刃球",'6035145364')
 
 local a = creds:section("脚本",true)
 
-a:Button("goinglike",function()
-loadstring(game:HttpGet("https://gist.githubusercontent.com/goinglikeatrainlol/c19adfa90a95db3fb8fcea27a87d3254/raw/8a84b455a0ad6eb75df333dfc7598916d0547eb8/mysticware%2520remake"))()
+a:Button("HeavenHub",function()
+loadstring(Game:HttpGet("https://raw.githubusercontent.com/Peessst/Heavenhub/main/HeavenHubBlade"))()
+end)
+
+a:Button("8968",function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/Blade-Ball-Autofarm-8968"))()
 end)
 
 a:Button("Corolla",function()
@@ -2859,7 +2863,7 @@ _G.infiniteStamina = true
 _G.killAuraRange = 20
 
      _G.Config = {
-    MinDistance = 0.00000001,
+    MinDistance = 5,
     DelBallSpeed = 0.000000000000000001,
 }
 _G.CloseCombatMode = "ping"
