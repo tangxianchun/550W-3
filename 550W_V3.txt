@@ -1371,7 +1371,7 @@ bin:Label("当前版本：V3.3.2 公开测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("收养我｜Adopt Me")
+bin:Label("Evade")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -2397,6 +2397,11 @@ end)
 local creds = window:Tab("evade",'6035145364')
 
 local tool = creds:section("『evade』",true)
+
+tool:Button("Evade Script",function()
+local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/EvadeScript.lua"
+loadstring(game:HttpGet(link))()
+end)
 
 tool:Button("evade",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua"))()
