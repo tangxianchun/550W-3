@@ -1389,7 +1389,7 @@ local credits = creds:section("UI设置",true)
         game:GetService("CoreGui")["frosty"]:Destroy()
     end)
 
-    credits:Toggle("彩虹UI", "", false, function(state)
+    credits:Toggle("彩虹UI", "", true, function(state)
         if state then
         game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
         else
