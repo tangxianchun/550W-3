@@ -1546,6 +1546,16 @@ tool:Button("功能",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HyaFranch/projs/hyrofr/hub"))()
 end)
 
+tool:Button("DEX-Explorer",function()
+local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/DEX-Explorer.lua"
+loadstring(game:HttpGet(link))()
+end)
+
+tool:Button("Fluxus",function()
+local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/Fluxus.lua"
+loadstring(game:HttpGet(link))()
+end)
+
 tool:Button("阿尔宙斯",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/arceus-X.txt"))()
 end)
@@ -2746,6 +2756,30 @@ end)
 
 local creds = window:Tab("刀刃球",'6035145364')
 
+local a = creds:section("星月交辉刀刃球脚本",true)
+
+a:Button("自动击球",function()
+hit_time = 0.5, -- // recommended 0.25 to 0.75 \ --     mode = 'Always', -- // Hold , Toggle , Always \ --    deflect_type = 'Remote', -- // Key Press , Remote \ --    notifications = true,    keybind = Enum.KeyCode.V
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
+end)
+
+a:Button("自动连击",function()
+local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autospam.lua"
+loadstring(game:HttpGet(link))()
+end)
+
+a:Button("星月刀刃球 V1",function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/biade%20ball.txt"))()
+ end)
+
+a:Button("星月刀刃球 V2",function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/daorenqiu-V2.lua"))()
+ end)
+
+a:Button("星月刀刃球 V3",function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/daorenqiu-V3.lua"))()
+ end)
+
 local a = creds:section("脚本",true)
 
 a:Button("HeavenHub",function()
@@ -2783,18 +2817,6 @@ end)
 
 a:Button("Sirius",function()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/xdevslasher/Siriusisbetter/main/xyz.bb.lua",true))()
- end)
-
-a:Button("星月刀刃球 V1",function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/biade%20ball.txt"))()
- end)
-
-a:Button("星月刀刃球 V2",function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/daorenqiu-V2.lua"))()
- end)
-
-a:Button("星月刀刃球 V3",function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/daorenqiu-V3.lua"))()
  end)
 
  a:Button("DenDenZYT KEY-VIOLAFOUNTAIN",function()
