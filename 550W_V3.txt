@@ -2782,6 +2782,10 @@ a:Button("星月刀刃球 V3",function()
 
 local a = creds:section("脚本",true)
 
+a:Button("Codex-Hub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bosterdrone/bladeball/main/Codex-Hub"))()
+end)
+
 a:Button("HeavenHub",function()
 loadstring(Game:HttpGet("https://raw.githubusercontent.com/Peessst/Heavenhub/main/HeavenHubBlade"))()
 end)
