@@ -2763,7 +2763,7 @@ hit_time = 0.5, -- // recommended 0.25 to 0.75 \ --     mode = 'Always', -- // H
  loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
 end)
 
-a:Toggle("自动连击",function(state)
+a:Toggle("自动连击","",false,function(state)
 local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autospam.lua"
 loadstring(game:HttpGet(link))()
 end)
