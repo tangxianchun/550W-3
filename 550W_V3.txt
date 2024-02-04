@@ -2939,7 +2939,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/ma
 
 local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autospam.lua"
 loadstring(game:HttpGet(link))()
- end) 
+ end)
 
 a:Button("ThatSick『密钥：INDISCORD』",function()
  script_key=""; -- Put your key here if you have VIP
