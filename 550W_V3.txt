@@ -2791,6 +2791,11 @@ a:Button("星月刀刃球 V3",function()
 
 local a = creds:section("脚本",true)
 
+a:Button("auto Parry",function()
+local link = "https://raw.githubusercontent.com/SupaaLucy/BladeBallFixedBlock/main/AutoParry"
+loadstring(game:HttpGet(link))()
+end)
+
 a:Button("Codex-Hub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bosterdrone/bladeball/main/Codex-Hub"))()
 end)
