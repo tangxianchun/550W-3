@@ -2768,11 +2768,7 @@ local creds = window:Tab("刀刃球",'6035145364')
 local a = creds:section("星月交辉刀刃球脚本",true)
 
 a:Button("自动击球",function()
-hit_time = 0.5, -- // recommended 0.25 to 0.75 \ --     mode = 'Always', -- // Hold , Toggle , Always \ --    deflect_type = 'Remote', -- // Key Press , Remote \ --    notifications = true,    keybind = Enum.KeyCode.V
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
-end)
 
-a:Toggle("自动连击","",false,function(state)
 _G.killAuraEnabled = true
 _G.infiniteStamina = true
 _G.killAuraRange = 20
@@ -2784,16 +2780,24 @@ _G.killAuraRange = 20
 _G.CloseCombatMode = "speed"
 
 _G.UI_Size = 30 -- config ui size
- 
+
+
+getgenv().config = getgenv().config or {
     hit_time = 0.5, -- // recommended 0.25 to 0.75 \ --
  
     mode = 'Always', -- // Hold , Toggle , Always \ --
     deflect_type = 'Remote', -- // Key Press , Remote \ --
     notifications = true,
     keybind = Enum.KeyCode.V
+}
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
 
+local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autospam.lua"
+loadstring(game:HttpGet(link))()
+end)
+
+a:Toggle("自动连击","",false,function(state)
 local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autospam.lua"
 loadstring(game:HttpGet(link))()
 end)
@@ -2929,6 +2933,16 @@ _G.killAuraRange = 20
 _G.CloseCombatMode = "speed"
 
 _G.UI_Size = 30 -- config ui size
+
+
+getgenv().config = getgenv().config or {
+    hit_time = 0.5, -- // recommended 0.25 to 0.75 \ --
+ 
+    mode = 'Always', -- // Hold , Toggle , Always \ --
+    deflect_type = 'Remote', -- // Key Press , Remote \ --
+    notifications = true,
+    keybind = Enum.KeyCode.V
+}
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
 
