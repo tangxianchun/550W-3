@@ -2816,6 +2816,10 @@ a:Button("星月刀刃球 V3",function()
 
 local a = creds:section("脚本",true)
 
+a:Button("romkich09",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/romkich09/stire/main/starballkey", true))()
+end)
+
 a:Button("Codex-Hub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bosterdrone/bladeball/main/Codex-Hub"))()
 end)
@@ -2962,6 +2966,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Bedol
 
 a:Button("ffji",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/autoparry.lua"))()
+end)
+
+local creds = window:Tab("死亡球",'6035145364')
+
+local a = creds:section("『Death ball』",turn)
+
+a:Button("LOLking",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Death/main/Ball"))()
 end)
 
 local creds = window:Tab("宠物模拟器",'6035145364')
