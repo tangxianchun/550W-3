@@ -2100,6 +2100,11 @@ end)
 
 local tool = creds:section("「功能」[✝]",true)
 
+tool:Button("上帝模式",function()
+local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/doors_shangdi.lua"
+loadstring(game:HttpGet(link))()
+end)
+
 tool:Button("支线任务:拯救耶稣", function()
 loadstring(game:HttpGet(('https://pastebin.com/raw/WsEia2W0')))()
 end)
