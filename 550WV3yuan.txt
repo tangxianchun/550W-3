@@ -151,7 +151,7 @@ corner.CornerRadius = UDim.new(0, 25)
 corner.Parent = frame   
 
 local textLabel = Instance.new("TextLabel")
-textLabel.Text = "星月交辉脚本"
+textLabel.Text = "星月交辉 V3"
 textLabel.Position = UDim2.new(0, 0, 0, 0)
 textLabel.Size = UDim2.new(1, 0, 0.5, 0)
 textLabel.BackgroundTransparency = 1
@@ -160,7 +160,16 @@ textLabel.TextSize = 24
 textLabel.Parent = frame
 
 local smallTextLabel = Instance.new("TextLabel")
-smallTextLabel.Text = "欢迎使用Σ＞―(灬⁺д⁺灬)♡―――＞"
+smallTextLabel.Text = "欢迎使用"
+smallTextLabel.Position = UDim2.new(0, 0, 0.2, 0)
+smallTextLabel.Size = UDim2.new(1, 0, 0.5, 0)
+smallTextLabel.BackgroundTransparency = 1
+smallTextLabel.TextColor3 = Color3.new(1, 0.84, 0)
+smallTextLabel.TextSize = 18
+smallTextLabel.Parent = frame
+
+local smallTextLabel = Instance.new("TextLabel")
+smallTextLabel.Text = "当前版本：3.3.5"
 smallTextLabel.Position = UDim2.new(0, 0, 0.5, 0)
 smallTextLabel.Size = UDim2.new(1, 0, 0.5, 0)
 smallTextLabel.BackgroundTransparency = 1
