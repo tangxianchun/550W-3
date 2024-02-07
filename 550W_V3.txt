@@ -1,4 +1,4 @@
-local library = loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
 
 local window = library:new("星月交辉☪️ V3 公开测试版")
 
