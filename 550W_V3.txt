@@ -1470,7 +1470,7 @@ a:Button("星月刀刃球 V3",function()
 
 local a = creds:section("脚本",true)
 
-a:Button("Next1",function()
+a:Button("Next1x",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Next1x/Bedol/main/Hub"))()
 end)
 
