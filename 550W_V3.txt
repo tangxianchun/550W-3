@@ -1048,6 +1048,10 @@ local creds = window:Tab("evade",'6035145364')
 
 local tool = creds:section("『evade』",true)
 
+tool:Button("masket",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dc2-masket27727/Mobile-s-Hub/main/Main/Hydra/Evade.exe"))()
+end)
+
 tool:Button("Evade Script",function()
 local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/EvadeScript.lua"
 loadstring(game:HttpGet(link))()
@@ -1465,6 +1469,14 @@ a:Button("星月刀刃球 V3",function()
  end)
 
 local a = creds:section("脚本",true)
+
+a:Button("Next1x",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Next1x/Bedol/main/Hub"))()
+end)
+
+a:Button("mqGPg69N",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/mqGPg69N"))()
+end)
 
 a:Button("romkich09",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/romkich09/stire/main/starballkey", true))()
