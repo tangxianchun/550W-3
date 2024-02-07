@@ -1,6 +1,5 @@
-local library = loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
-
-local window = library:new("星月交辉☪️ V3 公开测试版")
+local ui = loadstring(game:HttpGet"https://pastebin.com/raw/E9PzvbeX")()
+local window = ui:new("星月交辉☪️ V3 公开测试版")
 
 local creds = window:Tab("『信息』",'6035145364')
 
