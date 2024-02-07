@@ -1,4 +1,4 @@
-local ui = loadstring(game:HttpGet"https://pastebin.com/raw/E9PzvbeX")()
+local ui = loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
 
 local window = ui:new("星月交辉☪️ V3 公开测试版")
 
