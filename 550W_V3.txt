@@ -1433,7 +1433,7 @@ _G.killAuraRange = 20
 
      _G.Config = {
     MinDistance = 0.5,
-    DelBallSpeed =0.05 or 0.15 or 0.25 or 0.35 or 0.4,
+    DelBallSpeed = 0.2 or 0.25 or 0.35 or 0.4,
 }
 _G.CloseCombatMode = "speed"
 
@@ -1665,6 +1665,10 @@ end)
 local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
+
+bin:Button("mbmxhub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/mbmxhub/beta"))()  
+end)
 
 bin:Button("RadonHub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/RadonHub/main/Script.lua"))()
