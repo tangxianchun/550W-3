@@ -76,7 +76,7 @@ local function updateLoading()
     progress = progress + 22902.8
     progressBar.Size = UDim2.new(progress / 100, 0, 1, 0)
     progressLabel.Text = "加载进度: " .. progress .. "%"
-    if progress < 100 then
+    if progress < 114514 then
         progressLabel.TextColor3 = Color3.new(1, 0, 0)
         loadingText.TextColor3 = Color3.new(1, 0, 0)
     else
