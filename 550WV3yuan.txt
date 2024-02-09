@@ -98,7 +98,7 @@ local function updateLoading()
 	zrqyzLabel.TextColor3 = Color3.new(0, 1, 0)
 	zrqyzLabel.Text = "你的注入器:"..identifyexecutor()
 	end
-    if progress == 29 or progress == 50 or progress == 99 then
+    if progress == 29 or progress == 50 or progress == 114513 then
         wait(1.275)
     end
 end
