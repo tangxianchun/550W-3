@@ -1434,8 +1434,8 @@ _G.infiniteStamina = true
 _G.killAuraRange = 20
 
      _G.Config = {
-    MinDistance =0 or 0.1 or 0.2 or 0.3 or 0.4 or 0.5,
-    DelBallSpeed =0 or 10000000,
+    MinDistance =0 to 0.1 to 0.2 to 0.3 to 0.4 to 0.5,
+    DelBallSpeed =10000000,
 }
 _G.CloseCombatMode = "speed"
 
@@ -1443,7 +1443,7 @@ _G.UI_Size = 100 -- config ui size
 
 
 getgenv().config = getgenv().config or {
-    hit_time = 0.5, -- // recommended 0.25 to 0.75 \ --
+    hit_time = 0.5, -- // recommended 0.1 to 0.25 to 0.5 \ --
  
     mode = 'Always', -- // Hold , Toggle , Always \ --
     deflect_type = 'Remote', -- // Key Press , Remote \ --
