@@ -1435,7 +1435,7 @@ _G.killAuraRange = 20
 
      _G.Config = {
     MinDistance =0 or 0.1 or 0.2 or 0.3 or 0.4 or 0.5,
-    DelBallSpeed =10000000,
+    DelBallSpeed =0.0000000000001,
 }
 _G.CloseCombatMode = "speed"
 
