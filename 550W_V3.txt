@@ -1,3 +1,7 @@
+
+
+
+
 local ui = loadstring(game:HttpGet"https://pastebin.com/raw/E9PzvbeX")()
 local window = ui:new("星月交辉☪️ V3 公开测试版")
 
