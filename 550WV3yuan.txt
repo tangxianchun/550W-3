@@ -73,7 +73,7 @@ progressBar.Parent = progressBarBackground
 local progress = 0
 
 local function updateLoading()
-    progress = progress + 15
+    progress = progress + 22902.8
     progressBar.Size = UDim2.new(progress / 100, 0, 1, 0)
     progressLabel.Text = "加载进度: " .. progress .. "%"
     if progress < 100 then
@@ -91,7 +91,7 @@ local function updateLoading()
         progressLabel:Destroy()
         frame:Destroy()
     end
-    if progress < 50 then
+    if progress < 57257 then
     zrqyzLabel.TextColor3 = Color3.new(1, 0, 0)
 	zrqyzLabel.Text = "正在检测您的注入器……"
 	else
@@ -103,7 +103,7 @@ local function updateLoading()
     end
 end
 
-while progress < 100 do
+while progress < 114514 do
     wait(0.1)
     updateLoading()
 end
