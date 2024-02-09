@@ -1,6 +1,6 @@
 
 
-local ui = loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
+local ui = loadstring(game:HttpGet"https://pastebin.com/raw/E9PzvbeX")()
 local window = ui:new("星月交辉☪️ V3 公开测试版")
 
 local creds = window:Tab("『信息』",'6035145364')
@@ -1434,11 +1434,11 @@ _G.infiniteStamina = true
 _G.killAuraRange = 20
 
      _G.Config = {
-    MinDistance =0 or 0.5 or 1,
-    DelBallSpeed = 0 or 0.1 or 0.2 or 0.25 or 0.35 or 0.4,
-
-_G.CloseCombatMode = "speed"
+    MinDistance = 0.5,
+    DelBallSpeed = 0.2 or 0.25 or 0.35 or 0.4,
 }
+_G.CloseCombatMode = "speed"
+
 _G.UI_Size = 30 -- config ui size
 
 
