@@ -1630,6 +1630,10 @@ local creds = window:Tab("死亡球",'6035145364')
 
 local a = creds:section("『Death ball』",true)
 
+a:Button("Hosvile",function()
+loadstring(game:HttpGet("https://github.com/Hosvile/InfiniX/releases/latest/download/main.lua",true))()
+end)
+
 a:Button("LOLking",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Death/main/Ball"))()
 end)
