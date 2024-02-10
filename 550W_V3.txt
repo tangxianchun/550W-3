@@ -1434,9 +1434,9 @@ _G.infiniteStamina = true
 _G.killAuraRange = 20
 
      _G.Config = {
-    MinDistance < 0.5,
-    DelBallSpeed < 0.45,
-    Batting time < 0.35,
+    MinDistance =0.8,
+    DelBallSpeed =0.1,
+    Batting time =0.001,
     CloseCombatMode = "MinDistance"
 }
 
