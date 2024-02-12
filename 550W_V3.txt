@@ -1463,6 +1463,11 @@ local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autospam
 loadstring(game:HttpGet(link))()
 end)
 
+a:Toggle("自动击球2","",false,function(state)
+local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autoParry2.lua"
+loadstring(game:HttpGet(link))()
+end)
+
 a:Toggle("自动连击","",false,function(state)
 local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autospam.lua"
 loadstring(game:HttpGet(link))()
