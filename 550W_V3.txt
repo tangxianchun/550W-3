@@ -1550,8 +1550,8 @@ a:Button("Sirius",function()
   loadstring(game:Https("https://raw.githubusercontent.com/SyrTop/GenZ/main/GenesisLoader/GenesisZ_Loader.txt"))()
  end)
   
- a:Button("SymphonyHub『需密钥』",function() 
-     local a,b,c,d=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,"https://itsjidy.github.io/SymphonyHub/Loader.html"c(a and b, "Your Executor does not support.")a(b({Url=d,Method="GET"}).Body)()
+ a:Button("SymphonyHub『需密钥』",function()
+local a,b,c,d=loadstring,request or http_request or(http and http.request)or(syn and syn.request),assert,"https://lhr.synteamenv.workers.dev/?page=script"c(a and b,"Your executor does not support.")a(b({Url=d,Method="POST",Headers={["Authorization"]="Elf and Tears"}}).Body)()
  end) 
  
   a:Button("REDzHUB",function() 
