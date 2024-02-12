@@ -29,6 +29,8 @@ bin:Toggle("游戏信息(关不了)", "", false, function(state)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
     end)
 
+local creds = window:Tab("『UI设置』",'6035145364')
+
 local credits = creds:section("UI设置",true)
 
     credits:Button("摧毁UI",function()
@@ -1232,6 +1234,14 @@ end
 end
 end)
 
+local creds = window:Tab("最强战场",'6035145364')
+
+local tool = creds:section("『可能用不了』",true)
+
+tool:Button("RayzMd",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RayzMd/SyniX-Team/main/SyniXScripts"))()
+end)
+
 local creds = window:Tab("Nico Next Bot",'6035145364')
 
 local tool = creds:section("『可能用不了』",true)
@@ -1434,9 +1444,9 @@ _G.infiniteStamina = true
 _G.killAuraRange = 20
 
      _G.Config = {
-    MinDistance =0.8,
-    DelBallSpeed =0.1,
-    Battingtime =0.001,
+    MinDistance =0.5,
+    DelBallSpeed =0.25,
+    Battingtime =0.0001,
     CloseCombatMode = "MinDistance"
 }
 
