@@ -1,6 +1,19 @@
 
 local CoreGui = game:GetService("StarterGui")
 
+CoreGui:SetCore("SendNotification", {
+    Title = "提示",
+    Text = "脚本维护中",
+    Duration = 10,
+})
+
+--白名单程序
+local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/BMD2.lua", true))()
+if whitelist[game.Players.LocalPlayer.Name] then
+
+
+local CoreGui = game:GetService("StarterGui")
+
 local gui = Instance.new("ScreenGui")
 gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
@@ -526,7 +539,7 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEq78z3mQfz6ikaNMatV5LKR2fvKlN" then
+    if Key.Text == "hHINfRoJrKIV9Ppd7SackEo3FKIZ9Ppd7SackF23FMoFFNo33QHQsSXBhIKNu" then
         ScreenGui:Destroy()
 print("非白名单脚本")
 print("您的是非白名单脚本")
