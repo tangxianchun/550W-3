@@ -1442,34 +1442,8 @@ local creds = window:Tab("刀刃球",'6035145364')
 
 local a = creds:section("星月交辉刀刃球脚本",true)
 
-a:Button("自动击球",function()
-
-_G.killAuraEnabled = true
-_G.infiniteStamina = true
-_G.killAuraRange = 20
-
-     _G.Config = {
-    MinDistance =0.5,
-    DelBallSpeed =0.25,
-    Battingtime =0.0001,
-    CloseCombatMode = "MinDistance"
-}
-
-_G.UI_Size = 100 -- config ui size
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
-
-local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autospam.lua"
-loadstring(game:HttpGet(link))()
-end)
-
-a:Toggle("自动击球2","",false,function(state)
-local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autoParry2.lua"
-loadstring(game:HttpGet(link))()
-end)
-
-a:Toggle("自动连击","",false,function(state)
-local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autospam.lua"
+a:Button("新版星月刀刃球",function()
+local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/Blade-ball.lua"
 loadstring(game:HttpGet(link))()
 end)
 
