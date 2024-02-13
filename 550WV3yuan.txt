@@ -7,7 +7,7 @@ CoreGui:SetCore("SendNotification", {
     Duration = 10,
 })
 
---白名单程序
+
 local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/BMD2.lua", true))()
 if whitelist[game.Players.LocalPlayer.Name] then
 
