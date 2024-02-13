@@ -8,10 +8,6 @@ CoreGui:SetCore("SendNotification", {
 })
 
 
-local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/BMD2.lua", true))()
-if whitelist[game.Players.LocalPlayer.Name] then
-
-
 local CoreGui = game:GetService("StarterGui")
 
 local gui = Instance.new("ScreenGui")
@@ -436,7 +432,7 @@ local CoreGui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/pyaw
 notify("————💫『日月星辰工作室」💫————", "白名单验证中", 4)
 notify("————💫『日月星辰工作室」💫————", "加群定期发放白名单", 4)
 
-local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/BMD.lua", true))()
+local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/BMD2.lua", true))()
 if whitelist[game.Players.LocalPlayer.Name] then
 print("白名单脚本")
 print("欢迎👏白名单用户上分")
@@ -470,6 +466,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/m
 
 
 else
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "提示",
+    Text = "脚本维护中",
+    Duration = 10,
+})
+
 local ScreenGui = Instance.new("ScreenGui")
 local UI = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
