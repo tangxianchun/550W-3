@@ -169,7 +169,7 @@ smallTextLabel.TextSize = 18
 smallTextLabel.Parent = frame
 
 local smallTextLabel = Instance.new("TextLabel")
-smallTextLabel.Text = "当前版本：3.3.5"
+smallTextLabel.Text = "当前版本：3.3.6"
 smallTextLabel.Position = UDim2.new(0, 0, 0.4, 0)
 smallTextLabel.Size = UDim2.new(1, 0, 0.5, 0)
 smallTextLabel.BackgroundTransparency = 1
@@ -178,7 +178,7 @@ smallTextLabel.TextSize = 18
 smallTextLabel.Parent = frame
 
 local smallTextLabel = Instance.new("TextLabel")
-smallTextLabel.Text = "最新版本：3.3.7"
+smallTextLabel.Text = "最新版本：3.3.8"
 smallTextLabel.Position = UDim2.new(0, 0, 0., 0)
 smallTextLabel.Size = UDim2.new(1, 0, 0.6, 0)
 smallTextLabel.BackgroundTransparency = 1
@@ -192,6 +192,22 @@ local stayTime = 3
 
 local tween = game:GetService("TweenService"):Create(frame, TweenInfo.new(tweenTime, Enum.EasingStyle.Linear), {
     Position = targetPos
+})
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "提示",
+    Text = "当前版本不是最新版本",
+    Duration = 5,
+})
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "提示",
+    Text = "建议提升到最新版本，拥有更好的体验",
+    Duration = 5,
 })
 
 tween:Play()
