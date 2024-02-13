@@ -161,8 +161,8 @@ textLabel.Parent = frame
 
 local smallTextLabel = Instance.new("TextLabel")
 smallTextLabel.Text = "欢迎使用"
-smallTextLabel.Position = UDim2.new(0, 0, 0.2, 0)
-smallTextLabel.Size = UDim2.new(1, 0, 0.5, 0)
+smallTextLabel.Position = UDim2.new(0, 0, 0, 0)
+smallTextLabel.Size = UDim2.new(1, 0, 0.6, 0)
 smallTextLabel.BackgroundTransparency = 1
 smallTextLabel.TextColor3 = Color3.new(1, 0.84, 0)
 smallTextLabel.TextSize = 18
@@ -170,8 +170,8 @@ smallTextLabel.Parent = frame
 
 local smallTextLabel = Instance.new("TextLabel")
 smallTextLabel.Text = "当前版本：3.3.6"
-smallTextLabel.Position = UDim2.new(0, 0, 0.4, 0)
-smallTextLabel.Size = UDim2.new(1, 0, 0.5, 0)
+smallTextLabel.Position = UDim2.new(0, 0, 0, 0)
+smallTextLabel.Size = UDim2.new(1, 0, 0.7, 0)
 smallTextLabel.BackgroundTransparency = 1
 smallTextLabel.TextColor3 = Color3.new(1, 0.84, 0)
 smallTextLabel.TextSize = 18
@@ -180,7 +180,7 @@ smallTextLabel.Parent = frame
 local smallTextLabel = Instance.new("TextLabel")
 smallTextLabel.Text = "最新版本：3.3.8"
 smallTextLabel.Position = UDim2.new(0, 0, 0., 0)
-smallTextLabel.Size = UDim2.new(1, 0, 0.6, 0)
+smallTextLabel.Size = UDim2.new(1, 0, 0.8, 0)
 smallTextLabel.BackgroundTransparency = 1
 smallTextLabel.TextColor3 = Color3.new(1, 0.84, 0)
 smallTextLabel.TextSize = 18
@@ -194,6 +194,7 @@ local tween = game:GetService("TweenService"):Create(frame, TweenInfo.new(tweenT
     Position = targetPos
 })
 
+wait(2)
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
@@ -202,6 +203,7 @@ CoreGui:SetCore("SendNotification", {
     Duration = 5,
 })
 
+wait(1)
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
