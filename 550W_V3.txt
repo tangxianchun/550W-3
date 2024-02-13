@@ -13,11 +13,11 @@ bin:Label("作者QQ群：781759165")
 
 bin:Label("作者QQ频道：868h663073")
 
-bin:Label("当前版本：V3.3.5 公开测试版")
+bin:Label("当前版本：V3.3.6 公开测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("Death Ball")
+bin:Label("刀刃球")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
