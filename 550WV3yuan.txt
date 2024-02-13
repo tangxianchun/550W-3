@@ -1,12 +1,4 @@
 
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "提示",
-    Text = "脚本维护中",
-    Duration = 10,
-})
-
 
 local CoreGui = game:GetService("StarterGui")
 
@@ -178,7 +170,7 @@ smallTextLabel.TextSize = 18
 smallTextLabel.Parent = frame
 
 local smallTextLabel = Instance.new("TextLabel")
-smallTextLabel.Text = "当前版本：3.3.6"
+smallTextLabel.Text = "当前版本:3.3.6『维护中』"
 smallTextLabel.Position = UDim2.new(0, 0, 0.4, 0)
 smallTextLabel.Size = UDim2.new(1, 0, 0.5, 0)
 smallTextLabel.BackgroundTransparency = 1
@@ -187,7 +179,7 @@ smallTextLabel.TextSize = 18
 smallTextLabel.Parent = frame
 
 local smallTextLabel = Instance.new("TextLabel")
-smallTextLabel.Text = "最新版本：3.3.8"
+smallTextLabel.Text = "最新版本:3.3.8"
 smallTextLabel.Position = UDim2.new(0, 0, 0.6, 0)
 smallTextLabel.Size = UDim2.new(1, 0, 0.5, 0)
 smallTextLabel.BackgroundTransparency = 1
@@ -208,7 +200,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "提示",
-    Text = "当前版本不是最新版本",
+    Text = "当前版本不是最新版本,维护中",
     Duration = 5,
 })
 
