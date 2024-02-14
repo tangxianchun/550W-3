@@ -170,7 +170,7 @@ smallTextLabel.TextSize = 18
 smallTextLabel.Parent = frame
 
 local smallTextLabel = Instance.new("TextLabel")
-smallTextLabel.Text = "当前版本:3.3.6[维护中]"
+smallTextLabel.Text = "当前版本:3.3.6"
 smallTextLabel.Position = UDim2.new(0, 0, 0.4, 0)
 smallTextLabel.Size = UDim2.new(1, 0, 0.5, 0)
 smallTextLabel.BackgroundTransparency = 1
@@ -179,7 +179,7 @@ smallTextLabel.TextSize = 18
 smallTextLabel.Parent = frame
 
 local smallTextLabel = Instance.new("TextLabel")
-smallTextLabel.Text = "最新版本:3.3.8"
+smallTextLabel.Text = "最新版本:3.3.9"
 smallTextLabel.Position = UDim2.new(0, 0, 0.6, 0)
 smallTextLabel.Size = UDim2.new(1, 0, 0.5, 0)
 smallTextLabel.BackgroundTransparency = 1
@@ -200,7 +200,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "提示",
-    Text = "当前版本维护中,11点尝试启动",
+    Text = "当前版本已回档,可正常使用",
     Duration = 5,
 })
 
@@ -415,7 +415,7 @@ local CoreGui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/pyaw
 notify("————💫『日月星辰工作室」💫————", "白名单验证中", 4)
 notify("————💫『日月星辰工作室」💫————", "加群定期发放白名单", 4)
 
-local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/BMD2.lua", true))()
+local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/BMD.lua", true))()
 if whitelist[game.Players.LocalPlayer.Name] then
 print("白名单脚本")
 print("欢迎👏白名单用户上分")
@@ -454,7 +454,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "提示",
-    Text = "脚本维护中,11点尝试启动",
+    Text = "当前版本已回档,可正常使用",
     Duration = 10,
 })
 
