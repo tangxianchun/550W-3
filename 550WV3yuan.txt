@@ -142,7 +142,7 @@ end)
 
 local frame = Instance.new("Frame")
 frame.Position = UDim2.new(0, -200, 0.75, 0)
-frame.Size = UDim2.new(0, 200, 0, 200)
+frame.Size = UDim2.new(0, 520, 0, 520)
 frame.AnchorPoint = Vector2.new(0, 0.5)
 frame.BackgroundColor3 = Color3.new(0, 0, 0)
 frame.Parent = gui
@@ -200,16 +200,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "提示",
-    Text = "当前版本不是最新版本,维护中",
-    Duration = 5,
-})
-
-wait(1)
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "提示",
-    Text = "建议提升到最新版本，拥有更好的体验",
+    Text = "当前版本维护中,11点尝试启动",
     Duration = 5,
 })
 
@@ -463,7 +454,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "提示",
-    Text = "脚本维护中",
+    Text = "脚本维护中,11点尝试启动",
     Duration = 10,
 })
 
