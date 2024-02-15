@@ -11,11 +11,11 @@ bin:Label("作者QQ群：781759165")
 
 bin:Label("作者QQ频道：868h663073")
 
-bin:Label("当前版本：V3.3.5 公开测试版")
+bin:Label("当前版本：V3.3.5 公开密钥测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("Death Ball")
+bin:Label("")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -64,12 +64,8 @@ tool:Button("星月交辉☪️ V3 (公开测试版)",function()
 _G["公开测试版"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey" loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchu/550W_V3/main/550W_V3.txt"))()
 end)
 
-tool:Button("星月交辉☪️ V3 (未公开测试版)仅限测试员且脚本优先添加",function()
-	
-loadstring(game:HttpGet("https://rentry.co/550W-V3BAOMIBMD/raw"))()
-end)
 
-tool:Button("星月交辉☪️ V4(要白名单)仅限测试人员",function()
+tool:Button("星月交辉☪️ V4",function()
 	
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550WV4/main/550W-V4.txt"))()
 end)
