@@ -454,7 +454,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "提示",
-    Text = "当前版本已回档,可正常使用",
+    Text = "当前版本为密钥版,可正常使用",
     Duration = 10,
 })
 
@@ -536,7 +536,7 @@ print("欢迎您使用此脚本")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550-v3miyue.lua"))()
        
     else
 notify("系统", "密钥错误™", 1)
