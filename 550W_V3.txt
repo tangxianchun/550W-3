@@ -1438,6 +1438,7 @@ local creds = window:Tab("刀刃球",'6035145364')
 local a = creds:section("星月交辉刀刃球脚本",true)
 
 a:Button("新版星月刀刃球",function()
+getgenv().Color = Color3.fromRGB(0, 128, 255)
 local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/Blade-ball.lua"
 loadstring(game:HttpGet(link))()
 end)
@@ -1639,6 +1640,11 @@ end)
 local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
+
+bin:Button("StirkeHub1",function()
+getgenv().Color = Color3.fromRGB(0, 128, 255)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StormSKz12/StirkeHub1/main/Gameincluded"))()
+end)
 
 bin:Button("mbmxhub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/mbmxhub/beta"))()  
