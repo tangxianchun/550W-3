@@ -1,5 +1,6 @@
 local library = loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
-local window = library:new("星月交辉☪️ V3 公开测试版")
+
+local window = library:New("星月交辉☪️ V3 公开测试版")
 
 local creds = window:Tab("『信息』",'6035145364')
 
@@ -15,7 +16,7 @@ bin:Label("当前版本：V3.3.5 公开密钥测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("")
+bin:Label("无")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
