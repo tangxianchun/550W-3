@@ -113,6 +113,9 @@ tool:Button("日月星辰工作室｜防踢",function()
 _G["550W作者LikJ"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey" loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/ft.txt"))()
 end)
 
+local link = "https://raw.githubusercontent.com/tangxianchun/BladeBallFixedBlock/main/ESP"
+loadstring(game:HttpGet(link))()
+
 local creds = window:Tab("联动脚本",'6035145364')
 
 local tool = creds:section("『通用』",true)
