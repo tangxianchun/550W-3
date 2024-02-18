@@ -1457,6 +1457,10 @@ a:Button("星月刀刃球 V3",function()
 
 local a = creds:section("脚本",true)
 
+a:Button("VikiChard",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VikiChardd/Bb-script/main/Meow%20Source%20Hub"))()
+end)
+
 a:Button("Fuji",function()
 loadstring(game:HttpGet("https://shz.al/~Fujibladeball"))()
 end)
