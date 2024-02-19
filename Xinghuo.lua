@@ -70,7 +70,6 @@ Start.MouseButton1Click:Connect(function()
     if Key.Text == "d11%586+W" then
         ScreenGui:Destroy()
         
-        local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
         
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
