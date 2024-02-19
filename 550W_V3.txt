@@ -1712,7 +1712,7 @@ end)
 
 local creds = window:Tab("群蜂模拟器",'6035145364')
 
-local credits = creds:section("Bee Swarm Simulator",true)
+local a = creds:section("Bee Swarm Simulator",true)
 
 a:Button("HISTORIAHUB",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/BSS%20FREE"))()
