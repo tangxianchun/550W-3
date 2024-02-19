@@ -67,7 +67,7 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "d11%586+W" then
+    if Key.Text == "" then
         ScreenGui:Destroy()
         
         
@@ -117,7 +117,7 @@ local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tang
 local Window = OrionLib:MakeWindow({Name = "自制脚本", HidePremium = false, SaveConfig = true,IntroText = "自制脚本", ConfigFolder = "好闲"})
 
 OrionLib:MakeNotification({
-  Name = "密码正确，欢迎使用,作者QQ:347724155",
+  Name = "密码正确，欢迎使用",
   Content = "当前游戏ID为:" .. game.GameId .. ".",
   Image = "rbxassetid://7734068321",
   Time = 10
