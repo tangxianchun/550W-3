@@ -987,6 +987,14 @@ a:Button("ToraIsMe ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Dragon"))()
 end)
 
+local creds = window:Tab("方块比赛",'6035145364')
+
+local a = creds:section("『Block Race✅』",true)
+
+a:Button("ToraIsMe ✅",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0blockrace"))()
+end)
+
 local creds = window:Tab("飞行比赛",'6035145364')
 
 local a = creds:section("『fly race ✅』",true)
@@ -1732,6 +1740,10 @@ local credits = creds:section("脚本",true)
 
 credits:Button("彩虹朋友", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Rainbow-Friends/main/Rainbow%20Friends"))()
+end)
+
+credits:Button("彩虹朋友2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0rainbow"))()
 end)
 
 local creds = window:Tab("监狱人生",'6035145364')
