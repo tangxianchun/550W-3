@@ -17,7 +17,7 @@ bin:Label("当前版本：V3.3.6 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("刀刃球")
+bin:Label("群蜂模拟器")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -2136,6 +2136,8 @@ About:Label("某沙雕鸭子[提供部分帮助]")
 local Statement = creds:section("声明",true)
 
 Statement:Label("欢迎加入我们的群聊781759165")
+
+Statement:Label("此脚本符合CC BY-ND协议")
 
 local creds = window:Tab("fps ping",'6035145364')
 
