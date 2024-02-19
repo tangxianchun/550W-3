@@ -111,8 +111,11 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
+
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/OrionLib.lua"))()
+
 local Window = OrionLib:MakeWindow({Name = "自制脚本", HidePremium = false, SaveConfig = true,IntroText = "自制脚本", ConfigFolder = "好闲"})
+
 OrionLib:MakeNotification({
   Name = "密码正确，欢迎使用,作者QQ:347724155",
   Content = "当前游戏ID为:" .. game.GameId .. ".",
