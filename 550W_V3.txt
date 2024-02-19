@@ -198,6 +198,11 @@ tool:Button("功能",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HyaFranch/projs/hyrofr/hub"))()
 end)
 
+tool:Button("FOV",function()
+local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/FOV.lua"
+loadstring(game:HttpGet(link))()
+end)
+
 tool:Button("DEX-Explorer",function()
 local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/DEX-Explorer.lua"
 loadstring(game:HttpGet(link))()
