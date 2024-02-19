@@ -1710,6 +1710,14 @@ bin:Button("Speed-Hub-X (无密钥)",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/BloxFruit_V2_Beta_SpeedHubX.lua"))()
 end)
 
+local creds = window:Tab("群蜂模拟器",'6035145364')
+
+local credits = creds:section("Bee Swarm Simulator",true)
+
+a:Button("HISTORIAHUB",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/BSS%20FREE"))()
+end)
+
 local creds = window:Tab("彩虹朋友",'6035145364')
 
 local credits = creds:section("脚本",true)
