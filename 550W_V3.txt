@@ -1056,6 +1056,10 @@ local creds = window:Tab("evade",'6035145364')
 
 local tool = creds:section("『evade』",true)
 
+tool:Button("TbaoHub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEvade"))()
+end)
+
 tool:Button("masket",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dc2-masket27727/Mobile-s-Hub/main/Main/Hydra/Evade.exe"))()
 end)
@@ -1716,6 +1720,10 @@ local a = creds:section("Bee Swarm Simulator",true)
 
 a:Button("HISTORIAHUB",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/BSS%20FREE"))()
+end)
+
+a:Button("Histy",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Histy"))()
 end)
 
 local creds = window:Tab("彩虹朋友",'6035145364')
