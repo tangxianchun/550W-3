@@ -987,6 +987,10 @@ a:Button("ToraIsMe ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Dragon"))()
 end)
 
+a:Button("404",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/alialii404/DragonRace/main/Tora", true))()
+end)
+
 local creds = window:Tab("方块比赛",'6035145364')
 
 local a = creds:section("『Block Race✅』",true)
