@@ -1478,6 +1478,10 @@ a:Button("星月刀刃球 V3",function()
 
 local a = creds:section("脚本",true)
 
+a:Button("10336",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Blade-Ball-Auto-Parry-10336"))()
+end)
+
 a:Button("y3MGGd9n",function()
 loadstring(game:HttpGet("https://pastefy.app/y3MGGd9n/raw"))()
 end)
