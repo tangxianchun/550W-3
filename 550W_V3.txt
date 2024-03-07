@@ -18,7 +18,7 @@ bin:Label("当前版本：V3.3.6 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("群蜂模拟器")
+bin:Label("海贼王")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -1678,6 +1678,11 @@ end)
 local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
+
+bin:Button("StirkeHub",function()
+getgenv().Color = Color3.fromRGB(0, 128, 255)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StormSKz12/StirkeHub1/main/Gameincluded"))()
+end)
 
 bin:Button("StirkeHub1",function()
 getgenv().Color = Color3.fromRGB(0, 128, 255)
