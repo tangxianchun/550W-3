@@ -1,6 +1,7 @@
-local library = loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
 
-local window = library:new("星月交辉☪️ V3 公开测试版")
+
+local ui = loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
+local window = ui:new("星月交辉☪️ V3 公开测试版")
 
 local creds = window:Tab("『信息』",'6035145364')
 
@@ -12,11 +13,11 @@ bin:Label("作者QQ群：781759165")
 
 bin:Label("作者QQ频道：868h663073")
 
-bin:Label("当前版本：V3.3.5 公开密钥测试版")
+bin:Label("当前版本：V3.3.6 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("无")
+bin:Label("群蜂模拟器")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -27,6 +28,8 @@ bin:Label("当前游戏ID为:" .. game.GameId .. ".")
 bin:Toggle("游戏信息(关不了)", "", false, function(state)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
     end)
+
+local creds = window:Tab("『UI设置』",'6035145364')
 
 local credits = creds:section("UI设置",true)
 
@@ -64,7 +67,6 @@ end)
 tool:Button("星月交辉☪️ V3 (公开测试版)",function()
 _G["公开测试版"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey" loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchu/550W_V3/main/550W_V3.txt"))()
 end)
-
 
 tool:Button("星月交辉☪️ V4",function()
 	
@@ -194,6 +196,11 @@ end)
 
 tool:Button("功能",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HyaFranch/projs/hyrofr/hub"))()
+end)
+
+tool:Button("FOV",function()
+local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/FOV.lua"
+loadstring(game:HttpGet(link))()
 end)
 
 tool:Button("DEX-Explorer",function()
@@ -972,12 +979,29 @@ a:Button("AlSploit ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AlSploit/AlSploit/main/MainScript"))()
 end)
 
+a:Button("sirapobsriumang",function()
+local link = "https://raw.githubusercontent.com/sirapobsriumang/Bedwars/main/Beta"
+loadstring(game:HttpGet(link))()
+end)
+
 local creds = window:Tab("龙族竞赛",'6035145364')
 
 local a = creds:section("『Dragon Race  ✅』",true)
 
 a:Button("ToraIsMe ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Dragon"))()
+end)
+
+a:Button("404",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/alialii404/DragonRace/main/Tora", true))()
+end)
+
+local creds = window:Tab("方块比赛",'6035145364')
+
+local a = creds:section("『Block Race✅』",true)
+
+a:Button("ToraIsMe ✅",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0blockrace"))()
 end)
 
 local creds = window:Tab("飞行比赛",'6035145364')
@@ -1048,6 +1072,10 @@ end)
 local creds = window:Tab("evade",'6035145364')
 
 local tool = creds:section("『evade』",true)
+
+tool:Button("TbaoHub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEvade"))()
+end)
 
 tool:Button("masket",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dc2-masket27727/Mobile-s-Hub/main/Main/Hydra/Evade.exe"))()
@@ -1225,6 +1253,14 @@ tl.TextColor3 = Color3.new(185, 0, 0)
 tl.Text = v.Name
 end
 end
+end)
+
+local creds = window:Tab("最强战场",'6035145364')
+
+local tool = creds:section("『可能用不了』",true)
+
+tool:Button("RayzMd",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RayzMd/SyniX-Team/main/SyniXScripts"))()
 end)
 
 local creds = window:Tab("Nico Next Bot",'6035145364')
@@ -1422,38 +1458,9 @@ local creds = window:Tab("刀刃球",'6035145364')
 
 local a = creds:section("星月交辉刀刃球脚本",true)
 
-a:Button("自动击球",function()
-
-_G.killAuraEnabled = true
-_G.infiniteStamina = true
-_G.killAuraRange = 20
-
-     _G.Config = {
-    MinDistance = 0.5,
-    DelBallSpeed =0.05 or 0.15 or 0.25 or 0.35 or 0.4,
-}
-_G.CloseCombatMode = "speed"
-
-_G.UI_Size = 30 -- config ui size
-
-
-getgenv().config = getgenv().config or {
-    hit_time = 0.5, -- // recommended 0.25 to 0.75 \ --
- 
-    mode = 'Always', -- // Hold , Toggle , Always \ --
-    deflect_type = 'Remote', -- // Key Press , Remote \ --
-    notifications = true,
-    keybind = Enum.KeyCode.V
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
-
-local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autospam.lua"
-loadstring(game:HttpGet(link))()
-end)
-
-a:Toggle("自动连击","",false,function(state)
-local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autospam.lua"
+a:Button("新版星月刀刃球",function()
+getgenv().Color = Color3.fromRGB(0, 128, 255)
+local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/Blade-ball.lua"
 loadstring(game:HttpGet(link))()
 end)
 
@@ -1470,6 +1477,18 @@ a:Button("星月刀刃球 V3",function()
  end)
 
 local a = creds:section("脚本",true)
+
+a:Button("y3MGGd9n",function()
+loadstring(game:HttpGet("https://pastefy.app/y3MGGd9n/raw"))()
+end)
+
+a:Button("VikiChard",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VikiChardd/Bb-script/main/Meow%20Source%20Hub"))()
+end)
+
+a:Button("Fuji",function()
+loadstring(game:HttpGet("https://shz.al/~Fujibladeball"))()
+end)
 
 a:Button("Next1x",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Next1x/Bedol/main/Hub"))()
@@ -1527,25 +1546,9 @@ a:Button("Sirius",function()
  a:Button("DenDenZYT KEY-VIOLAFOUNTAIN",function()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/DenDenZYT/Main/main/FreeAtreusHubKeySystem"))()
  end)
-
- a:Button("xdevslasher",function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/xdevslasher/Siriusisbetter/main/xyz.bb.lua",true))()
- end)
-
- a:Button("MainLoader",function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
- end)
-
- a:Button("GBiFB5kE",function()
-  loadstring(game:HttpGet("https://pastebin.com/raw/GBiFB5kE"))()
- end)
-
- a:Button("GenesisZ_Loader",function() 
-  loadstring(game:Https("https://raw.githubusercontent.com/SyrTop/GenZ/main/GenesisLoader/GenesisZ_Loader.txt"))()
- end)
   
- a:Button("SymphonyHub『需密钥』",function() 
-     local a,b,c,d=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,"https://itsjidy.github.io/SymphonyHub/Loader.html"c(a and b, "Your Executor does not support.")a(b({Url=d,Method="GET"}).Body)()
+ a:Button("SymphonyHub『需密钥』",function()
+local a,b,c,d=loadstring,request or http_request or(http and http.request)or(syn and syn.request),assert,"https://lhr.synteamenv.workers.dev/?page=script"c(a and b,"Your executor does not support.")a(b({Url=d,Method="POST",Headers={["Authorization"]="Elf and Tears"}}).Body)()
  end) 
  
   a:Button("REDzHUB",function() 
@@ -1633,7 +1636,11 @@ end)
 
 local creds = window:Tab("死亡球",'6035145364')
 
-local a = creds:section("『Death ball』",ture)
+local a = creds:section("『Death ball』",true)
+
+a:Button("Hosvile",function()
+loadstring(game:HttpGet("https://github.com/Hosvile/InfiniX/releases/latest/download/main.lua",true))()
+end)
 
 a:Button("LOLking",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Death/main/Ball"))()
@@ -1662,6 +1669,15 @@ end)
 local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
+
+bin:Button("StirkeHub1",function()
+getgenv().Color = Color3.fromRGB(0, 128, 255)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StormSKz12/StirkeHub1/main/Gameincluded"))()
+end)
+
+bin:Button("mbmxhub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/mbmxhub/beta"))()  
+end)
 
 bin:Button("RadonHub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/RadonHub/main/Script.lua"))()
@@ -1719,12 +1735,28 @@ bin:Button("Speed-Hub-X (无密钥)",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/BloxFruit_V2_Beta_SpeedHubX.lua"))()
 end)
 
+local creds = window:Tab("群蜂模拟器",'6035145364')
+
+local a = creds:section("Bee Swarm Simulator",true)
+
+a:Button("HISTORIAHUB",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/BSS%20FREE"))()
+end)
+
+a:Button("Histy",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Histy"))()
+end)
+
 local creds = window:Tab("彩虹朋友",'6035145364')
 
 local credits = creds:section("脚本",true)
 
 credits:Button("彩虹朋友", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Rainbow-Friends/main/Rainbow%20Friends"))()
+end)
+
+credits:Button("彩虹朋友2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0rainbow"))()
 end)
 
 local creds = window:Tab("监狱人生",'6035145364')
@@ -2137,6 +2169,8 @@ About:Label("某沙雕鸭子[提供部分帮助]")
 local Statement = creds:section("声明",true)
 
 Statement:Label("欢迎加入我们的群聊781759165")
+
+Statement:Label("此脚本符合CC BY-ND协议")
 
 local creds = window:Tab("fps ping",'6035145364')
 
