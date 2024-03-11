@@ -18,7 +18,7 @@ bin:Label("当前版本：V3.3.7 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("海贼王")
+bin:Label("海贼王‖动漫战士模拟器")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -928,6 +928,14 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = window:Tab("动漫战士模拟器",'6035145364')
+
+local a = creds:section("『⚔️ Anime Fighters Simulator ✅』",true)
+
+a:Button("azHjbL1y ✅",function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/azHjbL1y")))()
+end)
+
 local creds = window:Tab("法师大亨",'6035145364')
 
 local a = creds:section("『Mage Tycoon ✅』",true)
@@ -1678,6 +1686,10 @@ end)
 local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
+
+bin:Button("zeqhyrhub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kenyoux2/zeqhyrhub/main/README.md"))()
+end)
 
 bin:Button("Min_XT_V2",function()
 loadstring(game:HttpGet"https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/Min_XT_V2_.lua")()
