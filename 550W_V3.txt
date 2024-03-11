@@ -1809,6 +1809,10 @@ local creds = window:Tab("极速传奇",'6035145364')
 
 local Quic = creds:section("非传送功能",true)
 
+Quic:Button("mqGPg69N",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/mqGPg69N"))()
+end)
+
 Quic:Button("开启卡宠", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/uR6azdQQ"))()
 end)
