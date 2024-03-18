@@ -696,6 +696,10 @@ local creds = window:Tab("DOORS[✝]",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
+tool:Button("FFJ",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-FFJ-Hub-11365"))()
+end)
+
 tool:Button("content",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Doors"))()
 end)
