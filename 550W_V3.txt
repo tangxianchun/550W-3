@@ -18,7 +18,7 @@ bin:Label("当前版本：V3.3.7 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("国王的遗产,新谋杀之迷2")
+bin:Label("Doors")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -695,6 +695,10 @@ end)
 local creds = window:Tab("DOORS[✝]",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
+
+tool:Button("Finish",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-Auto-Finish-11507"))()
+end)
 
 tool:Button("FFJ",function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-FFJ-Hub-11365"))()
