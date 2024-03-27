@@ -1727,6 +1727,10 @@ local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
 
+bin:Button("",function()
+loadstring(game:HttpGet("https://shz.al/~KamyonHubVerison1"))()
+end)
+
 bin:Button("zeqhyrhub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/kenyoux2/zeqhyrhub/main/README.md"))()
 end)
