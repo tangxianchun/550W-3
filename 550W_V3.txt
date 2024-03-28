@@ -1727,7 +1727,11 @@ local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
 
-bin:Button("",function()
+bin:Button("WinharHuB.lua",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/Yuri/main/WinharHuB.lua"))()
+end)
+
+bin:Button("kamyonHub",function()
 loadstring(game:HttpGet("https://shz.al/~KamyonHubVerison1"))()
 end)
 
