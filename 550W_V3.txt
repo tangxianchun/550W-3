@@ -18,7 +18,7 @@ bin:Label("当前版本：V3.3.7 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("MM2")
+bin:Label("Doors‖04-12")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -695,6 +695,26 @@ end)
 local creds = window:Tab("DOORS[✝]",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
+
+tool:Button("Kinghub",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-Kinghub-12322"))()
+end)
+
+tool:Button("lolhax-pc-only",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-lolhax-pc-only-12189"))()
+end)
+
+tool:Button("BlueRed-HubV10-BEST-HUB",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-BlueRed-HubV10-BEST-HUB-12161"))()
+end)
+
+tool:Button("PL-SH-ON-TOP-SEMI-UNIVERSAL",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-PL-SH-ON-TOP-SEMI-UNIVERSAL-12153"))()
+end)
+
+tool:Button("EPIC-MODE-ENDLESS-DOORS-stupid",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/EPIC-MODE-ENDLESS-DOORS-stupid-script-12153"))()
+end)
 
 tool:Button("Finish",function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-Auto-Finish-11507"))()
