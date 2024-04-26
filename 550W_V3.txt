@@ -1751,6 +1751,10 @@ local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
 
+bin:Button("MinGamingV4",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/MinGamingV4blox"))()
+end)
+
 bin:Button("WinharHuB.lua",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/Yuri/main/WinharHuB.lua"))()
 end)
