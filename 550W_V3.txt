@@ -956,14 +956,6 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
-local creds = window:Tab("寻宝",'6035145364')
-
-local a = creds:setcion("『BUTIF THE HUNT✅』",true)
-
-a:Button("Universal✅",function()
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-BUTIF-THE-HUNT-11572"))()
-end)
-
 local creds = window:Tab("新谋杀之谜2",'6035145364')
 
 local a = creds:section("『⚔ New Murder Mystery 2 ✅』",true)
