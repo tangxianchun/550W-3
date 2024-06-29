@@ -170,7 +170,7 @@ smallTextLabel.TextSize = 18
 smallTextLabel.Parent = frame
 
 local smallTextLabel = Instance.new("TextLabel")
-smallTextLabel.Text = "当前版本:3.3.6"
+smallTextLabel.Text = "当前版本:3.4.0"
 smallTextLabel.Position = UDim2.new(0, 0, 0.4, 0)
 smallTextLabel.Size = UDim2.new(1, 0, 0.5, 0)
 smallTextLabel.BackgroundTransparency = 1
@@ -179,7 +179,7 @@ smallTextLabel.TextSize = 18
 smallTextLabel.Parent = frame
 
 local smallTextLabel = Instance.new("TextLabel")
-smallTextLabel.Text = "测试版本:3.3.9"
+smallTextLabel.Text = "测试版本:3.5.0"
 smallTextLabel.Position = UDim2.new(0, 0, 0.6, 0)
 smallTextLabel.Size = UDim2.new(1, 0, 0.5, 0)
 smallTextLabel.BackgroundTransparency = 1
