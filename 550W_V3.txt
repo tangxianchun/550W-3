@@ -14,11 +14,11 @@ bin:Label("作者QQ群：781759165")
 
 bin:Label("作者QQ频道：868h663073")
 
-bin:Label("当前版本：V3.3.7 公开白名单测试版")
+bin:Label("当前版本：V3.4.0 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("BUTIF-HUB｜04-29")
+bin:Label("Blade ball｜06-29")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -1534,6 +1534,10 @@ a:Button("星月刀刃球 V3",function()
  end)
 
 local a = creds:section("脚本",true)
+
+a:Button("Lumin-Hub-v2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV2.lua"))
+end)
 
 a:Button("RNG",function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/RNG-AURA-Death-Ball-Mega-Auto-Parry-Esp-Dodge-11232"))()
