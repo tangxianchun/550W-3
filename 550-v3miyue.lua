@@ -1,6 +1,7 @@
 
 
-local ui = loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
+local ui = loadstring(game:HttpGet"https://pastebin.com/raw/E9PzvbeX")()
+
 local window = ui:new("星月交辉☪️ V3 公开测试版")
 
 local creds = window:Tab("『信息』",'6035145364')
@@ -13,11 +14,11 @@ bin:Label("作者QQ群：781759165")
 
 bin:Label("作者QQ频道：868h663073")
 
-bin:Label("当前版本：V3.3.6 公开白名单测试版")
+bin:Label("当前版本：V3.4.0 公开密钥测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("群蜂模拟器")
+bin:Label("Blade ball｜06-29")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -695,6 +696,34 @@ local creds = window:Tab("DOORS[✝]",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
+tool:Button("Kinghub",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-Kinghub-12322"))()
+end)
+
+tool:Button("lolhax-pc-only",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-lolhax-pc-only-12189"))()
+end)
+
+tool:Button("BlueRed-HubV10-BEST-HUB",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-BlueRed-HubV10-BEST-HUB-12161"))()
+end)
+
+tool:Button("PL-SH-ON-TOP-SEMI-UNIVERSAL",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-PL-SH-ON-TOP-SEMI-UNIVERSAL-12153"))()
+end)
+
+tool:Button("EPIC-MODE-ENDLESS-DOORS-stupid",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/EPIC-MODE-ENDLESS-DOORS-stupid-script-12153"))()
+end)
+
+tool:Button("Finish",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-Auto-Finish-11507"))()
+end)
+
+tool:Button("FFJ",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-FFJ-Hub-11365"))()
+end)
+
 tool:Button("content",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Doors"))()
 end)
@@ -927,6 +956,22 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = window:Tab("新谋杀之谜2",'6035145364')
+
+local a = creds:section("『⚔ New Murder Mystery 2 ✅』",true)
+
+a:Button("NEXUS ✅",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/13B8B/NEXUS/main/loadstring"))()
+end)
+
+local creds = window:Tab("动漫战士模拟器",'6035145364')
+
+local a = creds:section("『⚔️ Anime Fighters Simulator ✅』",true)
+
+a:Button("azHjbL1y ✅",function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/azHjbL1y")))()
+end)
+
 local creds = window:Tab("法师大亨",'6035145364')
 
 local a = creds:section("『Mage Tycoon ✅』",true)
@@ -951,6 +996,10 @@ local creds = window:Tab("国王的遗产",'6035145364')
 
 local a = creds:section("『KING LEGACY ✅』",true)
 
+a:Button("rblxhub",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua"),true))()
+end)
+
 a:Button("Adel-Hub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AdelOnTheTop/Adel-Hub/main/Main.lua"))()
 end)
@@ -969,6 +1018,10 @@ local a = creds:section("『Race Clicker ✅』",true)
 
 a:Button("SmokeXClient ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xysimdev/SmokeXClient/main/Loader.lua", true))()
+end)
+
+a:Button("HecAyid9",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/HecAyid9'))()
 end)
 
 local creds = window:Tab("床战",'6035145364')
@@ -1385,6 +1438,10 @@ local creds = window:Tab("The Mimic",'6035145364')
 
 local tool = creds:section("「脚本」",true)
 
+tool:Button("XhubMM2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
+end)
+
 tool:Button("MMC2",function()
 getgenv().mainKey = "nil";
 
@@ -1477,6 +1534,26 @@ a:Button("星月刀刃球 V3",function()
  end)
 
 local a = creds:section("脚本",true)
+
+a:Button("Lumin-Hub-v2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV2.lua"))
+end)
+
+a:Button("RNG",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/RNG-AURA-Death-Ball-Mega-Auto-Parry-Esp-Dodge-11232"))()
+end)
+
+a:Button("alchemyhub",function()
+loadstring(game:HttpGet("https://alchemyhub.xyz/v2"))()
+end)
+
+a:Button("Lumin-Hub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV3.lua"))()
+end)
+
+a:Button("10336",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Blade-Ball-Auto-Parry-10336"))()
+end)
 
 a:Button("y3MGGd9n",function()
 loadstring(game:HttpGet("https://pastefy.app/y3MGGd9n/raw"))()
@@ -1670,6 +1747,35 @@ local creds = window:Tab("海贼王",'6035145364')
 
 local bin = creds:section("『Blox Fruits』",true)
 
+bin:Button("SpectrumX",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/SpectrumX"))()
+end)
+
+bin:Button("MinGamingV4",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/MinGamingV4blox"))()
+end)
+
+bin:Button("WinharHuB.lua",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/Yuri/main/WinharHuB.lua"))()
+end)
+
+bin:Button("kamyonHub",function()
+loadstring(game:HttpGet("https://shz.al/~KamyonHubVerison1"))()
+end)
+
+bin:Button("zeqhyrhub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kenyoux2/zeqhyrhub/main/README.md"))()
+end)
+
+bin:Button("Min_XT_V2",function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/Min_XT_V2_.lua")()
+end)
+
+bin:Button("StirkeHub",function()
+getgenv().Color = Color3.fromRGB(0, 128, 255)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StormSKz12/StirkeHub1/main/Gameincluded"))()
+end)
+
 bin:Button("StirkeHub1",function()
 getgenv().Color = Color3.fromRGB(0, 128, 255)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/StormSKz12/StirkeHub1/main/Gameincluded"))()
@@ -1791,6 +1897,10 @@ local creds = window:Tab("极速传奇",'6035145364')
 
 local Quic = creds:section("非传送功能",true)
 
+Quic:Button("mqGPg69N",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/mqGPg69N"))()
+end)
+
 Quic:Button("开启卡宠", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/uR6azdQQ"))()
 end)
@@ -1868,6 +1978,10 @@ end)
 local creds = window:Tab("自然灾害",'6035145364')
 
 local Nad = creds:section("脚本功能",true)
+
+Nad:Button("Rochips",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Natural-Disaster-Survival-Rochips-nds-10406"))()
+end)
 
 Nad:Button("Natural",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hussain1323232234/My-Scripts/main/Natural%20Disaster"))()
@@ -2078,6 +2192,14 @@ end)
 local creds = window:Tab("『脚本』",'6035145364')
 
 local tool = creds:section("「脚本」",true)
+
+tool:Button("Universal-Hub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NEWBUTIF/Universal-Script-Hub/main/BUTIF%26RAFAN"))()
+end)
+
+tool:Button("BUTIF-HUB",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-BUTIF-HUB-7066"))()
+end)
 
 tool:Button("河流•version",function()
 loadstring(game:HttpGet(string.char(104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,65,87,68,88,45,68,89,86,66,47,116,101,115,116,47,109,97,105,110,47,37,69,54,37,66,50,37,66,51,37,69,54,37,66,53,37,56,49,45,37,69,53,37,65,70,37,56,54,37,69,57,37,57,50,37,65,53,45,37,69,55,37,57,57,37,66,68,37,69,53,37,57,48,37,56,68,37,69,53,37,56,68,37,57,53,45,37,69,54,37,66,65,37,57,48,37,69,55,37,65,48,37,56,49,46,108,117,97)))()
