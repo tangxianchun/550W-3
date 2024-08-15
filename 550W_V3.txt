@@ -1012,24 +1012,6 @@ a:Button("Hyper ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))()
 end)
 
-local creds = window:Tab("后室赛跑",'6035145364')
-
-local a = creds:section("『后室赛跑 ✅』",true)
-
-a:Button("原地金钱 ✅",function()
---后室赛跑
-local plr = game.Players.LocalPlayer.Character.Head
-
-while true do
-    for _, v in pairs(game:GetService("Workspace"):GetDescendants()) do
-        if v.Name == "TouchInterest" and v.Parent then
-            firetouchinterest(plr, v.Parent, 0)
-        end
-    end
-    wait(1)  -- time before loop. (adjust as needed)
-end
-end)
-
 local creds = window:Tab("金钱大亨",'6035145364')
 
 local a = creds:section("『Money tycoon ✅』",true)
@@ -1043,7 +1025,7 @@ local creds = window:Tab("TycoonRNG",'6035145364')
 
 local a = creds:section("『TycoonRNG ✅』",true)
 
-a:Button("Tycoon%20RNG ✅",function()
+a:Button("Tycoon20RNG ✅",function()
 --TycoonRNG
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MadbukScripts/Scripts/main/Obfuscated%20Tycoon%20RNG.lua"))()
 end)
