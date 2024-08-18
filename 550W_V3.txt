@@ -18,7 +18,7 @@ bin:Label("当前版本：V3.4.0 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("TycoonRNG｜08-15")
+bin:Label("Exec｜08-19")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -1187,6 +1187,10 @@ tool:Button("woah",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/fissurectomy/woah/main/ps99_stairway.lua'))()
 end)
 
+tool:Button("Exec",function()
+loadstring(game:HttpGet("https://zaphub.xyz/Exec"))()
+end)
+
 tool:Button("REDzHUB",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/PetSimulator99/main/redz9999.lua"))()
 end)
@@ -1570,6 +1574,10 @@ a:Button("星月刀刃球 V3",function()
  end)
 
 local a = creds:section("脚本",true)
+
+a:Button("REDzHUB-2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/eng"))()
+end)
 
 a:Button("Lumin-Hub-v2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV2.lua"))
