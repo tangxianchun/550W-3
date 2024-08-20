@@ -14,11 +14,11 @@ bin:Label("作者QQ群：781759165")
 
 bin:Label("作者QQ频道：868h663073")
 
-bin:Label("当前版本：V3.4.0 公开密钥测试版")
+bin:Label("当前版本：V3.4.0 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("Blade ball｜06-29")
+bin:Label("Exec｜08-19")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -1012,6 +1012,42 @@ a:Button("Hyper ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))()
 end)
 
+local creds = window:Tab("后室赛跑",'6035145364')
+
+local a = creds:section("『后室赛跑 ✅』",true)
+
+a:Button("原地金钱 ✅",function()
+--后室赛跑
+local plr = game.Players.LocalPlayer.Character.Head
+
+while true do
+    for _, v in pairs(game:GetService("Workspace"):GetDescendants()) do
+        if v.Name == "TouchInterest" and v.Parent then
+            firetouchinterest(plr, v.Parent, 0)
+        end
+    end
+    wait(1)  -- time before loop. (adjust as needed)
+end
+end)
+
+local creds = window:Tab("金钱大亨",'6035145364')
+
+local a = creds:section("『Money tycoon ✅』",true)
+
+a:Button("Destiny ✅",function()
+--金钱大亨
+loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Destiny/main/loader.lua"))()
+end)
+
+local creds = window:Tab("TycoonRNG",'6035145364')
+
+local a = creds:section("『TycoonRNG ✅』",true)
+
+a:Button("Tycoon20RNG ✅",function()
+--TycoonRNG
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MadbukScripts/Scripts/main/Obfuscated%20Tycoon%20RNG.lua"))()
+end)
+
 local creds = window:Tab("Race Clicker",'6035145364')
 
 local a = creds:section("『Race Clicker ✅』",true)
@@ -1149,6 +1185,10 @@ local tool = creds:section("『Pet Simulator 99』",true)
 
 tool:Button("woah",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/fissurectomy/woah/main/ps99_stairway.lua'))()
+end)
+
+tool:Button("Exec",function()
+loadstring(game:HttpGet("https://zaphub.xyz/Exec"))()
 end)
 
 tool:Button("REDzHUB",function()
@@ -1534,6 +1574,10 @@ a:Button("星月刀刃球 V3",function()
  end)
 
 local a = creds:section("脚本",true)
+
+a:Button("REDzHUB-2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/eng"))()
+end)
 
 a:Button("Lumin-Hub-v2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV2.lua"))
