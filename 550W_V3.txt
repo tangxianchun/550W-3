@@ -14,11 +14,11 @@ bin:Label("作者QQ群：781759165")
 
 bin:Label("作者QQ频道：868h663073")
 
-bin:Label("当前版本：V3.4.0 公开白名单测试版")
+bin:Label("当前版本：V3.4.5 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("Exec｜08-19")
+bin:Label("Evade｜08-20")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -1161,6 +1161,10 @@ end)
 local creds = window:Tab("evade",'6035145364')
 
 local tool = creds:section("『evade』",true)
+
+tool:Button("Ardrakhub-v7",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hungtu2121/Ardrakhubv7/main/Evade"))()
+end)
 
 tool:Button("TbaoHub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEvade"))()
