@@ -696,6 +696,10 @@ local creds = window:Tab("DOORS[✝]",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
+tool:Button("Rafanchik123",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/doors224"))()
+end)
+
 tool:Button("Kinghub",function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-Kinghub-12322"))()
 end)
