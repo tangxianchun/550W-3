@@ -152,7 +152,7 @@ corner.CornerRadius = UDim.new(0, 25)
 corner.Parent = frame   
 
 local textLabel = Instance.new("TextLabel")
-textLabel.Text = "星月交辉 V3"
+textLabel.Text = "星月交辉 X3"
 textLabel.Position = UDim2.new(0, 0, 0, 0)
 textLabel.Size = UDim2.new(1, 0, 0.5, 0)
 textLabel.BackgroundTransparency = 1
@@ -426,7 +426,7 @@ notify("————💫『日月星辰工作室」💫————", "验证成
 notify("————💫『日月星辰工作室」💫————", "loading……", 1)
 notify("————💫『日月星辰工作室」💫————", "正在为您启动云端…", 1)
 notify("————💫『日月星辰工作室」💫————", "启动成功！", 1)
-notify("————💫『日月星辰工作室」💫————", "Welcome use 星月交辉☪️ V3", 1)
+notify("————💫『日月星辰工作室」💫————", "Welcome use 星月交辉☪️ X3", 1)
 wait(1)
 notify("————💫『日月星辰工作室」💫————", "您目前使用的注入器:"..identifyexecutor(), 2)
 notify("MOSS", "星月交辉 Script™", 1)
