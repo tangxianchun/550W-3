@@ -18,7 +18,7 @@ bin:Label("当前版本：V3.5.0 公开密钥测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("Exec｜08-19")
+bin:Label("Evade｜08-20")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -696,6 +696,10 @@ local creds = window:Tab("DOORS[✝]",'6035145364')
 
 local tool = creds:section("「脚本」[✝]",true)
 
+tool:Button("Rafanchik123",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/doors224"))()
+end)
+
 tool:Button("Kinghub",function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-Kinghub-12322"))()
 end)
@@ -1161,6 +1165,10 @@ end)
 local creds = window:Tab("evade",'6035145364')
 
 local tool = creds:section("『evade』",true)
+
+tool:Button("Ardrakhub-v7",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hungtu2121/Ardrakhubv7/main/Evade"))()
+end)
 
 tool:Button("TbaoHub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEvade"))()
