@@ -18,7 +18,7 @@ bin:Label("当前版本：V3.5.0 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("Evade｜08-20")
+bin:Label("blade ball｜10-04")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -1582,6 +1582,10 @@ a:Button("星月刀刃球 V3",function()
  end)
 
 local a = creds:section("脚本",true)
+
+a:Button("illyamarj-HUB",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/illyamarj/HUB/main/bladeball.txt"))()
+end)
 
 a:Button("REDzHUB-2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/eng"))()
