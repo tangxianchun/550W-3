@@ -8,7 +8,7 @@ local creds = window:Tab("『信息』",'6035145364')
 
 local bin = creds:section("版本:『Public beta version』",true)
 
-bin:Label("作者：日月 official | ♡日月ikWYZ⁧‭")
+bin:Label("作者：日月 official | 日月ikWYZ⁧‭")
 
 bin:Label("作者QQ群：781759165")
 
