@@ -1583,9 +1583,9 @@ a:Button("星月刀刃球 V3",function()
 
 local a = creds:section("脚本",true)
 
-a:Button("illyamarj-HUB",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/illyamarj/HUB/main/bladeball.txt"))()
-end)
+--a:Button("illyamarj-HUB",function()
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/illyamarj/HUB/main/bladeball.txt"))()
+--end)
 
 a:Button("REDzHUB-2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/eng"))()
