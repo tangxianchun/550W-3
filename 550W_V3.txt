@@ -24,7 +24,7 @@ bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
 bin:Label("你的注入器:"..identifyexecutor())
 
-bin:Label("当前游戏ID为:" .. game.GameId .. ".")
+bin:Label("当前游戏ID为:" .. game.GameId .. "")
 
 bin:Toggle("游戏信息(关不了)", "", false, function(state)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
@@ -1583,9 +1583,9 @@ a:Button("星月刀刃球 V3",function()
 
 local a = creds:section("脚本",true)
 
---a:Button("illyamarj-HUB",function()
---loadstring(game:HttpGet("https://raw.githubusercontent.com/illyamarj/HUB/main/bladeball.txt"))()
---end)
+a:Button("illyamarj-HUB",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/illyamarj/HUB/main/bladeball.txt"))()
+end)
 
 a:Button("REDzHUB-2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/eng"))()
