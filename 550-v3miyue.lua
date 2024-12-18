@@ -2,7 +2,7 @@
 
 local ui = loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
 
-local window = ui:new("星月交辉☪️ X3 公开测试版")
+local window = ui:new("星月交辉☪️ V3 公开测试版")
 
 local creds = window:Tab("『信息』",'6035145364')
 
@@ -14,7 +14,7 @@ bin:Label("作者QQ群：781759165")
 
 bin:Label("作者QQ频道：868h663073")
 
-bin:Label("当前版本：V3.5.0 公开密钥测试版")
+bin:Label("当前版本：V3.4.5 公开白名单测试版")
 
 bin:Label("更新日志：")
 
@@ -65,7 +65,7 @@ tool:Button("星月交辉☪️ V2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550WV2/main/550WV2YUN.txt"))()
 end)
 
-tool:Button("星月交辉☪️ X3 (公开测试版)",function()
+tool:Button("星月交辉☪️ V3 (公开测试版)",function()
 _G["公开测试版"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey" loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchu/550W_V3/main/550W_V3.txt"))()
 end)
 
