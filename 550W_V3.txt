@@ -18,7 +18,7 @@ bin:Label("当前版本：V3.5.0 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("blade ball｜10-04")
+bin:Label("钓鱼｜12-18")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -958,6 +958,14 @@ end)
 
 tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
+end)
+
+local creds = window:Tab("钓鱼",'6035145364')
+
+local a = creds:section("『⚔ fish ✅』",true)
+
+a:Button("speed-Hub-X ✅",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
 end)
 
 local creds = window:Tab("新谋杀之谜2",'6035145364')
