@@ -454,7 +454,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "提示",
-    Text = "当前版本为密钥版,可正常使用",
+    Text = "当前版本为密钥版,可正常使用,密码：日月星辰",
     Duration = 10,
 })
 
@@ -527,7 +527,7 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "hHINfRoJrKIV9Ppd7SackEo3FKIZ9Ppd7SackF23FMoFFNo33QHQsSXBhIKNu" then
+    if Key.Text == "日月星辰" then
         ScreenGui:Destroy()
 print("非白名单脚本")
 print("您的是非白名单脚本")
