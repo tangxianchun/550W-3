@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/KRNL.txt"))()
 
 local ui = loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
 
@@ -1706,7 +1707,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-bet
 getgenv().visualizer = true
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))()
 -- CLICK 'X' TO ENABLE SPAM MODE
- 
+ end)
+
  a:Button("Luax-crack",function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/OopssSorry/luax-crack/main/loader.lua"))()
  end) 
