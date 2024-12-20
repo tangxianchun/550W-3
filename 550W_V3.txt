@@ -1,4 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/KRNL.txt"))()
 
 local ui = loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
 
@@ -2438,7 +2437,7 @@ local creds = window:Tab("afk",'6035145364')
 
 local tool = creds:section("afk",true)
 
-tool:Toggle("afk", "", false, function(state)
+tool:Toggle("afk", "", true, function(state)
         print("Anti Afk On")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -2446,4 +2445,9 @@ tool:Toggle("afk", "", false, function(state)
 		   wait(1)
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
+
+tool:Toggle("KRNL", "", true, function(state)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/KRNL.txt"))()
+end)
+
 end)
