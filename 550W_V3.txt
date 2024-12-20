@@ -1,4 +1,4 @@
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/KRNL.txt"))()
 
 local ui = loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
 
@@ -186,8 +186,6 @@ sound.SoundId = "rbxassetid://1837879082"
 sound.Parent = game.Workspace
 sound:Play()
 end)
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/KRNL.txt"))()
 
 local creds = window:Tab("『通用』",'6035145364')
 
