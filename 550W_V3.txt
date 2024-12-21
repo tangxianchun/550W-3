@@ -17,7 +17,7 @@ bin:Label("当前版本：V3.5.0 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("钓鱼｜12-19")
+bin:Label("钓鱼｜12-18")
 
 bin:Button("自瞄",function()
 local link = "https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/Aimbotesp" loadstring(game:HttpGet(link))()
