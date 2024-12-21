@@ -19,6 +19,10 @@ bin:Label("更新日志：")
 
 bin:Label("钓鱼｜12-18")
 
+bin:Button("自瞄",function()
+local link = "https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/Aimbotesp" loadstring(game:HttpGet(link))()
+end)
+
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
 bin:Label("你的注入器:"..identifyexecutor())
@@ -37,7 +41,7 @@ local credits = creds:section("UI设置",true)
         game:GetService("CoreGui")["frosty"]:Destroy()
     end)
 
-    credits:Toggle("彩虹UI", "", true, function(state)
+    credits:Toggle("彩虹UI", "", false, function(state)
         if state then
         game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
         else
@@ -1589,6 +1593,10 @@ a:Button("星月刀刃球 V3",function()
  end)
 
 local a = creds:section("脚本",true)
+
+a:Button("tbaohub",function()
+local link = "https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/TbaoHubBallBlade" loadstring(game:HttpGet(link))()
+end)
 
 a:Button("illyamarj-HUB",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/illyamarj/HUB/main/bladeball.txt"))()
