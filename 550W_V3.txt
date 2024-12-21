@@ -1711,7 +1711,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-bet
  a:Button("Red Circl and Inferno",function() 
      --⭕Red Circle Auto-Block:
      
-getgenv().visualizer = true
+--getgenv().visualizer = true
+
+_G.Config = {
+    MinDistance = 0.5,
+    DelBallSpeed = 0.15 or 0.25 or 0.35,
+}
+_G.CloseCombatMode = "Lag" -- [ "Lag","NotLag"  ] 
+
+_G.UI_Size = 30 -- config ui size
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))()
 -- CLICK 'X' TO ENABLE SPAM MODE
  end)
