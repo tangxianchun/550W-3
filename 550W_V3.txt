@@ -1712,8 +1712,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-bet
      --⭕Red Circle Auto-Block:--getgenv().visualizer = true
 
 _G.Config = {
-    MinDistance = -0.01,
-    DelBallSpeed = 0,
+    MinDistance = -0.000001,
+    DelBallSpeed = 0.1,
 }
 _G.CloseCombatMode = "NotLag" -- [ "Lag","NotLag"  ] 
 
