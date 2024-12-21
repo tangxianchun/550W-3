@@ -2455,7 +2455,7 @@ tool:Toggle("afk", "", true, function(state)
 		end)
 
 tool:Toggle("KRNL", "", true, function(state)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/KRNL.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/arceus-X.txt"))()
 end)
 
 end)
