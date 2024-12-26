@@ -2275,9 +2275,12 @@ tool:Button("皇脚本•version",function()
 loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
 end)
 
-tool:Button("剑客 V3•version",function()
-jianke_V3 = "作者_初夏"jianke = "剑客QQ群347724155"
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/jiankeQWQ/jiankeV3/main/jianke_V3')))()
+tool:Button("剑客 V6•version",function()
+Sword_Guest_VI = "剑客V6"
+Sword_Guest__VI = "作者 初夏"
+Sword_Guest___VI = "剑客QQ群 155160100"
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JianKeCX/GS/refs/heads/main/VI"))()
 end)
 
 tool:Button("导管中心•version",function()
