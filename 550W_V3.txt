@@ -2457,8 +2457,4 @@ tool:Toggle("afk", "", true, function(state)
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 
-tool:Toggle("KRNL", "", true, function(state)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/arceus-X.txt"))()
-end)
-
 end)
