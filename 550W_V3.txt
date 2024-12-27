@@ -1210,10 +1210,6 @@ tool:Button("Exec",function()
 loadstring(game:HttpGet("https://zaphub.xyz/Exec"))()
 end)
 
-tool:Button("REDzHUB",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/PetSimulator99/main/redz9999.lua"))()
-end)
-
 tool:Button("RedzHub-2.0",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FreeeScript/RedzHub-2.0/main/Update"))()
 end)
