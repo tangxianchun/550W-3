@@ -369,7 +369,7 @@ print("反挂机开启")
 		end)
 
 
---(local LBLG = Instance.new("ScreenGui", getParent)
+local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
 
@@ -408,7 +408,7 @@ local function HeartbeatUpdate()
 	FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 end
 Start = tick()
-Heartbeat:Connect(HeartbeatUpdate))
+Heartbeat:Connect(HeartbeatUpdate)
 
 local CoreGui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/pyawhh/UI-GUI/main/%E6%B6%88%E6%81%AF%E6%8F%90%E9%86%92%E5%8A%A0%E5%AF%86.txt')))()
 
