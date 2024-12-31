@@ -2244,7 +2244,7 @@ local creds = Window:NewTab("关于我们","list")
 
 local About = creds:NewSection("关于我们","crown","left")
 
-About:AddButton("制作者：日月꧔ꦿ℘~ikWYZ(星月交辉作者)")
+About:AddButton("制作者：日月更新UI~ikWYZ(星月交辉作者)")
 
 About:AddButton("感谢以下名单提供帮助:")
 
