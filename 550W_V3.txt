@@ -1,9 +1,19 @@
 
 local NoHyper = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/River-UI/refs/heads/main/River%20UI%E6%BA%90%E7%A0%81.lua"))()
 
-local window = NoHyper:new("星月交辉☪️ X3 公开测试版"..game.Players.LocalPlayer.DisplayName,"rbxassetid://13169991903","欢迎您，亲爱的VIP")
+local window = NoHyper:new("星月交辉☪️ X3 公开测试版"..game.Players.LocalPlayer.DisplayName,"星月交辉 X3 NEW","欢迎您，亲爱的VIP")
 
-local creds = window:Tab("『信息』",'6035145364')
+Window:NewSize(UDim2.new(0.1,430,0.1,300))
+Window:AddYoutube("")
+Window:AddWebsite("")
+Window:AddDiscord("")
+
+--[[可以填写自己的]]
+--[[联系方式链接]]
+--[[宣传视频链接]]
+--[[频道链接]];
+
+local PlayerLobby = window:Tab("『信息』","earth")
 
 local bin = creds:section("版本:『Public beta version』",true)
 
