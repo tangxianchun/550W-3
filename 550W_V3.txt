@@ -1,7 +1,7 @@
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/River-UI/refs/heads/main/River%20UI%E6%BA%90%E7%A0%81.lua"))()
 
-local window = ui:new("星月交辉☪️ X3 公开测试版")
+local window = ui:new("星月交辉☪️ X3 公开测试版"..game.Players.LocalPlayer.DisplayName,"rbxassetid://13169991903","欢迎您，亲爱的VIP")
 
 local creds = window:Tab("『信息』",'6035145364')
 
