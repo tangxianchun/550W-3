@@ -531,9 +531,9 @@ tool:AddButton("Answer Wins (No key)",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownStraz/Longest-Answer-Wins/main/Script",true))()
 end)
 
-local creds = Window:NewTab("『其他』", "6035145364")
+local creds = Window:NewTab("『其他』", "list")
 
-local tool = creds:NewSection("『功能类』",true)
+local tool = creds:NewSection("『功能类』","list","left")
 
 tool:AddButton("键盘",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt",true))()
