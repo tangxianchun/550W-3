@@ -1,5 +1,5 @@
 
-local ui = loadstring(game:HttpGet"https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua")()
+local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/River-UI/refs/heads/main/River%20UI%E6%BA%90%E7%A0%81.lua"))()
 
 local window = ui:new("星月交辉☪️ X3 公开测试版")
 
