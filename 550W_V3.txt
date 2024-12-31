@@ -1,7 +1,7 @@
 
 local NoHyper = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/River-UI/refs/heads/main/River%20UI%E6%BA%90%E7%A0%81.lua"))()
 
-local window = NoHyper:new("星月交辉☪️ X3 公开测试版"..game.Players.LocalPlayer.DisplayName,"星月交辉 X3 NEW","欢迎您，亲爱的VIP")
+local window = NoHyper:new("星月交辉 X3 NEW 公开测试版"..game.Players.LocalPlayer.DisplayName,"星月交辉 X3 NEW","欢迎您，亲爱的VIP")
 
 Window:NewSize(UDim2.new(0.1,430,0.1,300))
 Window:AddYoutube("")
