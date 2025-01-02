@@ -59,6 +59,21 @@ bin:AddToggle("游戏信息(关不了)", false, function(Value)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
     end)
     
+--[[local bin = creds:NewSection("人物设置","crown","right")
+    
+bin:AddSlider("速度",{Min = 0,Max = 1000,Default = 50,ValueT = '%'},function(value)
+    
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = false
+    
+end)
+
+bin:AddSlider("跳跃",{Min = 0,Max = 1000,Default = 50,ValueT = '%'},function(value)
+    
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = false
+	
+end)
+]]
+    
 local creds = Window:NewTab("星月交辉系列","list")
     
 local tool = creds:NewSection("『星月交辉☪』","crown","left")
@@ -322,9 +337,9 @@ tool:AddButton("按键（任意选择按键",function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/KeyBinds/main/KeyBinds-Source.lua"))()
 end)
 
-local creds = Window:NewTab("键盘","list")
+local creds = Window:NewTab("『键盘』","list")
 
-local Tab = creds:NewSection("『键盘』","smartphone","left")
+local Tab1 = creds:NewSection("『键盘』","smartphone","left")
 
 Tab1:AddButton("v1",function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()  
