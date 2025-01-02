@@ -322,6 +322,44 @@ tool:AddButton("按键（任意选择按键",function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/KeyBinds/main/KeyBinds-Source.lua"))()
 end)
 
+local creds = Window:NewTab("键盘","list")
+
+local Tab = creds:NewSection("『键盘』","smartphone","left")
+
+Tab1:AddButton("v1",function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()  
+    print("hi")
+end)
+Tab1:AddButton("v2",function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Keyboardv3/main/mobKeyboard"))()
+    print("hi")
+end)
+Tab1:AddButton("v3用大写，输入英文键盘字母",function()
+     loadstring(game:HttpGet(('https://pastefy.ga/Ujm4HWxh/raw'),true))()
+    print("hi")
+end)
+Tab1:AddButton("v4主要用于移动",function()
+     loadstring(game:HttpGet(('https://pastefy.ga/Te4dwSw2/raw'),true))()
+    print("hi")
+end)
+Tab1:AddButton("键盘v3的v2版本",function()
+     --[[
+    {"Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12"},
+    {"~", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "="},
+    {"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]"},
+    {"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "\\"},
+    {"Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/"},
+    {"Ctrl", "Win", "Alt", "Space", "Alt", "Menu", "Ctrl"}
+]]
+
+loadstring(game:HttpGet(('https://pastefy.ga/Ujm4HWxh/raw'),true))()
+    print("hi")
+end)
+Tab1:AddButton("v4主要用于移动的v2版本",function()
+    loadstring(game:HttpGet(('https://pastefy.app/Te4dwSw2/raw'),true))() 
+    print("hi")
+end)
+
 local creds = Window:NewTab("『热门游戏』","list")
 
 local tool = creds:NewSection("『热门游戏』","list","left")
