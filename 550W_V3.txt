@@ -1,9 +1,11 @@
 
 local NoHyper = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/River-UI/refs/heads/main/River%20UI%E6%BA%90%E7%A0%81.lua"))()
 
+NoHyper.set_theme("nohyper") -- [[nohyper , bedol , neverlose, green]]
+
 local Window = NoHyper.new("星月交辉 X3 NEW 公开测试版 "..game.Players.LocalPlayer.DisplayName," X3 NEW ","欢迎您，亲爱的VIP")
 
-Window:NewSize(UDim2.new(0.1,430,0.1,300))
+Window:NewSize(UDim2.new(0.1,100,0.1,100))
 Window:AddYoutube("")
 Window:AddWebsite("")
 Window:AddDiscord("")
