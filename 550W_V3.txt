@@ -211,13 +211,20 @@ sound:Play()
 end)
 
 local sound = Instance.new("Sound")
-sound.SoundId = "rbxassetid://1845918434"
+sound.SoundId = "rbxassetid://16190782181"
 sound.Parent = game.Workspace
 sound:Play()
 
 tool:AddButton("彩虹瀑布",function()
 local sound = Instance.new("Sound")
 sound.SoundId = "rbxassetid://1837879082"
+sound.Parent = game.Workspace
+sound:Play()
+end)
+
+tool:AddButton("phonk",function()
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://16190782181"
 sound.Parent = game.Workspace
 sound:Play()
 end)
