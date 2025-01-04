@@ -3,7 +3,7 @@ local NoHyper = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangx
 
 NoHyper.set_theme("nohyper") -- [[nohyper , bedol , neverlose, green]]
 
-local Window = NoHyper.new("星月交辉 X3 NEW "..game.Players.LocalPlayer.DisplayName," X3 New ","欢迎您，亲爱的："..game.Players.LocalPlayer.Name,"")
+local Window = NoHyper.new("星月 X3 NEW "..game.Players.LocalPlayer.DisplayName," X3 New ","欢迎您，亲爱的："..game.Players.LocalPlayer.Name,"")
 
 Window:NewSize(UDim2.new(0.2,430,0.2,320))
 Window:AddYoutube("")
@@ -29,13 +29,19 @@ bin:AddButton("当前版本：V3.5.0 公开白名单测试版")
 
 bin:AddButton("更新日志：")
 
-bin:AddButton("钓鱼｜12-18")
+bin:AddButton("柔术无限｜1-4")
 
 bin:AddButton("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
 bin:AddButton("你的注入器:"..identifyexecutor())
 
-bin:AddButton("当前游戏ID为:" .. game.GameId .. ".")
+--bin:AddButton("你的账号年龄:"..player.Account.Age.."天")
+
+bin:AddButton("你的用户ID:"..game.Players.LocalPlayer.UserId)
+
+bin:AddButton("你现在的服务器名称:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
+
+bin:AddButton("当前游戏ID为:" .. game.GameId .. "")
 
 local bin = creds:NewSection("UI设置","positon","right")
 
@@ -142,6 +148,10 @@ end)
 local creds = Window:NewTab("联动脚本","list")
 
 local tool = creds:NewSection("『通用』","smartphone","left")
+
+tool:AddButton("神",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/leenZzZzZ/ScriptHUB/main/Script%20Hub",true))();
+end)
 
 tool:AddButton("忍·脚本",function()
 R = "忍脚本交流群:139341298"
@@ -1025,12 +1035,25 @@ tool:AddButton("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = Window:NewTab("柔术无限","list")
+
+local a = creds:NewSection("『⚔ Jujutsu Infinite ✅』","save","left")
+
+a:AddButton("乌托邦",function()
+--[[柔术无限]]
+loadstring(game:HttpGet("https://snippet.host/eaigoc/raw"))()
+end)
+
 local creds = Window:NewTab("钓鱼","list")
 
 local a = creds:NewSection("『⚔ fish ✅』","save","left")
 
 a:AddButton("speed-Hub-X ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+end)
+
+a:AddButton("乌托邦",function()
+loadstring(game:HttpGet("https://pastefy.app/LixdTgKF/raw"))()
 end)
 
 local creds = Window:NewTab("新谋杀之谜2","list")
@@ -2213,6 +2236,10 @@ end)
 local creds = Window:NewTab("更多脚本","list")
 
 local tool = creds:NewSection("「脚本」","smartphone","left")
+
+tool:AddButton("乌托邦",function()
+loadstring(game:HttpGet("https://pastefy.app/M1Ns2Ggo/raw"))()
+end)
 
 tool:AddButton("Universal-Hub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NEWBUTIF/Universal-Script-Hub/main/BUTIF%26RAFAN"))()
