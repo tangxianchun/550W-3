@@ -1039,7 +1039,7 @@ local creds = Window:NewTab("柔术无限","list")
 
 local a = creds:NewSection("『⚔ Jujutsu Infinite ✅』","save","left")
 
-a:AddButton("乌托邦",function()
+a:AddButton("rs无限",function()
 --[[柔术无限]]
 loadstring(game:HttpGet("https://snippet.host/eaigoc/raw"))()
 end)
