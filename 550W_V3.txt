@@ -39,7 +39,7 @@ bin:AddButton("你的注入器:"..identifyexecutor())
 
 bin:AddButton("你的用户ID:"..game.Players.LocalPlayer.UserId)
 
---bin:AddButton("你现在的服务器名称:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
+bin:AddButton("你现在的服务器名称:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
 
 bin:AddButton("当前游戏ID为:" .. game.GameId .. "")
 
