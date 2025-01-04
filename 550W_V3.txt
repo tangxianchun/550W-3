@@ -1059,10 +1059,6 @@ a:AddButton("speed-Hub-X ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
 end)
 
-a:AddButton("乌托邦",function()
-loadstring(game:HttpGet("https://pastefy.app/LixdTgKF/raw"))()
-end)
-
 local creds = Window:NewTab("新谋杀之谜2","list")
 
 local a = creds:NewSection("『⚔ New Murder Mystery 2 ✅』","list","left")
