@@ -1,4 +1,4 @@
-
+local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"), true))()
 local NoHyper = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/River-UI/refs/heads/main/River%20UI%E6%BA%90%E7%A0%81.lua"))()
 
 NoHyper.set_theme("nohyper") -- [[nohyper , bedol , neverlose, green]]
@@ -61,25 +61,179 @@ local bin = creds:NewSection("UI设置","positon","right")
 local link = "https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/Aimbotesp" loadstring(game:HttpGet(link))()
 end)
 
+bin:AddButton("范围",function()
+_G.HeadSize = 20
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+    end)
+
 bin:AddToggle("游戏信息(关不了)", false, function(Value)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
     end)
     
---[[local bin = creds:NewSection("人物设置","crown","right")
+local bin = creds:NewSection("人物设置","crown","right")
     
-bin:AddSlider("速度",{Min = 0,Max = 1000,Default = 50,ValueT = '%'},function(value)
+bin:AddSlider("速度",{Min = 16,Max = 999999999,Default = 16,ValueT = '%'},function(Value)
     
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = false
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
     
 end)
 
-bin:AddSlider("跳跃",{Min = 0,Max = 1000,Default = 50,ValueT = '%'},function(value)
+bin:AddSlider("跳跃",{Min = 16,Max = 10000,Default = 16,ValueT = '%'},function(Value)
     
-	game.Players.LocalPlayer.Character.Humanoid.JumpPower = false
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 	
 end)
-]]
+
+bin:AddSlider("血量",{Min = 100,Max = 9999999999,Default = 100,ValueT = '%'},function(Value)
     
+	game.Players.LocalPlayer.Character.Humanoid.Health = Value
+	
+end)
+
+bin:AddSlider("缩放",{Min = 128,Max = 9999999999,Default = 128,ValueT = '%'},function(Value)
+    
+	game:GetService("Players").LocalPlayer.CameraMaxZoomDistance = Value
+	
+end)
+
+bin:AddSlider("重力",{Min = 0.1,Max = 250,Default = 196.2,ValueT = '%'},function(Value)
+    
+	game.Workspace.Gravity = Value
+	
+end)
+
+bin:AddSlider("视野",{Min = 1,Max = 250,Default = 70,ValueT = '%'},function(Value)
+    
+	game.Workspace.CurrentCamera.FieldOfView = Value
+	
+end)
+
+local bin = creds:NewSection("其他设置","crown","right")
+
+bin:AddToggle("穿墙",false,function(Value)
+
+if Value then
+            Noclip = true
+            Stepped =
+                game.RunService.Stepped:Connect(
+                function()
+                    if Noclip == true then
+                        for a, b in pairs(game.Workspace:GetChildren()) do
+                            if b.Name == game.Players.LocalPlayer.Name then
+                                for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+                                    if v:IsA("BasePart") then
+                                        v.CanCollide = false
+                                    end
+                                end
+                            end
+                        end
+                    else
+                        Stepped:Disconnect()
+                    end
+                end
+            )
+        else
+            Noclip = false
+        end
+        end)
+
+bin:AddToggle("夜视",false,function(Value)
+
+if Value then
+            game.Lighting.Ambient = Color3.new(1, 1, 1)
+        else
+            game.Lighting.Ambient = Color3.new(0, 0, 0)
+        end
+end)
+
+bin:AddToggle("无敌?",false,function(Value)
+if Value then
+		    local Cam = workspace.CurrentCamera
+	local Pos, Char = Cam.CFrame, speaker.Character
+	local Human = Char and Char.FindFirstChildWhichIsA(Char, "Humanoid")
+	local nHuman = Human.Clone(Human)
+	nHuman.Parent, speaker.Character = Char, nil
+	nHuman.SetStateEnabled(nHuman, 15, false)
+	nHuman.SetStateEnabled(nHuman, 1, false)
+	nHuman.SetStateEnabled(nHuman, 0, false)
+	nHuman.BreakJointsOnDeath, Human = true, Human.Destroy(Human)
+	speaker.Character, Cam.CameraSubject, Cam.CFrame = Char, nHuman, wait() and Pos
+	nHuman.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+	local Script = Char.FindFirstChild(Char, "Animate")
+	if Script then
+		Script.Disabled = true
+		wait()
+		Script.Disabled = false
+	end
+	nHuman.Health = nHuman.MaxHealth
+		else
+		    game.Players.LocalPlayer.Character.Humanoid.Health = 100
+		end
+		end)
+		
+		bin:AddToggle("无限跳跃",false,function(s)
+		getgenv().InfJ = s
+        game:GetService("UserInputService").JumpRequest:connect(
+            function()
+                if InfJ == true then
+                    game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass "Humanoid":ChangeState(
+                        "Jumping"
+                    )
+                end
+            end
+        )
+    end)
+    
+   --[[ local bin = creds:NewSection("传送","crown","right")
+    
+    bin:AddDropdown("玩家",{},AllPlayers,function(Value)
+    TeleportToPlayer(Value)
+    end)
+    
+    local function tp(Value)
+    game.Players.LocalPlayer.Character:PivotTo(Value)
+end
+
+bin:AddButton("刷新列表", function()
+    refreshPlayerList()
+    
+    bin:SetOptions(AllPlayers)
+end)
+    ]]
+    local bin = creds:NewSection("显示","crown","right")
+
+bin:AddToggle("人物显示",false,function(Value)
+getgenv().enabled = Value --Toggle on/off
+getgenv().filluseteamcolor = true --Toggle fill color using player team color on/off
+getgenv().outlineuseteamcolor = true --Toggle outline color using player team color on/off
+getgenv().fillcolor = Color3.new(1, 0, 0) --Change fill color, no need to edit if using team color
+getgenv().outlinecolor = Color3.new(1, 1, 1) --Change outline color, no need to edit if using team color
+getgenv().filltrans = 0.5 --Change fill transparency
+getgenv().outlinetrans = 0.5 --Change outline transparency
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/Highlight-ESP.lua"))()
+end)
+
+bin:AddToggle("显示名称",false,function(Value)
+ToggleESP(Value)
+end)
+
 local creds = Window:NewTab("星月交辉系列","list")
     
 local tool = creds:NewSection("『星月交辉☪』","crown","left")
@@ -2385,13 +2539,13 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Ping.Name = "Ping"
 Ping.Parent = ScreenGui
-Ping.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Ping.BackgroundColor3 = Color3.fromRGB(255, 250, 250)
 Ping.BackgroundTransparency = 1.000
 Ping.BorderColor3 = Color3.fromRGB(0, 0, 128)
-Ping.Position = UDim2.new(0.700000048, 0, 0, 0)
+Ping.Position = UDim2.new(0.75, 0, 0, 0)
 Ping.Size = UDim2.new(0, 125, 0, 25)
 Ping.Font = Enum.Font.SourceSans
-Ping.TextColor3 = Color3.fromRGB(0, 0, 255)
+Ping.TextColor3 = Color3.fromRGB(255, 250, 250)
 Ping.TextScaled = true
 Ping.TextSize = 14.000
 Ping.TextWrapped = true
@@ -2401,6 +2555,47 @@ local RunService = game:GetService("RunService")
 RunService.RenderStepped:Connect(function(ping) 
 script.Parent.Text = ("Ping: " ..game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString(math.round(2/ping))) -- your ping
 end)
+
+local LBLG = Instance.new("ScreenGui", getParent)
+local LBL = Instance.new("TextLabel", getParent)
+local player = game.Players.LocalPlayer
+
+LBLG.Name = "LBLG"
+LBLG.Parent = game.CoreGui
+LBLG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LBLG.Enabled = true
+LBL.Name = "LBL"
+LBL.Parent = LBLG
+LBL.BackgroundColor3 = Color3.new(55, 22, 11)
+LBL.BackgroundTransparency = 1
+LBL.BorderColor3 = Color3.new(5, 6, 7)
+LBL.Position = UDim2.new(0.75,0,0.040,0)
+LBL.Size = UDim2.new(0, 133, 0, 30)
+LBL.Font = Enum.Font.GothamSemibold
+LBL.Text = "TextLabel"
+LBL.TextColor3 = Color3.new(1, 1, 1)
+LBL.TextScaled = true
+LBL.TextSize = 14
+LBL.TextWrapped = true
+LBL.Visible = true
+
+local FpsLabel = LBL
+local Heartbeat = game:GetService("RunService").Heartbeat
+local LastIteration, Start
+local FrameUpdateTable = { }
+
+local function HeartbeatUpdate()
+	LastIteration = tick()
+	for Index = #FrameUpdateTable, 1, -1 do
+		FrameUpdateTable[Index + 1] = (FrameUpdateTable[Index] >= LastIteration - 1) and FrameUpdateTable[Index] or nil
+	end
+	FrameUpdateTable[1] = LastIteration
+	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
+	CurrentFPS = CurrentFPS - CurrentFPS % 1
+	FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+end
+Start = tick()
+Heartbeat:Connect(HeartbeatUpdate)
 
 local bin = creds:NewSection("fps","list","left")
 
@@ -2445,3 +2640,15 @@ tool:AddToggle("afk",true, function(Value)
 		end)
 
 end)
+notifications:notify{
+            Title = "星月交辉",
+            Description = "反挂机✅",
+            Icon = 6031302918,
+            Accept = {
+                Text = "启动完成",
+                Callback = function()
+                    print("启动完成")
+                end
+            },
+            Length = 15
+        }
