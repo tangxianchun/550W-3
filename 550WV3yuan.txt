@@ -1,4 +1,4 @@
-
+local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"), true))()
 
 local CoreGui = game:GetService("StarterGui")
 
@@ -9,7 +9,7 @@ local frame = Instance.new("Frame")
 frame.Size = UDim2.new(0, 300, 0, 200)
 frame.Position = UDim2.new(0.5, -150, 0.2, -15)
 frame.BackgroundTransparency = 0
-frame.BackgroundColor3 = Color3.new(215, 255, 0)
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
 frame.Parent = gui
 
 local corner = Instance.new("UICorner")
@@ -21,7 +21,7 @@ titleLabel.Text = "日月星辰工作室安全验证系统"
 titleLabel.Size = UDim2.new(0, 300, 0, 30)
 titleLabel.Position = UDim2.new(0, 0, 0, 10)
 titleLabel.BackgroundTransparency = 1
-titleLabel.TextColor3 = Color3.new(1, 0.8, 0) 
+titleLabel.TextColor3 = Color3.new(1, 0.84, 0) 
 titleLabel.TextSize = 19
 titleLabel.Parent = frame
 
@@ -108,7 +108,7 @@ while progress < 114514 do
     wait(0.1)
     updateLoading()
 end
-
+--[[
 local frame = Instance.new("Frame")
 frame.Size = UDim2.new(0, 150, 0, 40)
 frame.Position = UDim2.new(0.5, -100, 0.5, -20)
@@ -139,6 +139,7 @@ game:GetService("RunService").RenderStepped:Connect(function()
     frameRateLabel.Text = "当前帧数: " .. tostring(math.floor(1 / game:GetService("RunService").RenderStepped:Wait()))
     timeLabel.Text = "当前时间: " .. os.date("%H:%M:%S")
 end)
+]]
 
 local frame = Instance.new("Frame")
 frame.Position = UDim2.new(0, -250, 0.95, 0)
@@ -156,7 +157,7 @@ textLabel.Text = "星月交辉 X3"
 textLabel.Position = UDim2.new(0, 0, 0, 0)
 textLabel.Size = UDim2.new(1, 0, 0.5, 0)
 textLabel.BackgroundTransparency = 1
-textLabel.TextColor3 = Color3.new(1, 0, 0)
+textLabel.TextColor3 = Color3.new(1, 0.84, 0)
 textLabel.TextSize = 24
 textLabel.Parent = frame
 
@@ -196,13 +197,12 @@ local tween = game:GetService("TweenService"):Create(frame, TweenInfo.new(tweenT
 })
 
 wait(2)
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "提示",
-    Text = "当前版本已回档,可正常使用",
-    Duration = 5,
-})
+notifications:notify{
+            Title = "星月交辉",
+            Description = "正常✅",
+            Icon = 6031302918,
+            Length = 15
+        }
 
 tween:Play()
 tween.Completed:Wait()
@@ -338,11 +338,12 @@ button1.MouseButton1Click:Connect(function()
     toggleSwitch:Destroy()
     frame:Destroy()
     
-    CoreGui:SetCore("SendNotification", {
-    Title = "日月星辰工作室 | 星月交辉",
-    Text = "您拒绝签订协议",
-    Duration = 5, 
-})
+notifications:notify{
+            Title = "日月星辰工作室｜星月交辉",
+            Description = "您拒绝签订协议❎",
+            Icon = 6031302918,
+            Length = 5
+        }
 end)
 
 button2.MouseButton1Click:Connect(function()
@@ -355,11 +356,13 @@ button2.MouseButton1Click:Connect(function()
     toggleSwitch:Destroy()
     frame:Destroy()
     
-    CoreGui:SetCore("SendNotification", {
-    Title = "日月星辰工作室 | 星月交辉",
-    Text = "状态检测:反挂机……ON",
-    Duration = 5, 
-})
+notifications:notify{
+            Title = "日月星辰工作室｜星月交辉",
+            Description = "状态检测:反挂机✅",
+            Icon = 6031302918,
+            Length = 5
+        }
+        
 print("反挂机开启")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -410,27 +413,44 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 
-local CoreGui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/pyawhh/UI-GUI/main/%E6%B6%88%E6%81%AF%E6%8F%90%E9%86%92%E5%8A%A0%E5%AF%86.txt')))()
-
-notify("————💫『日月星辰工作室」💫————", "白名单验证中", 4)
-notify("————💫『日月星辰工作室」💫————", "加群定期发放白名单", 4)
-
+local CoreGui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua')))()
+wait(1)
+CoreGui:notify{
+            Title = "日月星辰工作室",
+            Description = "白名单验证中✅",
+            Icon = 6031302918,
+            Length = 4
+        }
+        wait(1)
+CoreGui:notify{
+            Title = "日月星辰工作室",
+            Description = "加群定期发放白名单✅",
+            Icon = 6031302918,
+            Length = 15
+        }
+        
 local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/BMD.lua", true))()
 if whitelist[game.Players.LocalPlayer.Name] then
 print("白名单脚本")
 print("欢迎👏白名单用户上分")
 print("已开启反挂机哟")
 print("欢迎您加入我们的大家庭🎉('ω')🎉")
-
-notify("————💫『日月星辰工作室」💫————", "验证成功，欢迎您！亲爱的"..game.Players.LocalPlayer.Name.. "", 1)
-notify("————💫『日月星辰工作室」💫————", "loading……", 1)
-notify("————💫『日月星辰工作室」💫————", "正在为您启动云端…", 1)
-notify("————💫『日月星辰工作室」💫————", "启动成功！", 1)
-notify("————💫『日月星辰工作室」💫————", "Welcome use 星月交辉☪️ X3", 1)
 wait(1)
-notify("————💫『日月星辰工作室」💫————", "您目前使用的注入器:"..identifyexecutor(), 2)
-notify("MOSS", "星月交辉 Script™", 1)
-notify("星月交辉 Script", "正在为您加载[已打开反挂机]", 1)
+CoreGui:notify{Title = "星月交辉",Description = "验证成功,欢迎您"..game.Players.LocalPlayer.Name.. "",Icon = 6031302918,Length = 4}
+wait(1)
+CoreGui:notify{Title = "星月交辉",Description = "loading……",Icon = 6031302918,Length = 1}
+wait(1)
+CoreGui:notify{Title = "星月交辉",Description = "正在为您启动云端…",Icon = 6031302918,Length = 1}
+wait(1)
+CoreGui:notify{Title = "星月交辉",Description = "启动成功！",Icon = 6031302918,Length = 1}
+wait(1)
+CoreGui:notify{Title = "星月交辉",Description = "Welcome use 星月交辉☪️ X3",Icon = 6031302918,Length = 1}
+wait(1)
+CoreGui:notify{Title = "星月交辉",Description = "您目前使用的注入器:"..identifyexecutor(),Icon = 6031302918,Length = 2}
+wait(1)
+CoreGui:notify{Title = "星月交辉 Script™",Icon = 6031302918,Length = 1}
+wait(1)
+CoreGui:notify{Title = "星月交辉 Script",Description = "正在为您加载[已打开反挂机]",Icon = 6031302918,Length = 1}
 print("Anti Afk On")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -438,24 +458,22 @@ print("Anti Afk On")
 		   wait(1)
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
-
-notify("星月交辉", "加载成功，欢迎进入方舟空间站[正在建造...]", 1)
-
-notify("————💫『日月星辰工作室」💫————", "欢迎您尊贵的『白名单用户…』", 17)
+wait(1)
+CoreGui:notify{Title = "星月交辉",Description = "加载成功，欢迎接入方舟空间站[正在建造...]",Icon = 6031302918,Length = 1}
+wait(1)
+CoreGui:notify{Title = "星月交辉",Description = "欢迎您尊贵的『白名单用户…』",Icon = 6031302918,Length = 17}
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
 
 
 else
-
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "提示",
-    Text = "当前版本为密钥版,可正常使用,密码：日月星辰",
-    Duration = 10,
-})
-
+notifications:notify{
+            Title = "星月交辉:提示",
+            Description = "当前版本为密钥版,密码:日月星辰",
+            Icon = 6031302918,
+            Length = 15
+        }
+        
 local ScreenGui = Instance.new("ScreenGui")
 local UI = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
@@ -537,14 +555,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/m
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550-v3miyue.lua"))()
        
     else
-notify("系统", "密钥错误™", 1)
+wait(1)
+CoreGui:notify{Title = "系统",Description = "密钥错误™",Icon = 6031302918,Length = 1}
 
 wait(2)
 game.Players.LocalPlayer:Kick ("错误：加群有活动领取密钥：781759165")
 end
 
 end)
-notify("系统", "验证失败，开启密钥程序™", 4)
+wait(1)
+CoreGui:notify{Title = "系统",Description = "验证失败，开启密钥程序™",Icon = 6031302918,Length = 4}
 end
 
 end)
