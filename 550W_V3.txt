@@ -1196,6 +1196,78 @@ tool:AddButton("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = Window:NewTab("火箭模拟发射器","list")
+
+local a = creds:NewSection("『 火箭模拟发射器 ✅』","save","left")
+
+a:AddToggle("自动收集燃料",false,function(Value)
+isFuelScoopEnabled = Value
+end)
+
+a:AddButton("登上火箭",function()
+game:GetService("ReplicatedStorage"):WaitForChild("BoardRocket"):FireServer()
+end)
+
+a:AddButton("将玩家从所有者座位移除",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemovePlayer"):FireServer()
+end)
+
+a:AddButton("发射台岛", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-123.15931701660156, 2.7371432781219482, 3.491959810256958)
+end)
+
+a:AddButton("白云岛", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-76.13252258300781, 170.55825805664062, -60.4516716003418)
+end)
+
+a:AddButton("浮漂岛", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-66.51714324951172, 720.4866333007812, -5.391753196716309)
+end)
+
+a:AddButton("卫星岛", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-34.2462043762207, 1429.4990234375, 1.3739361763000488)
+end)
+
+a:AddButton("蜜蜂迷宫岛", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(6.5361199378967285, 3131.249267578125, -29.759048461914062)
+end)
+
+a:AddButton("月球人救援", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7.212917804718018, 5016.341796875, -19.815933227539062)
+end)
+
+a:AddButton("暗物质岛", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(68.43186950683594, 6851.94091796875, 7.890637397766113)
+end)
+
+a:AddButton("太空岩石岛", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49.92888641357422, 8942.955078125, 8.674375534057617)
+end)
+
+a:AddButton("零号火星岛", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(54.44503402709961, 11270.0927734375, -1.273137092590332)
+end)
+
+a:AddButton("太空水晶小行星岛", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11.579089164733887, 15295.6318359375, -27.54974365234375)
+end)
+
+a:AddButton("月球浆果岛", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-14.601255416870117, 18410.9609375, 0.9418511986732483)
+end)
+
+a:AddButton("铺路石岛", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3.272758960723877, 22539.494140625, 63.283935546875)
+end)
+
+a:AddButton("流星岛", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-45.515689849853516, 27961.560546875, -7.358333110809326)
+end)
+
+a:AddButton("升级岛", function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2.7595248222351074, 33959.98828125, 53.93095397949219)
+end)
+
 local creds = Window:NewTab("柔术无限","list")
 
 local a = creds:NewSection("『⚔ Jujutsu Infinite ✅』","save","left")
@@ -1608,6 +1680,17 @@ end)
 local creds = Window:NewTab("最强战场","list")
 
 local tool = creds:NewSection("『可能用不了』","list","left")
+
+tool:AddButton("脚本",function()
+      loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
+    end)
+
+tool:AddButton("多功能",function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/SaitamaBattlegrounds.lua"))()
+    end)
+tool:AddButton("功能",function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Scripterbacon/TSBobfuscator/main/Main.Lua"))()
+    end)
 
 tool:AddButton("RayzMd",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RayzMd/SyniX-Team/main/SyniXScripts"))()
