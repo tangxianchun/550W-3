@@ -3,7 +3,7 @@ local NoHyper = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangx
 
 NoHyper.set_theme("nohyper") -- [[nohyper , bedol , neverlose, green]]
 
-local Window = NoHyper.new("星月 X3 NEW "..game.Players.LocalPlayer.DisplayName," X3 New ","欢迎您，亲爱的："..game.Players.LocalPlayer.Name,"")
+local Window = NoHyper.new("星月 X3 NEW "..game.Players.LocalPlayer.DisplayName,"rbxthumb://type=Asset&id=120253706779906&w=768&h=432","欢迎您，亲爱的："..game.Players.LocalPlayer.Name,"")
 
 Window:NewSize(UDim2.new(0.2,430,0.2,300))
 Window:AddYoutube("")
