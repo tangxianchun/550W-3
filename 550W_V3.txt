@@ -3,7 +3,7 @@ local NoHyper = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangx
 
 NoHyper.set_theme("nohyper") -- [[nohyper , bedol , neverlose, green]]
 
-wait(0.05)
+wait(0.0001)
 local Window = NoHyper.new("星月 X3 NEW "..game.Players.LocalPlayer.DisplayName,"rbxthumb://type=Asset&id=120253706779906&w=150&h=150","欢迎您，亲爱的："..game.Players.LocalPlayer.Name,"")
 
 Window:NewSize(UDim2.new(0.2,430,0.2,300))
@@ -19,7 +19,7 @@ Window:AddDiscord("")
 wait(1)
 local creds = Window:NewTab("『信息』","earth")
 
-wait(0.05)
+wait(0.0001)
 local bin = creds:NewSection("版本:『Public beta version』","settings","left")
 
 bin:AddButton("作者：日月 official | ♡日月ikWYZ")
@@ -46,7 +46,7 @@ bin:AddButton("你的用户ID:"..game.Players.LocalPlayer.UserId)
 
 bin:AddButton("当前游戏ID为:" .. game.GameId .. "")
 
-wait(0.05)
+wait(0.0001)
 local bin = creds:NewSection("UI设置","positon","right")
 
     bin:AddButton("摧毁UI(用不了)",function()
@@ -90,7 +90,7 @@ bin:AddToggle("游戏信息(关不了)", false, function(Value)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
     end)
     
-wait(0.05)
+wait(0.0001)
 local bin = creds:NewSection("人物设置","crown","right")
     
 bin:AddSlider("速度",{Min = 16,Max = 999999999,Default = 16,ValueT = '%'},function(Value)
@@ -129,7 +129,7 @@ bin:AddSlider("视野",{Min = 1,Max = 250,Default = 70,ValueT = '%'},function(Va
 	
 end)
 
-wait(0.05)
+wait(0.0001)
 local bin = creds:NewSection("其他设置","crown","right")
 
 bin:AddToggle("穿墙",false,function(Value)
@@ -222,7 +222,7 @@ bin:AddButton("刷新列表", function()
     bin:SetOptions(AllPlayers)
 end)
     ]]
-    wait(0.05)
+    wait(0.0001)
 local bin = creds:NewSection("显示","crown","right")
 
 bin:AddToggle("人物显示",false,function(Value)
@@ -241,10 +241,10 @@ bin:AddToggle("显示名称",false,function(Value)
 ToggleESP(Value)
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("星月交辉系列","list")
     
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『星月交辉☪』","crown","left")
 
 tool:AddButton("星月交辉☪️ TZ中心",function()
@@ -292,7 +292,7 @@ tool:AddButton("飞行x50倍(星月交辉脚本专属)",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/550FX.txt"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『明月清风🌙』","crown","right")
 
 tool:AddButton("明月清风🌙",function()
@@ -303,17 +303,17 @@ tool:AddButton("明月清风🌙…Doors…",function()
 loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,114,101,110,116,114,121,46,99,111,47,100,111,105,119,48,115,104,101,57,49,106,115,104,49,112,57,101,104,49,48,115,100,103,106,119,48,119,105,119,57,119,104,106,115,104,115,49,53,54,104,101,111,119,49,47,114,97,119})end)())))()
 end)
   
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『20分钟不动都不会被踢』","save","right")
 
 tool:AddButton("日月星辰工作室｜防踢",function()
 _G["550W作者LikJ"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey" loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/ft.txt"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("联动脚本","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『通用』","smartphone","left")
 
 tool:AddButton("神",function()
@@ -366,10 +366,10 @@ name = "青风脚本"
 loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,52,81,74,109,75,50,99,72})end)())))();
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("音乐","settings")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("点一下就行","settings","left")
 
 tool:AddButton("国歌🇨🇳",function()
@@ -398,10 +398,10 @@ sound.Parent = game.Workspace
 sound:Play()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("『通用』","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『通用』","settings","left")
 
 tool:AddButton("Stepshop",function()
@@ -474,7 +474,7 @@ balls = hookfunction(task.wait, newcclosure(function(...)
 end))
 end)
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『通用』","settings","right")
 
 tool:AddButton("爬墙",function()
@@ -526,10 +526,10 @@ tool:AddButton("按键（任意选择按键",function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/KeyBinds/main/KeyBinds-Source.lua"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("『键盘』","list")
 
-wait(0.05)
+wait(0.0001)
 local Tab1 = creds:NewSection("『键盘』","smartphone","left")
 
 Tab1:AddButton("v1",function()
@@ -566,10 +566,10 @@ Tab1:AddButton("v4主要用于移动的v2版本",function()
     print("hi")
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("『热门游戏』","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『热门游戏』","list","left")
 
 tool:AddButton("Adopt Me! (key in desc)",function()
@@ -620,10 +620,10 @@ tool:AddButton("Bedwars 🛰️[NEW KIT!]",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/bojoexploitz/yooo/main/itsobfuscated/InfinityHubTooOP",true))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("『射击游戏』","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『射击游戏』","list","left")
 
 tool:AddButton("Arsenal",function()
@@ -634,10 +634,10 @@ tool:AddButton("BIG Paintball!",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("『特色游戏』","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『特色游戏』","list","left")
 
 tool:AddButton("Breaking Point", function()
@@ -783,10 +783,10 @@ tool:AddButton("Answer Wins (No key)",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownStraz/Longest-Answer-Wins/main/Script",true))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("『其他』", "list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『功能类』","list","left")
 
 tool:AddButton("键盘",function()
@@ -944,10 +944,10 @@ tool:AddButton("脚本大中心",function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/zAuR0JUT"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("掰手腕","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("「脚本」[✝]","list","left")
 
 tool:AddButton("掰手腕模拟器『需密钥』",function()
@@ -958,10 +958,10 @@ tool:AddButton("掰手腕模拟器『需密钥』3",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Kenniel123/Arm-Wrestle-Simulator-Script/main/Arm-Wrestle-Simulator-Script",true))();
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("DOORS[✝]","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("「脚本」[✝]","list","left")
 
 tool:AddButton("Rafanchik123",function()
@@ -1052,7 +1052,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkra
 end)
 
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("「功能」[✝]","ads","right")
 
 tool:AddButton("上帝模式",function()
@@ -1229,10 +1229,10 @@ tool:AddButton("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("火箭模拟发射器","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『 火箭模拟发射器 ✅』","save","left")
 
 a:AddToggle("自动收集燃料",false,function(Value)
@@ -1303,10 +1303,10 @@ a:AddButton("升级岛", function()
     	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2.7595248222351074, 33959.98828125, 53.93095397949219)
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("柔术无限","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『⚔ Jujutsu Infinite ✅』","save","left")
 
 a:AddButton("rs无限",function()
@@ -1314,40 +1314,40 @@ a:AddButton("rs无限",function()
 loadstring(game:HttpGet("https://snippet.host/eaigoc/raw"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("钓鱼","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『⚔ fish ✅』","save","left")
 
 a:AddButton("speed-Hub-X ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("新谋杀之谜2","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『⚔ New Murder Mystery 2 ✅』","list","left")
 
 a:AddButton("NEXUS ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/13B8B/NEXUS/main/loadstring"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("动漫战士模拟器","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『⚔️ Anime Fighters Simulator ✅』","list","left")
 
 a:AddButton("azHjbL1y ✅",function()
 loadstring(game:HttpGet(("https://pastebin.com/raw/azHjbL1y")))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("法师大亨","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『Mage Tycoon ✅』","list","left")
 
 a:AddButton("wheathub ✅",function()
@@ -1356,7 +1356,7 @@ end)
 
 local creds = Window:NewTab("汽车经销商大亨","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『🚗Car Dealership Tycoon ✅』","list","left")
 
 a:AddButton("vercel ✅",function()
@@ -1367,10 +1367,10 @@ a:AddButton("weinz",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/weiny-ez/Weinz_Car-Dealership/main/weinz_cars.lua'))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("国王的遗产","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『KING LEGACY ✅』","list","left")
 
 a:AddButton("rblxhub",function()
@@ -1389,10 +1389,10 @@ a:AddButton("Hyper ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("后室赛跑","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『后室赛跑 ✅』","list","left")
 
 a:AddButton("原地金钱 ✅",function()
@@ -1405,14 +1405,14 @@ while true do
             firetouchinterest(plr, v.Parent, 0)
         end
     end
-    wait(0.05)  -- time before loop. (adjust as needed)
+    wait(0.0001)  -- time before loop. (adjust as needed)
 end
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("金钱大亨","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『Money tycoon ✅』","list","left")
 
 a:AddButton("Destiny ✅",function()
@@ -1420,10 +1420,10 @@ a:AddButton("Destiny ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Destiny/main/loader.lua"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("TycoonRNG","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『TycoonRNG ✅』","list","left")
 
 a:AddButton("Tycoon20RNG ✅",function()
@@ -1431,10 +1431,10 @@ a:AddButton("Tycoon20RNG ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MadbukScripts/Scripts/main/Obfuscated%20Tycoon%20RNG.lua"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("Race Clicker","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『Race Clicker ✅』","list","left")
 
 a:AddButton("SmokeXClient ✅",function()
@@ -1445,10 +1445,10 @@ a:AddButton("HecAyid9",function()
 loadstring(game:HttpGet('https://pastebin.com/raw/HecAyid9'))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("床战","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『Bed Wars ✅』","smartphone","left")
 
 a:AddButton("AlSploit ✅",function()
@@ -1460,10 +1460,10 @@ local link = "https://raw.githubusercontent.com/sirapobsriumang/Bedwars/main/Bet
 loadstring(game:HttpGet(link))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("龙族竞赛","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『Dragon Race  ✅』","list","left")
 
 a:AddButton("ToraIsMe ✅",function()
@@ -1474,20 +1474,20 @@ a:AddButton("404",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/alialii404/DragonRace/main/Tora", true))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("方块比赛","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『Block Race✅』","list","left")
 
 a:AddButton("ToraIsMe ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0blockrace"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("飞行比赛","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『fly race ✅』","list","left")
 
 a:AddButton("fly race ✅",function()
@@ -1498,20 +1498,20 @@ a:AddButton("key:mTAgLLFQJazwRWGh",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Amenteso/robloxscripts/main/Key.lua",true))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("BROOKHAVEN","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『BROOKHAVEN ✅』","list","left")
 
 a:AddButton("REDzHUB ✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("收养我","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『Adopt Me ✅』","list","left")
 
 a:AddButton("Pa1nx",function()
@@ -1527,10 +1527,10 @@ a:AddButton("Ez",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("战争大亨","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『War Tycoon ✅』","list","left")
 
 a:AddButton("vercel ✅",function()
@@ -1541,10 +1541,10 @@ a:AddButton("awkenchan",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Awakenchan/Misc-Release/main/WarTycoon"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("战斗勇士","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『Combat Warriors ✅』","list","left")
 
 tool:AddButton("Project-Hook ✅",function()
@@ -1559,10 +1559,10 @@ _G.killAuraRange = 12 -- Max Magnitude (Range) you can go is 12
 loadstring(game:HttpGet("https://raw.githubusercontent.com/samuelLovesPie/verm_releases/main/combat_warriors.lua", true))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("evade","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『evade』","list","left")
 
 tool:AddButton("Ardrakhub-v7",function()
@@ -1586,10 +1586,10 @@ tool:AddButton("evade",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("宠物模拟器 99","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『Pet Simulator 99』","list","left")
 
 tool:AddButton("woah",function()
@@ -1604,40 +1604,40 @@ tool:AddButton("RedzHub-2.0",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FreeeScript/RedzHub-2.0/main/Update"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("竞赛摩托车脚本","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("「Race motorcycle Script」","list","left")
 
 tool:AddButton("Race motorcycle Script", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0MotoRace'))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("塔防模拟器","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("「Tower Defense Simulator」","list","left")
 
 tool:AddButton("Tower Defense Simulator", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/TowerDefenseSimulator.lua', true))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("Break in 2","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("「脚本」","list","left")
 
 tool:AddButton("Break in 2", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/harlenscripts/HarlenHub/main/HarlenScripts"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("幸运方块战场","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『LUCKY BLOCKS Battlegrounds』","list","left")
 
 tool:AddButton("LUCKY BLOCKS Battlegrounds (需密钥)",function()
@@ -1652,10 +1652,10 @@ tool:AddButton("5iREx",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/5iREx/script/main/bedwars"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("杀手与警长","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『可能用不了』","list","left")
 
 tool:AddButton("杀手与警长",function()
@@ -1666,10 +1666,10 @@ tool:AddButton("Bebo",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/MurderersVsSheriffs.lua"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("僵尸起义","list")
 
-wait(0.05)
+wait(0.0001)
 local a= creds:NewSection("『Zombie Uprising』","list","left")
 
 a:AddButton("6Foot",function()
@@ -1688,20 +1688,20 @@ a:AddButton("NexHub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CopyReal/NexHub/main/NexHubLoader", true))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("僵尸攻击","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『Zombie Attack』","list","left")
 
 tool:AddButton("rblxhub",function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua"),true))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("Apeirophobia","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『可能用不了』","list","left")
 
 tool:AddButton("Apeirophobia",function()
@@ -1769,10 +1769,10 @@ end
 end
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("最强战场","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『可能用不了』","list","left")
 
 tool:AddButton("脚本",function()
@@ -1790,10 +1790,10 @@ tool:AddButton("RayzMd",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RayzMd/SyniX-Team/main/SyniXScripts"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("Nico Next Bot","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『可能用不了』","list","left")
 
 tool:AddButton("Nico Next Bot 1",function()
@@ -1835,10 +1835,10 @@ Player.CharacterAdded:Connect(function()
 end)
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("俄亥俄州","list")
 
-wait(0.05)
+wait(0.0001)
 local bin = creds:NewSection("『指令版』","hash","left")
 
 bin:AddButton("指令如下:透开 透关 ---透视")
@@ -1851,24 +1851,24 @@ bin:AddButton("穿墙开 穿墙关 ---穿墙")
 bin:AddButton("拳击光环开 拳击光环关 ---拳头光环")
 bin:AddButton("以上指令聊天框发送即可")
 
-wait(0.05)
+wait(0.0001)
 local credits = creds:NewSection("聊天框输入","list","right")
 
 credits:AddButton("俄亥俄州",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
     end)
 
-wait(0.05)
+wait(0.0001)
 local credits = creds:NewSection("脚本版","list","right")
 
 credits:AddButton("俄亥俄州",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/ohio/main/Roblox232"))()
     end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("厕所塔防","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『Toilet Tower Defense』","list","left")
 
 tool:AddButton("Aidens.",function()
@@ -1887,10 +1887,10 @@ tool:AddButton("Toilet Tower Defense",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Tower2/main/Toilet"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("the rake","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『脚本』","list","left")
 
 tool:AddButton("the rake 无限耐力",function()
@@ -1908,10 +1908,10 @@ _G["550W作者LikJ"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey"
 loadstring(game:HttpGet("https://gist.githubusercontent.com/OtarDevv/49186047e758b9b263ec5a6583a99b4b/raw/bf8e3b74e48936ed310767314b42c17c1b210e86/Rake"))();
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("悬浮滑板","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("Hoverboard Race","list","left")
 
 tool:AddButton("Hoverboard Race!", function()
@@ -1920,10 +1920,10 @@ tool:AddButton("Hoverboard Race!", function()
 loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/8483036737"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("The Mimic","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("「脚本」","list","left")
 
 tool:AddButton("XhubMM2",function()
@@ -1953,10 +1953,10 @@ tool:AddButton("CE",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptemt/CE-Technologies/main/script", true))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("只因剑","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("「脚本」","list","left")
 
 tool:AddButton("只因剑(无密钥)", function()
@@ -1971,10 +1971,10 @@ tool:AddButton("只因剑(需密钥)", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/KidichiHB/Kidachi/main/Scripts/SwordWarrior", true))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("『法宝模拟器』","list")
 
-wait(0.05)
+wait(0.0001)
 local bin = creds:NewSection("『可能用不了』","list","left")
 
 bin:AddButton("法宝模拟器", function()
@@ -1985,10 +1985,10 @@ bin:AddButton("法宝模拟器", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/katrina367/ScriptBlox-Projects/main/OblivionAutoEXEV1"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("Tank Race","list")
 
-wait(0.05)
+wait(0.0001)
 local credits = creds:NewSection("脚本","list","left")
 
 credits:AddButton("Tank Race",function()
@@ -1997,20 +1997,20 @@ credits:AddButton("Tank Race",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0TankRace'))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("3008","list")
 
-wait(0.05)
+wait(0.0001)
 local credits = creds:NewSection("脚本","list","left")
 
 credits:AddButton("自动收集食物",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/3008.lua"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("刀刃球","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("星月交辉刀刃球脚本","list","left")
 
 a:AddButton("新版星月刀刃球(用不了)",function()
@@ -2031,7 +2031,7 @@ a:AddButton("星月刀刃球 V3",function()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/daorenqiu-V3.lua"))()
  end)
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("脚本","list","right")
 
  a:AddButton("SymphonyHub『需密钥』",function()
@@ -2114,10 +2114,10 @@ local link = "https://raw.githubusercontent.com/tangxianchun/550fx/main/autospam
 loadstring(game:HttpGet(link))()
  end) 
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("死亡球","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("『Death ball』","list","left")
 
 a:AddButton("Hosvile",function()
@@ -2128,10 +2128,10 @@ a:AddButton("LOLking",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Death/main/Ball"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("宠物模拟器","list")
 
-wait(0.05)
+wait(0.0001)
 local bin = creds:NewSection("『Pet simulator X』","list","left")
 
 bin:AddButton("Pet simulator X 1",function()
@@ -2150,10 +2150,10 @@ bin:AddButton("SKYHUB",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SKOIXLL/RIVERHUB-SKYHUB/main/WL.lua"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("海贼王","list")
 
-wait(0.05)
+wait(0.0001)
 local bin = creds:NewSection("『Blox Fruits』","list","left")
 
 bin:AddButton("SpectrumX",function()
@@ -2250,10 +2250,10 @@ bin:AddButton("Speed-Hub-X (无密钥)",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/BloxFruit_V2_Beta_SpeedHubX.lua"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("群蜂模拟器","list")
 
-wait(0.05)
+wait(0.0001)
 local a = creds:NewSection("Bee Swarm Simulator","list","left")
 
 a:AddButton("HISTORIAHUB",function()
@@ -2264,10 +2264,10 @@ a:AddButton("Histy",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Histy"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("彩虹朋友","list")
 
-wait(0.05)
+wait(0.0001)
 local credits = creds:NewSection("脚本","list","left")
 
 credits:AddButton("彩虹朋友", function()
@@ -2278,10 +2278,10 @@ credits:AddButton("彩虹朋友2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0rainbow"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("监狱人生","list")
 
-wait(0.05)
+wait(0.0001)
 local credits = creds:NewSection("测试","list","left")
 
 credits:AddButton("警卫室", function()
@@ -2300,20 +2300,20 @@ credits:AddButton("监狱院子", function()
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(760.6033325195312, 96.96992492675781, 2475.405029296875)
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("克隆大亨[✝]","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("「脚本」[✝]","list","left")
 
 tool:AddButton("克隆大亨",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HELLLO1073/RobloxStuff/main/CT-Destroyer"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("极速传奇","list")
 
-wait(0.05)
+wait(0.0001)
 local Quic = creds:NewSection("非传送功能","list","left")
 
 Quic:AddButton("mqGPg69N",function()
@@ -2328,7 +2328,7 @@ Quic:AddButton("自动重生刷等级", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/SiWNXXeC"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local Quick = creds:NewSection("传送功能","positon","right")
 
 Quick:AddButton("出生岛", function()
@@ -2347,10 +2347,10 @@ Quick:AddButton("传奇公路", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13098.87109375, 216.83917236328125, 5907.6279296875) 
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("力量传奇","list")
 
-wait(0.05)
+wait(0.0001)
 local Los = creds:NewSection("传送功能","positon","left")
 
 Los:AddButton("肌肉之王健身房", function()
@@ -2385,10 +2385,10 @@ Los:AddButton("出生点", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(7, 3, 108)
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("忍者传奇","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("『Ninja Legends』","list","left")
 
 tool:AddButton("horizon",function()
@@ -2399,10 +2399,10 @@ tool:AddButton("忍者传奇",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadetamic/horizon/main/loadstring.lua"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("自然灾害","list")
 
-wait(0.05)
+wait(0.0001)
 local Nad = creds:NewSection("脚本功能","list","left")
 
 Nad:AddButton("Rochips",function()
@@ -2413,7 +2413,7 @@ Nad:AddButton("Natural",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hussain1323232234/My-Scripts/main/Natural%20Disaster"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local Nad = creds:NewSection("传送功能","positon","right")
 
 Nad:AddButton("游戏地图", function()
@@ -2424,10 +2424,10 @@ Nad:AddButton("休息室", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-268.28476, 179.599991, 367.855896, 0.98179841, 1.36748675e-08, -0.189925909, 1.92749705e-10, 1, 7.29974587e-08, 0.189925909, -7.17054007e-08, 0.98179841)
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("FE","list")
 
-wait(0.05)
+wait(0.0001)
 local Fe = creds:NewSection("FE","list","left")
 
 Fe:AddButton("SANS", function()
@@ -2474,10 +2474,10 @@ Fe:AddButton("Among us", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/f1LTmTPZ"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("巴掌模拟器","list")
 
-wait(0.05)
+wait(0.0001)
 local Sbl = creds:NewSection("脚本","list","left")
 
 Sbl:AddButton("Slap Battles fanmode（无冷却）", function()
@@ -2488,10 +2488,10 @@ Sbl:AddButton("巴掌模拟器", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/Unknownkellymc1/Unknownscripts/main/slap-battles')))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("超级大力士模拟器","list")
 
-wait(0.05)
+wait(0.0001)
 local Dls = creds:NewSection("传送功能","positon","left")
 
 Dls:AddButton("传送到开始区域", function()
@@ -2586,10 +2586,10 @@ Dls:AddButton("传送到下水道区域", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(47.36086654663086, 12.25178050994873, 17656.04296875)
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("灭霸模拟器","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("传送功能","positon","left")
 
 tool:AddButton("出生/复活的地方",function()
@@ -2624,10 +2624,10 @@ tool:AddButton("快速自杀",function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(99999,-4985,99999)
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("更多脚本","list")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("「脚本」","smartphone","left")
 
 tool:AddButton("乌托邦",function()
@@ -2714,10 +2714,10 @@ tool:AddButton("USA（卡密：USA AER）",function()
         getgenv().USA="作者莫羽免费请勿倒卖"loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/USA.lua"))()
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("关于我们","list")
 
-wait(0.05)
+wait(0.0001)
 local About = creds:NewSection("关于我们","crown","left")
 
 About:AddButton("制作者：日月~ikWYZ(星月交辉作者)")
@@ -2730,17 +2730,17 @@ About:AddButton("飞舞幻想作者[提供部分帮助]")
 
 About:AddButton("某沙雕鸭子[提供部分帮助]")
 
-wait(0.05)
+wait(0.0001)
 local Statement = creds:NewSection("声明","crown","right")
 
 Statement:AddButton("欢迎加入我们的群聊781759165")
 
 Statement:AddButton("此脚本符合CC BY-ND协议")
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("fps ping","earth")
 
-wait(0.05)
+wait(0.0001)
 local fps = creds:NewSection("fps ping","list","left")
 
 fps:AddButton("ping",function()
@@ -2838,7 +2838,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 
-wait(0.05)
+wait(0.0001)
 local bin = creds:NewSection("fps","list","left")
 
 bin:AddButton("fps",function()
@@ -2868,10 +2868,10 @@ script.Parent.Text = ("FPS: "..math.round(1/frame))
 end)
 end)
 
-wait(0.05)
+wait(0.0001)
 local creds = Window:NewTab("afk","earth")
 
-wait(0.05)
+wait(0.0001)
 local tool = creds:NewSection("afk","crown","left")
 
 tool:AddToggle("afk",true, function(Value)
@@ -2879,7 +2879,7 @@ tool:AddToggle("afk",true, function(Value)
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
 		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		   wait(0.05)
+		   wait(0.0001)
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 
