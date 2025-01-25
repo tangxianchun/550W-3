@@ -200,6 +200,12 @@ notifications:notify{
             Title = "星月交辉",
             Description = "正常✅",
             Icon = 6031302918,
+            Accept = {
+                Text = "加载中",
+                Callback = function()
+                    print("加载完成")
+                end
+            },
             Length = 4
         }
 
@@ -341,6 +347,12 @@ notifications:notify{
             Title = "日月星辰工作室｜星月交辉",
             Description = "您拒绝签订协议❎",
             Icon = 6031302918,
+            Accept = {
+                Text = "加载中",
+                Callback = function()
+                    print("加载完成")
+                end
+            },
             Length = 5
         }
 end)
@@ -359,6 +371,12 @@ notifications:notify{
             Title = "日月星辰工作室｜星月交辉",
             Description = "状态检测:反挂机✅",
             Icon = 6031302918,
+            Accept = {
+                Text = "加载中",
+                Callback = function()
+                    print("加载完成")
+                end
+            },
             Length = 5
         }
         
@@ -370,44 +388,40 @@ print("反挂机开启")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 
-
-local CoreGui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua')))()
 wait(1)
-CoreGui:notify{
-            Title = "日月星辰工作室",
-            Description = "白名单验证中✅",
+
+        notifications:notify{
+            Title = "星月交辉ID验证中",
+            Description = "星月交辉用户名验证中",
             Icon = 6031302918,
-            Length = 4
-        }
-        wait(1)
-CoreGui:notify{
-            Title = "日月星辰工作室",
-            Description = "加群定期发放白名单✅",
-            Icon = 6031302918,
-            Length = 15
+            Accept = {
+                Text = "双重验证",
+                Callback = function()
+                    print("验证中")
+                end
+            },
+            Length = 7
         }
         
+        wait(1)
 local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/BMD.lua", true))()
-if whitelist[game.Players.LocalPlayer.Name] then
+if whitelist[game.Players.LocalPlayer.UserId] or whitelist[game.Players.LocalPlayer.Name] then
 print("白名单脚本")
 print("欢迎👏白名单用户上分")
 print("已开启反挂机哟")
 print("欢迎您加入我们的大家庭🎉('ω')🎉")
 wait(1)
-CoreGui:notify{Title = "星月交辉",Description = "验证成功,欢迎您"..game.Players.LocalPlayer.Name.. "",Icon = 6031302918,Length = 4}
+notifications:notify{Title = "星月交辉",Description = "验证成功,欢迎您"..game.Players.LocalPlayer.Name.. "",Icon = 6031302918,Accept = {Text = "验证完成",Callback = function()print("加载完成")end},Length = 4}
 wait(1)
-CoreGui:notify{Title = "星月交辉",Description = "loading……",Icon = 6031302918,Length = 1}
+notifications:notify{Title = "星月交辉",Description = "loading……",Icon = 6031302918,Accept = {Text = "加载中",Callback = function()print("加载成功")end},Length = 1}
 wait(1)
-CoreGui:notify{Title = "星月交辉",Description = "正在为您启动云端…",Icon = 6031302918,Length = 1}
+notifications:notify{Title = "星月交辉",Description = "正在为您启动云端…",Icon = 6031302918,Accept = {Text = "加载中",Callback = function()print("加载成功")end},Length = 1}
 wait(1)
-CoreGui:notify{Title = "星月交辉",Description = "启动成功！",Icon = 6031302918,Length = 1}
+notifications:notify{Title = "星月交辉",Description = "Welcome use 星月交辉☪️ X3",Icon = 6031302918,Accept = {Text = "加载中",Callback = function()print("加载成功")end},Length = 1}
 wait(1)
-CoreGui:notify{Title = "星月交辉",Description = "Welcome use 星月交辉☪️ X3",Icon = 6031302918,Length = 1}
+notifications:notify{Title = "星月交辉",Description = "您目前使用的注入器:"..identifyexecutor(),Icon = 6031302918,Accept = {Text = "加载中",Callback = function()print("加载成功")end},Length = 2}
 wait(1)
-CoreGui:notify{Title = "星月交辉",Description = "您目前使用的注入器:"..identifyexecutor(),Icon = 6031302918,Length = 2}
-wait(1)
-CoreGui:notify{Title = "星月交辉 Script™",Description = "",Icon = 6031302918,Length = 1}
-CoreGui:notify{Title = "星月交辉 Script",Description = "正在为您加载[已打开反挂机]",Icon = 6031302918,Length = 1}
+notifications:notify{Title = "星月交辉 Script",Description = "正在为您加载[已打开反挂机]",Icon = 6031302918,Accept = {Text = "加载中",Callback = function()print("加载成功")end},Length = 1}
 print("Anti Afk On")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -416,17 +430,22 @@ print("Anti Afk On")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 		
-CoreGui:notify{Title = "星月交辉",Description = "加载成功，欢迎接入方舟空间站[正在建造...]",Icon = 6031302918,Length = 1}
-CoreGui:notify{Title = "星月交辉",Description = "欢迎您尊贵的『白名单用户…』",Icon = 6031302918,Length = 17}
+notifications:notify{Title = "星月交辉",Description = "欢迎您尊贵的『白名单用户…』",Icon = 6031302918,Accept = {Text = "加载成功",Callback = function()print("加载成功")end},Length = 17}
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
 
 else
 notifications:notify{
             Title = "星月交辉:提示",
-            Description = "当前版本为密钥版,密码:日月星辰",
+            Description = "密码:日月星辰",
             Icon = 6031302918,
-            Length = 15
+            Accept = {
+                Text = "确定",
+                Callback = function()
+                    print("密码：日月星辰")
+                end
+            },
+            Length = 17
         }
         
 local ScreenGui = Instance.new("ScreenGui")
@@ -511,7 +530,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/m
        
     else
 wait(1)
-CoreGui:notify{Title = "系统",Description = "密钥错误™",Icon = 6031302918,Length = 1}
+notifications:notify{Title = "系统",Description = "密钥错误™",Icon = 6031302918,Accept = {Text = "密码错误",Callback = function()print("验证完成")end},Length = 1}
 
 wait(2)
 game.Players.LocalPlayer:Kick ("错误：加群有活动领取密钥：781759165")
@@ -519,7 +538,7 @@ end
 
 end)
 wait(1)
-CoreGui:notify{Title = "系统",Description = "验证失败，开启密钥程序™",Icon = 6031302918,Length = 4}
+notifications:notify{Title = "系统",Description = "验证失败，开启密钥程序™",Icon = 6031302918,Accept = {Text = "验证失败",Callback = function()print("验证完成")end},Length = 1}
 end
 
 end)
