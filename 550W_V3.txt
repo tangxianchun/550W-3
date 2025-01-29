@@ -381,12 +381,12 @@ end)
 
 notifications:notify{
             Title = "星月交辉",
-            Description = "启动音乐🎵",
+            Description = "启动音乐🎶",
             Icon = 6031302918,
             Accept = {
                 Text = "启动！",
                 Callback = function()
-                    print("音乐启动！！！")
+                    print("phonk启动！！！")
 local sound = Instance.new("Sound")
 sound.SoundId = "rbxassetid://16190782181"
 sound.Parent = game.Workspace
