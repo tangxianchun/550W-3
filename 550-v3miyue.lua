@@ -364,10 +364,22 @@ sound.Parent = game.Workspace
 sound:Play()
 end)
 
+notifications:notify{
+	Title = "星月交辉",
+	Description = "启动音乐🎶",
+	Icon = 6031302918,
+	Accept = {
+		Text = "启动！",
+		Callback = function()
+			print("phonk启动！！！")
 local sound = Instance.new("Sound")
 sound.SoundId = "rbxassetid://16190782181"
 sound.Parent = game.Workspace
 sound:Play()
+end
+	},
+	Length = 15
+}
 
 tool:AddButton("彩虹瀑布",function()
 local sound = Instance.new("Sound")
@@ -2723,15 +2735,4 @@ tool:AddToggle("afk",true, function(Value)
 		end)
 
 end)
-notifications:notify{
-            Title = "星月交辉",
-            Description = "反挂机✅",
-            Icon = 6031302918,
-            Accept = {
-                Text = "启动完成",
-                Callback = function()
-                    print("启动完成")
-                end
-            },
-            Length = 15
-        }
+
