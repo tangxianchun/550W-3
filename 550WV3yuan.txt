@@ -430,7 +430,7 @@ print("Anti Afk On")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 		
-notifications:notify{Title = "星月交辉",Description = "欢迎您尊贵的『白名单用户…』",Icon = 6031302918,Accept = {Text = "加载成功",Callback = function()print("加载成功")end},Length = 21
+notifications:notify{Title = "星月交辉",Description = "欢迎您尊贵的『白名单用户…』",Icon = 6031302918,Accept = {Text = "加载成功",Callback = function()print("加载成功")end},Length = 2
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-3/main/550W_V3.txt"))()
 
