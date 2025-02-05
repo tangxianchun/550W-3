@@ -1241,9 +1241,30 @@ tool:AddButton("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = Window:NewTab("taxi boss","list")
+
+local a = creds:NewSection("『 taxi boss ✅』","save","left")
+
+a:AddButton("刷钱，卡的时候容易刷不了，重进就行",function()
+local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"), true))()
+notifications:notify{
+            Title = "星月交辉",
+            Description = "启动刷钱",
+            Icon = 6031302918,
+            Accept = {
+                Text = "启动！",
+                Callback = function()
+                    print("刷钱开启")
+end
+            },
+            Length = 7
+        }
+--taxi boss
+local link = "https://raw.githubusercontent.com/tangxianchun/xingyue-Hub/refs/heads/main/Loader.lua"
+loadstring(game:HttpGet(link))()
+end)
 
 local creds = Window:NewTab("火箭模拟发射器","list")
-
 
 local a = creds:NewSection("『 火箭模拟发射器 ✅』","save","left")
 
