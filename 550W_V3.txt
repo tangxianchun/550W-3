@@ -32,7 +32,7 @@ bin:AddButton("当前版本：V3.5.0 公开白名单测试版")
 
 bin:AddButton("更新日志：")
 
-bin:AddButton("柔术无限｜1-4")
+bin:AddButton("blade ball｜4-26")
 
 bin:AddButton("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -2067,6 +2067,10 @@ a:AddButton("星月刀刃球 V3",function()
 
 local a = creds:NewSection("脚本","list","right")
 
+a:AddButton("LUNAR『需密钥』",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mzkv/LUNAR/refs/heads/main/BladeBall", true))()
+end)
+
  a:AddButton("SymphonyHub『需密钥』",function()
 local a,b,c,d=loadstring,request or http_request or(http and http.request)or(syn and syn.request),assert,"https://lhr.synteamenv.workers.dev/?page=script"c(a and b,"Your executor does not support.")a(b({Url=d,Method="POST",Headers={["Authorization"]="Elf and Tears"}}).Body)()
  end) 
@@ -2084,7 +2088,7 @@ _G.UI_Size = 30 -- config ui size
 loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
  end) 
  
- a:AddButton("Red Circl and Inferno",function() 
+ a:AddButton("Red Circl and Inferno(可用）)",function() 
      --⭕Red Circle Auto-Block:--getgenv().visualizer = true
 
 _G.Config = {
