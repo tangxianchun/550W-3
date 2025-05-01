@@ -2687,12 +2687,8 @@ tool:AddButton("皇脚本•version",function()
 loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
 end)
 
-tool:AddButton("剑客 V6•version",function()
-Sword_Guest_VI = "剑客V6"
-Sword_Guest__VI = "作者 初夏"
-Sword_Guest___VI = "剑客QQ群 155160100"
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JianKeCX/GS/refs/heads/main/VI"))()
+tool:AddButton("剑客 V7•version",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0neK/Hello/refs/heads/main/SG-V7"))()
 end)
 
 tool:AddButton("导管中心•version",function()
