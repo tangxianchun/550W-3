@@ -2688,7 +2688,7 @@ loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105
 end)
 
 tool:AddButton("剑客 V7•version",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0neK/Hello/refs/heads/main/SG-V7"))()
+loadstring(request({Url="https://raw.githubusercontent.com/Zer0neK/JianKe/refs/heads/main/初夏.lua"}).Body)()
 end)
 
 tool:AddButton("导管中心•version",function()
