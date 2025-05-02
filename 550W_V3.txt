@@ -85,6 +85,10 @@ end
 end
 end)
     end)
+    
+bin:AddButton("优化",function()
+(loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/refs/heads/main/youhua.lua"))()
+end)
 
 bin:AddToggle("游戏信息(关不了)", false, function(Value)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
