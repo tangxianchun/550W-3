@@ -63,6 +63,7 @@ local bin = creds:NewSection("UI设置","positon","right")
     
     bin:AddButton("自瞄",function()
 local link = "https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/Aimbotesp" loadstring(game:HttpGet(link))()
+(loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/refs/heads/main/zhimiao2"))();
 end)
 
 bin:AddButton("范围",function()
