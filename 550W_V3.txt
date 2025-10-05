@@ -323,6 +323,10 @@ local creds = Window:NewTab("联动脚本","list")
 
 local tool = creds:NewSection("『通用』","smartphone","left")
 
+tool:AddButton("Destiny",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Destiny/main/loader.lua"))()
+end)
+
 tool:AddButton("神",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/leenZzZzZ/ScriptHUB/main/Script%20Hub",true))();
 end)
