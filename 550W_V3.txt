@@ -2918,7 +2918,7 @@ local creds = Window:NewTab("afk","earth")
 
 local tool = creds:NewSection("afk","crown","left")
 
-tool:AddToggle("afk",true, function(Value)
+tool:AddToggle("afk",false, function(Value)
         print("Anti Afk On")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
