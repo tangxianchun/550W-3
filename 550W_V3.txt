@@ -100,7 +100,7 @@ bin:AddToggle("游戏信息(关不了)", false, function(Value)
 
 local bin = creds:NewSection("人物设置","crown","right")
     
-bin:AddSlider("速度",{Min = 16,Max = 999999999,Default = 16,ValueT = '%'},function(Value)
+bin:AddSlider("速度",{Min = 16,Max = 10000,Default = 16,ValueT = '%'},function(Value)
     
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
     
@@ -112,7 +112,7 @@ bin:AddSlider("跳跃",{Min = 16,Max = 10000,Default = 16,ValueT = '%'},function
 	
 end)
 
-bin:AddSlider("血量",{Min = 100,Max = 9999999999,Default = 100,ValueT = '%'},function(Value)
+bin:AddSlider("血量",{Min = 100,Max = 10000,Default = 100,ValueT = '%'},function(Value)
     
 	game.Players.LocalPlayer.Character.Humanoid.Health = Value
 	
