@@ -389,7 +389,7 @@ sound.SoundId = "rbxassetid://1845918434"
 sound.Parent = game.Workspace
 sound:Play()
 end)
-
+--[[
 notifications:notify{
             Title = "星月交辉",
             Description = "启动音乐🎶",
@@ -406,7 +406,7 @@ end
             },
             Length = 15
         }
-        
+        ]]
 tool:AddButton("彩虹瀑布",function()
 local sound = Instance.new("Sound")
 sound.SoundId = "rbxassetid://1837879082"
