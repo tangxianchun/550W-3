@@ -2680,8 +2680,9 @@ local tool = creds:NewSection("「脚本」","smartphone","left")
 
 tool:AddButton("皮脚本",function()
 Name = "皮脚本",
-      Callback = function()
-        getgenv().XiaoPi="皮脚本QQ群1002100032" loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
+    [[Callback = function()
+        getgenv().XiaoPi="皮脚本QQ群1002100032" ]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
       end)
 
 tool:AddButton("乌托邦",function()
