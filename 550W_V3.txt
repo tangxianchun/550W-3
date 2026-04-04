@@ -68,7 +68,7 @@ bin:AddButton("ESP",function()
 (loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/refs/heads/main/zhimiao2"))();
 end)
 
-bin:AddButton("即时互动",function()
+bin:AddButton("即时互动",function(s)
 _G.II = (s and true or false)
 game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(prompt)
     if _G.II == true then
