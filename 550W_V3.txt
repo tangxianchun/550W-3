@@ -69,16 +69,12 @@ bin:AddButton("ESP",function()
 end)
 
 bin:AddButton("即时互动",function()
-local Cooking = game.Players.LocalPlayer.PlayerScripts.CookingNew
-local CookProgress = require(Cooking.CookProgress)
-local MultiClick = require(Cooking.InputDetectors.MultiClick)
-local MouseMovement = require(Cooking.InputDetectors.MouseMovement)
-local MouseSpin = require(Cooking.InputDetectors.MouseSpin)
-local run = CookProgress.run
-CookProgress.run = function(...)
-  local ARGS = {...}
-  ARGS[3] = 0
-  
+_G.II = (s and true or false)
+game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(prompt)
+    if _G.II == true then
+        fireproximityprompt(prompt)
+    end
+end)
 end)
 
 bin:AddButton("范围",function()
