@@ -1,6 +1,6 @@
 --local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"), true))()
 
-local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/refs/heads/main/550wv3UI.lua"))()
+local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua"))()
 
 local window = ui:new("星月 X3 NEW")
 
