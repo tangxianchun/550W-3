@@ -1995,7 +1995,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/KidichiHB/Kidachi/mai
 end)
 
 
-local creds = window:Tab("『法宝模拟器』",'6035145364')
+local creds = window:Tab("法宝模拟器",'6035145364')
 
 
 local bin = creds:section("『可能用不了』",true)
