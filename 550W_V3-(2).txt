@@ -221,7 +221,7 @@ if Value then
     end)
     
    --[[ local bin = creds:section("传送","crown","right")
-    ]]
+   
     bin:Dropdown("玩家",{},AllPlayers,function(Value)
     TeleportToPlayer(Value)
     end)
@@ -235,7 +235,7 @@ bin:Button("刷新列表", function()
     
     bin:SetOptions(AllPlayers)
 end)
-    
+]]
 
 bin:Toggle("人物显示",false,function(Value)
 getgenv().enabled = Value --Toggle on/off
@@ -254,7 +254,7 @@ ToggleESP(Value)
 end)
 
 
-local creds = Window:Tab("星月交辉系列",'6035145364')
+local creds = window:Tab("星月交辉系列",'6035145364')
 
 local tool = creds:section("『星月交辉☪』",false)
 
@@ -550,7 +550,6 @@ end)
 
 
 local creds = window:Tab("键盘",'6035145364')
-
 
 local Tab1 = creds:ection("『键盘』",true)
 
