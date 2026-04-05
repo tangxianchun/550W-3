@@ -2,7 +2,7 @@
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/refs/heads/main/550wv3UI.lua"))()
 
-local window = ui:new("星月 X3 NEW "..game.Players.LocalPlayer.DisplayName"")
+local window = ui:new("星月 X3 NEW")
 
 --[["rbxthumb://type=Asset&id=93454115263053&w=768&h=432",]]
 
@@ -36,6 +36,8 @@ bin:Label("更新日志：")
 bin:Label("blade ball｜4-26")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
+
+bin:Label("..game.Players.LocalPlayer.DisplayName""))
     
 bin:Label("你的注入器:"..identifyexecutor())
 
