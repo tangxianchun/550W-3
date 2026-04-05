@@ -1,4 +1,4 @@
---[[local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"), true))()]]
+local tz = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"), true))()
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/refs/heads/main/550wv3UI.lua"))()
 
@@ -51,11 +51,11 @@ bin:Label("当前游戏ID为:" .. game.GameId .. "")
 
 local bin = creds:section("UI设置",true)
 
-    bin:Button("摧毁UI(用不了)",function()
+    bin:Button("摧毁UI",function()
         game:GetService("CoreGui")["frosty"]:Destroy()
     end)
 
-    bin:Toggle("彩虹UI", false, function(Value)
+    bin:Toggle("彩虹UI", false, function(value)
         if state then
         game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
         else
@@ -99,7 +99,7 @@ bin:Button("优化",function()
 (loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/refs/heads/main/youhua.lua"))()
 end)
 
-bin:Toggle("游戏信息(关不了)", false, function(Value)
+bin:Toggle("游戏信息(关不了)", false, function(state)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
     end)
     
@@ -108,47 +108,47 @@ local creds = window:Tab("人物设置",'6035145364')
 
 local bin = creds:section("人物设置",true)
 
-bin:Slider("速度",{Min = 16,Max = 10000,Default = 16,ValueT = '%'},function(Value)
+bin:Slider("速度",{Min = 16,Max = 10000,Default = 16,valueT = '%'},function(value)
     
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
     
 end)
 
-bin:Slider("跳跃",{Min = 16,Max = 10000,Default = 16,ValueT = '%'},function(Value)
+bin:Slider("跳跃",{Min = 16,Max = 10000,Default = 16,valueT = '%'},function(value)
     
-	game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
 	
 end)
 
-bin:Slider("血量",{Min = 100,Max = 10000,Default = 100,ValueT = '%'},function(Value)
+bin:Slider("血量",{Min = 100,Max = 10000,Default = 100,valueT = '%'},function(value)
     
-	game.Players.LocalPlayer.Character.Humanoid.Health = Value
+	game.Players.LocalPlayer.Character.Humanoid.Health = value
 	
 end)
 
-bin:Slider("缩放",{Min = 128,Max = 9999999999,Default = 128,ValueT = '%'},function(Value)
+bin:Slider("缩放",{Min = 128,Max = 9999999999,Default = 128,valueT = '%'},function(value)
     
-	game:GetService("Players").LocalPlayer.CameraMaxZoomDistance = Value
+	game:GetService("Players").LocalPlayer.CameraMaxZoomDistance = value
 	
 end)
 
-bin:Slider("重力",{Min = 0.1,Max = 250,Default = 196.2,ValueT = '%'},function(Value)
+bin:Slider("重力",{Min = 0.1,Max = 250,Default = 196.2,valueT = '%'},function(value)
     
-	game.Workspace.Gravity = Value
+	game.Workspace.Gravity = value
 	
 end)
 
-bin:Slider("视野",{Min = 1,Max = 250,Default = 70,ValueT = '%'},function(Value)
+bin:Slider("视野",{Min = 1,Max = 250,Default = 70,valueT = '%'},function(value)
     
-	game.Workspace.CurrentCamera.FieldOfView = Value
+	game.Workspace.CurrentCamera.FieldOfView = value
 	
 end)
 
 local bin = creds:section("其它设置",false)
 
-bin:Toggle("穿墙",false,function(Value)
+bin:Toggle("穿墙",false,function(value)
 
-if Value then
+if value then
             Noclip = true
             Stepped =
                 game.RunService.Stepped:Connect(
@@ -173,17 +173,17 @@ if Value then
         end
         end)
 
-bin:Toggle("夜视",false,function(Value)
+bin:Toggle("夜视",false,function(value)
 
-if Value then
+if value then
             game.Lighting.Ambient = Color3.new(1, 1, 1)
         else
             game.Lighting.Ambient = Color3.new(0, 0, 0)
         end
 end)
 
-bin:Toggle("无敌?",false,function(Value)
-if Value then
+bin:Toggle("无敌?",false,function(value)
+if value then
 		    local Cam = workspace.CurrentCamera
 	local Pos, Char = Cam.CFrame, speaker.Character
 	local Human = Char and Char.FindFirstChildWhichIsA(Char, "Humanoid")
@@ -222,12 +222,12 @@ if Value then
     
    --[[ local bin = creds:section("传送","crown","right")
     ]]
-    bin:Dropdown("玩家",{},AllPlayers,function(Value)
-    TeleportToPlayer(Value)
+    bin:Dropdown("玩家",{},AllPlayers,function(value)
+    TeleportToPlayer(value)
     end)
     
-    local function tp(Value)
-    game.Players.LocalPlayer.Character:PivotTo(Value)
+    local function tp(value)
+    game.Players.LocalPlayer.Character:PivotTo(value)
 end
 
 bin:Button("刷新列表", function()
@@ -237,8 +237,8 @@ bin:Button("刷新列表", function()
 end)
     
 
-bin:Toggle("人物显示",false,function(Value)
-getgenv().enabled = Value --Toggle on/off
+bin:Toggle("人物显示",false,function(value)
+getgenv().enabled = value --Toggle on/off
 getgenv().filluseteamcolor = true --Toggle fill color using player team color on/off
 getgenv().outlineuseteamcolor = true --Toggle outline color using player team color on/off
 getgenv().fillcolor = Color3.new(1, 0, 0) --Change fill color, no need to edit if using team color
@@ -249,8 +249,8 @@ getgenv().outlinetrans = 0.5 --Change outline transparency
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/Highlight-ESP.lua"))()
 end)
 
-bin:Toggle("显示名称",false,function(Value)
-ToggleESP(Value)
+bin:Toggle("显示名称",false,function(value)
+ToggleESP(value)
 end)
 
 
@@ -392,7 +392,7 @@ sound.Parent = game.Workspace
 sound:Play()
 end)
 --[[
-notifications:notify{
+tz:notify{
             Title = "星月交辉",
             Description = "启动音乐🎶",
             Icon = 6031302918,
@@ -1188,8 +1188,8 @@ tool:Button("穿墙",function()
         loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
 end)
 
-tool:Button("控制",function(Value)
-		if Value then
+tool:Button("控制",function(value)
+		if value then
 		    game.Lighting.Ambient = Color3.new(1, 1, 1)
 		else
 		    game.Lighting.Ambient = Color3.new(0, 0, 0)
@@ -1276,8 +1276,8 @@ local creds = window:Tab("火箭模拟发射器",'6035145364')
 
 local a = creds:section("『 火箭模拟发射器 ✅』",true)
 
-a:Toggle("自动收集燃料",false,function(Value)
-isFuelScoopEnabled = Value
+a:Toggle("自动收集燃料",false,function(value)
+isFuelScoopEnabled = value
 end)
 
 a:Button("登上火箭",function()
@@ -2813,7 +2813,7 @@ Ping.TextWrapped = true
 local script = Instance.new('LocalScript', Ping)
 local RunService = game:GetService("RunService")
 RunService.RenderStepped:Connect(function(ping) 
-script.Parent.Text = ("Ping: " ..game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString(math.round(2/ping))) -- your ping
+script.Parent.Text = ("Ping: " ..game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetvalueString(math.round(2/ping))) -- your ping
 end)
 end)
 
@@ -2840,7 +2840,7 @@ Ping.TextWrapped = true
 local script = Instance.new('LocalScript', Ping)
 local RunService = game:GetService("RunService")
 RunService.RenderStepped:Connect(function(ping) 
-script.Parent.Text = ("Ping: " ..game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString(math.round(2/ping))) -- your ping
+script.Parent.Text = ("Ping: " ..game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetvalueString(math.round(2/ping))) -- your ping
 end)
 
 local LBLG = Instance.new("ScreenGui", getParent)
@@ -2920,7 +2920,7 @@ local creds = window:Tab("afk",'6035145364'))
 
 local tool = creds:section("afk",true)
 
-tool:Toggle("afk",false, function(Value)
+tool:Toggle("afk",false, function(value)
         print("Anti Afk On")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
