@@ -2,7 +2,7 @@ local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.co
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/refs/heads/main/550wv3UI.lua"))()
 
-local window = ui:new("星月 X3 NEW "..game.Players.LocalPlayer.DisplayName")
+local window = ui:new("星月 X3 NEW "..game.Players.LocalPlayer.DisplayName"")
 
 --[["rbxthumb://type=Asset&id=93454115263053&w=768&h=432",]]
 
