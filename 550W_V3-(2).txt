@@ -1,6 +1,6 @@
---local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"), true))()
+local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"), true))()
 
-local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/550wv3UI.lua"))()
+local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/refs/heads/main/550wv3UI.lua"))()
 
 local window = ui:new("星月 X3 NEW")
 
@@ -108,37 +108,37 @@ local creds = window:Tab("人物设置",'6035145364')
 
 local bin = creds:section("人物设置",true)
 
-bin:Slider("速度",{Min = 16,Max = 10000,Default = 16,ValueT = '%'},function(Value)
+bin:txt("速度",{Min = 16,Max = 10000,Default = 16,ValueT = '%'},function(Value)
     
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
     
 end)
 
-bin:Slider("跳跃",{Min = 16,Max = 10000,Default = 16,ValueT = '%'},function(Value)
+bin:txt("跳跃",{Min = 16,Max = 10000,Default = 16,ValueT = '%'},function(Value)
     
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 	
 end)
 
-bin:Slider("血量",{Min = 100,Max = 10000,Default = 100,ValueT = '%'},function(Value)
+bin:txt("血量",{Min = 100,Max = 10000,Default = 100,ValueT = '%'},function(Value)
     
 	game.Players.LocalPlayer.Character.Humanoid.Health = Value
 	
 end)
 
-bin:Slider("缩放",{Min = 128,Max = 9999999999,Default = 128,ValueT = '%'},function(Value)
+bin:txt("缩放",{Min = 128,Max = 9999999999,Default = 128,ValueT = '%'},function(Value)
     
 	game:GetService("Players").LocalPlayer.CameraMaxZoomDistance = Value
 	
 end)
 
-bin:Slider("重力",{Min = 0.1,Max = 250,Default = 196.2,ValueT = '%'},function(Value)
+bin:txt("重力",{Min = 0.1,Max = 250,Default = 196.2,ValueT = '%'},function(Value)
     
 	game.Workspace.Gravity = Value
 	
 end)
 
-bin:Slider("视野",{Min = 1,Max = 250,Default = 70,ValueT = '%'},function(Value)
+bin:txt("视野",{Min = 1,Max = 250,Default = 70,ValueT = '%'},function(Value)
     
 	game.Workspace.CurrentCamera.FieldOfView = Value
 	
