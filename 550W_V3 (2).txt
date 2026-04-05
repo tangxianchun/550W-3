@@ -1,4 +1,4 @@
-local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"), true))()
+--local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"), true))()
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/refs/heads/main/550wv3UI.lua"))()
 
