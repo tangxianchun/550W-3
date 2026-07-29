@@ -1237,6 +1237,14 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = window:Tab("⚡️ +1 speed keyboard escape",'6035145364')
+
+local a = creds:section("『 ⚡️ +1 speed keyboard escape』",false)
+
+a:Button("⚡️ +1 speed keyboard escape/需密钥",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Lilwero20/KatoHub/refs/heads/main/KatoHub"))()
+end)
+
 local creds = window:Tab("taxi boss",'6035145364')
 
 local a = creds:section("『 taxi boss ❌』",false)
