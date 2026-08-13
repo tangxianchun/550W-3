@@ -1237,11 +1237,20 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = window:Tab("花园清洁工进化",'6035145364')
+
+local a = creds:section("Garden cleaner evolution",true)
+
+a:Button("Bac0nHck✅",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/refs/heads/main/GardenCleanerEvolution.lua"))()
+-- [[ More scripts: https://t.me/KREVETKASCRIPTS ]]
+end)
+
 local creds = window:Tab("森林中99夜",'6035145364')
 
-local a = creds:section("『 99 Nights in the Forest』",false)
+local a = creds:section("『 99 Nights in the Forest』",true)
 
-a:Button("voidware",function()
+a:Button("voidware✅",function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/99-Nights-in-the-Forest-SNOW-BIOME-KEYLESS-BEST-99-NIGHTS-IN-THE-FOREST-SCRIPT-VOIDWARE-47274"))()
 end)
 
