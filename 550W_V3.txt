@@ -1266,7 +1266,11 @@ a:Button("voidware✅",function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/99-Nights-in-the-Forest-SNOW-BIOME-KEYLESS-BEST-99-NIGHTS-IN-THE-FOREST-SCRIPT-VOIDWARE-47274"))()
 end)
 
-a:Button("moondiety",function()
+a:Button("Foxname",function()
+(loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))();
+end)
+
+a:Button("moondiety✅（key)",function()
 loadstring(game:HttpGet("https://moondiety.com/loader"))()
 end)
 
