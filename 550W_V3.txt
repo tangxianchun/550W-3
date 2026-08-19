@@ -2689,6 +2689,10 @@ local creds = window:Tab("更多脚本",'6035145364')
 
 local tool = creds:section("「脚本」",true)
 
+tool:Button("TX脚本",function()
+(loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/JsYb666/TX-Free/refs/heads/main/TX-V4.0"))();
+end)
+
 tool:Button("皮脚本",function()
 Name = "皮脚本",
     [[Callback = function()
