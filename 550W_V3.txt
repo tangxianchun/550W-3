@@ -132,6 +132,14 @@ bin:Slider("视野",{Min = 1,Max = 250,Default = 70,stateT = '%'},function(state
 end)
 ]]
 
+local creds = window:Tab("全自动翻译（包括脚本）",'6035145364')
+
+local a = creds:section("全自动翻译",true)
+
+a:Button("TX 全自动翻译",function()
+TX = "TX Script"Script = "全自动翻译"loadstring(game:HttpGet("https://raw.githubusercontent.com/JsYb666/Item/refs/heads/main/Auto-language"))()
+end)
+
 local creds = window:Tab("其它设置",'6035145364')
 
 local bin = creds:section("其它设置",true)
