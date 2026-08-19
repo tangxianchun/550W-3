@@ -54,6 +54,10 @@ local creds = window:Tab("自瞄",'6035145364')
     
     local bin = creds:section("自瞄",true)
     
+    bin:Button("阿尔宙斯/子弹追踪",function()
+    (loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/JsYb666/Item/refs/heads/main/Arceus%E5%AD%90%E8%BF%BD"))();
+    end)
+    
     bin:Button("自瞄",function()
 local link = "https://raw.githubusercontent.com/tangxianchun/550fx/refs/heads/main/adminesp.llua" loadstring(game:HttpGet(link))()
 end)
