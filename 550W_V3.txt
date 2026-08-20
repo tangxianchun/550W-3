@@ -1274,6 +1274,10 @@ a:Button("moondiety✅（key)",function()
 loadstring(game:HttpGet("https://moondiety.com/loader"))()
 end)
 
+a:Button("Kurd",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ninja10908/S4/refs/heads/main/Kurdhub"))()
+end)
+
 a:Button("TX森林中99夜",function()
 (loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/JsYb666/Item/refs/heads/main/99-Nights-TX-XIAN-MIAN______-_-_--_-_-_-_--_-_-_-_--_-_-_-_-_--_-_-_-__------_-_-_-_.lua"))();
 end)
