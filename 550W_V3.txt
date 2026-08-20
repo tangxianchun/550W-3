@@ -1282,7 +1282,11 @@ a:Button("H4xScripts",function()
 loadstring(game:HttpGet("https://H4xScripts.xyz/loader"))()
 end)
 
-a:Button("Foxname❌",function()
+a:Button("Foxname99",function()
+(loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/farm%20diamond%2099%20night"))();
+end)
+
+a:Button("FoxnameHub❌",function()
 (loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))();
 end)
 
