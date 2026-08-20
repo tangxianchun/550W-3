@@ -1267,14 +1267,6 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/99-Nights-in-the-Forest-SNOW
 end)
 
 a:Button("wilonity",function()
--- [[ Rscripts 风险提示 ]]
--- 此脚本未经rscripts.net验证，请谨慎使用。
---
-注意安全：
--- • 切勿在非官方 Roblox 网站或类似域名上登录。
--- • 真正的 Roblox 链接使用 roblox.com（检查 .com 结尾）。
--- • 将虚假的 Roblox 登录/“领取奖励”页面视为网络钓鱼。
--- [[ Rscripts 风险提示结束 ]]
 loadstring(game:HttpGet("https://wilonity.xyz/script-hub.lua"))()
 end)
 
@@ -1290,7 +1282,7 @@ a:Button("FoxnameHub❌",function()
 (loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))();
 end)
 
-a:Button("moondiety✅（key）",function()
+a:Button("moondiety✅『key』",function()
 loadstring(game:HttpGet("https://moondiety.com/loader"))()
 end)
 
