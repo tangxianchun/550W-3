@@ -1290,7 +1290,7 @@ a:Button("FoxnameHub❌",function()
 (loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))();
 end)
 
-a:Button("moondiety✅（key)",function()
+a:Button("moondiety✅（key）",function()
 loadstring(game:HttpGet("https://moondiety.com/loader"))()
 end)
 
