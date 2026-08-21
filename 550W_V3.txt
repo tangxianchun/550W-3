@@ -1266,11 +1266,11 @@ a:Button("voidware✅",function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/99-Nights-in-the-Forest-SNOW-BIOME-KEYLESS-BEST-99-NIGHTS-IN-THE-FOREST-SCRIPT-VOIDWARE-47274"))()
 end)
 
-a:Button("wilonity",function()
+a:Button("wilonity❌",function()
 loadstring(game:HttpGet("https://wilonity.xyz/script-hub.lua"))()
 end)
 
-a:Button("H4xScripts",function()
+a:Button("H4xScripts✅『key』",function()
 loadstring(game:HttpGet("https://H4xScripts.xyz/loader"))()
 end)
 
