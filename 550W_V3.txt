@@ -1249,6 +1249,14 @@ tool:Button("紫色手电筒买东西时使用",function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
 end)
 
+local creds = window:Tab("僵尸竞技场",'6035145364')
+
+local a = creds:section("Zombie Arena",true)
+
+a:Button("Foxname",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/Foxname_SZA.lua"))()
+end)
+
 local creds = window:Tab("花园清洁工进化",'6035145364')
 
 local a = creds:section("Garden cleaner evolution",true)
@@ -1288,6 +1296,10 @@ end)
 
 a:Button("TX森林中99夜❌",function()
 (loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/JsYb666/Item/refs/heads/main/99-Nights-TX-XIAN-MIAN______-_-_--_-_-_-_--_-_-_-_--_-_-_-_-_--_-_-_-__------_-_-_-_.lua"))();
+end)
+
+a:Button("hosting",function()
+loadstring(game:HttpGet("http://prem-eu2.bot-hosting.net:21951/load?script=loader"))()
 end)
 
 local creds = window:Tab("⚡️ +1 speed keyboard escape",'6035145364')
