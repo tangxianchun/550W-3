@@ -1270,6 +1270,8 @@ local creds = window:Tab("森林中99夜",'6035145364')
 
 local a = creds:section("『 99 Nights in the Forest』",true)
 
+a:Label("打不开用游帮帮加速器")
+
 a:Button("voidware✅",function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/99-Nights-in-the-Forest-SNOW-BIOME-KEYLESS-BEST-99-NIGHTS-IN-THE-FOREST-SCRIPT-VOIDWARE-47274"))()
 end)
@@ -1282,7 +1284,7 @@ a:Button("H4xScripts✅『key』",function()
 loadstring(game:HttpGet("https://H4xScripts.xyz/loader"))()
 end)
 
-a:Button("FoxnameHub❌",function()
+a:Button("FoxnameHub✅",function()
 (loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))();
 end)
 
