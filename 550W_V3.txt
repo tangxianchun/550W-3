@@ -1261,6 +1261,10 @@ local creds = window:Tab("花园清洁工进化",'6035145364')
 
 local a = creds:section("Garden cleaner evolution",true)
 
+a:Button("ArcaHUB",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/arcaaaaa/ArcaHUB-Scripts/main/Garden%20Cleaner%20Evolution%20by%20ArcaHUB.lua"))()
+end)
+
 a:Button("Bac0nHck✅",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/refs/heads/main/GardenCleanerEvolution.lua"))()
 -- [[ More scripts: https://t.me/KREVETKASCRIPTS ]]
