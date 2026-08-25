@@ -1304,8 +1304,8 @@ a:Button("Kurd",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Ninja10908/S4/refs/heads/main/Kurdhub"))()
 end)
 
-a:Button("TX森林中99夜❌",function()
-(loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/JsYb666/Item/refs/heads/main/99-Nights-TX-XIAN-MIAN______-_-_--_-_-_-_--_-_-_-_--_-_-_-_-_--_-_-_-__------_-_-_-_.lua"))();
+a:Button("luarmor",function()
+(loadstring or load)(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c27892d6692ba09d991c09dc9d5ceae1.lua"))();
 end)
 
 a:Button("hosting",function()
@@ -1314,7 +1314,11 @@ end)
 
 local creds = window:Tab("⚡️ +1 speed keyboard escape",'6035145364')
 
-local a = creds:section("『 ⚡️ +1 speed keyboard escape』",false)
+local a = creds:section("『 ⚡️ +1 speed keyboard escape』",true)
+
+a:Button("Galactic",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GalacticScripts/Galactic-Hub/refs/heads/main/WindUI"))()
+end)
 
 a:Button("⚡️ +1 speed keyboard escape/需密钥",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Lilwero20/KatoHub/refs/heads/main/KatoHub"))()
