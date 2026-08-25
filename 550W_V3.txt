@@ -1257,6 +1257,14 @@ a:Button("Foxname",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/Foxname_SZA.lua"))()
 end)
 
+local creds = window:Tab("清理所有的树叶",'6035145364')
+
+local a = creds:section("Clear all the leaves",true)
+
+a:Button("potato",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/potatohub67/potatoscripts/refs/heads/main/cleanleafes.lua"))()
+end)
+
 local creds = window:Tab("花园清洁工进化",'6035145364')
 
 local a = creds:section("Garden cleaner evolution",true)
