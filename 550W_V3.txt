@@ -1300,11 +1300,11 @@ a:Button("moondiety✅『key』",function()
 loadstring(game:HttpGet("https://moondiety.com/loader"))()
 end)
 
-a:Button("Kurd",function()
+a:Button("Kurd❌",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Ninja10908/S4/refs/heads/main/Kurdhub"))()
 end)
 
-a:Button("luarmor",function()
+a:Button("luarmor❌",function()
 (loadstring or load)(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c27892d6692ba09d991c09dc9d5ceae1.lua"))();
 end)
 
