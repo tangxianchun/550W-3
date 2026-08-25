@@ -1308,7 +1308,7 @@ a:Button("luarmor❌",function()
 (loadstring or load)(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c27892d6692ba09d991c09dc9d5ceae1.lua"))();
 end)
 
-a:Button("hosting",function()
+a:Button("hosting✅",function()
 loadstring(game:HttpGet("http://prem-eu2.bot-hosting.net:21951/load?script=loader"))()
 end)
 
@@ -1328,7 +1328,7 @@ local creds = window:Tab("taxi boss",'6035145364')
 
 local a = creds:section("『 taxi boss ❌』",false)
 
-a:Button("刷钱，卡的时候容易刷不了，重进就行",function()
+a:Button("刷钱，卡的时候容易刷不了，重进就行❌",function()
 local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"), true))()
 notifications:notify{
             Title = "星月交辉",
