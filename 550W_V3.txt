@@ -22,7 +22,7 @@ bin:Label("当前版本：V3.5.0 公开白名单测试版")
 
 bin:Label("更新日志：")
 
-bin:Label("blade ball｜4-26")
+bin:Label("Galactic中心｜4-26")
 
 bin:Label("欢迎您，亲爱的"..game.Players.LocalPlayer.Name.. "")
     
@@ -136,9 +136,9 @@ bin:Slider("视野",{Min = 1,Max = 250,Default = 70,stateT = '%'},function(state
 end)
 ]]
 
-local creds = window:Tab("全自动翻译（包括脚本）",'6035145364')
+local creds = window:Tab("全自动翻译",'6035145364')
 
-local a = creds:section("全自动翻译",true)
+local a = creds:section("全自动翻译『包括脚本』",true)
 
 a:Button("TX 全自动翻译",function()
 TX = "TX Script"Script = "全自动翻译"loadstring(game:HttpGet("https://raw.githubusercontent.com/JsYb666/Item/refs/heads/main/Auto-language"))()
@@ -327,6 +327,10 @@ end)
 local creds = window:Tab("联动脚本",'6035145364')
 
 local tool = creds:section("『联动』",true)
+
+a:Button("Galactic",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GalacticScripts/Galactic-Hub/refs/heads/main/WindUI"))()
+end)
 
 tool:Button("Destiny",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Destiny/main/loader.lua"))()
@@ -1279,6 +1283,10 @@ local creds = window:Tab("森林中99夜",'6035145364')
 local a = creds:section("『 99 Nights in the Forest』",true)
 
 a:Label("打不开用游帮帮加速器")
+
+a:Button("Galactic✅",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GalacticScripts/Galactic-Hub/refs/heads/main/WindUI"))()
+end)
 
 a:Button("voidware✅",function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/99-Nights-in-the-Forest-SNOW-BIOME-KEYLESS-BEST-99-NIGHTS-IN-THE-FOREST-SCRIPT-VOIDWARE-47274"))()
